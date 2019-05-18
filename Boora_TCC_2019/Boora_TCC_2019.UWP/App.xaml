@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="Boora_TCC_2019.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Boora_TCC_2019.UWP"
+    RequestedTheme="Light">
+
+</Application>
