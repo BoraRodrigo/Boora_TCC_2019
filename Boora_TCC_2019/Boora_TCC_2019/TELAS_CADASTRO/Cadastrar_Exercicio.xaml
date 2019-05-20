@@ -4,23 +4,22 @@
              x:Class="Boora_TCC_2019.TELAS.Cadastrar_Exercicio">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout>
-                <StackLayout>
-                    <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
-                        
-                        <Label Margin="0,0,0,10" Text="Cadastrar Exercicio" FontAttributes="Bold" FontSize="Large" TextColor="Gray" HorizontalTextAlignment="Center" ></Label>
-                        <Image x:Name="imgChoosed" HeightRequest="150"></Image>
 
-                        <Entry x:Name="txtNOME" Placeholder="NOME"></Entry>
-                        <Entry x:Name="txtDESCRICAO" Placeholder="DESCRICAO"></Entry>
-                        <Entry x:Name="txtOBJETIVO" Placeholder="OBJETIVO"></Entry>
-                        <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
-                            <Button x:Name="btnPick" WidthRequest="200" Text="BUSCAR IMAGEM" Clicked="Btn_Buscar"/>
-                            <Button x:Name="btnUpload" WidthRequest="200" Text="CADASTRAR" Clicked="Btn_Upload" />
-                        </StackLayout>
+            <StackLayout BackgroundColor="LightYellow">
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
 
+                    <Label Margin="0,30,0,10" Text="Cadastrar Exercicio" FontAttributes="Bold" FontSize="16" TextColor="OrangeRed" HorizontalTextAlignment="Center" />
+
+                    <Image x:Name="imgChoosed" HeightRequest="150"/>
+
+                    <Entry x:Name="txtNOME" Placeholder="NOME" HorizontalTextAlignment="Center" PlaceholderColor="OrangeRed" BackgroundColor="LightYellow"/>
+                    <Entry x:Name="txtDESCRICAO" Placeholder="DESCRICAO" HorizontalTextAlignment="Center" PlaceholderColor="OrangeRed" BackgroundColor="LightYellow"/>
+                    <Editor x:Name="txtOBJETIVO" Placeholder="OBJETIVO" HeightRequest="150" PlaceholderColor="OrangeRed" BackgroundColor="LightYellow"/>
+                    
+                    <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
                         
-                        
+                        <Button x:Name="btnPick" WidthRequest="200" Text="BUSCAR IMAGEM" Clicked="Btn_Buscar" BackgroundColor="LightYellow" TextColor="OrangeRed"/>
+                        <Button x:Name="btnUpload" WidthRequest="200" Text="CADASTRAR" Clicked="Btn_Upload" BackgroundColor="LightYellow"  TextColor="OrangeRed"/>
 
                     </StackLayout>
                 </StackLayout>

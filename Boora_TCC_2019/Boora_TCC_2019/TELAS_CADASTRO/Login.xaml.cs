@@ -20,6 +20,7 @@ namespace Boora_TCC_2019.TELAS
         {
 
             await DisplayAlert("Login", "Não configurado", "OK");
+            
 
         }
     }

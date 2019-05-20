@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using FFImageLoading.Forms.Platform;
 using Foundation;
 using UIKit;
 
@@ -23,6 +23,9 @@ namespace Boora_TCC_2019.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+            CachedImageRenderer.Init(); //Adicionado para utilizar plugin FFImageLoading
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

@@ -166,4 +166,19 @@
       <Name>Boora_TCC_2019</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AngelosFitness.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_Boora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_Boora_Preto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_Boora_Preto2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SupinoReto.gif" />
+  </ItemGroup>
 </Project>

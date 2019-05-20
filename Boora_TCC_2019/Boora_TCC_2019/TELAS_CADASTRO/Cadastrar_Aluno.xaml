@@ -1,12 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="Boora_TCC_2019.TELAS.Cadastrar_Aluno">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            
+            <ffimageloading:CachedImage Source="Logo_Boora.png"/>
+
+            <StackLayout Padding="0" Margin="15" >
+                <Label Text="CADASTRAR ALUNO" FontAttributes="Bold" FontSize="24" TextColor="OrangeRed" HorizontalOptions="Center"/>
+                <TableView>
+                    <TableRoot>
+                        <TableSection>
+                            <EntryCell Label="Nome" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="Txt_nome"/>
+                            <EntryCell Label="Idade" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="Txt_idade"/>
+                            <EntryCell Label="Apelido" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="Txt_apelido"/>
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+                <Button Text="Salvar" BackgroundColor="Yellow" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" />
+            </StackLayout>
+            <StackLayout>
+
+            </StackLayout>
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>

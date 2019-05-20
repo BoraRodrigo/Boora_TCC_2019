@@ -4,7 +4,7 @@
              x:Class="Boora_TCC_2019.TELAS.Login">
     <ContentPage.Content>
         <StackLayout BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <Image Source="IMAGENS/logo_Boora_Preto2.png"  />
+            <Image Source="logo_Boora_Preto2.png"  />
 
             <Entry Placeholder="Login" HorizontalOptions="Center" WidthRequest="150"/>
 
@@ -12,10 +12,7 @@
             <Button Text="Logar!" HorizontalOptions="Center" WidthRequest="100" BackgroundColor="Yellow" TextColor="Black"
                     Clicked="EfetuarLogin"/>
 
-            <Image Source="IMAGENS/AngelosFitness.png" HeightRequest="150"/>
+            <Image Source="AngelosFitness.png" HeightRequest="150"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
-
-
-

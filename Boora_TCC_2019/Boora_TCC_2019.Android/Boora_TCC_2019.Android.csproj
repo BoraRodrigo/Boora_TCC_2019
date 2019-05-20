@@ -98,7 +98,6 @@
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
-    <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Boora_TCC_2019\Boora_TCC_2019.csproj">
@@ -108,6 +107,21 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\xml\file_paths.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\AngelosFitness.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\logo_Boora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\logo_Boora_Preto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\logo_Boora_Preto2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\SupinoReto.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
