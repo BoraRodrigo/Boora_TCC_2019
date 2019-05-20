@@ -4,11 +4,26 @@
              xmlns:local="clr-namespace:Boora_TCC_2019"
              x:Class="Boora_TCC_2019.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <ScrollView>
+        <StackLayout>
+            <StackLayout>
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+                    <Image x:Name="imgBanner" Source="banner.png" ></Image>
+                    <Image Margin="0,0,0,10" HeightRequest="100" Source="firebase.png" ></Image>
+                    <Label Margin="0,0,0,10" Text="Firebase Storage" FontAttributes="Bold" FontSize="Large" TextColor="Gray" HorizontalTextAlignment="Center" ></Label>
+                    <Image x:Name="imgChoosed" HeightRequest="150"></Image>
+                    <Image x:Name="imgbaixada" Source="banner.png" ></Image>
+                    <Entry x:Name="txtFileName" Placeholder="Enter FileName"></Entry>
+                    <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+
+                    </StackLayout>
+                    <Label x:Name="lblPath"></Label>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
 
 </ContentPage>
