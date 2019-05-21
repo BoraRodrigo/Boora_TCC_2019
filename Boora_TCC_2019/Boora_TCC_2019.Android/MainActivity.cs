@@ -1,5 +1,5 @@
 ﻿using System;
-
+using FFImageLoading.Forms.Platform;
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
@@ -17,10 +17,11 @@ namespace Boora_TCC_2019.Droid
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-            CrossCurrentActivity.Current.Init(this, savedInstanceState);
+           
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(enableFastRenderer: true); //Adicionado para utilizar FFloading
+            CrossCurrentActivity.Current.Init(this, savedInstanceState);
             LoadApplication(new App());
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)

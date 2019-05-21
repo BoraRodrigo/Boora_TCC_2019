@@ -13,7 +13,7 @@
 
                 <StackLayout Orientation="Vertical" Padding="10">
 
-                    <Label Text="Exercicio - Supino Reto" FontSize="16" FontAttributes="Bold"  HorizontalOptions="Center" TextColor="Black"/>
+                    <Label x:Name="TxtNomeExercicio" Text="Exercicio - Supino Reto" FontSize="16" FontAttributes="Bold"  HorizontalOptions="Center" TextColor="Black"/>
                     <Label Text="00:00" FontSize="28" HorizontalOptions="Center"/>
                     <Button Text="Iniciar"  HorizontalOptions="Center" BackgroundColor="LightYellow" TextColor="OrangeRed"/>
 
@@ -24,22 +24,22 @@
 
                         <StackLayout Orientation="Vertical" Padding="0,25,0,0">
 
-                            <Label Text="Repetições/Vezes - 10/3 " TextColor="Black" />
+                            <Label x:Name="TxtRepetiçoes" Text="Repetições/Vezes - 10/3 " TextColor="Black" />
 
-                            <Entry Text="25 Kg" FontSize="Small"/>
+                            <Entry x:Name="TxtPeso" Text="25 Kg" FontSize="Small"/>
 
                         </StackLayout >
 
                         <StackLayout>
 
-                            <ffimageloading:CachedImage Source="SupinoReto.gif" WidthRequest="150" HeightRequest="150" Margin="10"/>
+                            <ffimageloading:CachedImage x:Name="ImgGif"   WidthRequest="150" HeightRequest="150" Margin="10"/>
 
                         </StackLayout>
 
 
 
                     </StackLayout>
-                    <Editor  Text="O supino é um tipo de exercício que visa o levantamento de peso para trabalhar o peitoral, Supino Reto – Trabalha o peitoral completo, mas dá ênfase no meio;" FontSize="Small" IsReadOnly="True"/>
+                    <Editor x:Name="txtDescricao" Text="O supino é um tipo de exercício que visa o levantamento de peso para trabalhar o peitoral, Supino Reto – Trabalha o peitoral completo, mas dá ênfase no meio;" FontSize="Small" IsReadOnly="True"/>
 
                     <StackLayout Orientation="Horizontal" >
                         <Button Text="Anterior" Margin="0,0,0,50" HorizontalOptions="FillAndExpand" BackgroundColor="LightYellow" TextColor="OrangeRed"/>

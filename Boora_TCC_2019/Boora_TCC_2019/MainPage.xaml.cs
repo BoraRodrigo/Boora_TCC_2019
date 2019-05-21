@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
+
+
 namespace Boora_TCC_2019
 {
     public partial class MainPage : ContentPage
@@ -12,7 +14,8 @@ namespace Boora_TCC_2019
         public MainPage()
         {
             InitializeComponent();
-        }
 
+
+        }
     }
 }

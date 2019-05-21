@@ -4,7 +4,8 @@
              x:Class="Boora_TCC_2019.TELAS_CADASTRO.ListViewExercicios">
     <ContentPage.Content>
         <StackLayout >
-            <Label Text="Lisview"/>
+            <Entry Placeholder="Pesquisar" x:Name="Pesquisar_Exercicios" TextChanged="BuscaRapida"/>
+            
             <ListView x:Name="ListaExercicios" >
                 <ListView.ItemTemplate>
                     <DataTemplate>

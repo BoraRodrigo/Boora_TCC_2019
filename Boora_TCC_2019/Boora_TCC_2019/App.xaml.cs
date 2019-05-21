@@ -1,8 +1,10 @@
 ﻿using Boora_TCC_2019.TELAS;
 using Boora_TCC_2019.TELAS_SERIE;
+using Boora_TCC_2019.TELAS_CADASTRO;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Boora_TCC_2019
@@ -12,8 +14,8 @@ namespace Boora_TCC_2019
         public App()
         {
             InitializeComponent();
-
-            MainPage = new Cadastrar_Exercicio();
+           
+            MainPage = new ListViewExercicios();
         }
 
         protected override void OnStart()

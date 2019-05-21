@@ -24,7 +24,7 @@ namespace Boora_TCC_2019.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
-            CachedImageRenderer.Init(); //Adicionado para utilizar plugin FFImageLoading
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init();//Adicionado para utilizar plugin FFImageLoading
 
             LoadApplication(new App());
 

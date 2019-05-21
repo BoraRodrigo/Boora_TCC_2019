@@ -16,6 +16,8 @@ namespace Boora_TCC_2019.TELAS
         public Cadastrar_Serie ()
 		{
 			InitializeComponent ();
+
+
 		}
 	}
 }

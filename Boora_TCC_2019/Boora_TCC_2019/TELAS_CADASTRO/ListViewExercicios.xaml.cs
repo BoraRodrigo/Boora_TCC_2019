@@ -13,16 +13,27 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ListViewExercicios : ContentPage
 	{
-		public ListViewExercicios ()
+        ExercicioDAO exercicioDAO = new ExercicioDAO();
+        private List<Exercicio> listaPesquisa { get; set; }
+        private List<Exercicio> listaInterna { get; set; }
+        public ListViewExercicios ()
 		{
 			InitializeComponent ();
 
-            ExercicioDAO exercicio = new ExercicioDAO();
-            List<Exercicio> lista = exercicio.Busca_Exercicio().Result;
-
-
-            ListaExercicios.ItemsSource = lista;
             
-		}
-	}
+        }
+        protected async override void OnAppearing()
+        {
+            base.OnAppearing();
+            listaInterna = await exercicioDAO.Busca_Exercicio();
+            ListaExercicios.ItemsSource = listaInterna;
+        }
+
+        private void BuscaRapida(Object sender, TextChangedEventArgs args)
+        {
+            listaPesquisa = listaInterna.Where(a => a.Nome.Contains(args.NewTextValue)).ToList();
+            ListaExercicios.ItemsSource = listaPesquisa;
+        }
+
+    }
 }
