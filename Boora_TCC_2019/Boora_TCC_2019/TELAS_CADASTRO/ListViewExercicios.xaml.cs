@@ -25,7 +25,17 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
         {
             base.OnAppearing();
             listaInterna = await exercicioDAO.Busca_Exercicio();
+
+            for (int i = 0; i < listaInterna.Count; i++)
+            {
+                string path = await exercicioDAO.Buscar_IMAGEM(listaInterna[i].Imagem_Gif);
+                listaInterna[i].Imagem_Gif = path;
+               
+            }
+
             ListaExercicios.ItemsSource = listaInterna;
+            
+            
 
         }
 

@@ -9,7 +9,7 @@
             <ListView x:Name="ListaExercicios" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ImageCell Text="{Binding Nome}" ImageSource="{Binding Imagem_Gif}" DetailColor="Blue"/>
+                        <ImageCell Text="{Binding Nome}" ImageSource="{Binding Imagem_Gif}" Detail="{Binding Objetivo}" DetailColor="Blue"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
