@@ -16,24 +16,46 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
         ExercicioDAO exercicioDAO = new ExercicioDAO();
         private List<Exercicio> listaPesquisa { get; set; }
         private List<Exercicio> listaInterna { get; set; }
+       
         public ListViewExercicios ()
 		{
 			InitializeComponent ();
-
-            
         }
         protected async override void OnAppearing()
         {
             base.OnAppearing();
             listaInterna = await exercicioDAO.Busca_Exercicio();
             ListaExercicios.ItemsSource = listaInterna;
+
         }
 
-        private void BuscaRapida(Object sender, TextChangedEventArgs args)
+        private async void BuscaRapida(Object sender, TextChangedEventArgs args)
         {
-            listaPesquisa = listaInterna.Where(a => a.Nome.Contains(args.NewTextValue)).ToList();
-            ListaExercicios.ItemsSource = listaPesquisa;
-        }
+            listaInterna = await exercicioDAO.Busca_Exercicio();
+            try
+            {
+                listaPesquisa = listaInterna.Where(a => a.Nome.Contains(args.NewTextValue)).ToList();
+                string path = await exercicioDAO.Buscar_IMAGEM(listaPesquisa[0].Imagem_Gif);
+                listaPesquisa[0].Imagem_Gif = path;
 
+                ListaExercicios.ItemsSource = listaPesquisa;
+            }
+            catch
+            {
+                
+            }
+
+        }
+        //Metodo que faz a busca da imagem do banco atraves de seu nome 
+        //este metodo não esta sendo usado porem ele atualiza uma imagem atravez da busca
+        public async void imagemExercicio(string nomeImagem)
+        {
+            string path = await exercicioDAO.Buscar_IMAGEM(nomeImagem);
+            if (path != null)
+            {
+                //seta a imagem no campo imagem
+                imagem_Exercicio_Selecionado.Source= path;
+            }
+        }
     }
 }

@@ -34,8 +34,10 @@ namespace Boora_TCC_2019.DAO
         {
             //Gambiarra para increment de id se excluir alguem do banco vai repetir id HHAHH, salvo o nome da imagem/gif junto com o exercicio o certo seria o id
             List<Exercicio> listaExercicio = await Busca_Exercicio();
+            
             await firebase
               .Child("Exercicio")
+              
               .PostAsync(new Exercicio() { Id_exercicio=listaExercicio.Count()+1, Nome = nome, Descricao = descricao, Objetivo = objetivo,Imagem_Gif=Convert.ToString(listaExercicio.Count()+1) });
 
             //Salva a imagem  paremtros fileStreen e file name que são a imagem carregada e o nome que eu quero salvar no banco
@@ -82,7 +84,7 @@ namespace Boora_TCC_2019.DAO
         public async Task<string> Buscar_IMAGEM(string nomeImagem)
         {
             return await firebaseStorage
-                .Child("Exercicio")
+                .Child("Gif_Exercicio")
                 .Child(nomeImagem)
                 .GetDownloadUrlAsync();
         }

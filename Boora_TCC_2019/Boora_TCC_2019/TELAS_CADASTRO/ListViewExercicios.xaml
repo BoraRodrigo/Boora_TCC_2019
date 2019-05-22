@@ -9,10 +9,11 @@
             <ListView x:Name="ListaExercicios" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ImageCell Text="{Binding Nome}" ImageSource="{Binding Foto}"/>
+                        <ImageCell Text="{Binding Nome}" ImageSource="{Binding Imagem_Gif}" DetailColor="Blue"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Image x:Name="imagem_Exercicio_Selecionado" HeightRequest="150"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
