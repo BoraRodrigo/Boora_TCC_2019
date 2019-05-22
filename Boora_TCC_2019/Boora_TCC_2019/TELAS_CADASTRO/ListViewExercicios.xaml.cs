@@ -11,6 +11,8 @@ using Boora_TCC_2019.DAO;
 namespace Boora_TCC_2019.TELAS_CADASTRO
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
+
+
 	public partial class ListViewExercicios : ContentPage
 	{
         ExercicioDAO exercicioDAO = new ExercicioDAO();
@@ -49,6 +51,7 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
                 listaPesquisa[0].Imagem_Gif = path;
 
                 ListaExercicios.ItemsSource = listaPesquisa;
+             
             }
             catch
             {
