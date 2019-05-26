@@ -6,20 +6,25 @@
     <ContentPage.Content>
         <StackLayout>
             
-            <ffimageloading:CachedImage Source="Logo_Boora.png"/>
+          
 
             <StackLayout Padding="0" Margin="15" >
                 <Label Text="CADASTRAR ALUNO" FontAttributes="Bold" FontSize="24" TextColor="OrangeRed" HorizontalOptions="Center"/>
                 <TableView>
                     <TableRoot>
                         <TableSection>
-                            <EntryCell Label="Nome" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="Txt_nome"/>
-                            <EntryCell Label="Idade" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="Txt_idade"/>
-                            <EntryCell Label="Apelido" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="Txt_apelido"/>
+                            <EntryCell Label="Nome" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_NOME"/>
+                            <EntryCell Label="Email" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_EMAIL"/>
+                            <EntryCell Label="Senha" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_SENHA"/>
+                            <EntryCell Label="Peso" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_PESO"/>
+                            <EntryCell Label="Altura" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_ALTURA"/>
+                            <EntryCell Label="Idade" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_IDADE"/>
+                            <EntryCell Label="Objetivo" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_OBJETIVO"/>
+                            <EntryCell Label="Situcao" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_SITUACAO"/>
                         </TableSection>
                     </TableRoot>
                 </TableView>
-                <Button Text="Salvar" BackgroundColor="Yellow" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" />
+                <Button Text="Cadastrar Aluno" BackgroundColor="Yellow" Clicked="Cadastrar_AlunoAsy" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" />
             </StackLayout>
             <StackLayout>
 

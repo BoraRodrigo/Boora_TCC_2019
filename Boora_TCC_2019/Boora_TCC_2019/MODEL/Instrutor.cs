@@ -12,6 +12,5 @@ namespace Boora_TCC_2019.MODEL
         public string Senha { get; set; }
         public float Idade { get; set; }
         public string Formacao_Academica { get; set; }
-        public string Inf_Adicional { get; set; }
     }
 }

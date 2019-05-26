@@ -4,9 +4,21 @@
              x:Class="Boora_TCC_2019.TELAS.Cadastrar_Instrutor">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout Padding="0" Margin="15" >
+                <Label Text="CADASTRAR INSTRUTOR" FontAttributes="Bold" FontSize="24" TextColor="OrangeRed" HorizontalOptions="Center"/>
+                <TableView>
+                    <TableRoot>
+                        <TableSection>
+                            <EntryCell Label="Nome" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_NOME"/>
+                            <EntryCell Label="Email" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_EMAIL"/>
+                            <EntryCell Label="Senha" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_SENHA"/>
+                            <EntryCell Label="Idade" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_IDADE"/>
+                            <EntryCell Label="Formacão Academica" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_FORMACAO"/>
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+                <Button Text="Cadastrar Instrutor" BackgroundColor="Yellow" Clicked="Cadastrar_InstrutorAsync" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

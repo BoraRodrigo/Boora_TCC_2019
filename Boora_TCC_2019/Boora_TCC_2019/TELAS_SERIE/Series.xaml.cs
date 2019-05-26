@@ -14,18 +14,23 @@ namespace Boora_TCC_2019.TELAS_SERIE
 	{
 		public Serie ()
 		{
-			InitializeComponent ();
-            MODEL.Serie serie = new MODEL.Serie();
-            List<MODEL.Serie> lista = new List<MODEL.Serie>();
-            lista = serie.gerar_dados();
+		InitializeComponent ();
+            /*	   MODEL.Serie serie = new MODEL.Serie();
+               List<MODEL.Serie> lista = new List<MODEL.Serie>();
+               lista = serie.gerar_dados();
 
-            txtDescricao.Text = lista[0].Descricao_Exercicio;
-            TxtNomeExercicio.Text = lista[0].Nome_Exercicio;
-            TxtPeso.Text = "25";
-            TxtRepetiçoes.Text = lista[0].Qtd_Vezes + "/" + lista[0].Qtd_repeticoes;
-            ImgGif.Source = ImageSource.FromFile(lista[0].Url_Imagem);
+               txtDescricao.Text = lista[0].Descricao_Exercicio;
+               TxtNomeExercicio.Text = lista[0].Nome_Exercicio;
+               TxtPeso.Text = "25";
+               TxtRepetiçoes.Text = lista[0].Qtd_Vezes + "/" + lista[0].Qtd_repeticoes;
+               ImgGif.Source = ImageSource.FromFile(lista[0].Url_Imagem);
 
+       */
+        }
 
-		}
-	}
+        public static explicit operator Serie(MODEL.Serie v)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
