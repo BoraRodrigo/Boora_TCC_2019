@@ -55,29 +55,31 @@ namespace Boora_TCC_2019.DAO
               });
         }
 
-  
+
+        //Busca serie aluno e coloca dados em campos de dados ver implementacao -BORA
+        //retona os detalhaes do exercicio da serie.
+        // esta tabela possui o ID do exercicio vinculado a estas inf
         public async Task<Exercicios_Serie> Busca_Exercicio_SERIE_ALUNO(int id_serie)
         {
             Exercicios_Serie_DAO exercicios_Serie_DAO = new Exercicios_Serie_DAO();
             var exercicios_serie = await exercicios_Serie_DAO.Busca_Exercicios_Serie();
             await firebase
-              .Child("Serie")
+              .Child("Exercicios_Serie_DAO")
               .OnceAsync<Exercicios_Serie_DAO>();
             return exercicios_serie.Where(a => a.Id_Serie == id_serie).FirstOrDefault();
         }
 
-        //não consigo puxar por estes metodos não sei o que acontece 
-        public async Task<Serie> Busca_SERIE_ALUNO(int id_Aluno)
+        //Pesquisa da serie do aluno retorna a serie que tiver o ID do aluno, este id
+        //de serie que vier no retono é necessario para busca os exercicios  da serie --BORA
+        public async Task<Serie> Busca_Serie_Aluno(int idAluno)
         {
-            SerieDAO serieDAO = new SerieDAO();
-            var serie = await serieDAO.Busca_Serie();
+            SerieDAO Serie_DAO = new SerieDAO();
+            var serie = await Serie_DAO.Busca_Serie();
             await firebase
               .Child("Serie")
               .OnceAsync<Serie>();
-            return serie.Where(a => a.Id_Aluno == id_Aluno).FirstOrDefault();
-
+            return serie.Where(a => a.Id_Aluno == idAluno).FirstOrDefault();
         }
-
 
     }
 }

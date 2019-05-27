@@ -18,7 +18,7 @@ namespace Boora_TCC_2019.DAO
         {
 
             return (await firebase
-                .Child("Exercicios_Serie")
+                .Child("Exercicios_Serie_DAO")
                 .OnceAsync<Exercicios_Serie>()).Select(item => new Exercicios_Serie
                 {
                     Id_Exercicios_Serie = item.Object.Id_Serie,

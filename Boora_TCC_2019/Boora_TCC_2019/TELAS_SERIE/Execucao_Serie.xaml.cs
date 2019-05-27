@@ -40,10 +40,20 @@ namespace Boora_TCC_2019.TELAS_SERIE
         {
 
             base.OnAppearing();
+
+            //Somente para teste Busco as inf no banco e coloca nos campos de texto abaixo
             var todosexercicio = await alunoDAO.Busca_Exercicio_SERIE_ALUNO(1);
-            //este metodo deveria busca a serie do alunno pelo ID mais da um erro que nao sei 
-          //  listaAlunos.ItemsSource =todosexercicio;
-    }
+            if (todosexercicio != null)
+            {
+                txtId.Text = Convert.ToString(todosexercicio.Qtd_Vezes);
+                txtNome.Text =Convert.ToString( todosexercicio.Id_Exercicios_Serie);
+                await DisplayAlert("DADOS", "", "OK");
+            }
+            else
+            {
+                await DisplayAlert("SEM DADOS", "", "OK");
+            }
+        }
        
     }
 }
