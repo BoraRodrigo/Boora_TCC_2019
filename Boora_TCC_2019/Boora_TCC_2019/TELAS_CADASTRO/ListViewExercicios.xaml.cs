@@ -11,6 +11,7 @@ using Boora_TCC_2019.DAO;
 namespace Boora_TCC_2019.TELAS_CADASTRO
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
+
 	public partial class ListViewExercicios : ContentPage
 	{
         ExercicioDAO exercicioDAO = new ExercicioDAO();
@@ -38,9 +39,6 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
             }
            
             ListaExercicios.ItemsSource = listaInterna;
-            
-            
-
         }
 
         private async void BuscaRapida(Object sender, TextChangedEventArgs args)
@@ -58,6 +56,7 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
                 }
 
                 ListaExercicios.ItemsSource = listaPesquisa;
+             
             }
             catch
             {

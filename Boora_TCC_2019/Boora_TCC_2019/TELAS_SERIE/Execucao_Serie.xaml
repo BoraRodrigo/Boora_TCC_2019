@@ -6,6 +6,20 @@
         <StackLayout VerticalOptions="Center">
             <Button Text="Iniciar timer" Clicked="Button_OnClicked" x:Name="Button" />
             <Entry IsEnabled="False" x:Name="Entry" Placeholder="Status do timer"/>
+
+            <Entry IsEnabled="True" x:Name="txtId" Placeholder="Status do timer"/>
+
+            <Entry IsEnabled="True" x:Name="txtNome" Placeholder="Status do timer"/>
+
+
+            <ListView x:Name="listaAlunos">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Nome}"></TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
