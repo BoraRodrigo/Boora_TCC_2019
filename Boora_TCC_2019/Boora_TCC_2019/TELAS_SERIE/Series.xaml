@@ -42,8 +42,8 @@
                     <Editor x:Name="txtDescricao" Text="O supino é um tipo de exercício que visa o levantamento de peso para trabalhar o peitoral, Supino Reto – Trabalha o peitoral completo, mas dá ênfase no meio;" FontSize="Small" IsReadOnly="True"/>
 
                     <StackLayout Orientation="Horizontal" >
-                        <Button Text="Anterior" Margin="0,0,0,50" HorizontalOptions="FillAndExpand" BackgroundColor="LightYellow" TextColor="OrangeRed"/>
-                        <Button Text="Proximo" Margin="0,0,0,50" HorizontalOptions="FillAndExpand" BackgroundColor="LightYellow" TextColor="OrangeRed"/>
+                        <Button Text="Anterior" Margin="0,0,0,50" HorizontalOptions="FillAndExpand" BackgroundColor="LightYellow" TextColor="OrangeRed" Clicked="Anterior_Exercicio"/>
+                        <Button Text="Proximo" Margin="0,0,0,50" HorizontalOptions="FillAndExpand" BackgroundColor="LightYellow" TextColor="OrangeRed" Clicked="Proximo_Exercicio"/>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>

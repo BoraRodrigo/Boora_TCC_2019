@@ -11,8 +11,6 @@ using Boora_TCC_2019.DAO;
 namespace Boora_TCC_2019.TELAS_CADASTRO
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-
-
 	public partial class ListViewExercicios : ContentPage
 	{
         ExercicioDAO exercicioDAO = new ExercicioDAO();
@@ -22,7 +20,10 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
         public ListViewExercicios ()
 		{
 			InitializeComponent ();
+
+            
         }
+
         protected async override void OnAppearing()
         {
             base.OnAppearing();
@@ -31,10 +32,11 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
             for (int i = 0; i < listaInterna.Count; i++)
             {
                 string path = await exercicioDAO.Buscar_IMAGEM(listaInterna[i].Imagem_Gif);
+                
                 listaInterna[i].Imagem_Gif = path;
                
             }
-
+           
             ListaExercicios.ItemsSource = listaInterna;
             
             
@@ -47,11 +49,15 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
             try
             {
                 listaPesquisa = listaInterna.Where(a => a.Nome.Contains(args.NewTextValue)).ToList();
-                string path = await exercicioDAO.Buscar_IMAGEM(listaPesquisa[0].Imagem_Gif);
-                listaPesquisa[0].Imagem_Gif = path;
+                // Com o For a lista atualiza as imagens, tirei o estatico - Guga
+                for (int i = 0; i < listaInterna.Count; i++)
+                {
+                    string path = await exercicioDAO.Buscar_IMAGEM(listaInterna[i].Imagem_Gif);
+                    listaInterna[i].Imagem_Gif = path;
+
+                }
 
                 ListaExercicios.ItemsSource = listaPesquisa;
-             
             }
             catch
             {
@@ -59,16 +65,17 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
             }
 
         }
+        //Comentei tudo pq tava dando erro - Guga
         //Metodo que faz a busca da imagem do banco atraves de seu nome 
         //este metodo não esta sendo usado porem ele atualiza uma imagem atravez da busca
-        public async void imagemExercicio(string nomeImagem)
-        {
-            string path = await exercicioDAO.Buscar_IMAGEM(nomeImagem);
-            if (path != null)
-            {
-                //seta a imagem no campo imagem
-                imagem_Exercicio_Selecionado.Source= path;
-            }
-        }
+        //public async void imagemExercicio(string nomeImagem)
+        //{
+        //    string path = await exercicioDAO.Buscar_IMAGEM(nomeImagem);
+        //    if (path != null)
+        //    {
+        //        //seta a imagem no campo imagem
+        //        imagem_Exercicio_Selecionado.Source= path;
+        //    }
+        //}
     }
 }

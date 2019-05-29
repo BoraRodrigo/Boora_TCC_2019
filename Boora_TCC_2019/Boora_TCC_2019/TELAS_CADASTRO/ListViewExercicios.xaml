@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ff="ff"
              x:Class="Boora_TCC_2019.TELAS_CADASTRO.ListViewExercicios">
     <ContentPage.Content>
         <StackLayout >
             <Entry Placeholder="Pesquisar" x:Name="Pesquisar_Exercicios" TextChanged="BuscaRapida"/>
             
-            <ListView x:Name="ListaExercicios" >
+            <ListView x:Name="ListaExercicios"  >
                 <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ImageCell Text="{Binding Nome}" ImageSource="{Binding Imagem_Gif}" Detail="{Binding Objetivo}" DetailColor="Blue"/>
-                    </DataTemplate>
+                    <DataTemplate >
+                        <ImageCell Text="{Binding Nome}" ImageSource="{Binding Imagem_Gif}"  Detail="{Binding Objetivo}" DetailColor="Blue"/>
+                    </DataTemplate >
                 </ListView.ItemTemplate>
             </ListView>
-            <Image x:Name="imagem_Exercicio_Selecionado" HeightRequest="150"/>
-        </StackLayout>
+         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
