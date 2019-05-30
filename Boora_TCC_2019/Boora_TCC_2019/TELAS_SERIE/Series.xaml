@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Orientation="Vertical" BackgroundColor="LightYellow">
-                <ffimageloading:CachedImage Source="Logo_Boora.png"  VerticalOptions="Center"/>
+     
                 
                 <Label Text="Serie A - Exercicio 1 de 06" FontSize="12"   HorizontalOptions="Center" TextColor="OrangeRed"/>
 

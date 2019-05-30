@@ -16,7 +16,7 @@ namespace Boora_TCC_2019
         {
             InitializeComponent();
            
-            MainPage = new Execucao_Serie();
+            MainPage = new Cadastrar_Serie();
         }
 
         protected override void OnStart()
