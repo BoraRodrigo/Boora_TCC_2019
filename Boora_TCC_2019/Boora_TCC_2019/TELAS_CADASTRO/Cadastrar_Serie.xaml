@@ -4,45 +4,53 @@
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="Boora_TCC_2019.TELAS.Cadastrar_Serie">
     <ContentPage.Content>
-        <StackLayout>
+        <ScrollView>
+            <StackLayout BackgroundColor="#ffc800">
+            
+                <StackLayout Padding="10" Margin="15">
+                    <Label Text="CADASTRAR SERIE" FontAttributes="Bold" FontSize="24" TextColor="OrangeRed" HorizontalOptions="Center"/>
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout Orientation="Horizontal" >
+                            <Entry HorizontalOptions="FillAndExpand" Placeholder="Id Serie" PlaceholderColor="Black" x:Name="Txt_Id_Da_Serie"/>
+                            <Entry HorizontalOptions="FillAndExpand" Placeholder="Id Aluno" PlaceholderColor="Black" x:Name="Txt_Id_Do_Aluno"/>
+                         </StackLayout>
+                        <Entry Placeholder="Nome Serie" PlaceholderColor="Black" x:Name="Txt_nome_Serie"/>
+                        <Entry Placeholder="Descrição" PlaceholderColor="Black" x:Name="Txt_Descricao_Serie"/>
+                        <StackLayout Orientation="Horizontal" >
+                            <Label FontSize="18" TextColor="Black" Text="Data Inicial:" HorizontalOptions="FillAndExpand"/>
+                            
+                            <Label Text="Data Final:" FontSize="18" TextColor="Black" HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" >
+                            <Label HorizontalOptions="FillAndExpand" x:Name="Lbl_data_Inicial" FontSize="18" TextColor="Black"/>
+                            
+                            <DatePicker  FontSize="18" HorizontalOptions="FillAndExpand" TextColor="Black" Format="dd/MM/yyyy" x:Name="Txt_Data_Fim" MinimumDate="01/01/2019" DateSelected="DataSelecionada"/>
+                        </StackLayout>
+                    </StackLayout>
 
-            <StackLayout Padding="0" Margin="15" >
-                <Label Text="CADASTRAR SERIE" FontAttributes="Bold" FontSize="24" TextColor="OrangeRed" HorizontalOptions="Center"/>
+                    <Button Text="Confirmar Serie?" BackgroundColor="Orange" Clicked="Btn_Cadastrar_Serie" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" />
+                    <Label Margin="10" Text="CADASTRAR EXERCICIOS NA SERIE" FontAttributes="Bold" FontSize="24" TextColor="OrangeRed" HorizontalOptions="Center"/>
                 
-                
-                
-                <TableView>
-                    <TableRoot>
-                        <TableSection>
-                            <EntryCell Label="Id da serie" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="Txt_Id_Da_Serie"/>
-                            <EntryCell Label="Id Do aluno" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="Txt_Id_Do_Aluno"/>
-                            <EntryCell Label="Nome Da Serie" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="Txt_nome_Serie"/>
-                            <EntryCell Label="Descricao Serie" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="Txt_Descricao_Serie"/>
-                            <EntryCell Label="Data Inicio" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="Txt_Data_Inicio"/>
-                            <EntryCell Label="Data Fim" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="Txt_Data_Fim"/>
-                        </TableSection>
-                    </TableRoot>
-                </TableView>
-                <Button Text="Confirmar Serie?" BackgroundColor="Yellow" Clicked="Btn_Cadastrar_Serie" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" />
-                <Label Text="CADASTRAR EXERCICIOS NA SERIE" FontAttributes="Bold" FontSize="24" TextColor="OrangeRed" HorizontalOptions="Center"/>
-                <TableView>
-                    <TableRoot>
-                        <TableSection>
-                        <EntryCell Label="Id Exercicos Do Exercicio Serie" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="Txt_Id_Exercicios_Serie"/>
-                        <EntryCell Label="Id da Serie" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="Txt_Id_Da_Serie_Cadastro_Exercicio"/>
-                        <EntryCell Label="Quantidade Repetições" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="Txt_Quantidade_repeticoes"/>
-                        <EntryCell Label="Quantidade de vezes" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="Txt_Quantidade_Vezes"/>
-                        <EntryCell Label="Tempo Minimo" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_Tempo_Maximo"/>
-                        <EntryCell Label="Tempo Maximo" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_tempo_minimo"/>
-                         <EntryCell Label="Tempo de Execução" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_tempo_execucao"/>
-                        </TableSection>
-                    </TableRoot>
-                </TableView>
-                <Button Text="Adicionar Exercicio a Serie?" BackgroundColor="Yellow" Clicked="Btn_Cadastrar_Exercicios_Serie" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" />
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout Orientation="Horizontal" >
+                            <Entry HorizontalOptions="FillAndExpand" PlaceholderColor="Black" Placeholder="Id Exercicios Serie" x:Name="Txt_Id_Exercicios_Serie"/>
+                            <Entry HorizontalOptions="FillAndExpand" PlaceholderColor="Black" Placeholder="id Serie" x:Name="Txt_Id_Da_Serie_Cadastro_Exercicio"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" >
+                            <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="Black" Placeholder="Repetiçoes" x:Name="Txt_Quantidade_repeticoes" />
+                            <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="Black" Placeholder="Vezes" x:Name="Txt_Quantidade_Vezes"/>
+                            <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="Black" Placeholder="Tempo Execução" x:Name="txt_tempo_execucao"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Entry HorizontalOptions="FillAndExpand" PlaceholderColor="Black" Placeholder="Tempo maximo" x:Name="txt_Tempo_Maximo"/>
+                            <Entry HorizontalOptions="FillAndExpand" PlaceholderColor="Black" Placeholder="Tempo minimo" x:Name="txt_tempo_minimo"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <Button Text="Adicionar Exercicio a Serie?"  BackgroundColor="Orange" Clicked="Btn_Cadastrar_Exercicios_Serie" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" />
+            
             </StackLayout>
-            <StackLayout>
 
-            </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

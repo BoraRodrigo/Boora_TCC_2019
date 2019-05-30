@@ -7,21 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Boora_TCC_2019.TELAS
+namespace Boora_TCC_2019
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Login : ContentPage
+	public partial class Inicial : ContentPage
 	{
-		public Login ()
+		public Inicial ()
 		{
 			InitializeComponent ();
 		}
-        private void EfetuarLogin(object sender, EventArgs args)
-        {
-
-            App.Current.MainPage = new NavigationPage(new MENU.Master());
-
-
-        }
-    }
+	}
 }

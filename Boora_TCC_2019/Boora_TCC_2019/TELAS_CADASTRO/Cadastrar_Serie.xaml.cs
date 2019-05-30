@@ -14,11 +14,18 @@ namespace Boora_TCC_2019.TELAS
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Cadastrar_Serie : ContentPage
     {
+        string dataFim;
         SerieDAO serieDAO = new SerieDAO();
         Exercicios_Serie_DAO exercicios_Serie_DAO = new Exercicios_Serie_DAO();
         public Cadastrar_Serie()
         {
             InitializeComponent();
+            Lbl_data_Inicial.Text =  DateTime.Now.ToString("dd/MM/yyyy");
+        }
+
+        private void DataSelecionada(object sender, DateChangedEventArgs args)
+        {
+            dataFim = args.NewDate.ToString("dd/MM/yyyy");
         }
 
         private async void Btn_Cadastrar_Serie(object sender, EventArgs e)
@@ -28,9 +35,16 @@ namespace Boora_TCC_2019.TELAS
             serie.Id_Aluno = Convert.ToInt32(Txt_Id_Do_Aluno.Text);
             serie.Nome_Serie = Txt_nome_Serie.Text;
             serie.Descricao_Serie = Txt_Descricao_Serie.Text;
-            serie.Data_Inicio = Txt_Data_Inicio.Text;
-            serie.Data_Fim = Txt_Data_Fim.Text;
-            
+            serie.Data_Inicio = DateTime.Now.ToString("dd/MM/yyyy");
+            if (dataFim != null)
+            {
+                serie.Data_Fim = dataFim;
+            }
+            else
+            {
+               await DisplayAlert("Data não Selecionada", "Selecione data", "OK");
+            }
+           
             await serieDAO.Cadastrar_Serie(serie);
         }
         private async void Btn_Cadastrar_Exercicios_Serie(object sender, EventArgs e)
