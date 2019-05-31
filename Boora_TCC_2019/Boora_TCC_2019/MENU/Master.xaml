@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:page="clr-namespace:Boora_TCC_2019"
+             x:Class="Boora_TCC_2019.MENU.Master">
+    <MasterDetailPage.Master>
+    <ContentPage Title="Menu">
+        <ScrollView>
+        <StackLayout>
+            <!--Adiona novo botao, e no Master C# faz o funçao do evento cliked, esse tipo de menu so funciona em masterdateilpage-->
+                    <Button Text="Cadastro Aluno" Clicked="GoCadastroAluno"/>
+                    <Button Text="Cadastro Exercicio" Clicked="GoCadastroExercicio"/>
+                    <Button Text="Cadastro Instrutor" Clicked="GoCadastroInstrutor"/>
+                    <Button Text="Cadastro Serie" Clicked="GoCadastroSerie"/>
+                    <Button Text="Lista Exercicio" Clicked="GoListExercicios"/>
+                    <Button Text="Execução tela" Clicked="GoExecucaoTela"/>
+                    <Button Text="serie" Clicked="GoSerie"/>
+                </StackLayout>
+        </ScrollView>
+    </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <page:Inicial />
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
