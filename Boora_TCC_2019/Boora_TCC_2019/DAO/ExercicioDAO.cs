@@ -30,6 +30,7 @@ namespace Boora_TCC_2019.DAO
                }).ToList();
                
            }
+
         public async Task Cadastrar_Exercicio(int id_Exercicio, string nome,string descricao, string objetivo, Stream fileStream, string fileName)
         {
             //Gambiarra para increment de id se excluir alguem do banco vai repetir id HHAHH, salvo o nome da imagem/gif junto com o exercicio o certo seria o id
@@ -56,7 +57,9 @@ namespace Boora_TCC_2019.DAO
               return exercicio.Where(a => a.Id_exercicio == id_Exercicio).FirstOrDefault();
          
         }
-         public async Task Alterar_Exercicio(int id_Exercicio, string nome)
+
+
+        public async Task Alterar_Exercicio(int id_Exercicio, string nome)
              {
             //metodo incompleto
             var alterar_exercicio = (await firebase

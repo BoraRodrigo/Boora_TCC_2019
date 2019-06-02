@@ -3,23 +3,51 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Boora_TCC_2019.TELAS_SERIE.Execucao_Serie">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="Center">
-            <Button Text="Iniciar timer" Clicked="Button_OnClicked" x:Name="Button" />
-            <Entry IsEnabled="False" x:Name="Entry" Placeholder="Status do timer"/>
+        <ScrollView>
+            <StackLayout BackgroundColor="#ffc800">
 
-            <Entry IsEnabled="True" x:Name="txtId" Placeholder="Status do timer"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label Text="SEJA BEM VINDO BOORA MALHAR " FontAttributes="Bold" FontSize="24" TextColor="OrangeRed" HorizontalOptions="Center"/>
+                </StackLayout>
+                <Label Text="" x:Name="txtNomeALUNO" FontAttributes="Bold" FontSize="24" TextColor="OrangeRed" HorizontalOptions="Center"/>
 
-            <Entry IsEnabled="True" x:Name="txtNome" Placeholder="Status do timer"/>
 
 
-            <ListView x:Name="listaAlunos">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding Nome}"></TextCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                <Label Text="INF SERIE" FontAttributes="Bold" FontSize="24" TextColor="OrangeRed" HorizontalOptions="Center"/>
+                <StackLayout Orientation="Horizontal" >
+                   <Label Text="Nome da Serie:" />
+                   <Entry IsEnabled="True" x:Name="txtnomedaSerie" Placeholder="NOME SERIE"/>
+                </StackLayout>
+                
+                
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="REPETICOES:" />
+                    <Entry IsEnabled="True" x:Name="txtREPETICOES" Placeholder="Repeticoes"/>
+                    <Label Text="VEZES:" />
+                    <Entry IsEnabled="True" x:Name="txtQTDVEZES" Placeholder="Vezes"/>
+                </StackLayout>
+                <Label Text="INF EXERCICIO" FontAttributes="Bold" FontSize="24" TextColor="OrangeRed" HorizontalOptions="Center"/>
+                <Label Text="Serie - Exercicio 1 de 1" x:Name="lblexercicioSerie" FontAttributes="Bold" FontSize="18" TextColor="OrangeRed" HorizontalOptions="Center"/>
 
-        </StackLayout>
+
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Nome:" />
+                    <Entry IsEnabled="True" x:Name="txtNOMEEXERCICIO" Placeholder="NOME EXERCICIO"/>
+                    <Label Text="Objetivo:" />
+                    <Entry IsEnabled="True" x:Name="txtOBJTIVOEXERCICIO" Placeholder="OBJETIVO"/>
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                    <Button Text="Iniciar Cronômetro" HorizontalOptions="Center" Clicked="Button_OnClicked" x:Name="Button"  />
+                    <Entry IsEnabled="False" x:Name="Entry" HorizontalOptions="Fill" Placeholder="Cronômetro"/>
+                </StackLayout>
+                <Image x:Name="imgbaixada"  ></Image>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                    <Button Text="Proximo Exercicio"  Clicked="Proximo_Exercicio_Da_SerieAsync" HorizontalOptions="Center" BackgroundColor="LightYellow" TextColor="OrangeRed"/>
+                    <Button Text="Exercicio Anterior" Clicked="Anterior_Exercicio_Da_SerieAsync"  HorizontalOptions="Center" BackgroundColor="LightYellow" TextColor="OrangeRed"/>
+                </StackLayout>
+            </StackLayout>
+     </ScrollView>
     </ContentPage.Content>
 </ContentPage>

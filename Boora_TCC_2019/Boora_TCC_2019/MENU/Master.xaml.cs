@@ -5,17 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.OpenWhatsApp;
 using Xamarin.Forms.Xaml;
 
 namespace Boora_TCC_2019.MENU
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Master : MasterDetailPage
-	{
-		public Master ()
-		{
-			InitializeComponent ();
-		}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Master : MasterDetailPage
+    {
+        public Master()
+        {
+            InitializeComponent();
+        }
         // aqui vc instancia novo navigationPage com a tela que vc quer cadastrar. cada metodo para um botao.
         private void GoCadastroAluno(object sender, EventArgs args)
         {
@@ -52,6 +53,21 @@ namespace Boora_TCC_2019.MENU
             Detail = new NavigationPage(new TELAS_SERIE.Serie());
             IsPresented = false;
         }
+        private void abrirfacebook(object sender, EventArgs args)
+        {
 
+            Device.OpenUri(new Uri("https://www.facebook.com/angelosfitness/"));
+        }
+        private async void Send(object sender, EventArgs e)
+        {
+            try
+            {
+                Chat.Open("+5541996114270", "Fala parça!");
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Erro", ex.Message, "OK");
+            }
+        }
     }
 }

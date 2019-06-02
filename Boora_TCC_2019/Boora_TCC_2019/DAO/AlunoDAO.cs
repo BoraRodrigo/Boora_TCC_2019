@@ -69,6 +69,9 @@ namespace Boora_TCC_2019.DAO
             return exercicios_serie.Where(a => a.Id_Serie == id_serie).FirstOrDefault();
         }
 
+
+
+
         //Pesquisa da serie do aluno retorna a serie que tiver o ID do aluno, este id
         //de serie que vier no retono é necessario para busca os exercicios  da serie --BORA
         public async Task<Serie> Busca_Serie_Aluno(int idAluno)
@@ -80,6 +83,21 @@ namespace Boora_TCC_2019.DAO
               .OnceAsync<Serie>();
             return serie.Where(a => a.Id_Aluno == idAluno).FirstOrDefault();
         }
+        public async Task<Aluno> Login_Aluno(string nome, string senha)
+        {
+            try
+            {
+                var aluno = await Busca_Aluno();
+                await firebase
+                  .Child("Aluno")
+                  .OnceAsync<Aluno>();
+                return aluno.Where(a => a.Nome == nome && a.Senha == senha).FirstOrDefault();
+            }
+            catch (Exception)
+            {
 
+                throw;
+            }  
+        }
     }
 }

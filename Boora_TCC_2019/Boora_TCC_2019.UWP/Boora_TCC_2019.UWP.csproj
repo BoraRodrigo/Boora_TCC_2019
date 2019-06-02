@@ -103,8 +103,11 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="facebook.png" />
+    <Content Include="like.png" />
     <Content Include="SupinoReto.gif" />
-    <None Include="AngelosFitness.png" />
+    <Content Include="testebotao.png" />
+    <None Include="angelosgfitness.png" />
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-200.png" />
     <Content Include="Assets\LargeTile.scale-400.png" />
@@ -134,7 +137,7 @@
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
     <None Include="logo_Boora.png" />
     <None Include="logo_Boora_Preto.png" />
-    <None Include="logo_Boora_Preto2.png" />
+    <None Include="logo_boora_preto2.png" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>

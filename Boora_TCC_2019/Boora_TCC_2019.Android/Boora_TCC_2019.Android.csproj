@@ -109,7 +109,7 @@
     <AndroidResource Include="Resources\xml\file_paths.xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\drawable\AngelosFitness.png" />
+    <None Include="Resources\drawable\angelosfitness.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\drawable\logo_Boora.png" />
@@ -118,10 +118,13 @@
     <None Include="Resources\drawable\logo_Boora_Preto.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\drawable\logo_Boora_Preto2.png" />
+    <None Include="Resources\drawable\logo_boora_preto2.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\SupinoReto.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\facebook.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

@@ -38,6 +38,7 @@ namespace Boora_TCC_2019.DAO
             await firebase
               .Child("Serie")
               .PostAsync(new Serie() { Id_Serie = listaSerie.Count() + 1,
+                  
                   Id_Aluno = serie.Id_Aluno,
                   Nome_Serie = serie.Nome_Serie,
                   Data_Inicio = serie.Data_Inicio,
