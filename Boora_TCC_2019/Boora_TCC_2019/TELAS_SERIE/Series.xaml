@@ -32,7 +32,7 @@
 
                         <StackLayout>
 
-                            <ffimageloading:CachedImage x:Name="ImgGif"   WidthRequest="150" HeightRequest="150" Margin="10"/>
+                            <ffimageloading:CachedImage x:Name="ImgGif"   WidthRequest="150" HeightRequest="150" Margin="10"></ffimageloading:CachedImage>
 
                         </StackLayout>
 

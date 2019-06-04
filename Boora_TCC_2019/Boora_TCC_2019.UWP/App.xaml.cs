@@ -30,6 +30,7 @@ namespace Boora_TCC_2019.UWP
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            
         }
 
         /// <summary>

@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:ff="ff"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="Boora_TCC_2019.TELAS_CADASTRO.ListViewExercicios">
     <ContentPage.Content>
-        <StackLayout >
+        <StackLayout BackgroundColor="#ffc800">
             <Entry Placeholder="Pesquisar" x:Name="Pesquisar_Exercicios" TextChanged="BuscaRapida"/>
             
-            <ListView x:Name="ListaExercicios"  >
+            <ListView x:Name="ListaExercicios" BackgroundColor="#ffc800" >
                 <ListView.ItemTemplate>
                     <DataTemplate >
-                        <ImageCell Text="{Binding Nome}" ImageSource="{Binding Imagem_Gif}"  Detail="{Binding Objetivo}" DetailColor="Blue"/>
+                        <ImageCell Text="{Binding Nome}" TextColor="Black" ImageSource="{Binding Imagem_Gif}"  Detail="{Binding Objetivo}" DetailColor="Orange"/>
                     </DataTemplate >
                 </ListView.ItemTemplate>
             </ListView>

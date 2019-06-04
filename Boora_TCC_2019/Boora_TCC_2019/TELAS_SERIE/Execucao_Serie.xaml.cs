@@ -40,7 +40,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
             //esta funcao retorna uma lista com todos o exercicio cadastrado na serie do aluno.
             //(lembrando que um aluno pode ter mais de uma serie ai só fazer o mesmo esquena do exercicio
             listaExercicio = await exercicios_Serie_DAO.Busca_Exercicios_Serie_DA_SERIE(seriealuno.Id_Serie);
-            lblexercicioSerie.Text = "Exercicio" + (exerciciodalista+1).ToString()+" de " + listaExercicio.Count().ToString();
+            lblexercicioSerie.Text = "Exercicio " + (exerciciodalista+1).ToString()+" de " + listaExercicio.Count().ToString();
 
 
 
@@ -57,7 +57,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
             }
             else
             {
-                await DisplayAlert("Falha ao buscar Dados", "", "OK");
+                await DisplayAlert("Erro", "Falha ao buscar Dados", "OK");
             }
         }
         private void Button_OnClicked (object sender, EventArgs e)
@@ -65,7 +65,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
             Device.StartTimer(TimeSpan.FromSeconds(1), () =>
             {
                 Entry.Text = tempo(++_vezesTimer);
-                Button.IsEnabled = false;
+               // Button.IsEnabled = false;
                 return true;
             });
          
@@ -87,7 +87,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
 
                 var todosexercicio = await alunoDAO.Busca_Exercicio_SERIE_ALUNO(alunoLogado.Id_Aluno);//acho que só retorna o primeiro da lista
                 var exercicio = await exercicioDAO.Busca_Exercicio_ID(listaExercicio[exerciciodalista].Id_Exercicios_Serie);
-                lblexercicioSerie.Text = "Exercicio" + (exerciciodalista + 1).ToString() + " de " + listaExercicio.Count().ToString();
+                lblexercicioSerie.Text = "Exercicio " + (exerciciodalista + 1).ToString() + " de " + listaExercicio.Count().ToString();
                 if (todosexercicio != null)
                 {
                     txtNomeALUNO.Text = alunoLogado.Nome.ToUpper() + "!";
@@ -124,7 +124,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
 
                 var todosexercicio = await alunoDAO.Busca_Exercicio_SERIE_ALUNO(alunoLogado.Id_Aluno);//acho que só retorna o primeiro da lista
                 var exercicio = await exercicioDAO.Busca_Exercicio_ID(listaExercicio[exerciciodalista].Id_Exercicios_Serie);
-                lblexercicioSerie.Text = "Exercicio" + (exerciciodalista + 1).ToString() + " de " + listaExercicio.Count().ToString();
+                lblexercicioSerie.Text = "Exercicio " + (exerciciodalista + 1).ToString() + " de " + listaExercicio.Count().ToString();
                 if (todosexercicio != null)
                 {
                     txtNomeALUNO.Text = alunoLogado.Nome.ToUpper() + "!";
@@ -137,7 +137,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
                 }
                 else
                 {
-                    await DisplayAlert("Falha ao buscar Dados", "", "OK");
+                    await DisplayAlert("Erro", "Falha ao buscar Dados", "OK");
                 }
             }
             else
@@ -152,7 +152,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
             Horas = Tempo / 3600;
             Minutos = Tempo % 3600 / 60;
             Segundos = Tempo % 60;
-            result =  Horas + ":" + Minutos + ":" + Segundos;
+            result = "Tempo: " + Horas + ":" + Minutos + ":" + Segundos;
             return result;
         }        
     }

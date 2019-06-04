@@ -104,10 +104,14 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="facebook.png" />
+    <Content Include="AngelosFitness.png" />
+    <Content Include="FaceSobre.png" />
+    <Content Include="InstaSobre.jpg" />
     <Content Include="like.png" />
+    <Content Include="LogoF.png" />
+    <Content Include="logo_Boora_Preto2.png" />
     <Content Include="SupinoReto.gif" />
     <Content Include="testebotao.png" />
-    <None Include="angelosgfitness.png" />
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-200.png" />
     <Content Include="Assets\LargeTile.scale-400.png" />
@@ -135,9 +139,9 @@
     <Content Include="Assets\Wide310x150Logo.scale-100.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Content Include="TwitterSobrepng.png" />
+    <Content Include="WhatsLogo.jpg" />
     <None Include="logo_Boora.png" />
-    <None Include="logo_Boora_Preto.png" />
-    <None Include="logo_boora_preto2.png" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -159,6 +163,12 @@
     </PackageReference>
     <PackageReference Include="Xam.Plugin.Media">
       <Version>4.0.1.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading.Forms">
+      <Version>2.4.11.982</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.6.0.344457" />
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.8" />

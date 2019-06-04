@@ -3,21 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Boora_TCC_2019.TELAS.Cadastrar_Instrutor">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout BackgroundColor="#ffc800">
             <StackLayout Padding="0" Margin="15" >
-                <Label Text="CADASTRAR INSTRUTOR" FontAttributes="Bold" FontSize="24" TextColor="OrangeRed" HorizontalOptions="Center"/>
-                <TableView>
-                    <TableRoot>
-                        <TableSection>
-                            <EntryCell Label="Nome" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_NOME"/>
-                            <EntryCell Label="Email" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_EMAIL"/>
-                            <EntryCell Label="Senha" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_SENHA"/>
-                            <EntryCell Label="Idade" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_IDADE"/>
-                            <EntryCell Label="Formacão Academica" LabelColor="OrangeRed" Placeholder="Digite aqui" x:Name="txt_FORMACAO"/>
-                        </TableSection>
-                    </TableRoot>
-                </TableView>
-                <Button Text="Cadastrar Instrutor" BackgroundColor="Yellow" Clicked="Cadastrar_InstrutorAsync" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" />
+                <Label Text="CADASTRAR INSTRUTOR" FontAttributes="Bold" FontSize="26" TextColor="Black" HorizontalOptions="Center"/>
+
+                <Entry Placeholder="Nome" x:Name="txt_NOME" PlaceholderColor="Black"/>
+                <Entry Placeholder="Email" x:Name="txt_EMAIL" PlaceholderColor="Black"/>
+                <Entry Placeholder="Senha" x:Name="txt_SENHA" PlaceholderColor="Black"/>
+                <Entry Placeholder="Idade" x:Name="txt_IDADE" PlaceholderColor="Black"/>
+                <Entry Placeholder="Formacão Academica" x:Name="txt_FORMACAO" PlaceholderColor="Black"/>
+                   
+                <Button Text="Cadastrar Instrutor" BackgroundColor="Orange" Clicked="Cadastrar_InstrutorAsync" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

@@ -48,11 +48,7 @@ namespace Boora_TCC_2019.MENU
             Detail = new NavigationPage(new TELAS_SERIE.Execucao_Serie());
             IsPresented = false;
         }
-        private void GoSerie(object sender, EventArgs args)
-        {
-            Detail = new NavigationPage(new TELAS_SERIE.Serie());
-            IsPresented = false;
-        }
+        
         private void abrirfacebook(object sender, EventArgs args)
         {
 
@@ -60,14 +56,9 @@ namespace Boora_TCC_2019.MENU
         }
         private async void Send(object sender, EventArgs e)
         {
-            try
-            {
-                Chat.Open("+5541996114270", "Fala parça!");
-            }
-            catch (Exception ex)
-            {
-                await DisplayAlert("Erro", ex.Message, "OK");
-            }
+            Detail = new NavigationPage(new TELAS.TelaSobre());
+            IsPresented = false;
+
         }
     }
 }

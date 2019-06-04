@@ -3,17 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Boora_TCC_2019.Inicial">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Black">
-            <Label Text="Bem vindo!"
+        <StackLayout BackgroundColor="Black" Orientation="Vertical">
+
+            <StackLayout  VerticalOptions="FillAndExpand">
+            <Label Text="Bem Vindo!"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="26" TextColor="#ffc800"/>
-            <Label Text="Tela Teste Inicial"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="26" TextColor="#ffc800"/>
-            <Label Text="Menu Geral"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="26" TextColor="#ffc800"/>
-            
+                HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="32" TextColor="#ffc800"/>
+                <StackLayout Padding="20" VerticalOptions="FillAndExpand">
+                <Image Source="AngelosFitness.png" />
+            </StackLayout>
+        </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
