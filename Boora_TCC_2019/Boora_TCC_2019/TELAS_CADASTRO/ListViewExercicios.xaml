@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="#ffc800">
             <Entry Placeholder="Pesquisar" x:Name="Pesquisar_Exercicios" TextChanged="BuscaRapida"/>
-            
+
             <ListView x:Name="ListaExercicios" BackgroundColor="#ffc800" >
                 <ListView.ItemTemplate>
                     <DataTemplate >
@@ -14,6 +14,8 @@
                     </DataTemplate >
                 </ListView.ItemTemplate>
             </ListView>
-         </StackLayout>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
+
+

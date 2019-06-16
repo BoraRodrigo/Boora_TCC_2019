@@ -45,6 +45,16 @@ namespace Boora_TCC_2019.DAO
                   Data_Fim = serie.Data_Fim,
                   Descricao_Serie =serie.Descricao_Serie });
         }
+        public async Task<Serie> Busca_Serie_ID(int id_Serie)
+        {
+            var exercicio = await Busca_Serie();
+            await firebase
+              .Child("Serie")
+              .OnceAsync<Serie>();
+            return exercicio.Where(a => a.Id_Serie == id_Serie).FirstOrDefault();
+
+        }
+
 
     }
 }

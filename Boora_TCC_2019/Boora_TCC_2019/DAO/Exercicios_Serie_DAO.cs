@@ -51,7 +51,30 @@ namespace Boora_TCC_2019.DAO
 
         }
 
-       
+        public async Task<List<Serie>> Busca_Todas__Series_Aluno(int idAluno)
+        {
+
+            return (await firebase
+
+                //para fazer esse tipo de busca tem que adiconar uma regras no firebase.
+                //    "Serie": {
+                //       ".indexOn": ["Id_Aluno"],          
+                //    ".read": true,
+                //     ".write": true
+                //  }
+                .Child("Serie").OrderBy("Id_Aluno").EqualTo(idAluno)
+                .OnceAsync<Serie>()).Select(item => new Serie
+                {
+                    Id_Serie = item.Object.Id_Serie,
+                    Id_Aluno = item.Object.Id_Aluno,
+                    Nome_Serie = item.Object.Nome_Serie,
+                    Data_Inicio = item.Object.Data_Inicio,
+                    Data_Fim = item.Object.Data_Fim,
+                    Descricao_Serie = item.Object.Descricao_Serie
+                }).ToList();
+
+        }
+
 
 
 

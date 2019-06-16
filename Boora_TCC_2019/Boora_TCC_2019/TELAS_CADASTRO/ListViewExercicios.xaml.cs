@@ -39,6 +39,7 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
             }
            
             ListaExercicios.ItemsSource = listaInterna;
+          
         }
 
         private async void BuscaRapida(Object sender, TextChangedEventArgs args)

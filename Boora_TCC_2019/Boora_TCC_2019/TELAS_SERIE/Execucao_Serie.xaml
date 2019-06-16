@@ -26,6 +26,7 @@
                 <Label Text="Informações do exercício" FontAttributes="Bold" FontSize="20" TextColor="Black" HorizontalOptions="Center"/>
                 <Label Text="Serie - Exercicio 1 de 1" x:Name="lblexercicioSerie" FontAttributes="Bold" FontSize="18" TextColor="Black" HorizontalOptions="Center"/>
 
+              
 
                 <StackLayout Orientation="Vertical" >
                     <StackLayout Orientation="Horizontal">

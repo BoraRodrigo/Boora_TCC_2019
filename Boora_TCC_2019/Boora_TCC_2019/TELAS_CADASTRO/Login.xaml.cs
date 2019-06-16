@@ -12,15 +12,18 @@ namespace Boora_TCC_2019.TELAS
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Login : ContentPage
 	{
-		public Login ()
+
+        public Login ()
 		{
-			InitializeComponent ();
+
+            InitializeComponent ();
+
 		}
         private void EfetuarLogin(object sender, EventArgs args)
         {
 
             App.Current.MainPage = new NavigationPage(new MENU.Master());
-
+            
 
         }
     }

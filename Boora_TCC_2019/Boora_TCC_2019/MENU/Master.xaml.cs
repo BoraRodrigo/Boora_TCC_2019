@@ -33,6 +33,12 @@ namespace Boora_TCC_2019.MENU
             Detail = new NavigationPage(new TELAS.Cadastrar_Instrutor());
             IsPresented = false;
         }
+
+        internal void GoExecucaoTela()
+        {
+            throw new NotImplementedException();
+        }
+
         private void GoCadastroSerie(object sender, EventArgs args)
         {
             Detail = new NavigationPage(new TELAS.Cadastrar_Serie());
@@ -43,12 +49,22 @@ namespace Boora_TCC_2019.MENU
             Detail = new NavigationPage(new TELAS_CADASTRO.ListViewExercicios());
             IsPresented = false;
         }
-        private void GoExecucaoTela(object sender, EventArgs args)
+        
+        
+        private void GoExecucaoTela_(object sender, EventArgs args)
         {
             Detail = new NavigationPage(new TELAS_SERIE.Execucao_Serie());
             IsPresented = false;
         }
+
+        private void GoEMinhasSeries(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new TELAS_SERIE.Serie());
+            IsPresented = false;
+        }
+
         
+
         private void abrirfacebook(object sender, EventArgs args)
         {
 
