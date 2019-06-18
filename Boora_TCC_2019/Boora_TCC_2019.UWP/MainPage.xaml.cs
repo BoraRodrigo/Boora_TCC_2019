@@ -22,7 +22,7 @@ namespace Boora_TCC_2019.UWP
             this.InitializeComponent();
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
             LoadApplication(new Boora_TCC_2019.App());
-
+            
         }
     }
 }
