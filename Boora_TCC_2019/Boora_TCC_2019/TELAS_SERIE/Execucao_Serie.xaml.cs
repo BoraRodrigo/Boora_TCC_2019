@@ -22,9 +22,11 @@ namespace Boora_TCC_2019.TELAS_SERIE
         List<Exercicios_Serie> listaExercicio = new List<Exercicios_Serie>();
         
         int exerciciodalista = 0;
-
-        public Execucao_Serie ()
+        //mandando o id da serie por parametro no construtor
+        static int  IdSerie;
+        public Execucao_Serie (int idSerie)
 		{
+            IdSerie = idSerie;
 			InitializeComponent ();
         }
 
@@ -34,6 +36,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
 
           await  Dados_DO_Exercicio();
         }
+
         private void Button_OnClicked (object sender, EventArgs e)
         {
             Device.StartTimer(TimeSpan.FromSeconds(1), () =>
@@ -72,7 +75,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
             var alunoLogado = await alunoDAO.Login_Aluno("Rodrigo", "1");
             var seriealuno = await alunoDAO.Busca_Serie_Aluno(alunoLogado.Id_Aluno);
 
-            listaExercicio = await exercicios_Serie_DAO.Busca_Exercicios_Serie_DA_SERIE(seriealuno.Id_Serie);
+            listaExercicio = await exercicios_Serie_DAO.Busca_Exercicios_Serie_DA_SERIE(IdSerie);
           //  listaExercicio = await exercicios_Serie_DAO.Busca_Exercicios_Serie_DA_SERIE(3);
             if (exerciciodalista <= 0)
             {

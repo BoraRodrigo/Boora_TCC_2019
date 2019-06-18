@@ -25,7 +25,17 @@
                         <Button Text="Anterior" Margin="0,0,0,50" HorizontalOptions="FillAndExpand" BackgroundColor="LightYellow" TextColor="OrangeRed" Clicked="Anterior_SerieAsync"/>
                     </StackLayout>
                 </StackLayout>
+                <StackLayout>
+                    <ListView x:Name="ListaExerciciosSerie">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextCell Text="{Binding Nome}" Detail="{Binding Objetivo}"  />
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
             </StackLayout>
+
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -51,11 +51,6 @@ namespace Boora_TCC_2019.MENU
         }
         
         
-        private void GoExecucaoTela_(object sender, EventArgs args)
-        {
-            Detail = new NavigationPage(new TELAS_SERIE.Execucao_Serie());
-            IsPresented = false;
-        }
 
         private void GoEMinhasSeries(object sender, EventArgs args)
         {

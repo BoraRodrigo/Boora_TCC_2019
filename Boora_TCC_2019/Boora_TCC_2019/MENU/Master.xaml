@@ -14,7 +14,7 @@
                     <Button Text="Cadastro Instrutor" Clicked="GoCadastroInstrutor" BackgroundColor="#ffc800" TextColor="Black"/>
                     <Button Text="Cadastro Serie" Clicked="GoCadastroSerie" BackgroundColor="#ffc800" TextColor="Black"/>
                     <Button Text="Lista Exercicio" Clicked="GoListExercicios" BackgroundColor="#ffc800" TextColor="Black"/>
-                    <Button Text="Execução tela" Clicked="GoExecucaoTela_" BackgroundColor="#ffc800" TextColor="Black"/>
+                   
                     <Button Text="Minhas Series" Clicked="GoEMinhasSeries" BackgroundColor="#ffc800" TextColor="Black"/>
                     <Button Text="Sobre" Clicked="Send" BackgroundColor="#ffc800" TextColor="Black"/>
                     

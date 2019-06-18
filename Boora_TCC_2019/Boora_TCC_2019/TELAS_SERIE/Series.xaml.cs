@@ -19,6 +19,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
         AlunoDAO alunoDAO = new AlunoDAO();
         SerieDAO serieDAO = new SerieDAO();
 
+       
 
         public static int idSerie = 0;//não consigo usar o static 
 
@@ -55,12 +56,38 @@ namespace Boora_TCC_2019.TELAS_SERIE
             {
             }
         }
-        private void IniciarSerie(object sender, EventArgs args)
+        private void  IniciarSerie(object sender, EventArgs args)
         {
-        
 
-            //não sei como colocar dentro do menu.
-            App.Current.MainPage = new NavigationPage(new TELAS_SERIE.Execucao_Serie());
+            //ExercicioDAO exercicioDAO = new ExercicioDAO();
+            //List<Exercicios_Serie> listaExercicio = new List<Exercicios_Serie>();
+            //List<Exercicio> lista = new List<Exercicio>();
+            //try
+            //{
+            //    listaExercicio = exercicios_Serie_DAO.Busca_Exercicios_Serie_DA_SERIE(idSerie).GetAwaiter().GetResult();
+            //}
+            //catch (Exception e)
+            //{
+
+            //    DisplayAlert("1", "" + e , "OK");
+            //}
+
+            //try
+            //{
+            //    var exercico = exercicioDAO.Busca_Exercicio_ID(listaExercicio[0].Id_Exercicios_Serie).GetAwaiter().GetResult();
+            //    lista.Add(exercico);
+            //}
+            //catch (Exception e)
+            //{
+
+            //    DisplayAlert("2", "" + e, "OK");
+            //}
+            //ListaExerciciosSerie.ItemsSource = lista;
+          
+            
+            //Nao fica com o menu disponivel, mas libera o botao para voltar
+            ((NavigationPage)App.Current.MainPage).Navigation.PushAsync(new TELAS_SERIE.Execucao_Serie(idSerie));
+
         }
 
         public async Task Dados_Da_serie()
