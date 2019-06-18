@@ -65,7 +65,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
 
         public async Task Dados_Da_serie()
         {
-            //mudei ///
+            //mudei /////
             var alunoLogado = await alunoDAO.Login_Aluno("Rodrigo", "1");
             //tras todas as series que o aluno tem 
             var lista_Serie = await exercicios_Serie_DAO.Busca_Todas__Series_Aluno(alunoLogado.Id_Aluno);
