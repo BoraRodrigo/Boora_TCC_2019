@@ -20,8 +20,9 @@ namespace Boora_TCC_2019.UWP
         public MainPage()
         {
             this.InitializeComponent();
-            LoadApplication(new Boora_TCC_2019.App());
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
+            LoadApplication(new Boora_TCC_2019.App());
+            
         }
     }
 }

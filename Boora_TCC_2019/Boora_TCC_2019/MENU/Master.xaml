@@ -5,7 +5,7 @@
                   xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="Boora_TCC_2019.MENU.Master">
     <MasterDetailPage.Master >
-    <ContentPage Title="Menu" BackgroundColor="Black" BackgroundImage="Logo_Boora_Preto2.png">
+    <ContentPage Title="Menu" BackgroundColor="Black" BackgroundImage="logo_Boora_Preto2.png">
         <ScrollView>
         <StackLayout BackgroundColor="Black" >
             <!--Adiona novo botao, e no Master C# faz o funçao do evento clicked, esse tipo de menu so funciona em masterdateilpage-->
