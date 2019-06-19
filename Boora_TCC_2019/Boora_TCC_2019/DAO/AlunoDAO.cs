@@ -74,14 +74,14 @@ namespace Boora_TCC_2019.DAO
 
         //Pesquisa da serie do aluno retorna a serie que tiver o ID do aluno, este id
         //de serie que vier no retono é necessario para busca os exercicios  da serie --BORA
-        public async Task<Serie> Busca_Serie_Aluno(int idAluno)
+        public async Task<Serie> Busca_Serie_Aluno(int idserie)
         {
             SerieDAO Serie_DAO = new SerieDAO();
             var serie = await Serie_DAO.Busca_Serie();
             await firebase
               .Child("Serie")
               .OnceAsync<Serie>();
-            return serie.Where(a => a.Id_Aluno == idAluno).FirstOrDefault();
+            return serie.Where(a => a.Id_Serie == idserie).FirstOrDefault();
         }
         public async Task<Aluno> Login_Aluno(string nome, string senha)
         {
