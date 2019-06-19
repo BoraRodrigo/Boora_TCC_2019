@@ -18,8 +18,10 @@ namespace Boora_TCC_2019.TELAS_SERIE
         Exercicios_Serie_DAO exercicios_Serie_DAO = new Exercicios_Serie_DAO();
         AlunoDAO alunoDAO = new AlunoDAO();
         SerieDAO serieDAO = new SerieDAO();
+        ExercicioDAO exercicioDAO = new ExercicioDAO();
+        List<Exercicios_Serie> listaExercicio = new List<Exercicios_Serie>();
+        List<Exercicio> lista = new List<Exercicio>();
 
-       
 
         public static int idSerie = 0;//não consigo usar o static 
 
@@ -56,37 +58,25 @@ namespace Boora_TCC_2019.TELAS_SERIE
             {
             }
         }
-        private void  IniciarSerie(object sender, EventArgs args)
+        private async void  IniciarSerie(object sender, EventArgs args)
         {
 
-            //ExercicioDAO exercicioDAO = new ExercicioDAO();
-            //List<Exercicios_Serie> listaExercicio = new List<Exercicios_Serie>();
-            //List<Exercicio> lista = new List<Exercicio>();
-            //try
-            //{
-            //    listaExercicio = exercicios_Serie_DAO.Busca_Exercicios_Serie_DA_SERIE(idSerie).GetAwaiter().GetResult();
-            //}
-            //catch (Exception e)
-            //{
-
-            //    DisplayAlert("1", "" + e , "OK");
-            //}
-
-            //try
-            //{
-            //    var exercico = exercicioDAO.Busca_Exercicio_ID(listaExercicio[0].Id_Exercicios_Serie).GetAwaiter().GetResult();
-            //    lista.Add(exercico);
-            //}
-            //catch (Exception e)
-            //{
-
-            //    DisplayAlert("2", "" + e, "OK");
-            //}
-            //ListaExerciciosSerie.ItemsSource = lista;
-          
             
-            //Nao fica com o menu disponivel, mas libera o botao para voltar
-            ((NavigationPage)App.Current.MainPage).Navigation.PushAsync(new TELAS_SERIE.Execucao_Serie(idSerie));
+           
+            listaExercicio = await exercicios_Serie_DAO.Busca_Exercicios_Serie_DA_SERIE(idSerie);
+
+            for (int i = 0; i < listaExercicio.Count; i++)
+            {
+                Exercicio exercicio = await exercicioDAO.Busca_Exercicio_ID(listaExercicio[i].Id_Exercicios_Serie);
+                exercicio.Imagem_Gif = "fail.png";
+                lista.Add(exercicio);
+
+            }
+
+            //ListaExerciciosSerie.ItemsSource = lista;
+
+           
+           await Navigation.PushAsync(new TELAS_SERIE.Lista_Exercicios_Serie(lista, idSerie));
 
         }
 
@@ -120,5 +110,6 @@ namespace Boora_TCC_2019.TELAS_SERIE
             }
         }
 
+       
     }
 }

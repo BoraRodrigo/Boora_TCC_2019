@@ -7,7 +7,7 @@
         <ScrollView>
             <StackLayout Orientation="Vertical" BackgroundColor="LightYellow">
                 <ffimageloading:CachedImage Source="Logo_Boora.png"  VerticalOptions="Center"/>
-                
+
                 <Label Text="Series  - Serie 0 de 0" x:Name="lblQuantidade_De_Series"  FontSize="12"   HorizontalOptions="Center" TextColor="OrangeRed"/>
 
 
@@ -17,22 +17,15 @@
 
                     <Editor x:Name="txt_Nome_Serie" Text="Nome" FontSize="Small" IsReadOnly="True"/>
                     <Editor x:Name="txt_Descricao_Serie" Text="Descricao" FontSize="Small" IsReadOnly="True"/>
-                    
-                    <Button Text="Iniciar Serie" Clicked="IniciarSerie" HorizontalOptions="Center" BackgroundColor="LightYellow" TextColor="OrangeRed"/>
+
+                    <Button Text="Vizualizar" Clicked="IniciarSerie" HorizontalOptions="Center" BackgroundColor="LightYellow" TextColor="OrangeRed"/>
 
                     <StackLayout Orientation="Horizontal" >
-                        <Button Text="Proxima" Margin="0,0,0,50" HorizontalOptions="FillAndExpand" BackgroundColor="LightYellow" TextColor="OrangeRed" Clicked="Proxima_SerieAsync" />
+
                         <Button Text="Anterior" Margin="0,0,0,50" HorizontalOptions="FillAndExpand" BackgroundColor="LightYellow" TextColor="OrangeRed" Clicked="Anterior_SerieAsync"/>
+                        <Button Text="Proxima" Margin="0,0,0,50" HorizontalOptions="FillAndExpand" BackgroundColor="LightYellow" TextColor="OrangeRed" Clicked="Proxima_SerieAsync" />
+                        
                     </StackLayout>
-                </StackLayout>
-                <StackLayout>
-                    <ListView x:Name="ListaExerciciosSerie">
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <TextCell Text="{Binding Nome}" Detail="{Binding Objetivo}"  />
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
                 </StackLayout>
             </StackLayout>
 

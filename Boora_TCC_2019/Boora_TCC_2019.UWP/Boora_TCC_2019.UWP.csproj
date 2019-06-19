@@ -105,7 +105,9 @@
   <ItemGroup>
     <AndroidResource Include="facebook.png" />
     <Content Include="AngelosFitness.png" />
+    <Content Include="Check.png" />
     <Content Include="FaceSobre.png" />
+    <Content Include="fail.png" />
     <Content Include="InstaSobre.jpg" />
     <Content Include="like.png" />
     <Content Include="LogoF.png" />

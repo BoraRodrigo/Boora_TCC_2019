@@ -202,4 +202,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\FaceSobre.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fail.png" />
+  </ItemGroup>
 </Project>
