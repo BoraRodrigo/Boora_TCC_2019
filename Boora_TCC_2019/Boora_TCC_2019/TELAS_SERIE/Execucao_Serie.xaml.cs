@@ -113,7 +113,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
         public async Task Exercicio_Pelo_List(Exercicio exercicio)
         {
             var alunoLogado = await alunoDAO.Login_Aluno("Rodrigo", "1");
-            var seriealuno = await alunoDAO.Busca_Serie_Aluno(alunoLogado.Id_Aluno);
+            var seriealuno = await alunoDAO.Busca_Serie_Aluno(IdSerie);
 
             listaExercicio = await exercicios_Serie_DAO.Busca_Exercicios_Serie_DA_SERIE(IdSerie);
             //  listaExercicio = await exercicios_Serie_DAO.Busca_Exercicios_Serie_DA_SERIE(3);
