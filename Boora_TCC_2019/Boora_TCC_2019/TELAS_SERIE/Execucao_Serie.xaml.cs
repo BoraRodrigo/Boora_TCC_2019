@@ -20,7 +20,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
         ExercicioDAO exercicioDAO = new ExercicioDAO();
         Exercicios_Serie_DAO exercicios_Serie_DAO = new Exercicios_Serie_DAO();
         List<Exercicios_Serie> listaExercicio = new List<Exercicios_Serie>();
-        
+        //comentario
         int exerciciodalista = 0;
         //mandando o id da serie por parametro no construtor
         static int  IdSerie;

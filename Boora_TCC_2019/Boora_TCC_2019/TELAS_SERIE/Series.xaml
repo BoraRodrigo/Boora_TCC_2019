@@ -5,6 +5,7 @@
              x:Class="Boora_TCC_2019.TELAS_SERIE.Serie">
     <ContentPage.Content>
         <ScrollView>
+            <!--comentario-->
             <StackLayout Orientation="Vertical" BackgroundColor="LightYellow">
                 <ffimageloading:CachedImage Source="Logo_Boora.png"  VerticalOptions="Center"/>
 

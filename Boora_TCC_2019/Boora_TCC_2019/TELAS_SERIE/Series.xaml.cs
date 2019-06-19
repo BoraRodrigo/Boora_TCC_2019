@@ -13,7 +13,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Serie : ContentPage
-    {
+    { //comentario
         List<Serie> lista_Serie = new List<Serie>();
         Exercicios_Serie_DAO exercicios_Serie_DAO = new Exercicios_Serie_DAO();
         AlunoDAO alunoDAO = new AlunoDAO();

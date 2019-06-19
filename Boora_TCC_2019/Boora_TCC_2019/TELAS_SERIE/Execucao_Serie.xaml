@@ -18,21 +18,21 @@
 
                 <Label Text="Informações da serie" FontAttributes="Bold" FontSize="20" TextColor="Black" HorizontalOptions="Center"/>
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Label Text="Nome da Serie:" TextColor="Black" FontAttributes="Bold" FontSize="16"/>
-                <!--entry trocado por label-->
-                <Label x:Name="txtnomedaSerie" Text="NOME SERIE" TextColor="Black" FontSize="16"/>
+					<Label Text="Nome da Serie:" TextColor="Black" FontAttributes="Bold" FontSize="16"/>
+					<!--entry trocado por label-->
+					<Label x:Name="txtnomedaSerie" Text="NOME SERIE" TextColor="Black" FontSize="16"/>
 
 
-                <Label Text="Informações do exercício" FontAttributes="Bold" FontSize="20" TextColor="Black" HorizontalOptions="Center"/>
-                <Label Text="Serie - Exercicio 1 de 1" x:Name="lblexercicioSerie" FontAttributes="Bold" FontSize="18" TextColor="Black" HorizontalOptions="Center"/>
+					<Label Text="Informações do exercício" FontAttributes="Bold" FontSize="20" TextColor="Black" HorizontalOptions="Center"/>
+					<Label Text="Serie - Exercicio 1 de 1" x:Name="lblexercicioSerie" FontAttributes="Bold" FontSize="18" TextColor="Black" HorizontalOptions="Center"/>
 
               
 
-                <StackLayout Orientation="Vertical" >
-                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                        <Label Text="Nome:" TextColor="Black" FontAttributes="Bold" FontSize="16"/>
-                        <!--entry trocado por label-->
-                        <Label x:Name="txtNOMEEXERCICIO" Text="Exercício" TextColor="Black" FontSize="16"/>
+					<StackLayout Orientation="Vertical" >
+							<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+							<Label Text="Nome:" TextColor="Black" FontAttributes="Bold" FontSize="16"/>
+							<!--entry trocado por label-->
+							<Label x:Name="txtNOMEEXERCICIO" Text="Exercício" TextColor="Black" FontSize="16"/>
                     </StackLayout>
                         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                         <Label Text="Objetivo:" FontAttributes="Bold" TextColor="Black" FontSize="16"/>
@@ -61,11 +61,11 @@
                 </StackLayout>
                 <ffimageloading:CachedImage x:Name="imgbaixada" HeightRequest="180" WidthRequest="180" />
 
-              <!--  <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+               <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
                     <Button Text="Exercício Anterior" Clicked="Anterior_Exercicio_Da_SerieAsync"  HorizontalOptions="Center" BackgroundColor="Orange" TextColor="Black"/>
                     <Button Text="Proxímo Exercício"  Clicked="Proximo_Exercicio_Da_SerieAsync" HorizontalOptions="Center" BackgroundColor="Orange" TextColor="Black"/>
-                </StackLayout>-->
-                
+                </StackLayout> 
+				</StackLayout> 
             </StackLayout>
      </ScrollView>
     </ContentPage.Content>

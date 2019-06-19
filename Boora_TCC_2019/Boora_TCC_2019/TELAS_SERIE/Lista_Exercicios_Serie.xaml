@@ -4,6 +4,7 @@
              x:Class="Boora_TCC_2019.TELAS_SERIE.Lista_Exercicios_Serie">
     <ContentPage.Content>
         <StackLayout>
+            <!--comentario-->
             <StackLayout>
                 <ListView x:Name="ListaExerciciosSerie"  ItemSelected="ListaExerciciosSerie_ItemSelected">
                     <ListView.ItemTemplate >
