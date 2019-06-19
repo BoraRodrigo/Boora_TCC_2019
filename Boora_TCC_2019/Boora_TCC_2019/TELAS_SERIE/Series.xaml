@@ -18,13 +18,16 @@
                     <Editor x:Name="txt_Nome_Serie" Text="Nome" FontSize="Small" IsReadOnly="True"/>
                     <Editor x:Name="txt_Descricao_Serie" Text="Descricao" FontSize="Small" IsReadOnly="True"/>
                     
-                    <Button Text="Iniciar Serie" Clicked="IniciarSerie" HorizontalOptions="Center" BackgroundColor="LightYellow" TextColor="OrangeRed"/>
+                    <Button Text="Iniciar Serie" Clicked="IniciarSerieAsync" HorizontalOptions="Center" BackgroundColor="LightYellow" TextColor="OrangeRed"/>
 
                     <StackLayout Orientation="Horizontal" >
                         <Button Text="Proxima" Margin="0,0,0,50" HorizontalOptions="FillAndExpand" BackgroundColor="LightYellow" TextColor="OrangeRed" Clicked="Proxima_SerieAsync" />
                         <Button Text="Anterior" Margin="0,0,0,50" HorizontalOptions="FillAndExpand" BackgroundColor="LightYellow" TextColor="OrangeRed" Clicked="Anterior_SerieAsync"/>
                     </StackLayout>
                 </StackLayout>
+
+
+                <Label  Text="Exercicios da Serie" x:Name="lblExerciciosda serie" FontSize="28" HorizontalOptions="Center"/>
                 <StackLayout>
                     <ListView x:Name="ListaExerciciosSerie">
                         <ListView.ItemTemplate>

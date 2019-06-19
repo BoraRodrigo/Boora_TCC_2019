@@ -88,7 +88,8 @@ namespace Boora_TCC_2019.DAO
               .Child("Exercicios_Serie_DAO")
               .PostAsync(new Exercicios_Serie()
               {
-                  Id_Exercicios_Serie = listaExercicios_Serie.Count() + 1,
+                 // Id_Exercicios_Serie = listaExercicios_Serie.Count() + 1,
+                  Id_Exercicios_Serie = exercicios_Serie.Id_Exercicios_Serie,
                   Id_Serie = exercicios_Serie.Id_Serie,
                   Qtd_repeticoes = exercicios_Serie.Qtd_repeticoes,
                   Qtd_Vezes = exercicios_Serie.Qtd_Vezes,
