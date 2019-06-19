@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Boora_TCC_2019.TELAS_SERIE.Lista_Exercicios_Serie">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <ListView x:Name="ListaExerciciosSerie"  ItemSelected="ListaExerciciosSerie_ItemSelected">
+                    <ListView.ItemTemplate >
+                        <DataTemplate >
+                            <ImageCell ImageSource="{Binding Imagem_Gif}" Text="{Binding Nome}" Detail="{Binding Objetivo}"  />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            <StackLayout>
+                
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
