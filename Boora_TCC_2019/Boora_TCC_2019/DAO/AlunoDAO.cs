@@ -1,4 +1,5 @@
-﻿using Boora_TCC_2019.MODEL;
+﻿
+using Boora_TCC_2019.MODEL;
 using Firebase.Database;
 using Firebase.Database.Query;
 using Firebase.Storage;
@@ -97,7 +98,7 @@ namespace Boora_TCC_2019.DAO
             {
 
                 throw;
-            }  
+            }
         }
     }
 }

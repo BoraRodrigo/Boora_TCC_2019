@@ -9,36 +9,37 @@ using Xamarin.Forms.Xaml;
 
 namespace Boora_TCC_2019.TELAS_SERIE
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Lista_Exercicios_Serie : ContentPage
-	{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Lista_Exercicios_Serie : ContentPage
+    {
 
         //comentario
         int IdSerie;
-        
+
         List<Exercicio> Exerciciolista = new List<Exercicio>();
         public Lista_Exercicios_Serie(List<Exercicio> lista, int id)
         {
             InitializeComponent();
             IdSerie = id;
             Exerciciolista = lista;
-            
+
             ListaExerciciosSerie.ItemsSource = Exerciciolista;
-            
+
         }
 
-         private async void ListaExerciciosSerie_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void ListaExerciciosSerie_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             Exercicio exercicio = (Exercicio)e.SelectedItem;
-            
+
             Exerciciolista[Exerciciolista.IndexOf(exercicio)].Imagem_Gif = "Check.png";
-            
+
+            await ((NavigationPage)App.Current.MainPage).Navigation.PushAsync(new TELAS_SERIE.Execucao_Serie(exercicio));
+
             await Navigation.PushAsync(new TELAS_SERIE.Lista_Exercicios_Serie(Exerciciolista, IdSerie));
 
-           await ((NavigationPage)App.Current.MainPage).Navigation.PushAsync(new TELAS_SERIE.Execucao_Serie(exercicio));
-
+         
         }
 
-        
-	}
+
+    }
 }
