@@ -21,9 +21,9 @@
 					<Label Text="Nome da Serie:" TextColor="Black" FontAttributes="Bold" FontSize="16"/>
 					<!--entry trocado por label-->
 					<Label x:Name="txtnomedaSerie" Text="NOME SERIE" TextColor="Black" FontSize="16"/>
+				</StackLayout>
 
-
-					<Label Text="Informações do exercício" FontAttributes="Bold" FontSize="20" TextColor="Black" HorizontalOptions="Center"/>
+				<Label Text="Informações do exercício" FontAttributes="Bold" FontSize="20" TextColor="Black" HorizontalOptions="Center"/>
 					<Label Text="Serie - Exercicio 1 de 1" x:Name="lblexercicioSerie" FontAttributes="Bold" FontSize="18" TextColor="Black" HorizontalOptions="Center"/>
 
               
@@ -65,7 +65,7 @@
                     <Button Text="Exercício Anterior" Clicked="Anterior_Exercicio_Da_SerieAsync"  HorizontalOptions="Center" BackgroundColor="Orange" TextColor="Black"/>
                     <Button Text="Proxímo Exercício"  Clicked="Proximo_Exercicio_Da_SerieAsync" HorizontalOptions="Center" BackgroundColor="Orange" TextColor="Black"/>
                 </StackLayout> 
-				</StackLayout> 
+				
             </StackLayout>
      </ScrollView>
     </ContentPage.Content>
