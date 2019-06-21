@@ -82,7 +82,7 @@ namespace Boora_TCC_2019.DAO
         public async Task Cadastrar_Exercicios_Serie(Exercicios_Serie exercicios_Serie)
         {
             //Gambiarra para increment de id
-            List<Exercicios_Serie> listaExercicios_Serie= await Busca_Exercicios_Serie();
+            List<Exercicios_Serie> listaExercicios_Serie = await Busca_Exercicios_Serie();
 
             await firebase
               .Child("Exercicios_Serie_DAO")
@@ -95,7 +95,7 @@ namespace Boora_TCC_2019.DAO
                   Qtd_Vezes = exercicios_Serie.Qtd_Vezes,
                   Tempo_Maximo = exercicios_Serie.Tempo_Maximo,
                   Tempo_Minimo = exercicios_Serie.Tempo_Minimo,
-                  Tempo_Execucao=exercicios_Serie.Tempo_Execucao
+                  Tempo_Execucao = exercicios_Serie.Tempo_Execucao
               });
         }
     }

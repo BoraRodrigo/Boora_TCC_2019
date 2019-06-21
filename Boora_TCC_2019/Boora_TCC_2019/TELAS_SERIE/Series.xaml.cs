@@ -58,11 +58,11 @@ namespace Boora_TCC_2019.TELAS_SERIE
             {
             }
         }
-        private async void  IniciarSerie(object sender, EventArgs args)
+        private async void IniciarSerie(object sender, EventArgs args)
         {
 
-            
-           
+
+
             listaExercicio = await exercicios_Serie_DAO.Busca_Exercicios_Serie_DA_SERIE(idSerie);
 
             for (int i = 0; i < listaExercicio.Count; i++)
@@ -75,8 +75,8 @@ namespace Boora_TCC_2019.TELAS_SERIE
 
             //ListaExerciciosSerie.ItemsSource = lista;
 
-           
-           await Navigation.PushAsync(new TELAS_SERIE.Lista_Exercicios_Serie(lista, idSerie));
+
+            await Navigation.PushAsync(new TELAS_SERIE.Lista_Exercicios_Serie(lista, idSerie));
 
         }
 
@@ -110,6 +110,6 @@ namespace Boora_TCC_2019.TELAS_SERIE
             }
         }
 
-       
+
     }
 }
