@@ -61,10 +61,10 @@
                 </StackLayout>
                 <ffimageloading:CachedImage x:Name="imgbaixada" HeightRequest="180" WidthRequest="180" />
 
-               <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+           <!--    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
                     <Button Text="Exercício Anterior" Clicked="Anterior_Exercicio_Da_SerieAsync"  HorizontalOptions="Center" BackgroundColor="Orange" TextColor="Black"/>
                     <Button Text="Proxímo Exercício"  Clicked="Proximo_Exercicio_Da_SerieAsync" HorizontalOptions="Center" BackgroundColor="Orange" TextColor="Black"/>
-                </StackLayout> 
+                </StackLayout> -->
 				
             </StackLayout>
      </ScrollView>
