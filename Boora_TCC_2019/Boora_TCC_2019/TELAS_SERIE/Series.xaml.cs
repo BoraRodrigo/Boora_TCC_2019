@@ -82,6 +82,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
 
         public async Task Dados_Da_serie()
         {
+            lbl_DATA.Text = DateTime.Now.ToString("dd/MM/yyyy");
             //mudei /////
             var alunoLogado = await alunoDAO.Login_Aluno("Rodrigo", "1");
             //tras todas as series que o aluno tem 
@@ -101,11 +102,11 @@ namespace Boora_TCC_2019.TELAS_SERIE
                 lblQuantidade_De_Series.Text = "Serie " + (serie_da_lista + 1).ToString() + " de " + lista_Serie.Count().ToString();
                 var serieEXibida = await serieDAO.Busca_Serie_ID(lista_Serie[serie_da_lista].Id_Serie);
 
-                txt_Nome_Serie.Text = serieEXibida.Nome_Serie.ToString();
+                txt_Nome_Serie.Text = serieEXibida.Nome_Serie;
                 //salva id da serie exibida em uma varialvel static 
                 idSerie = serieEXibida.Id_Serie;
 
-                txt_Descricao_Serie.Text = serieEXibida.Descricao_Serie.ToString();
+                txt_Descricao_Serie.Text = serieEXibida.Descricao_Serie;
 
             }
         }

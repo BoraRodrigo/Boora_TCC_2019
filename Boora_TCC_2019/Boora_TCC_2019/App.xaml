@@ -3,6 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Boora_TCC_2019.App">
     <Application.Resources>
-
+            <ResourceDictionary>
+            <Style TargetType="StackLayout">
+                <Setter Property="BackgroundColor" Value="#ffc800"/>
+            </Style>
+            <Style TargetType="Frame">
+                <Setter Property="WidthRequest" Value="200"/>
+                <Setter Property="BorderColor" Value="Black"/>
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+            </Style>
+            <Style TargetType="Entry">
+                <Setter Property="PlaceholderColor" Value="Black"/>
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Orange"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="WidthRequest" Value="200"/>
+            </Style>
+            <Style TargetType="StackLayout" x:Key="SLInicio">
+                <Setter Property="BackgroundColor"  Value="Black"/>
+            </Style>
+            <Style TargetType="Label" x:Key="LblInicio">
+                <Setter Property="TextColor" Value="#ffc800"/>
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="34"/>
+            </Style>
+            <Style TargetType="Label" x:Key="LblTitulo">
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+            </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -5,21 +5,20 @@
     <ContentPage.Content>
         <ScrollView>
 
-            <StackLayout BackgroundColor="#ffc800">
-                <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+            <StackLayout>
 
-                    <Label Margin="0,30,0,10" Text="Cadastrar Exercicio" FontAttributes="Bold" FontSize="16" TextColor="Black" HorizontalTextAlignment="Center" />
-
-                    <Image x:Name="imgChoosed" HeightRequest="150"/>
-
+                <StackLayout  Padding="0" Margin="15">
+                    
+                    <Label Text="CADASTRAR EXERCÍCIO" Style="{StaticResource LblTitulo}" />
                     <Entry x:Name="txtNOME" Placeholder="Nome"  PlaceholderColor="Black" />
                     <Entry x:Name="txtDESCRICAO" Placeholder="Descrição" PlaceholderColor="Black" />
                     <Editor x:Name="txtOBJETIVO" Placeholder="Objetivo" HeightRequest="150" PlaceholderColor="Black" />
+                    <Image x:Name="imgChoosed" HeightRequest="150"/>
                     
                     <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
                         
-                        <Button x:Name="btnPick" WidthRequest="200" Text="Buscar imagem" Clicked="Btn_Buscar" BackgroundColor="Orange" TextColor="Black"/>
-                        <Button x:Name="btnUpload" WidthRequest="200" Text="Cadastrar" Clicked="Btn_Upload" BackgroundColor="Orange"  TextColor="Black"/>
+                        <Button x:Name="btnPick" WidthRequest="200" Text="Buscar imagem" Clicked="Btn_Buscar"/>
+                        <Button x:Name="btnUpload" WidthRequest="200" Text="Cadastrar" Clicked="Btn_Upload" />
 
                     </StackLayout>
                 </StackLayout>

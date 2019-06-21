@@ -21,34 +21,47 @@ namespace Boora_TCC_2019.TELAS_SERIE
         Exercicios_Serie_DAO exercicios_Serie_DAO = new Exercicios_Serie_DAO();
         List<Exercicios_Serie> listaExercicio = new List<Exercicios_Serie>();
         //comentario
-        int exerciciodalista = 0;
+        
         //mandando o id da serie por parametro no construtor
         static int IdSerie;
+        
         Exercicio exe;
-        public Execucao_Serie(Exercicio exercicio)
+        public Execucao_Serie(Exercicio exercicio, int id)
         {
             InitializeComponent();
+            IdSerie = id;
             exe = exercicio;
 
         }
 
         protected async override void OnAppearing()
+
         {
+
+            await Exercicio_Pelo_List(exe);
+            
+            
             base.OnAppearing();
 
 
         
-                await Exercicio_Pelo_List(exe);
+                
             
          
         }
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
+            int i = 0;
+            i++;
+            RepeticoesRealizadas.Text = (i + " Repetições Realizadas");
+            tempo(1);
+            
             Device.StartTimer(TimeSpan.FromSeconds(1), () =>
             {
+                
                 Entry.Text = tempo(++_vezesTimer);
-                // Button.IsEnabled = false;
+                
                 return true;
             });
 
@@ -136,10 +149,19 @@ namespace Boora_TCC_2019.TELAS_SERIE
             txtQTDVEZES.Text = Convert.ToString(todosexercicio.Qtd_Vezes);
             txtREPETICOES.Text = Convert.ToString(todosexercicio.Qtd_repeticoes);
             txtOBJTIVOEXERCICIO.Text = exercicio.Objetivo;
-            string path = await exercicioDAO.Buscar_IMAGEM(Convert.ToString(exercicio.Id_exercicio));
-            imgbaixada.Source = path;
+            if(Device.RuntimePlatform == Device.UWP)
+            {
+                imgbaixadaW.Source = await exercicioDAO.Buscar_IMAGEM(Convert.ToString(exe.Id_exercicio));
+                imgbaixadaM.IsVisible = false;
+            }
+            else
+            {
+                imgbaixadaM.Source = await exercicioDAO.Buscar_IMAGEM(Convert.ToString(exe.Id_exercicio));
+                imgbaixadaW.IsVisible = false;
+            }
+            
             //  }
-
+            
 
         }
 
@@ -150,7 +172,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
             Horas = Tempo / 3600;
             Minutos = Tempo % 3600 / 60;
             Segundos = Tempo % 60;
-            result = "Tempo: " + Horas + ":" + Minutos + ":" + Segundos;
+            result = "Descanso: "  + Minutos + ":" + Segundos;
             return result;
         }
     }

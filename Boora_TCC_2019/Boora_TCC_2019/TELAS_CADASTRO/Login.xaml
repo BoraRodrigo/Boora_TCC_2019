@@ -4,17 +4,19 @@
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="Boora_TCC_2019.TELAS.Login">
     <ContentPage.Content >
-        <StackLayout BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <ffimageloading:CachedImage Source="logo_boora_preto2.png"  />
+        <StackLayout BackgroundColor="Black">
+            <StackLayout BackgroundColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <ffimageloading:CachedImage Source="logo_boora_preto2.png"  />
 
-            <Entry  Placeholder="Login" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150"/>
+                <Entry  Placeholder="Login" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150"/>
 
-            <Entry Placeholder="Senha" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150"/>
-            
-            <Button Text="Logar!" HorizontalOptions="Center" WidthRequest="100" BackgroundColor="#ffc800" TextColor="Black"
-                    Clicked="EfetuarLogin"/>
+                <Entry Placeholder="Senha" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150"/>
 
-            <ffimageloading:CachedImage Source="angelosfitness.png" />
+                <Button Text="Logar!" HorizontalOptions="Center" WidthRequest="100" BackgroundColor="#ffc800" TextColor="Black"
+                        Clicked="EfetuarLogin"/>
+
+                <ffimageloading:CachedImage Source="angelosfitness.png" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

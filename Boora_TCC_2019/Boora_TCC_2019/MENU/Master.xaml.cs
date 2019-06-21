@@ -49,8 +49,12 @@ namespace Boora_TCC_2019.MENU
             Detail = new NavigationPage(new TELAS_CADASTRO.ListViewExercicios());
             IsPresented = false;
         }
-        
-        
+
+        private void GoInicial(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new Inicial());
+            IsPresented = false;
+        }
 
         private void GoEMinhasSeries(object sender, EventArgs args)
         {
@@ -60,11 +64,11 @@ namespace Boora_TCC_2019.MENU
 
         
 
-        private void abrirfacebook(object sender, EventArgs args)
-        {
+        //private void abrirfacebook(object sender, EventArgs args)
+        //{
 
-            Device.OpenUri(new Uri("https://www.facebook.com/angelosfitness/"));
-        }
+        //    Device.OpenUri(new Uri("https://www.facebook.com/angelosfitness/"));
+        //}
         private async void Send(object sender, EventArgs e)
         {
             Detail = new NavigationPage(new TELAS.TelaSobre());

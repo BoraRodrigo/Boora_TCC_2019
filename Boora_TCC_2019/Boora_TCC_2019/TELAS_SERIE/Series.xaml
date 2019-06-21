@@ -6,25 +6,26 @@
     <ContentPage.Content>
         <ScrollView>
             <!--comentario-->
-            <StackLayout Orientation="Vertical" BackgroundColor="LightYellow">
-                <ffimageloading:CachedImage Source="Logo_Boora.png"  VerticalOptions="Center"/>
+            <StackLayout Orientation="Vertical">
+                <Image Source="Logo_Boora.png"  VerticalOptions="Center"/>
 
-                <Label Text="Series  - Serie 0 de 0" x:Name="lblQuantidade_De_Series"  FontSize="12"   HorizontalOptions="Center" TextColor="OrangeRed"/>
+                <Label Text="Series  - Serie 0 de 0" x:Name="lblQuantidade_De_Series"  FontSize="16" HorizontalOptions="Center" />
 
 
                 <StackLayout Orientation="Vertical" Padding="10">
 
-                    <Label  Text="DATA DE HOJE" x:Name="lbl_DATA" FontSize="28" HorizontalOptions="Center"/>
+                    <Label  Text="DATA CADASTRO SERIE" x:Name="lbl_DATA" FontSize="28" HorizontalOptions="Center"/>
+                    <Label  Text="DATA VENCIMENTO SERIE" x:Name="lbl_DATAVENC" FontSize="28" HorizontalOptions="Center"/>
 
                     <Editor x:Name="txt_Nome_Serie" Text="Nome" FontSize="Small" IsReadOnly="True"/>
                     <Editor x:Name="txt_Descricao_Serie" Text="Descricao" FontSize="Small" IsReadOnly="True"/>
 
-                    <Button Text="Vizualizar" Clicked="IniciarSerie" HorizontalOptions="Center" BackgroundColor="LightYellow" TextColor="OrangeRed"/>
+                    <Button Text="Vizualizar" Clicked="IniciarSerie" HorizontalOptions="Center" />
 
                     <StackLayout Orientation="Horizontal" >
 
-                        <Button Text="Anterior" Margin="0,0,0,50" HorizontalOptions="FillAndExpand" BackgroundColor="LightYellow" TextColor="OrangeRed" Clicked="Anterior_SerieAsync"/>
-                        <Button Text="Proxima" Margin="0,0,0,50" HorizontalOptions="FillAndExpand" BackgroundColor="LightYellow" TextColor="OrangeRed" Clicked="Proxima_SerieAsync" />
+                        <Button Text="Anterior" Margin="0,0,0,50" HorizontalOptions="FillAndExpand"  Clicked="Anterior_SerieAsync"/>
+                        <Button Text="Proxima" Margin="0,0,0,50" HorizontalOptions="FillAndExpand"  Clicked="Proxima_SerieAsync" />
 
                     </StackLayout>
                 </StackLayout>

@@ -3,16 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Boora_TCC_2019.Inicial">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Black" Orientation="Vertical">
+        <StackLayout Orientation="Vertical" Style="{StaticResource SLInicio}">
 
-            <StackLayout  VerticalOptions="FillAndExpand">
-            <Label Text="Bem Vindo!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="32" TextColor="#ffc800"/>
-                <StackLayout Padding="20" VerticalOptions="FillAndExpand">
-                <Image Source="AngelosFitness.png" />
+            <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Style="{StaticResource SLInicio}" >
+                <Label Text="Bem Vindo!" Style="{StaticResource LblInicio}"/>
+                <StackLayout Padding="20" VerticalOptions="FillAndExpand" Style="{StaticResource SLInicio}">
+                    <Image Source="AngelosFitness.png" />
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
 
         </StackLayout>
     </ContentPage.Content>

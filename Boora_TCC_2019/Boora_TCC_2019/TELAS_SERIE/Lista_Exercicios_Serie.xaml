@@ -6,7 +6,8 @@
         <StackLayout>
             <!--comentario-->
             <StackLayout>
-                <ListView x:Name="ListaExerciciosSerie"  ItemSelected="ListaExerciciosSerie_ItemSelected">
+                <Label x:Name="Titulo_Serie" Style="{StaticResource LblTitulo}"/>
+                <ListView Margin="0,10" x:Name="ListaExerciciosSerie"  ItemSelected="ListaExerciciosSerie_ItemSelected">
                     <ListView.ItemTemplate >
                         <DataTemplate >
                             <ImageCell ImageSource="{Binding Imagem_Gif}" Text="{Binding Nome}" Detail="{Binding Objetivo}"  />

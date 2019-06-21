@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             
              x:Class="Boora_TCC_2019.TELAS.Cadastrar_Serie">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout BackgroundColor="#ffc800">
             
-                <StackLayout Padding="10" Margin="15">
-                    <Label Text="CADASTRAR SERIE" FontAttributes="Bold" FontSize="24" TextColor="Black" HorizontalOptions="Center"/>
+                <StackLayout Padding="0" Margin="15">
+                    <Label Text="CADASTRAR SéRIE" Style="{StaticResource LblTitulo}"/>
                     <StackLayout Orientation="Vertical">
                         <StackLayout Orientation="Horizontal" >
                             <Entry HorizontalOptions="FillAndExpand" Placeholder="Id Serie" PlaceholderColor="Black" x:Name="Txt_Id_Da_Serie"/>
                             <Entry HorizontalOptions="FillAndExpand" Placeholder="Id Aluno" PlaceholderColor="Black" x:Name="Txt_Id_Do_Aluno"/>
                          </StackLayout>
-                        <Entry Placeholder="Nome Serie" PlaceholderColor="Black" x:Name="Txt_nome_Serie"/>
+                        <Entry Placeholder="Nome Série" PlaceholderColor="Black" x:Name="Txt_nome_Serie"/>
                         <Entry Placeholder="Descrição" PlaceholderColor="Black" x:Name="Txt_Descricao_Serie"/>
                         <StackLayout Orientation="Horizontal" >
                             <Label FontSize="18" TextColor="Black" Text="Data Inicial:" HorizontalOptions="FillAndExpand"/>
@@ -28,8 +28,8 @@
                         </StackLayout>
                     </StackLayout>
 
-                    <Button Text="Confirmar Serie?" BackgroundColor="Orange" Clicked="Btn_Cadastrar_Serie" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" />
-                    <Label Margin="10" Text="CADASTRAR EXERCICIOS NA SERIE" FontAttributes="Bold" FontSize="24" TextColor="OrangeRed" HorizontalOptions="Center"/>
+                    <Button Text="Confirmar Série"  Clicked="Btn_Cadastrar_Serie" HorizontalOptions="Center" />
+                    <Label Margin="10" Text="CADASTRAR EXERCÍCIOS NA SÉRIE" HorizontalOptions="Center" Style="{StaticResource LblTitulo}"/>
                 
                     <StackLayout Orientation="Vertical">
                         <StackLayout Orientation="Horizontal" >
@@ -47,7 +47,7 @@
                         </StackLayout>
                     </StackLayout>
                 </StackLayout>
-                <Button Text="Adicionar Exercicio a Serie?"  BackgroundColor="Orange" Clicked="Btn_Cadastrar_Exercicios_Serie" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" />
+                <Button Text="Adicionar" Clicked="Btn_Cadastrar_Exercicios_Serie"  HorizontalOptions="Center" />
             
             </StackLayout>
 
