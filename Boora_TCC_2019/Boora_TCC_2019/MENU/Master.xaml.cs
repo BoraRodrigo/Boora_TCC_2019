@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ScheduleSimpleSample;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -62,7 +63,12 @@ namespace Boora_TCC_2019.MENU
             IsPresented = false;
         }
 
-        
+        private void GoEMeuClendario(object sender, EventArgs args)
+        {
+
+            Detail = new NavigationPage(new ScheduleSimpleSamplePage());
+            IsPresented = false;
+        }
 
         //private void abrirfacebook(object sender, EventArgs args)
         //{

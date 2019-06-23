@@ -13,7 +13,6 @@ namespace Boora_TCC_2019.TELAS_SERIE
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Lista_Exercicios_Serie : ContentPage
     {
-
         //comentario
         int IdSerie;
         string NomeSerie;
@@ -48,11 +47,17 @@ namespace Boora_TCC_2019.TELAS_SERIE
 
             await ((NavigationPage)App.Current.MainPage).Navigation.PushAsync(new TELAS_SERIE.Execucao_Serie(exercicio, IdSerie));
 
-           
-
-         
         }
-
-
+        private async void finalizarSerie(object sender, EventArgs e)
+        {
+            //passar aqui o nome da serie que vai salvar e o id do aluno tó fazendo isso de modo direto pra ganhar tempo
+            Controle_Dia controle_Dia = new Controle_Dia();
+            Controle_Dia_DAO controle_Dia_DAO= new Controle_Dia_DAO();
+            controle_Dia.Id_Aluno = 1;//passar o id do aluno que fez a serie
+            controle_Dia.Nome_serie = NomeSerie;
+            controle_Dia.Hora_Serie = DateTime.Now.Hour.ToString();
+            controle_Dia.Data_Presenca =DateTime.Now.ToString("dd/MM/yyyy");
+            await  controle_Dia_DAO.Cadastrar_Dia(controle_Dia);
+        }
     }
 }

@@ -40,7 +40,14 @@ namespace Boora_TCC_2019.UWP
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
-
+            //troquei essa classe toda deixei ela a antiga salva no meu Pc n
+            //ão sei se tinha algo importante aqui. (Só que agora esta aparecendo um numeros pretos quando roda no pc)
+#if DEBUG
+            if (System.Diagnostics.Debugger.IsAttached)
+            {
+                this.DebugSettings.EnableFrameRateCounter = true;
+            }
+#endif
 
             Frame rootFrame = Window.Current.Content as Frame;
 
@@ -79,7 +86,7 @@ namespace Boora_TCC_2019.UWP
         /// Invoked when Navigation to a certain page fails
         /// </summary>
         /// <param name="sender">The Frame which failed navigation</param>
-        /// <param name="e">Details about the navigation failure</param>
+        /// <param name="e">Details about the naviga
         void OnNavigationFailed(object sender, NavigationFailedEventArgs e)
         {
             throw new Exception("Failed to load Page " + e.SourcePageType.FullName);

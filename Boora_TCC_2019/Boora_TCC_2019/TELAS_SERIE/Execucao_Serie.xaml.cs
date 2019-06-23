@@ -40,14 +40,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
 
             await Exercicio_Pelo_List(exe);
             
-            
             base.OnAppearing();
-
-
-        
-                
-            
-         
         }
 
         private void Button_OnClicked(object sender, EventArgs e)

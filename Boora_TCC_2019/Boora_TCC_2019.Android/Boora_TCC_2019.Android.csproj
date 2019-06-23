@@ -55,6 +55,9 @@
     <PackageReference Include="FirebaseStorage.net">
       <Version>1.0.3</Version>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfSchedule">
+      <Version>17.1.0.52</Version>
+    </PackageReference>
     <PackageReference Include="Xam.Plugin.Media">
       <Version>4.0.1.5</Version>
     </PackageReference>

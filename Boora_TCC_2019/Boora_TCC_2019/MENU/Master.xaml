@@ -17,6 +17,7 @@
                     <Button Text="Cadastro Serie" Clicked="GoCadastroSerie"/>
                     <Button Text="Lista Exercicio" Clicked="GoListExercicios"/>
                     <Button Text="Minhas Series" Clicked="GoEMinhasSeries"/>
+                    <Button Text="Meu Calendario" Clicked="GoEMeuClendario"/>
                     <Button Text="Sobre" Clicked="Send"/>
 
                 </StackLayout>

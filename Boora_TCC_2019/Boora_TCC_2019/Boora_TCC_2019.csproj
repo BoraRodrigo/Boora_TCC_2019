@@ -20,6 +20,7 @@
   <ItemGroup>
     <PackageReference Include="FirebaseDatabase.net" Version="4.0.1" />
     <PackageReference Include="FirebaseStorage.net" Version="1.0.3" />
+    <PackageReference Include="Syncfusion.Xamarin.SfSchedule" Version="17.1.0.52" />
     <PackageReference Include="Xam.Plugin.Media" Version="4.0.1.5" />
     <PackageReference Include="Xamarin.FFImageLoading" Version="2.4.11.982" />
     <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
@@ -28,6 +29,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Calendario\Calendario.xaml.cs">
+      <DependentUpon>Calendario.xaml</DependentUpon>
+    </Compile>
     <Compile Update="TELAS_SERIE\Series.xaml.cs">
       <DependentUpon>Series.xaml</DependentUpon>
     </Compile>
@@ -38,6 +42,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="MENU\Master.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Calendario\Calendario.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="TELAS\TelaSobre.xaml">
