@@ -19,6 +19,7 @@
                     <Button Text="Minhas Series" Clicked="GoEMinhasSeries"/>
                     <Button Text="Meu Calendario" Clicked="GoEMeuClendario"/>
                     <Button Text="Sobre" Clicked="Send"/>
+                    <Button Text="SAIR" Clicked="GoSAIR" BackgroundColor="Red"/>
 
                 </StackLayout>
         </ScrollView>

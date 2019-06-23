@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Boora_TCC_2019.DAO;
 using Boora_TCC_2019.MENU;
 using Boora_TCC_2019.MODEL;
+using Boora_TCC_2019.TELAS;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -83,7 +84,9 @@ namespace Boora_TCC_2019.TELAS_SERIE
         {
             lbl_DATA.Text = DateTime.Now.ToString("dd/MM/yyyy");
             //mudei /////
-            var alunoLogado = await alunoDAO.Login_Aluno("Rodrigo", "1");
+            Login login = new Login();
+            var alunoLogado = await alunoDAO.Login_Aluno(Login.Nome_Aluno_Logado, Login.Senha_Aluno_Logado);
+
             //tras todas as series que o aluno tem 
             var lista_Serie = await exercicios_Serie_DAO.Busca_Todas__Series_Aluno(alunoLogado.Id_Aluno);
             if (serie_da_lista <= 0)

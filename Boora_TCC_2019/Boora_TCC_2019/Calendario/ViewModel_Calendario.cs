@@ -1,6 +1,7 @@
 ﻿
 using Boora_TCC_2019.DAO;
 using Boora_TCC_2019.MODEL;
+using Boora_TCC_2019.TELAS;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -25,9 +26,11 @@ namespace ScheduleSimpleSample
         /// </summary>
         private async System.Threading.Tasks.Task CreateAppointmentsAsync()
         {
+
+            Login login = new Login();
             Controle_Dia_DAO dias_Academia = new Controle_Dia_DAO();
             List<Controle_Dia> listaDia = new List<Controle_Dia>();
-            listaDia = await dias_Academia.Busca_Todas__Dias_Do_Aluno(1);
+            listaDia = await dias_Academia.Busca_Todas__Dias_Do_Aluno(Login.Id_Aluno_Login);
 
             Console.WriteLine(listaDia[0].Nome_serie);
 

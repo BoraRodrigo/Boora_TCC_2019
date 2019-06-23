@@ -8,9 +8,9 @@
             <StackLayout BackgroundColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                 <ffimageloading:CachedImage Source="logo_boora_preto2.png"  />
 
-                <Entry  Placeholder="Login" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150"/>
+                <Entry   x:Name="txtNome" Placeholder="Login" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" TextColor="White"/>
 
-                <Entry Placeholder="Senha" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150"/>
+                <Entry x:Name="txtsenha" Placeholder="Senha" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" TextColor="White"/>
 
                 <Button Text="Logar!" HorizontalOptions="Center" WidthRequest="100" BackgroundColor="#ffc800" TextColor="Black"
                         Clicked="EfetuarLogin"/>

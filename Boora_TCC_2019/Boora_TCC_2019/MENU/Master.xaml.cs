@@ -1,4 +1,5 @@
-﻿using ScheduleSimpleSample;
+﻿using Boora_TCC_2019.TELAS;
+using ScheduleSimpleSample;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -68,6 +69,12 @@ namespace Boora_TCC_2019.MENU
 
             Detail = new NavigationPage(new ScheduleSimpleSamplePage());
             IsPresented = false;
+        }
+        private void GoSAIR(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new Login());
+            IsPresented = false;
+
         }
 
         //private void abrirfacebook(object sender, EventArgs args)

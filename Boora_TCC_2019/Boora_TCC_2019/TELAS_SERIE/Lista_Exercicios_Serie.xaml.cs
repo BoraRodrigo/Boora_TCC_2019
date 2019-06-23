@@ -7,6 +7,7 @@ using Boora_TCC_2019.MODEL;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Boora_TCC_2019.DAO;
+using Boora_TCC_2019.TELAS;
 
 namespace Boora_TCC_2019.TELAS_SERIE
 {
@@ -50,10 +51,11 @@ namespace Boora_TCC_2019.TELAS_SERIE
         }
         private async void finalizarSerie(object sender, EventArgs e)
         {
+            Login login = new Login();
             //passar aqui o nome da serie que vai salvar e o id do aluno tó fazendo isso de modo direto pra ganhar tempo
             Controle_Dia controle_Dia = new Controle_Dia();
             Controle_Dia_DAO controle_Dia_DAO= new Controle_Dia_DAO();
-            controle_Dia.Id_Aluno = 1;//passar o id do aluno que fez a serie
+            controle_Dia.Id_Aluno =Login.Id_Aluno_Login ;//passar o id do aluno que fez a serie
             controle_Dia.Nome_serie = NomeSerie;
             controle_Dia.Hora_Serie = DateTime.Now.Hour.ToString();
             controle_Dia.Data_Presenca =DateTime.Now.ToString("dd/MM/yyyy");
