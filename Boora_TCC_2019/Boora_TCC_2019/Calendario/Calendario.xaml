@@ -4,27 +4,34 @@
 	xmlns:local="clr-namespace:ScheduleSimpleSample"
 	x:Class="ScheduleSimpleSample.ScheduleSimpleSamplePage"
 	xmlns:syncfusion="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
+             BackgroundColor="#ffc800"
              xmlns:local1="clr-namespace:Boora_TCC_2019.MODEL">
     <ContentPage.Content>
-        <syncfusion:SfSchedule x:Name="schedule" 
+      
+        <syncfusion:SfSchedule x:Name="schedule"
 		DataSource = "{Binding Meetings}"
 		ScheduleView = "MonthView"
-        ShowAppointmentsInline="true">
+        ShowAppointmentsInline="true"
+        BackgroundColor="#ffc800">
+            
             <syncfusion:SfSchedule.BindingContext>
                 <local:ViewModel_Calendario/>
             </syncfusion:SfSchedule.BindingContext>
             <syncfusion:SfSchedule.AppointmentMapping>
-                <syncfusion:ScheduleAppointmentMapping
+                <syncfusion:ScheduleAppointmentMapping 
                 ColorMapping="color"
+                    
                 EndTimeMapping="To"
                 StartTimeMapping="From"
                 SubjectMapping="EventName"                    
                 IsAllDayMapping="AllDay"/>
+                
 
             </syncfusion:SfSchedule.AppointmentMapping>
             
             
         </syncfusion:SfSchedule>
+       
     </ContentPage.Content>
 </ContentPage>
     

@@ -42,8 +42,9 @@ namespace ScheduleSimpleSample
                             meeting.From = new DateTime(marcarAQUI.Year, marcarAQUI.Month, marcarAQUI.Day, DateTime.Now.Hour, 0, 0);
                             meeting.To = (meeting.From.AddHours(1));
                             meeting.EventName = listaDia[i].Nome_serie;//passo o nome da serie
-                            meeting.color = (Color.FromHex("#FF339933"));//cor do prenchimento
-                            meeting.AllDay = true;
+                            meeting.color = (Color.FromHex("#FFc800"));//cor do prenchimento FF339933
+                meeting.BackgroundColor = Color.FromHex("ffc800");
+                meeting.AllDay = true;
                             Meetings.Add(meeting);//adiciona os elementos no calendario é chamado no calendario.xaml
             }
         }

@@ -31,26 +31,35 @@ namespace Boora_TCC_2019.TELAS
             Aluno aluno = new Aluno();
             AlunoDAO alunoDAO = new AlunoDAO();
 
-
+            string nome;
+            
 
             try
             {
-                aluno = await alunoDAO.Login_Aluno(txtNome.Text, txtsenha.Text);
+                // resolve a questao do espaço
+                nome = txtNome.Text.Trim();
+
+                SlCarregandoLogin.IsVisible = true; // enquanto espera resposta do BD sobe um stacklayout com indicador(carregadndo) rodadndo.
+                aluno = await alunoDAO.Login_Aluno(nome, txtsenha.Text);
 
                 Id_Aluno_Login = aluno.Id_Aluno;
                 Nome_Aluno_Logado = aluno.Nome;
                 Senha_Aluno_Logado = aluno.Senha;
-
+                SlCarregandoLogin.IsVisible = false; // apos o retorno do BD o Stacklayout some.
                 App.Current.MainPage = new NavigationPage(new MENU.Master());
             }
             catch 
             {
-                await DisplayAlert("BOORA", "Verefique seu Login Parça", "OK");
+                
+                await DisplayAlert("BOORA", "Verefique seu Login", "OK");
 
             } 
            
-            
-
+        }
+        public async void EsqueceuSenha(object sender, EventArgs args)
+        {
+            // TODO - Desenvolver metodo da esqueceu a senha
+            EsqueceuSenhaLbl.IsVisible = true;
         }
     }
 }

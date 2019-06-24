@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Boora_TCC_2019.App">
     <Application.Resources>
+        <!--aqui que se seta os styles que serao usado no projeto-->
             <ResourceDictionary>
             <Style TargetType="StackLayout">
                 <Setter Property="BackgroundColor" Value="#ffc800"/>
@@ -10,6 +11,8 @@
             <Style TargetType="Frame">
                 <Setter Property="WidthRequest" Value="200"/>
                 <Setter Property="BorderColor" Value="Black"/>
+                <Setter Property="BackgroundColor" Value="#ffc800"/>
+                
             </Style>
             <Style TargetType="Label">
                 <Setter Property="TextColor" Value="Black"/>
@@ -21,7 +24,7 @@
                 <Setter Property="BackgroundColor" Value="Orange"/>
                 <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
-                <Setter Property="WidthRequest" Value="200"/>
+                <Setter Property="WidthRequest" Value="160"/>
             </Style>
             <Style TargetType="StackLayout" x:Key="SLInicio">
                 <Setter Property="BackgroundColor"  Value="Black"/>

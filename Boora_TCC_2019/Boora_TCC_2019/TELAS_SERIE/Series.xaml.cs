@@ -35,10 +35,13 @@ namespace Boora_TCC_2019.TELAS_SERIE
         }
         protected async override void OnAppearing()
         {
+            SlCarregandoLogin.IsVisible = true;
             await Dados_Da_serie();
+            SlCarregandoLogin.IsVisible = false;
         }
         private async void Proxima_SerieAsync(object sender, EventArgs e)
         {
+            VerificarLimite.IsVisible = false; //temporario
             serie_da_lista = serie_da_lista + 1;
             try
             {
@@ -50,6 +53,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
         }
         private async void Anterior_SerieAsync(object sender, EventArgs e)
         {
+            VerificarLimite.IsVisible = false; //temporario
             serie_da_lista = serie_da_lista - 1;
             try
             {
@@ -61,8 +65,8 @@ namespace Boora_TCC_2019.TELAS_SERIE
         }
         private async void IniciarSerie(object sender, EventArgs args)
         {
-
-            listaExercicio.Clear();//limpar a lista antes de carregar outra senão dupplica
+            VerificarLimite.IsVisible = false; //temporario
+            listaExercicio.Clear();//limpar a lista antes de carregar outra senão duplica
             lista.Clear();
             listaExercicio = await exercicios_Serie_DAO.Busca_Exercicios_Serie_DA_SERIE(idSerie);
 
@@ -83,33 +87,37 @@ namespace Boora_TCC_2019.TELAS_SERIE
         public async Task Dados_Da_serie()
         {
             lbl_DATA.Text = DateTime.Now.ToString("dd/MM/yyyy");
-            //mudei /////
             Login login = new Login();
             var alunoLogado = await alunoDAO.Login_Aluno(Login.Nome_Aluno_Logado, Login.Senha_Aluno_Logado);
-
+            
             //tras todas as series que o aluno tem 
             var lista_Serie = await exercicios_Serie_DAO.Busca_Todas__Series_Aluno(alunoLogado.Id_Aluno);
+            lbl_DATA.Text = lista_Serie[0].Data_Inicio;
+            lbl_DATAVENC.Text = lista_Serie[0].Data_Fim;
             if (serie_da_lista <= 0)
             {
                 serie_da_lista = 0;
-                await DisplayAlert("BOORA", "Está é sua Primeira Serie Parça", "OK");
+                VerificarLimite.Text = "Está é sua primeira de " + lista_Serie.Count().ToString();
+                VerificarLimite.IsVisible = true;
+
             }
             if (serie_da_lista > lista_Serie.Count - 1)
             {
                 serie_da_lista = lista_Serie.Count() - 1;
-                await DisplayAlert("BOORA", "Está é sua Ultima Serie parça", "OK");
+                VerificarLimite.Text = "Está é sua ultima " + (serie_da_lista + 1).ToString() + " / " + lista_Serie.Count().ToString();
+                VerificarLimite.IsVisible = true;
+                
             }
             if (serie_da_lista <= lista_Serie.Count - 1)
             {
-                lblQuantidade_De_Series.Text = "Serie " + (serie_da_lista + 1).ToString() + " de " + lista_Serie.Count().ToString();
+                lblQuantidade_De_Series.Text = "Série " + (serie_da_lista + 1).ToString() + " de " + lista_Serie.Count().ToString();
                 var serieEXibida = await serieDAO.Busca_Serie_ID(lista_Serie[serie_da_lista].Id_Serie);
 
                 txt_Nome_Serie.Text = serieEXibida.Nome_Serie;
-                //salva id da serie exibida em uma varialvel static 
                 idSerie = serieEXibida.Id_Serie;
 
                 txt_Descricao_Serie.Text = serieEXibida.Descricao_Serie;
-
+                
             }
         }
 

@@ -38,10 +38,10 @@ namespace Boora_TCC_2019.TELAS_SERIE
         protected async override void OnAppearing()
 
         {
-
+            SlCarregando.IsVisible = true;
             await Exercicio_Pelo_List(exe);
-            
             base.OnAppearing();
+            SlCarregando.IsVisible = false;
         }
 
         private void Button_OnClicked(object sender, EventArgs e)

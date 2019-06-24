@@ -28,6 +28,7 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
         protected async override void OnAppearing()
         {
             base.OnAppearing();
+            SlCarregandoLista.IsVisible = true;
             listaInterna = await exercicioDAO.Busca_Exercicio();
 
             for (int i = 0; i < listaInterna.Count; i++)
@@ -39,6 +40,8 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
             }
            
             ListaExercicios.ItemsSource = listaInterna;
+
+            SlCarregandoLista.IsVisible = false;
           
         }
 
@@ -48,7 +51,7 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
             try
             {
                 listaPesquisa = listaInterna.Where(a => a.Nome.Contains(args.NewTextValue)).ToList();
-                // Com o For a lista atualiza as imagens, tirei o estatico - Guga
+               
                 for (int i = 0; i < listaInterna.Count; i++)
                 {
                     string path = await exercicioDAO.Buscar_IMAGEM(listaInterna[i].Imagem_Gif);
@@ -65,17 +68,6 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
             }
 
         }
-        //Comentei tudo pq tava dando erro - Guga
-        //Metodo que faz a busca da imagem do banco atraves de seu nome 
-        //este metodo não esta sendo usado porem ele atualiza uma imagem atravez da busca
-        //public async void imagemExercicio(string nomeImagem)
-        //{
-        //    string path = await exercicioDAO.Buscar_IMAGEM(nomeImagem);
-        //    if (path != null)
-        //    {
-        //        //seta a imagem no campo imagem
-        //        imagem_Exercicio_Selecionado.Source= path;
-        //    }
-        //}
+       
     }
 }

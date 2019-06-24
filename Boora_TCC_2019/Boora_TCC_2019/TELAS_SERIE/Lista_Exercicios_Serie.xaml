@@ -15,8 +15,7 @@
                     </ListView.ItemTemplate>
                 </ListView>
 
-                <Button Text="Finalizar Serie" HorizontalOptions="Center" WidthRequest="100" BackgroundColor="#ffc800" TextColor="Black"
-                        Clicked="finalizarSerie"/>
+                <Button Text="Finalizar Série" HorizontalOptions="Center" Clicked="finalizarSerie"/>
             </StackLayout>
             <StackLayout>
 

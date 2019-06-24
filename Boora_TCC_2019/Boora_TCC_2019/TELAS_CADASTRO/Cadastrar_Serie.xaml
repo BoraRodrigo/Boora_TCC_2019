@@ -8,7 +8,7 @@
             <StackLayout BackgroundColor="#ffc800">
             
                 <StackLayout Padding="0" Margin="15">
-                    <Label Text="CADASTRAR SéRIE" Style="{StaticResource LblTitulo}"/>
+                    <Label Text="CADASTRAR SÉRIE" Style="{StaticResource LblTitulo}"/>
                     <StackLayout Orientation="Vertical">
                         <StackLayout Orientation="Horizontal" >
                             <Entry HorizontalOptions="FillAndExpand" Placeholder="Id Serie" PlaceholderColor="Black" x:Name="Txt_Id_Da_Serie"/>

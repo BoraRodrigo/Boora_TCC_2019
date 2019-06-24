@@ -5,32 +5,68 @@
              x:Class="Boora_TCC_2019.TELAS_SERIE.Serie">
     <ContentPage.Content>
         <ScrollView>
-            <!--comentario-->
-            <StackLayout Orientation="Vertical">
-                <Image Source="Logo_Boora.png"  VerticalOptions="Center"/>
+            <AbsoluteLayout >
+                <StackLayout Orientation="Vertical" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+                    <Image Source="Logo_Boora.png"  VerticalOptions="Center"/>
 
-                <Label Text="Series  - Serie 0 de 0" x:Name="lblQuantidade_De_Series"  FontSize="16" HorizontalOptions="Center" />
+                    <Label Text="Series  - Serie 0 de 0" x:Name="lblQuantidade_De_Series"  FontSize="16" HorizontalOptions="Center" />
 
 
-                <StackLayout Orientation="Vertical" Padding="10">
+                    <StackLayout Orientation="Vertical" Padding="10">
 
-                    <Label  Text="DATA CADASTRO SERIE" x:Name="lbl_DATA" FontSize="28" HorizontalOptions="Center"/>
-                    <Label  Text="DATA VENCIMENTO SERIE" x:Name="lbl_DATAVENC" FontSize="28" HorizontalOptions="Center"/>
+                        <StackLayout Orientation="Horizontal">
+                            
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                            <Label Text="Início - " FontSize="28" HorizontalOptions="Center"/>
+                            <Label  Text="DATA CADASTRO SERIE" x:Name="lbl_DATA" FontSize="28" HorizontalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                            <Label Text="Fim - " FontSize="28" HorizontalOptions="Center"/>
+                            <Label  Text="DATA VENCIMENTO SERIE" x:Name="lbl_DATAVENC" FontSize="28" HorizontalOptions="Center"/>
+                        </StackLayout>
+                       
+                       
+                      
+                        <Frame>
+                            <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                                
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                    <Label Text="Série - " HorizontalOptions="Center" FontSize="20" FontAttributes="Bold"/>
+                                    <Label x:Name="txt_Nome_Serie" Text="Nome" HorizontalOptions="Center" FontSize="20"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                    <Label Text="Objetivo - " HorizontalOptions="Center" FontSize="20" FontAttributes="Bold"/>
+                                    <Label x:Name="txt_Descricao_Serie" Text="Descricao" HorizontalOptions="Center" FontSize="20"/>
+                                </StackLayout>
+                             
+                            </StackLayout>
+                        </Frame>
+                      
+                        <Button Text="Vizualizar" Clicked="IniciarSerie" HorizontalOptions="Center" />
+                        <StackLayout Orientation="Vertical">
+                            <StackLayout Orientation="Horizontal" >
 
-                    <Editor x:Name="txt_Nome_Serie" Text="Nome" FontSize="Small" IsReadOnly="True"/>
-                    <Editor x:Name="txt_Descricao_Serie" Text="Descricao" FontSize="Small" IsReadOnly="True"/>
-
-                    <Button Text="Vizualizar" Clicked="IniciarSerie" HorizontalOptions="Center" />
-
-                    <StackLayout Orientation="Horizontal" >
-
-                        <Button Text="Anterior" Margin="0,0,0,50" HorizontalOptions="FillAndExpand"  Clicked="Anterior_SerieAsync"/>
-                        <Button Text="Proxima" Margin="0,0,0,50" HorizontalOptions="FillAndExpand"  Clicked="Proxima_SerieAsync" />
-
+                                <Button Text="Anterior" Margin="0,0,0,50" HorizontalOptions="FillAndExpand"  Clicked="Anterior_SerieAsync"/>
+                                <Button Text="Proxima" Margin="0,0,0,50" HorizontalOptions="FillAndExpand"  Clicked="Proxima_SerieAsync" />
+                                <!--troquei os displays alerts por essa label-->
+                                
+                            </StackLayout>
+                            <Label x:Name="VerificarLimite" HorizontalTextAlignment="Center" Text="" TextColor="#ffc800" IsVisible="False" BackgroundColor="Black" HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        
+                    </StackLayout>
+                    
+                </StackLayout>
+                <!--Carregando...-->
+                <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="Black" x:Name="SlCarregandoLogin" IsVisible="False">
+                    <StackLayout BackgroundColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <ActivityIndicator IsRunning="True" Color="#ffc800" />
+                        <Label TextColor="#ffc800" Text="Carregando..." HorizontalOptions="Center" FontSize="12"/>
                     </StackLayout>
                 </StackLayout>
-            </StackLayout>
-
+            </AbsoluteLayout>
+            
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -72,8 +72,9 @@ namespace Boora_TCC_2019.MENU
         }
         private void GoSAIR(object sender, EventArgs args)
         {
-            Detail = new NavigationPage(new Login());
-            IsPresented = false;
+            //Alterado pq ficava liberado o menu apos deslogar, assim nao tem menu
+            Navigation.PushAsync(new TELAS.Login());
+           
 
         }
 

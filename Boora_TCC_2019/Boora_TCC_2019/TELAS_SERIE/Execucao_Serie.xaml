@@ -5,15 +5,16 @@
              x:Class="Boora_TCC_2019.TELAS_SERIE.Execucao_Serie">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout BackgroundColor="#ffc800" Orientation="Vertical" Padding="10">
+            <AbsoluteLayout>
+                <StackLayout BackgroundColor="#ffc800" Orientation="Vertical" Padding="10" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
                     <Label Text="Boora Malhar "  FontSize="22"  FontAttributes="Bold"/>
                     <Label x:Name="txtNomeALUNO"  FontSize="22"  FontAttributes="Bold" />
                 </StackLayout>
 
-                <Frame>
-                    <StackLayout>
+                <Frame >
+                    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                         <Label Text="Informações da serie" FontAttributes="Bold" FontSize="20" TextColor="Black" HorizontalOptions="Center"/>
                         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
 					        <Label Text="Nome da Serie:" TextColor="Black" FontAttributes="Bold" FontSize="16"/>
@@ -23,60 +24,58 @@
                     </StackLayout>
                 </Frame>
                 <Frame >
-                    <StackLayout>
-                            <Label Text="Informações do exercício" FontAttributes="Bold" FontSize="20" TextColor="Black" HorizontalOptions="Center"/>
+                   <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <Label Text="Informações do exercício" FontAttributes="Bold" FontSize="20" TextColor="Black" HorizontalOptions="Center"/>
                 
-                    <!--<Label Text="Serie - Exercicio 1 de 1" x:Name="lblexercicioSerie" FontAttributes="Bold" FontSize="18" TextColor="Black" HorizontalOptions="Center"/>-->
-
-
-
-                    <StackLayout Orientation="Vertical" >
-							    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-							    <Label Text="Nome:" TextColor="Black" FontAttributes="Bold" FontSize="16"/>
-							    <!--entry trocado por label-->
-							    <Label x:Name="txtNOMEEXERCICIO" Text="Exercício" TextColor="Black" FontSize="16"/>
-                        </StackLayout>
-                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                            <Label Text="Objetivo:" FontAttributes="Bold" TextColor="Black" FontSize="16"/>
-                            <!--entry trocado por label-->
-                            <Label x:Name="txtOBJTIVOEXERCICIO" Text="OBJETIVO" TextColor="Black" FontSize="16"/>
-                        </StackLayout>
+                            <StackLayout Orientation="Vertical" >
+							            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+							            <Label Text="Nome:" TextColor="Black" FontAttributes="Bold" FontSize="16"/>
+							            <!--entry trocado por label-->
+							            <Label x:Name="txtNOMEEXERCICIO" Text="Exercício" TextColor="Black" FontSize="16"/>
+                                </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                    <Label Text="Objetivo:" FontAttributes="Bold" TextColor="Black" FontSize="16"/>
+                                    <!--entry trocado por label-->
+                                    <Label x:Name="txtOBJTIVOEXERCICIO" Text="OBJETIVO" TextColor="Black" FontSize="16"/>
+                                </StackLayout>
                     
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal"  HorizontalOptions="Center">
+                                <Label Text="Repetições:" TextColor="Black" FontAttributes="Bold" FontSize="16"/>
+                                <!--entry trocado por label-->
+                                <Label  x:Name="txtREPETICOES" Text="Repeticoes" TextColor="Black" FontSize="16"/>
+                                <Label Text="Vezes:" TextColor="Black" FontAttributes="Bold" FontSize="16" />
+                                <!--entry trocado por label-->
+                                <Label  x:Name="txtQTDVEZES" Text="Vezes" TextColor="Black" FontSize="16"/>
+                            </StackLayout>
                     </StackLayout>
-                        <StackLayout Orientation="Horizontal"  HorizontalOptions="Center">
-                            <Label Text="Repetições:" TextColor="Black" FontAttributes="Bold" FontSize="16"/>
-                            <!--entry trocado por label-->
-                            <Label  x:Name="txtREPETICOES" Text="Repeticoes" TextColor="Black" FontSize="16"/>
-                            <Label Text="Vezes:" TextColor="Black" FontAttributes="Bold" FontSize="16" />
-                            <!--entry trocado por label-->
-                            <Label  x:Name="txtQTDVEZES" Text="Vezes" TextColor="Black" FontSize="16"/>
-                        </StackLayout>
-                    </StackLayout>
-            </Frame>
+                </Frame>
                 <StackLayout Orientation="Vertical" HorizontalOptions="Center" >
                     <!--Retirado para tap na label <Button Text="Iniciar Cronômetro" HorizontalOptions="Center" Clicked="Button_OnClicked" x:Name="Button"  /> -->
-                    <Label Text="Iniciar Cronômetro" x:Name="Entry" TextColor="Black" FontSize="24">
+                    <Label Text="Iniciar Cronômetro" x:Name="Entry" TextColor="Black" FontSize="24" >
                         <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="Button_OnClicked"/>
+                            <TapGestureRecognizer Tapped="Button_OnClicked" />
                         </Label.GestureRecognizers>
                     </Label>
                     <Label x:Name="RepeticoesRealizadas" FontSize="24"/>
                     <!--Retirado para tap na label <Label x:Name="Entry" HorizontalOptions="Fill" Text="Cronômetro"/> -->
                 </StackLayout>
-                <Frame Padding="0">
-                    <StackLayout Padding="0">
-                        <ffimageloading:CachedImage x:Name="imgbaixadaM" HeightRequest="180" WidthRequest="180" />
+                <Frame>
+                    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                            <ffimageloading:CachedImage x:Name="imgbaixadaM" HeightRequest="180" WidthRequest="180" />
                         <Image x:Name="imgbaixadaW" HeightRequest="180" WidthRequest="180" />
                     </StackLayout>
                 </Frame>
-                
-
-           <!--    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
-                    <Button Text="Exercício Anterior" Clicked="Anterior_Exercicio_Da_SerieAsync"  HorizontalOptions="Center" BackgroundColor="Orange" TextColor="Black"/>
-                    <Button Text="Proxímo Exercício"  Clicked="Proximo_Exercicio_Da_SerieAsync" HorizontalOptions="Center" BackgroundColor="Orange" TextColor="Black"/>
-                </StackLayout> -->
-				
-            </StackLayout>
-     </ScrollView>
+   
+                </StackLayout>
+                <!--Carregando...-->
+                <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="Black" x:Name="SlCarregando" IsVisible="False">
+                    <StackLayout BackgroundColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <ActivityIndicator IsRunning="True" Color="#ffc800" />
+                        <Label TextColor="#ffc800" Text="Carregando..." HorizontalOptions="Center" FontSize="12"/>
+                    </StackLayout>
+                </StackLayout>
+            </AbsoluteLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
