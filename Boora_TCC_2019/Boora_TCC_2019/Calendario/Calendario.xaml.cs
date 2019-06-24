@@ -9,6 +9,7 @@ namespace ScheduleSimpleSample
         public ScheduleSimpleSamplePage()
         {
 
+           
             InitializeComponent();
         }
     }

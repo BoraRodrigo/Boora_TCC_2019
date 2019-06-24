@@ -8,7 +8,8 @@
     <ContentPage.Content>
         <syncfusion:SfSchedule x:Name="schedule" 
 		DataSource = "{Binding Meetings}"
-		ScheduleView = "WeekView" >
+		ScheduleView = "MonthView"
+        ShowAppointmentsInline="true">
             <syncfusion:SfSchedule.BindingContext>
                 <local:ViewModel_Calendario/>
             </syncfusion:SfSchedule.BindingContext>
@@ -26,4 +27,5 @@
         </syncfusion:SfSchedule>
     </ContentPage.Content>
 </ContentPage>
+    
     
