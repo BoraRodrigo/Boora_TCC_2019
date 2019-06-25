@@ -18,7 +18,6 @@
                         <Label Text="Informações da serie" FontAttributes="Bold" FontSize="20" TextColor="Black" HorizontalOptions="Center"/>
                         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
 					        <Label Text="Nome da Serie:" TextColor="Black" FontAttributes="Bold" FontSize="16"/>
-					        <!--entry trocado por label-->
 					        <Label x:Name="txtnomedaSerie" Text="NOME SERIE" TextColor="Black" FontSize="16"/>
 				        </StackLayout>
                     </StackLayout>
@@ -30,35 +29,29 @@
                             <StackLayout Orientation="Vertical" >
 							            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
 							            <Label Text="Nome:" TextColor="Black" FontAttributes="Bold" FontSize="16"/>
-							            <!--entry trocado por label-->
 							            <Label x:Name="txtNOMEEXERCICIO" Text="Exercício" TextColor="Black" FontSize="16"/>
                                 </StackLayout>
                                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                                     <Label Text="Objetivo:" FontAttributes="Bold" TextColor="Black" FontSize="16"/>
-                                    <!--entry trocado por label-->
                                     <Label x:Name="txtOBJTIVOEXERCICIO" Text="OBJETIVO" TextColor="Black" FontSize="16"/>
                                 </StackLayout>
                     
                             </StackLayout>
                             <StackLayout Orientation="Horizontal"  HorizontalOptions="Center">
                                 <Label Text="Repetições:" TextColor="Black" FontAttributes="Bold" FontSize="16"/>
-                                <!--entry trocado por label-->
                                 <Label  x:Name="txtREPETICOES" Text="Repeticoes" TextColor="Black" FontSize="16"/>
                                 <Label Text="Vezes:" TextColor="Black" FontAttributes="Bold" FontSize="16" />
-                                <!--entry trocado por label-->
                                 <Label  x:Name="txtQTDVEZES" Text="Vezes" TextColor="Black" FontSize="16"/>
                             </StackLayout>
                     </StackLayout>
                 </Frame>
                 <StackLayout Orientation="Vertical" HorizontalOptions="Center" >
-                    <!--Retirado para tap na label <Button Text="Iniciar Cronômetro" HorizontalOptions="Center" Clicked="Button_OnClicked" x:Name="Button"  /> -->
-                    <Label Text="Iniciar Cronômetro" x:Name="Entry" TextColor="Black" FontSize="24" >
+                    <Label Text="Iniciar Cronômetro" x:Name="Entry" TextColor="Black" FontSize="24" HorizontalTextAlignment="Center">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Tapped="Button_OnClicked" />
                         </Label.GestureRecognizers>
                     </Label>
-                    <Label x:Name="RepeticoesRealizadas" FontSize="24"/>
-                    <!--Retirado para tap na label <Label x:Name="Entry" HorizontalOptions="Fill" Text="Cronômetro"/> -->
+                    <Label x:Name="RepeticoesRealizadas" FontSize="24" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
                 </StackLayout>
                 <Frame>
                     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">

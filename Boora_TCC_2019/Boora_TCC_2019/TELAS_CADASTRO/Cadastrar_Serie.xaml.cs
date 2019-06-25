@@ -17,10 +17,12 @@ namespace Boora_TCC_2019.TELAS
         string dataFim;
         SerieDAO serieDAO = new SerieDAO();
         Exercicios_Serie_DAO exercicios_Serie_DAO = new Exercicios_Serie_DAO();
-        public Cadastrar_Serie()
+        public Cadastrar_Serie(Aluno aluno)
         {
             InitializeComponent();
             Lbl_data_Inicial.Text =  DateTime.Now.ToString("dd/MM/yyyy");
+            Txt_Id_Do_Aluno.Text = (aluno.Id_Aluno.ToString());
+            Txt_nome_Serie.Text = aluno.Nome;
         }
 
         private void DataSelecionada(object sender, DateChangedEventArgs args)

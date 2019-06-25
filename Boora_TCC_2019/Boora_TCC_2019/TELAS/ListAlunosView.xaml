@@ -1,19 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-             x:Class="Boora_TCC_2019.TELAS_CADASTRO.ListViewExercicios">
+             x:Class="Boora_TCC_2019.TELAS.ListAlunosView">
     <ContentPage.Content>
         <AbsoluteLayout>
             <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
                 <StackLayout Padding="0" Margin="15">
-                    <Label Text="EXERCÍCIOS CADASTRADOS" Style="{StaticResource LblTitulo}"/>
-                    <Entry Placeholder="Pesquisar" x:Name="Pesquisar_Exercicios" TextChanged="BuscaRapida"/>
+                    <Label Text="ALUNOS CADASTRADOS" Style="{StaticResource LblTitulo}"/>
+                    <Entry Placeholder="Pesquisar" x:Name="Pesquisar_Alunos" TextChanged="BuscaRapida"/>
 
-                    <ListView x:Name="ListaExercicios" BackgroundColor="#ffc800"  >
+                    <ListView x:Name="ListaAlunos" BackgroundColor="#ffc800" ItemSelected="SelecaoAlunoAction">
                         <ListView.ItemTemplate>
                             <DataTemplate >
-                                <ImageCell Text="{Binding Nome}" TextColor="Black" ImageSource="{Binding Imagem_Gif}"  Detail="{Binding Objetivo}" DetailColor="Black" />
+                                <TextCell Text="{Binding Nome}" TextColor="Black"  Detail="{Binding Email}" DetailColor="Black" />
                             </DataTemplate >
                         </ListView.ItemTemplate>
                     </ListView>
@@ -27,8 +26,5 @@
                 </StackLayout>
             </StackLayout>
         </AbsoluteLayout>
-       
     </ContentPage.Content>
 </ContentPage>
-
-

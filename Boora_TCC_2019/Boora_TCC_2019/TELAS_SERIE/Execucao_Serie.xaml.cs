@@ -16,7 +16,9 @@ namespace Boora_TCC_2019.TELAS_SERIE
 
     public partial class Execucao_Serie : ContentPage
     {
+        private bool zerar = false;
         private int _vezesTimer;
+        private int i = 0;
         AlunoDAO alunoDAO = new AlunoDAO();
         ExercicioDAO exercicioDAO = new ExercicioDAO();
         Exercicios_Serie_DAO exercicios_Serie_DAO = new Exercicios_Serie_DAO();
@@ -46,17 +48,36 @@ namespace Boora_TCC_2019.TELAS_SERIE
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
-            int i = 0;
-            i++;
+            if(zerar == false)
+            {
+                zerar = true;
+                i++;
+            }else 
+            {
+                zerar = false;
+            }
+
+            
+            
             RepeticoesRealizadas.Text = (i + " Repetições Realizadas");
-            tempo(1);
+            
+
             
             Device.StartTimer(TimeSpan.FromSeconds(1), () =>
             {
                 
                 Entry.Text = tempo(++_vezesTimer);
+
+                if (zerar == false)
+                {
+                    Entry.Text = "Iniciar Cronômetro";
+                    _vezesTimer = 0;
+
+                }
                 
-                return true;
+
+                return zerar;
+                
             });
 
         }
@@ -167,7 +188,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
             Horas = Tempo / 3600;
             Minutos = Tempo % 3600 / 60;
             Segundos = Tempo % 60;
-            result = "Descanso: "  + Minutos + ":" + Segundos;
+            result = "Descanso - " + Minutos + ":" + Segundos;
             return result;
         }
     }

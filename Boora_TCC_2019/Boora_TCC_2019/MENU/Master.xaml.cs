@@ -41,11 +41,11 @@ namespace Boora_TCC_2019.MENU
             throw new NotImplementedException();
         }
 
-        private void GoCadastroSerie(object sender, EventArgs args)
-        {
-            Detail = new NavigationPage(new TELAS.Cadastrar_Serie());
-            IsPresented = false;
-        }
+        //private void GoCadastroSerie(object sender, EventArgs args)
+        //{
+        //    Detail = new NavigationPage(new TELAS.Cadastrar_Serie());
+        //    IsPresented = false;
+        //}
         private void GoListExercicios(object sender, EventArgs args)
         {
             Detail = new NavigationPage(new TELAS_CADASTRO.ListViewExercicios());
@@ -83,11 +83,20 @@ namespace Boora_TCC_2019.MENU
 
         //    Device.OpenUri(new Uri("https://www.facebook.com/angelosfitness/"));
         //}
-        private async void Send(object sender, EventArgs e)
+
+        private void Send(object sender, EventArgs e)
         {
             Detail = new NavigationPage(new TELAS.TelaSobre());
             IsPresented = false;
 
         }
+        private void GoListaAlunos(object sender, EventArgs e)
+        {
+            Detail = new NavigationPage(new TELAS.ListAlunosView());
+            IsPresented = false;
+
+        }
+        
+
     }
 }

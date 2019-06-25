@@ -9,7 +9,7 @@
             <StackLayout Padding="0" Margin="15">
                 <Label Text="CADASTRAR ALUNO" Style="{StaticResource LblTitulo}"/>
                 
-                    <Entry Placeholder="Nome" PlaceholderColor="Black" x:Name="txt_NOME" />
+                    <Entry Placeholder="Nome Completo" PlaceholderColor="Black" x:Name="txt_NOME" />
                     <Entry Placeholder="Email" PlaceholderColor="Black" x:Name="txt_EMAIL"/>
                     <Entry Placeholder="Senha" PlaceholderColor="Black" x:Name="txt_SENHA" IsPassword="True"/>
                     <Entry Placeholder="Peso aqui" PlaceholderColor="Black" x:Name="txt_PESO"/>

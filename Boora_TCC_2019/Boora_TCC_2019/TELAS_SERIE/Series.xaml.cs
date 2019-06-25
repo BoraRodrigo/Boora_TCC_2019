@@ -41,11 +41,14 @@ namespace Boora_TCC_2019.TELAS_SERIE
         }
         private async void Proxima_SerieAsync(object sender, EventArgs e)
         {
-            VerificarLimite.IsVisible = false; //temporario
+           // VerificarLimite.IsVisible = false; //temporario
             serie_da_lista = serie_da_lista + 1;
             try
             {
+                SlCarregandoLogin.IsVisible = true;
+                Verificar();
                 await Dados_Da_serie();
+                SlCarregandoLogin.IsVisible = false;
             }
             catch
             {
@@ -53,11 +56,14 @@ namespace Boora_TCC_2019.TELAS_SERIE
         }
         private async void Anterior_SerieAsync(object sender, EventArgs e)
         {
-            VerificarLimite.IsVisible = false; //temporario
+           // VerificarLimite.IsVisible = false; //temporario
             serie_da_lista = serie_da_lista - 1;
             try
             {
+                SlCarregandoLogin.IsVisible = true;
+                Verificar();
                 await Dados_Da_serie();
+                SlCarregandoLogin.IsVisible = false;
             }
             catch
             {
@@ -65,7 +71,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
         }
         private async void IniciarSerie(object sender, EventArgs args)
         {
-            VerificarLimite.IsVisible = false; //temporario
+           // VerificarLimite.IsVisible = false; //temporario
             listaExercicio.Clear();//limpar a lista antes de carregar outra senão duplica
             lista.Clear();
             listaExercicio = await exercicios_Serie_DAO.Busca_Exercicios_Serie_DA_SERIE(idSerie);
@@ -96,17 +102,44 @@ namespace Boora_TCC_2019.TELAS_SERIE
             lbl_DATAVENC.Text = lista_Serie[0].Data_Fim;
             if (serie_da_lista <= 0)
             {
-                serie_da_lista = 0;
-                VerificarLimite.Text = "Está é sua primeira de " + lista_Serie.Count().ToString();
+                int i = 5;
+                bool aux = true;
                 VerificarLimite.IsVisible = true;
+                VerificarLimite.Text = "Está é sua primeira";
+                Device.StartTimer(TimeSpan.FromSeconds(1), () =>
+                {
+
+                    i--;
+                    if (i < 0)
+                    {
+                        VerificarLimite.IsVisible = false;
+                        aux = false;
+                    }
+                    return aux;
+                });
+
+
 
             }
             if (serie_da_lista > lista_Serie.Count - 1)
             {
-                serie_da_lista = lista_Serie.Count() - 1;
-                VerificarLimite.Text = "Está é sua ultima " + (serie_da_lista + 1).ToString() + " / " + lista_Serie.Count().ToString();
+                int i = 5;
+                bool aux = true;
                 VerificarLimite.IsVisible = true;
-                
+                VerificarLimite.Text = "Está é sua ultima";
+                Device.StartTimer(TimeSpan.FromSeconds(1), () =>
+                {
+
+                    i--;
+                    if (i < 0)
+                    {
+                        VerificarLimite.IsVisible = false;
+                        aux = false;
+                    }
+                    return aux;
+                });
+
+
             }
             if (serie_da_lista <= lista_Serie.Count - 1)
             {
@@ -119,6 +152,11 @@ namespace Boora_TCC_2019.TELAS_SERIE
                 txt_Descricao_Serie.Text = serieEXibida.Descricao_Serie;
                 
             }
+        }
+
+        private void Verificar()
+        {
+           
         }
 
 
