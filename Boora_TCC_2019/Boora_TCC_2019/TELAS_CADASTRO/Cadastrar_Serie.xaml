@@ -11,7 +11,6 @@
                     <Label Text="CADASTRAR SÉRIE" Style="{StaticResource LblTitulo}"/>
                     <StackLayout Orientation="Vertical">
                         <StackLayout Orientation="Horizontal" >
-                            <Entry HorizontalOptions="FillAndExpand" Placeholder="Id Serie" PlaceholderColor="Black" x:Name="Txt_Id_Da_Serie"/>
                             <Label Text="Identificação do Aluno: " FontAttributes="Bold"/>
                             <Label HorizontalOptions="FillAndExpand" x:Name="Txt_Id_Do_Aluno"/>
                          </StackLayout>
@@ -35,12 +34,10 @@
 
                     <Button Text="Confirmar Série"  Clicked="Btn_Cadastrar_Serie" HorizontalOptions="Center" />
                     <Label Margin="10" Text="CADASTRAR EXERCÍCIOS NA SÉRIE" HorizontalOptions="Center" Style="{StaticResource LblTitulo}"/>
-                
                     <StackLayout Orientation="Vertical">
                         <StackLayout Orientation="Horizontal" >
                             <Entry HorizontalOptions="FillAndExpand" PlaceholderColor="Black" Placeholder="Id Exercicios Serie" x:Name="Txt_Id_Exercicios_Serie"/>
-                            <Entry HorizontalOptions="FillAndExpand" PlaceholderColor="Black" Placeholder="id Serie" x:Name="Txt_Id_Da_Serie_Cadastro_Exercicio"/>
-                        </StackLayout>
+                          </StackLayout>
                         <StackLayout Orientation="Horizontal" >
                             <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="Black" Placeholder="Repetiçoes" x:Name="Txt_Quantidade_repeticoes" />
                             <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="Black" Placeholder="Vezes" x:Name="Txt_Quantidade_Vezes"/>

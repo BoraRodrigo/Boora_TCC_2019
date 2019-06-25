@@ -75,20 +75,13 @@ namespace Boora_TCC_2019.DAO
 
         }
 
-
-
-
-
         public async Task Cadastrar_Exercicios_Serie(Exercicios_Serie exercicios_Serie)
         {
-            //Gambiarra para increment de id
-            List<Exercicios_Serie> listaExercicios_Serie = await Busca_Exercicios_Serie();
-
             await firebase
               .Child("Exercicios_Serie_DAO")
               .PostAsync(new Exercicios_Serie()
               {
-                  //Id_Exercicios_Serie = listaExercicios_Serie.Count() + 1,
+               
                   Id_Exercicios_Serie = exercicios_Serie.Id_Exercicios_Serie,
                   Id_Serie = exercicios_Serie.Id_Serie,
                   Qtd_repeticoes = exercicios_Serie.Qtd_repeticoes,
