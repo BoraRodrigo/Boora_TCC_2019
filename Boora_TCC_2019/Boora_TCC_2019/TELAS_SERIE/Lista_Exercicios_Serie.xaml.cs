@@ -58,27 +58,27 @@ namespace Boora_TCC_2019.TELAS_SERIE
 
             lista_controle_dia = await controle_Dia_DAO.Busca_Todas__Dias_Do_Aluno(Login.Id_Aluno_Login);
 
+            bool Verefica_Dia = false;
             for (int i = 0; i < lista_controle_dia.Count; i++)
             {
                 if (lista_controle_dia[i].Data_Presenca.Equals(DateTime.Now.ToString("dd/MM/yyyy"))&&lista_controle_dia[i].Nome_serie.Equals(NomeSerie))
                 {
                     await DisplayAlert("BOORA", "Você já realizou essa Serie HOJE Parça", "OK");
-                    i = (lista_controle_dia.Count() + 1);
-                    break;
+
+                    Verefica_Dia = true;
                 }
-            else{
-                //passar aqui o nome da serie que vai salvar e o id do aluno tó fazendo isso de modo direto pra ganhar tempo
+            }
+
+            if (Verefica_Dia==false)
+            {
 
                 controle_Dia.Id_Aluno = Login.Id_Aluno_Login;//passar o id do aluno que fez a serie
                 controle_Dia.Nome_serie = NomeSerie;
                 controle_Dia.Hora_Serie = DateTime.Now.Hour.ToString();
                 controle_Dia.Data_Presenca = DateTime.Now.ToString("dd/MM/yyyy");
                 await controle_Dia_DAO.Cadastrar_Dia(controle_Dia);
-                    i = (lista_controle_dia.Count() + 1);
-                    break;
 
-                }
-            }   
+            }  //passar aqui o nome da serie que vai salvar e o id do aluno tó fazendo isso de modo direto pra ganhar tempo
         }
     }
 }
