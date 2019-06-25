@@ -52,14 +52,33 @@ namespace Boora_TCC_2019.TELAS_SERIE
         private async void finalizarSerie(object sender, EventArgs e)
         {
             Login login = new Login();
-            //passar aqui o nome da serie que vai salvar e o id do aluno tó fazendo isso de modo direto pra ganhar tempo
             Controle_Dia controle_Dia = new Controle_Dia();
-            Controle_Dia_DAO controle_Dia_DAO= new Controle_Dia_DAO();
-            controle_Dia.Id_Aluno =Login.Id_Aluno_Login ;//passar o id do aluno que fez a serie
-            controle_Dia.Nome_serie = NomeSerie;
-            controle_Dia.Hora_Serie = DateTime.Now.Hour.ToString();
-            controle_Dia.Data_Presenca =DateTime.Now.ToString("dd/MM/yyyy");
-            await  controle_Dia_DAO.Cadastrar_Dia(controle_Dia);
+            Controle_Dia_DAO controle_Dia_DAO = new Controle_Dia_DAO();
+            List<Controle_Dia> lista_controle_dia = new List<Controle_Dia>();
+
+            lista_controle_dia = await controle_Dia_DAO.Busca_Todas__Dias_Do_Aluno(Login.Id_Aluno_Login);
+
+            for (int i = 0; i < lista_controle_dia.Count; i++)
+            {
+                if (lista_controle_dia[i].Data_Presenca.Equals(DateTime.Now.ToString("dd/MM/yyyy"))&&lista_controle_dia[i].Nome_serie.Equals(NomeSerie))
+                {
+                    await DisplayAlert("BOORA", "Você já realizou essa Serie HOJE Parça", "OK");
+                    i = (lista_controle_dia.Count() + 1);
+                    break;
+                }
+            else{
+                //passar aqui o nome da serie que vai salvar e o id do aluno tó fazendo isso de modo direto pra ganhar tempo
+
+                controle_Dia.Id_Aluno = Login.Id_Aluno_Login;//passar o id do aluno que fez a serie
+                controle_Dia.Nome_serie = NomeSerie;
+                controle_Dia.Hora_Serie = DateTime.Now.Hour.ToString();
+                controle_Dia.Data_Presenca = DateTime.Now.ToString("dd/MM/yyyy");
+                await controle_Dia_DAO.Cadastrar_Dia(controle_Dia);
+                    i = (lista_controle_dia.Count() + 1);
+                    break;
+
+                }
+            }   
         }
     }
 }
