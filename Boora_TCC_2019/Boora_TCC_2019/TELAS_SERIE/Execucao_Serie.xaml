@@ -43,7 +43,13 @@
                                 <Label Text="Vezes:" TextColor="Black" FontAttributes="Bold" FontSize="16" />
                                 <Label  x:Name="txtQTDVEZES" Text="Vezes" TextColor="Black" FontSize="16"/>
                             </StackLayout>
-                    </StackLayout>
+                            <StackLayout Orientation="Horizontal"  HorizontalOptions="Center">
+                                <Label Text="Peso Previsto:" TextColor="Black" FontAttributes="Bold" FontSize="16"/>
+                                <Label  x:Name="txt_Peso" Text="Peso" TextColor="Black" FontSize="16"/>
+                                
+                            </StackLayout>
+
+                        </StackLayout>
                 </Frame>
                 <StackLayout Orientation="Vertical" HorizontalOptions="Center" >
                     <Label Text="Iniciar Cronômetro" x:Name="Entry" TextColor="Black" FontSize="24" HorizontalTextAlignment="Center">

@@ -18,12 +18,14 @@
                             <StackLayout Orientation="Horizontal" >
                                 <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="Black" Placeholder="Repetiçoes" x:Name="Txt_Quantidade_repeticoes" />
                                 <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="Black" Placeholder="Vezes" x:Name="Txt_Quantidade_Vezes"/>
-                                <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="Black" Placeholder="Tempo Execução" x:Name="txt_tempo_execucao"/>
                             </StackLayout>
-                            <StackLayout Orientation="Horizontal">
-                                <Entry HorizontalOptions="FillAndExpand" PlaceholderColor="Black" Placeholder="Tempo maximo" x:Name="txt_Tempo_Maximo"/>
-                                <Entry HorizontalOptions="FillAndExpand" PlaceholderColor="Black" Placeholder="Tempo minimo" x:Name="txt_tempo_minimo"/>
+
+                            <StackLayout Orientation="Horizontal" >
+                                <Label HorizontalOptions="FillAndExpand" Text="Peso Kg:" FontAttributes="Bold"/>
+                                <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="Black" Placeholder="Peso" x:Name="txt_Peso"/>
+
                             </StackLayout>
+
                         </StackLayout>
                         <Button Text="Adicionar" Clicked="Btn_Cadastrar_Exercicios_Serie"  HorizontalOptions="Center" />
                     </StackLayout>

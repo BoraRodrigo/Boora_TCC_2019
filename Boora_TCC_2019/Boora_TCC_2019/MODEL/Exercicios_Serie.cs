@@ -11,8 +11,7 @@ namespace Boora_TCC_2019.MODEL
     
         public int Qtd_repeticoes { get; set; }
         public int Qtd_Vezes { get; set; }
-        public string Tempo_Minimo { get; set; }
-        public string Tempo_Maximo { get; set; }
-        public string Tempo_Execucao { get; set; }
+        public Double Peso { get; set; }
+
     }
 }

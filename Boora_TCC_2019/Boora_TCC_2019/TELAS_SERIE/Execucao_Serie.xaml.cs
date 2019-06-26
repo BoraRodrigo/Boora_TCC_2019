@@ -165,6 +165,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
             txtQTDVEZES.Text = Convert.ToString(todosexercicio.Qtd_Vezes);
             txtREPETICOES.Text = Convert.ToString(todosexercicio.Qtd_repeticoes);
             txtOBJTIVOEXERCICIO.Text = exercicio.Objetivo;
+            txt_Peso.Text = todosexercicio.Peso.ToString();
             if(Device.RuntimePlatform == Device.UWP)
             {
                 imgbaixadaW.Source = await exercicioDAO.Buscar_IMAGEM(Convert.ToString(exe.Id_exercicio));

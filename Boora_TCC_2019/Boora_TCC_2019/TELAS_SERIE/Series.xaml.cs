@@ -49,6 +49,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
                 Verificar();
                 await Dados_Da_serie();
                 SlCarregandoLogin.IsVisible = false;
+                
             }
             catch
             {
@@ -92,12 +93,13 @@ namespace Boora_TCC_2019.TELAS_SERIE
 
         public async Task Dados_Da_serie()
         {
-            lbl_DATA.Text = DateTime.Now.ToString("dd/MM/yyyy");
+          
+            lbl_DATAVENC.Text= DateTime.Now.ToString("dd/MM/yyyy");
             Login login = new Login();
             var alunoLogado = await alunoDAO.Login_Aluno(Login.Nome_Aluno_Logado, Login.Senha_Aluno_Logado);
             
             //tras todas as series que o aluno tem 
-            var lista_Serie = await exercicios_Serie_DAO.Busca_Todas__Series_Aluno(alunoLogado.Id_Aluno);
+            var lista_Serie = await exercicios_Serie_DAO.Busca_Todas__Series_Aluno(Login.Id_Aluno_Login);
             lbl_DATA.Text = lista_Serie[0].Data_Inicio;
             lbl_DATAVENC.Text = lista_Serie[0].Data_Fim;
             if (serie_da_lista <= 0)
@@ -148,6 +150,8 @@ namespace Boora_TCC_2019.TELAS_SERIE
 
                 txt_Nome_Serie.Text = serieEXibida.Nome_Serie;
                 idSerie = serieEXibida.Id_Serie;
+                lbl_DATA.Text = serieEXibida.Data_Inicio;
+                lbl_DATAVENC.Text = serieEXibida.Data_Fim;
 
                 txt_Descricao_Serie.Text = serieEXibida.Descricao_Serie;
                 

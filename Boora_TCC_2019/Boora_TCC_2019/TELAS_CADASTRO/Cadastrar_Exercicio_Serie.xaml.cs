@@ -32,27 +32,34 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
 
         private async void Btn_Cadastrar_Exercicios_Serie(object sender, EventArgs e)
         {
-            Exercicios_Serie_DAO exercicios_Serie_DAO = new Exercicios_Serie_DAO();
-            Exercicios_Serie exercicios_Serie = new Exercicios_Serie();
+            try
+            {
+                Exercicios_Serie_DAO exercicios_Serie_DAO = new Exercicios_Serie_DAO();
+                Exercicios_Serie exercicios_Serie = new Exercicios_Serie();
 
-            exercicios_Serie.Id_Exercicios_Serie = Convert.ToInt32(Txt_Id_Exercicios_Serie.Text);
-            //PASSA O ID DA SERIE PARA CADASTRO DO EXERCICIO
-            exercicios_Serie.Id_Serie = serie.Id_Serie;
-            exercicios_Serie.Qtd_repeticoes = Convert.ToInt32(Txt_Quantidade_repeticoes.Text);
-            exercicios_Serie.Qtd_Vezes = Convert.ToInt32(Txt_Quantidade_Vezes.Text);
-            exercicios_Serie.Tempo_Minimo = txt_tempo_minimo.Text;
-            exercicios_Serie.Tempo_Maximo = txt_Tempo_Maximo.Text;
-            exercicios_Serie.Tempo_Execucao = txt_tempo_execucao.Text;
-            // await exercicios_Serie_DAO.Cadastrar_Exercicios_Serie(exercicios_Serie);
+                exercicios_Serie.Id_Exercicios_Serie = Convert.ToInt32(Txt_Id_Exercicios_Serie.Text);
+                //PASSA O ID DA SERIE PARA CADASTRO DO EXERCICIO
+                exercicios_Serie.Id_Serie = serie.Id_Serie;
+                exercicios_Serie.Qtd_repeticoes = Convert.ToInt32(Txt_Quantidade_repeticoes.Text);
+                exercicios_Serie.Qtd_Vezes = Convert.ToInt32(Txt_Quantidade_Vezes.Text);
+                exercicios_Serie.Peso = Convert.ToDouble(txt_Peso.Text);
+                await exercicios_Serie_DAO.Cadastrar_Exercicios_Serie(exercicios_Serie);
 
-            listaAuxiliar = listaInterna.Where(a => a.Id_exercicio == (exercicios_Serie.Id_Exercicios_Serie)).ToList();
-            listaExerciciosSerie.Add(listaAuxiliar[0]);
-            ListaExerciciosSeriesView.ItemsSource = listaExerciciosSerie;
-            ListaExerciciosSeriesView.IsRefreshing = true;
+                listaAuxiliar = listaInterna.Where(a => a.Id_exercicio == (exercicios_Serie.Id_Exercicios_Serie)).ToList();
+                listaExerciciosSerie.Add(listaAuxiliar[0]);
+                ListaExerciciosSeriesView.ItemsSource = listaExerciciosSerie;
+                ListaExerciciosSeriesView.IsRefreshing = true;
 
 
 
-            limpaCampos();
+                limpaCampos();
+            }
+            catch 
+            {
+
+            await    DisplayAlert("BOORA","Verefique os campos","OK");
+            }
+            
         }
        
         public void limpaCampos()
@@ -60,9 +67,6 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
             Txt_Id_Exercicios_Serie.Text = "";
             Txt_Quantidade_repeticoes.Text = "";
             Txt_Quantidade_Vezes.Text = "";
-            txt_tempo_minimo.Text = "";
-            txt_Tempo_Maximo.Text = "";
-            txt_tempo_execucao.Text = "";
             Txt_Quantidade_repeticoes.Text = "";
 
             

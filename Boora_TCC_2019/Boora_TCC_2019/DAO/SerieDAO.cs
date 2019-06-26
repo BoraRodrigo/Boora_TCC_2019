@@ -25,7 +25,8 @@ namespace Boora_TCC_2019.DAO
                     Nome_Serie = item.Object.Nome_Serie,
                     Data_Inicio = item.Object.Data_Inicio,
                     Data_Fim = item.Object.Data_Fim,
-                    Descricao_Serie = item.Object.Descricao_Serie
+                    Descricao_Serie = item.Object.Descricao_Serie,
+                    Tempo_Execucao=item.Object.Tempo_Execucao
                 }).ToList();
 
         }
@@ -43,7 +44,9 @@ namespace Boora_TCC_2019.DAO
                   Nome_Serie = serie.Nome_Serie,
                   Data_Inicio = serie.Data_Inicio,
                   Data_Fim = serie.Data_Fim,
-                  Descricao_Serie =serie.Descricao_Serie });
+                  Descricao_Serie =serie.Descricao_Serie,
+                  Tempo_Execucao = serie.Tempo_Execucao
+              });
         }
         public async Task<Serie> Busca_Serie_ID(int id_Serie)
         {

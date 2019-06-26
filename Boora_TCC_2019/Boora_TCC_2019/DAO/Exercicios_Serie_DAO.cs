@@ -26,9 +26,7 @@ namespace Boora_TCC_2019.DAO
                     Id_Serie = item.Object.Id_Serie,
                     Qtd_repeticoes = item.Object.Qtd_repeticoes,
                     Qtd_Vezes = item.Object.Qtd_Vezes,
-                    Tempo_Maximo = item.Object.Tempo_Maximo,
-                    Tempo_Minimo = item.Object.Tempo_Minimo,
-                    Tempo_Execucao = item.Object.Tempo_Execucao
+                    Peso=item.Object.Peso
                 }).ToList();
 
         }
@@ -44,9 +42,7 @@ namespace Boora_TCC_2019.DAO
                     Id_Serie = item.Object.Id_Serie,
                     Qtd_repeticoes = item.Object.Qtd_repeticoes,
                     Qtd_Vezes = item.Object.Qtd_Vezes,
-                    Tempo_Maximo = item.Object.Tempo_Maximo,
-                    Tempo_Minimo = item.Object.Tempo_Minimo,
-                    Tempo_Execucao = item.Object.Tempo_Execucao
+                     Peso = item.Object.Peso
                 }).ToList();
 
         }
@@ -86,9 +82,7 @@ namespace Boora_TCC_2019.DAO
                   Id_Serie = exercicios_Serie.Id_Serie,
                   Qtd_repeticoes = exercicios_Serie.Qtd_repeticoes,
                   Qtd_Vezes = exercicios_Serie.Qtd_Vezes,
-                  Tempo_Maximo = exercicios_Serie.Tempo_Maximo,
-                  Tempo_Minimo = exercicios_Serie.Tempo_Minimo,
-                  Tempo_Execucao = exercicios_Serie.Tempo_Execucao
+                  Peso = exercicios_Serie.Peso
               });
         }
     }

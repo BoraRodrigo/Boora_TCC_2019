@@ -46,6 +46,7 @@ namespace Boora_TCC_2019.TELAS
             serie.Id_Aluno = Convert.ToInt32(Txt_Id_Do_Aluno.Text);
             serie.Nome_Serie = Txt_nome_Serie.Text;
             serie.Descricao_Serie = Txt_Descricao_Serie.Text;
+            serie.Tempo_Execucao = txt_tempo_execucao.Text;
             serie.Data_Inicio = DateTime.Now.ToString("dd/MM/yyyy");
             if (dataFim != null)
             {
@@ -56,7 +57,7 @@ namespace Boora_TCC_2019.TELAS
                await DisplayAlert("Data não Selecionada", "Selecione data", "OK");
             }
            
-            //await serieDAO.Cadastrar_Serie(serie);
+            await serieDAO.Cadastrar_Serie(serie);
 
             await Navigation.PushAsync(new TELAS_CADASTRO.Cadastrar_Exercicio_Serie(aluno, serie));    
         }

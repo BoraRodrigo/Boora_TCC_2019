@@ -25,9 +25,7 @@
                             <Label Text="Fim - " FontSize="28" HorizontalOptions="Center"/>
                             <Label  Text="DATA VENCIMENTO SERIE" x:Name="lbl_DATAVENC" FontSize="28" HorizontalOptions="Center"/>
                         </StackLayout>
-                       
-                       
-                      
+
                         <Frame>
                             <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
                                 

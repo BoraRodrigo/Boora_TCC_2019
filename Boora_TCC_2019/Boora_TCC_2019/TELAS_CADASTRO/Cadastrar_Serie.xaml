@@ -30,6 +30,11 @@
 
                             <DatePicker  FontSize="18" HorizontalOptions="FillAndExpand" TextColor="Black" Format="dd/MM/yyyy" x:Name="Txt_Data_Fim" MinimumDate="01/01/2019" DateSelected="DataSelecionada"/>
                         </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" >
+                            <Label Text="Tempo de Execução Sugerido:"/>
+                            <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="Black" Placeholder="Tempo Execução" x:Name="txt_tempo_execucao"/>
+                        </StackLayout>
                     </StackLayout>
 
                     <Button Text="Cadastrar Série"  Clicked="Btn_Cadastrar_Serie" HorizontalOptions="Center" />
