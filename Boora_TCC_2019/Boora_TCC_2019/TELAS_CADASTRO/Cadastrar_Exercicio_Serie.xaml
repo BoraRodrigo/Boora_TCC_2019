@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Boora_TCC_2019.TELAS_CADASTRO.Cadastrar_Exercicio_Serie">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame>
+                    <StackLayout>
+                        <Label Margin="10" Text="CADASTRAR EXERCÍCIOS NA SÉRIE" HorizontalOptions="Center" Style="{StaticResource LblTitulo}"/>
+                        <StackLayout Orientation="Vertical">
+                            <StackLayout Orientation="Horizontal" >
+                                <Label HorizontalOptions="FillAndExpand" Text="Id. Exercício - " FontAttributes="Bold"/>
+                                <Label HorizontalOptions="FillAndExpand"  x:Name="Txt_Id_Exercicios_Serie"/>
+                                <Label HorizontalOptions="FillAndExpand" Text="Exercício - " FontAttributes="Bold"/>
+                                <Label HorizontalOptions="FillAndExpand" x:Name="Txt_nome_Exercicio"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" >
+                                <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="Black" Placeholder="Repetiçoes" x:Name="Txt_Quantidade_repeticoes" />
+                                <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="Black" Placeholder="Vezes" x:Name="Txt_Quantidade_Vezes"/>
+                                <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="Black" Placeholder="Tempo Execução" x:Name="txt_tempo_execucao"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Entry HorizontalOptions="FillAndExpand" PlaceholderColor="Black" Placeholder="Tempo maximo" x:Name="txt_Tempo_Maximo"/>
+                                <Entry HorizontalOptions="FillAndExpand" PlaceholderColor="Black" Placeholder="Tempo minimo" x:Name="txt_tempo_minimo"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <Button Text="Adicionar" Clicked="Btn_Cadastrar_Exercicios_Serie"  HorizontalOptions="Center" />
+                    </StackLayout>
+                </Frame>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Padding="0" Margin="15">
+                            <Label Text="Exercícios Cadastrados" Style="{StaticResource LblTitulo}"/>
+                            <Entry Placeholder="Pesquisar" x:Name="Pesquisar_Exercicios" TextChanged="BuscaRapida"/>
+
+                            <ListView x:Name="ListaExercicios" BackgroundColor="#ffc800"  ItemSelected="SelecaoExercicioAction">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate >
+                                        <TextCell Text="{Binding Nome}" TextColor="Black"  Detail="{Binding Objetivo}" DetailColor="Black" />
+                                    </DataTemplate >
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </StackLayout>
+                        <StackLayout Padding="0" Margin="15" VerticalOptions="StartAndExpand">
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="Exercícios na Série" Style="{StaticResource LblTitulo}"/>
+                                
+                            </StackLayout>
+                            
+                            <ListView x:Name="ListaExerciciosSeriesView"  BackgroundColor="#ffc800">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextCell Text="{Binding Nome}" TextColor="Black" />
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+
+        </ScrollView>
+            
+    </ContentPage.Content>
+</ContentPage>

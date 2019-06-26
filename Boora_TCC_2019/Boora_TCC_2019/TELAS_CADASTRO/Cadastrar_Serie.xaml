@@ -6,51 +6,35 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout BackgroundColor="#ffc800">
-            
+
                 <StackLayout Padding="0" Margin="15">
                     <Label Text="CADASTRAR SÉRIE" Style="{StaticResource LblTitulo}"/>
                     <StackLayout Orientation="Vertical">
                         <StackLayout Orientation="Horizontal" >
                             <Label Text="Identificação do Aluno: " FontAttributes="Bold"/>
                             <Label HorizontalOptions="FillAndExpand" x:Name="Txt_Id_Do_Aluno"/>
-                         </StackLayout>
+                        </StackLayout>
                         <StackLayout Orientation="Horizontal">
                             <Label Text="Nome da Série: "/>
                             <Entry Placeholder="Nome Série" PlaceholderColor="Black" x:Name="Txt_nome_Serie" HorizontalOptions="FillAndExpand"/>
                         </StackLayout>
-                        
+
                         <Entry Placeholder="Descrição" PlaceholderColor="Black" x:Name="Txt_Descricao_Serie"/>
                         <StackLayout Orientation="Horizontal" >
                             <Label FontSize="18" TextColor="Black" Text="Data Inicial:" HorizontalOptions="FillAndExpand"/>
-                            
+
                             <Label Text="Data Final:" FontSize="18" TextColor="Black" HorizontalOptions="FillAndExpand"/>
                         </StackLayout>
                         <StackLayout Orientation="Horizontal" >
                             <Label HorizontalOptions="FillAndExpand" x:Name="Lbl_data_Inicial" FontSize="18" TextColor="Black"/>
-                            
+
                             <DatePicker  FontSize="18" HorizontalOptions="FillAndExpand" TextColor="Black" Format="dd/MM/yyyy" x:Name="Txt_Data_Fim" MinimumDate="01/01/2019" DateSelected="DataSelecionada"/>
                         </StackLayout>
                     </StackLayout>
 
-                    <Button Text="Confirmar Série"  Clicked="Btn_Cadastrar_Serie" HorizontalOptions="Center" />
-                    <Label Margin="10" Text="CADASTRAR EXERCÍCIOS NA SÉRIE" HorizontalOptions="Center" Style="{StaticResource LblTitulo}"/>
-                    <StackLayout Orientation="Vertical">
-                        <StackLayout Orientation="Horizontal" >
-                            <Entry HorizontalOptions="FillAndExpand" PlaceholderColor="Black" Placeholder="Id Exercicios Serie" x:Name="Txt_Id_Exercicios_Serie"/>
-                          </StackLayout>
-                        <StackLayout Orientation="Horizontal" >
-                            <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="Black" Placeholder="Repetiçoes" x:Name="Txt_Quantidade_repeticoes" />
-                            <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="Black" Placeholder="Vezes" x:Name="Txt_Quantidade_Vezes"/>
-                            <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="Black" Placeholder="Tempo Execução" x:Name="txt_tempo_execucao"/>
-                        </StackLayout>
-                        <StackLayout Orientation="Horizontal">
-                            <Entry HorizontalOptions="FillAndExpand" PlaceholderColor="Black" Placeholder="Tempo maximo" x:Name="txt_Tempo_Maximo"/>
-                            <Entry HorizontalOptions="FillAndExpand" PlaceholderColor="Black" Placeholder="Tempo minimo" x:Name="txt_tempo_minimo"/>
-                        </StackLayout>
-                    </StackLayout>
+                    <Button Text="Cadastrar Série"  Clicked="Btn_Cadastrar_Serie" HorizontalOptions="Center" />
+
                 </StackLayout>
-                <Button Text="Adicionar" Clicked="Btn_Cadastrar_Exercicios_Serie"  HorizontalOptions="Center" />
-            
             </StackLayout>
 
         </ScrollView>
