@@ -162,10 +162,10 @@ namespace Boora_TCC_2019.TELAS_SERIE
             txtNomeALUNO.Text = alunoLogado.Nome.ToUpper() + "!";
             txtnomedaSerie.Text = seriealuno.Nome_Serie;
             txtNOMEEXERCICIO.Text = Convert.ToString(exercicio.Nome);
-            txtQTDVEZES.Text = Convert.ToString(todosexercicio.Qtd_Vezes);
-            txtREPETICOES.Text = Convert.ToString(todosexercicio.Qtd_repeticoes);
+            txtQTDVEZES.Text = Convert.ToString(exercicio.Exercicios_Serie.Qtd_Vezes);
+            txtREPETICOES.Text = Convert.ToString(exercicio.Exercicios_Serie.Qtd_repeticoes);
             txtOBJTIVOEXERCICIO.Text = exercicio.Objetivo;
-            txt_Peso.Text = todosexercicio.Peso.ToString();
+            txt_Peso.Text = exercicio.Exercicios_Serie.Peso.ToString();
             if(Device.RuntimePlatform == Device.UWP)
             {
                 imgbaixadaW.Source = await exercicioDAO.Buscar_IMAGEM(Convert.ToString(exe.Id_exercicio));

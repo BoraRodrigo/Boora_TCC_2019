@@ -51,15 +51,31 @@ namespace Boora_TCC_2019.TELAS
             if (dataFim != null)
             {
                 serie.Data_Fim = dataFim;
+                //await serieDAO.Cadastrar_Serie(serie);
+                await Navigation.PushAsync(new TELAS_CADASTRO.Cadastrar_Exercicio_Serie(aluno, serie));
             }
             else
             {
-               await DisplayAlert("Data não Selecionada", "Selecione data", "OK");
+                int i = 5;
+                bool aux = true;
+                dataFinalIsVisible.IsVisible = true;
+                Device.StartTimer(TimeSpan.FromSeconds(1), () =>
+                {
+
+                    i--;
+                    if (i < 0)
+                    {
+                        dataFinalIsVisible.IsVisible = false;
+                        aux = false;
+                    }
+                    return aux;
+                });
+                
             }
            
-            await serieDAO.Cadastrar_Serie(serie);
+            
 
-            await Navigation.PushAsync(new TELAS_CADASTRO.Cadastrar_Exercicio_Serie(aluno, serie));    
+               
         }
         //private async void Btn_Cadastrar_Exercicios_Serie(object sender, EventArgs e)
         //{

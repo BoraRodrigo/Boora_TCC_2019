@@ -69,6 +69,8 @@ namespace Boora_TCC_2019.TELAS_SERIE
                 }
             }
 
+            await Navigation.PushAsync(new Inicial());
+
             if (Verefica_Dia==false)
             {
 

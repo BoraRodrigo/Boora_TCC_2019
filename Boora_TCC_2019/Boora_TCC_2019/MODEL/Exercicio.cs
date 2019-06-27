@@ -12,5 +12,6 @@ namespace Boora_TCC_2019.MODEL
         public string Descricao { get; set; }
         public string Objetivo { get; set; }
         public string Imagem_Gif { get; set; }
+        public Exercicios_Serie Exercicios_Serie { get; set; }
     }
 }

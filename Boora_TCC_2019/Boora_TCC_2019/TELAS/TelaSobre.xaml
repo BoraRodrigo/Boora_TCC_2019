@@ -3,24 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Boora_TCC_2019.TELAS.TelaSobre">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#ffc800" Orientation="Vertical" Padding="10">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <ImageButton Source="FaceSobre.png" Clicked="GoFace"/>
-                <ImageButton Source="WhatsLogo" Clicked="GoWhats"/>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-            <ImageButton Source="InstaSobre.png" Clicked="GoInsta"/>
-                <ImageButton Source="TwitterSobrepng.png" Clicked="GoTwitter"/>
-            </StackLayout>
-
-            <Label Text="Mais Detalhes" TextColor="Black" x:Name="Lbl_MaisDetalhes" >
+        <StackLayout BackgroundColor="#ffc800" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="10">
+            
+            <Label Text="Mais Detalhes" TextColor="Black" x:Name="Lbl_MaisDetalhes" HorizontalTextAlignment="Center">
                 <Label.GestureRecognizers>
                     
                     <TapGestureRecognizer  Tapped="MaisDetalhesAction" />
 
                 </Label.GestureRecognizers>
             </Label>
-            
+            <Label x:Name="Lbl_MaisDetalhes2" TextColor="Black" HorizontalTextAlignment="Center" IsVisible="False"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

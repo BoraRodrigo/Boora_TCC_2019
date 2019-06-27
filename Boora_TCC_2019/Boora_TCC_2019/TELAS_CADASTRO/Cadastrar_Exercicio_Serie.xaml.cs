@@ -43,7 +43,7 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
                 exercicios_Serie.Qtd_repeticoes = Convert.ToInt32(Txt_Quantidade_repeticoes.Text);
                 exercicios_Serie.Qtd_Vezes = Convert.ToInt32(Txt_Quantidade_Vezes.Text);
                 exercicios_Serie.Peso = Convert.ToDouble(txt_Peso.Text);
-                await exercicios_Serie_DAO.Cadastrar_Exercicios_Serie(exercicios_Serie);
+                //await exercicios_Serie_DAO.Cadastrar_Exercicios_Serie(exercicios_Serie);
 
                 listaAuxiliar = listaInterna.Where(a => a.Id_exercicio == (exercicios_Serie.Id_Exercicios_Serie)).ToList();
                 listaExerciciosSerie.Add(listaAuxiliar[0]);

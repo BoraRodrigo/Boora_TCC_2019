@@ -41,13 +41,14 @@ namespace Boora_TCC_2019.TELAS_SERIE
         }
         private async void Proxima_SerieAsync(object sender, EventArgs e)
         {
-           // VerificarLimite.IsVisible = false; //temporario
+          
             serie_da_lista = serie_da_lista + 1;
             try
             {
                 SlCarregandoLogin.IsVisible = true;
-                Verificar();
+               
                 await Dados_Da_serie();
+
                 SlCarregandoLogin.IsVisible = false;
                 
             }
@@ -57,13 +58,14 @@ namespace Boora_TCC_2019.TELAS_SERIE
         }
         private async void Anterior_SerieAsync(object sender, EventArgs e)
         {
-           // VerificarLimite.IsVisible = false; //temporario
+           
             serie_da_lista = serie_da_lista - 1;
             try
             {
                 SlCarregandoLogin.IsVisible = true;
-                Verificar();
+                
                 await Dados_Da_serie();
+
                 SlCarregandoLogin.IsVisible = false;
             }
             catch
@@ -72,7 +74,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
         }
         private async void IniciarSerie(object sender, EventArgs args)
         {
-           // VerificarLimite.IsVisible = false; //temporario
+          
             listaExercicio.Clear();//limpar a lista antes de carregar outra senão duplica
             lista.Clear();
             listaExercicio = await exercicios_Serie_DAO.Busca_Exercicios_Serie_DA_SERIE(idSerie);
@@ -80,6 +82,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
             for (int i = 0; i < listaExercicio.Count; i++)
             {
                 Exercicio exercicio = await exercicioDAO.Busca_Exercicio_ID(listaExercicio[i].Id_Exercicios_Serie);
+                exercicio.Exercicios_Serie = listaExercicio[i];
                 exercicio.Imagem_Gif = "fail.png";
                 lista.Add(exercicio);
 
@@ -104,7 +107,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
             lbl_DATAVENC.Text = lista_Serie[0].Data_Fim;
             if (serie_da_lista <= 0)
             {
-                int i = 5;
+                int i = 8;
                 bool aux = true;
                 VerificarLimite.IsVisible = true;
                 VerificarLimite.Text = "Está é sua primeira";
@@ -125,7 +128,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
             }
             if (serie_da_lista > lista_Serie.Count - 1)
             {
-                int i = 5;
+                int i = 8;
                 bool aux = true;
                 VerificarLimite.IsVisible = true;
                 VerificarLimite.Text = "Está é sua ultima";
@@ -143,7 +146,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
 
 
             }
-            if (serie_da_lista <= lista_Serie.Count - 1)
+            if (serie_da_lista <= lista_Serie.Count - 1 && serie_da_lista >= 0)
             {
                 lblQuantidade_De_Series.Text = "Série " + (serie_da_lista + 1).ToString() + " de " + lista_Serie.Count().ToString();
                 var serieEXibida = await serieDAO.Busca_Serie_ID(lista_Serie[serie_da_lista].Id_Serie);
@@ -158,10 +161,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
             }
         }
 
-        private void Verificar()
-        {
-           
-        }
+       
 
 
     }

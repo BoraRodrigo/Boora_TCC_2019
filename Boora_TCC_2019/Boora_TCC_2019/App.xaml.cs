@@ -19,7 +19,7 @@ namespace Boora_TCC_2019
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MTEzNDM5QDMxMzcyZTMxMmUzMEFxUTdKRUFOdk9ueEljR1dRM1B1dk5LaWpZTTE2bHd1ZG56WnJxQkY0Qk" +
                                                                             "k9;MTEzNDQwQDMxMzcyZTMxMmUzMEtjem5Rem4rb3pXMVpiSTFxcjFZUUxPMk9uQzBHTGZ1R2FWbkczOTR1R0U9");
             InitializeComponent();
-           
+            
             MainPage = new Login();
         }
 

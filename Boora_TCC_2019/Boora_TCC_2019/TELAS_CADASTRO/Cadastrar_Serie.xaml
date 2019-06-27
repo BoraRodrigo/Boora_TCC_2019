@@ -32,11 +32,11 @@
                         </StackLayout>
 
                         <StackLayout Orientation="Horizontal" >
-                            <Label Text="Tempo de Execução Sugerido:"/>
                             <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="Black" Placeholder="Tempo Execução" x:Name="txt_tempo_execucao"/>
                         </StackLayout>
                     </StackLayout>
 
+                    <Label Text="Data final não selecionada" x:Name="dataFinalIsVisible"   IsVisible="False" Style="{StaticResource LblAvisos}"/>
                     <Button Text="Cadastrar Série"  Clicked="Btn_Cadastrar_Serie" HorizontalOptions="Center" />
 
                 </StackLayout>

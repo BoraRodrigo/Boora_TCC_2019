@@ -18,36 +18,13 @@ namespace Boora_TCC_2019.TELAS
 			InitializeComponent ();
 		}
 
-        public void GoFace(object sender, EventArgs args)
-        {
-            Device.OpenUri(new Uri("https://www.facebook.com/angelosfitness/"));
-        }
-
-        public void GoWhats(object sender, EventArgs args)
-        {
-            try
-            {
-                Chat.Open("+5541996114270", "Fala parça!");
-            }
-            catch (Exception ex)
-            {
-                DisplayAlert("Erro", ex.Message, "OK");
-            }
-        }
-
-        public void GoInsta(object sender, EventArgs args)
-        {
-            Device.OpenUri(new Uri("https://www.instagram.com/angelos_fitness_academia/"));
-        }
-
-        public void GoTwitter(object sender, EventArgs args)
-        {
-            DisplayAlert("Alert", "Nao tem Twitter", "Ok");
-        }
+        
 
         public void MaisDetalhesAction(object sender, EventArgs args)
         {
             Lbl_MaisDetalhes.Text = "Software Versão 1.0 - Deselvolvido por Augusto de Lima, Rodrigo Bora";
+            Lbl_MaisDetalhes2.Text = "Contato - agtaugusto92@hotmail.com";
+            Lbl_MaisDetalhes2.IsVisible = true;
         }
 
     }

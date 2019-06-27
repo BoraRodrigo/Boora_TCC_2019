@@ -11,7 +11,18 @@
                     <Image Source="AngelosFitness.png" />
                 </StackLayout>
             </StackLayout>
-
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="End" Style="{StaticResource SLInicio}">
+                <StackLayout Padding="5" Orientation="Vertical" Style="{StaticResource SLInicio}" HorizontalOptions="Start" >
+                    <ImageButton Source="InstaAmarelo.png" WidthRequest="65" HeightRequest="65" Clicked="GoInsta"/>
+                    <Label Text="Siga-nos" TextColor="#ffc800" FontSize="16" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+                <StackLayout Padding="5" Orientation="Vertical" Style="{StaticResource SLInicio}" HorizontalOptions="End" >
+                    <ImageButton Source="WhatsYellow.png" WidthRequest="65" HeightRequest="65" Clicked="GoWhats"/>
+                    <Label Text="Contato" TextColor="#ffc800" FontSize="16" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </StackLayout>
+            
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

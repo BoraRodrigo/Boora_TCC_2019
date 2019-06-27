@@ -50,7 +50,7 @@
                                 <!--troquei os displays alerts por essa label-->
                                 
                             </StackLayout>
-                            <Label x:Name="VerificarLimite" HorizontalTextAlignment="Center" Text="" TextColor="#ffc800" IsVisible="False" BackgroundColor="Black" HorizontalOptions="FillAndExpand"/>
+                            <Label x:Name="VerificarLimite" IsVisible="False" Style="{StaticResource LblAvisos}"/>
                         </StackLayout>
                         
                     </StackLayout>

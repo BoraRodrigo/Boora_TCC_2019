@@ -108,6 +108,7 @@
     <Content Include="Check.png" />
     <Content Include="FaceSobre.png" />
     <Content Include="fail.png" />
+    <Content Include="InstaAmarelo.png" />
     <Content Include="InstaSobre.jpg" />
     <Content Include="like.png" />
     <Content Include="LogoF.png" />
@@ -143,6 +144,7 @@
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
     <Content Include="TwitterSobrepng.png" />
     <Content Include="WhatsLogo.jpg" />
+    <Content Include="WhatsYellow.png" />
     <None Include="logo_Boora.png" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>

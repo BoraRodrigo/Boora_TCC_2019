@@ -29,6 +29,12 @@
             <Style TargetType="StackLayout" x:Key="SLInicio">
                 <Setter Property="BackgroundColor"  Value="Black"/>
             </Style>
+            <Style TargetType="Label" x:Key="LblAvisos">
+                <Setter Property="TextColor" Value="#ffc800"/>
+                <Setter Property="BackgroundColor" Value="Black"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
             <Style TargetType="Label" x:Key="LblInicio">
                 <Setter Property="TextColor" Value="#ffc800"/>
                 <Setter Property="VerticalOptions" Value="CenterAndExpand"/>

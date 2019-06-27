@@ -211,4 +211,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\fail.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\InstaAmarelo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\WhatsYellow.png" />
+  </ItemGroup>
 </Project>
