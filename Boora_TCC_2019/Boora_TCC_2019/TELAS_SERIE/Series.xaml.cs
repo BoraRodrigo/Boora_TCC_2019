@@ -122,7 +122,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
                     }
                     return aux;
                 });
-
+                serie_da_lista = 0;
 
 
             }
@@ -144,6 +144,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
                     return aux;
                 });
 
+                serie_da_lista = (lista_Serie.Count - 1);
 
             }
             if (serie_da_lista <= lista_Serie.Count - 1 && serie_da_lista >= 0)

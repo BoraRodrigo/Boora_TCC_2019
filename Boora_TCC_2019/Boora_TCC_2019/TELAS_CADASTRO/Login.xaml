@@ -23,7 +23,7 @@
                     </Label> 
                     <ffimageloading:CachedImage Source="angelosfitness.png" />
                 </StackLayout>
-                <Label x:Name="EsqueceuSenhaLbl" HorizontalTextAlignment="Center" Text="em desenvolvimento" IsVisible="False" BackgroundColor="#ffc800" HorizontalOptions="FillAndExpand"/>
+                <Label x:Name="EsqueceuSenhaLbl" HorizontalTextAlignment="Center"  IsVisible="False" BackgroundColor="#ffc800" HorizontalOptions="FillAndExpand"/>
             </StackLayout>
             <!--Carregando...-->
             <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="Black" x:Name="SlCarregandoLogin" IsVisible="False">

@@ -50,16 +50,45 @@ namespace Boora_TCC_2019.TELAS
             }
             catch 
             {
+                int i = 4;
+                bool aux = true;
+                EsqueceuSenhaLbl.Text = "Verifique seu login";
+                EsqueceuSenhaLbl.IsVisible = true;
+                Device.StartTimer(TimeSpan.FromSeconds(1), () =>
+                {
+
+                    i--;
+                    if (i < 0)
+                    {
+                        EsqueceuSenhaLbl.IsVisible = false;
+                        aux = false;
+                    }
+                    return aux;
+                });
                 
-                await DisplayAlert("BOORA", "Verefique seu Login", "OK");
 
             } 
            
         }
-        public async void EsqueceuSenha(object sender, EventArgs args)
+        public void EsqueceuSenha(object sender, EventArgs args)
         {
             // TODO - Desenvolver metodo da esqueceu a senha
+            int i = 4;
+            bool aux = true;
+            EsqueceuSenhaLbl.Text = "Em desenvolvimento";
             EsqueceuSenhaLbl.IsVisible = true;
+            Device.StartTimer(TimeSpan.FromSeconds(1), () =>
+            {
+
+                i--;
+                if (i < 0)
+                {
+                    EsqueceuSenhaLbl.IsVisible = false;
+                    aux = false;
+                }
+                return aux;
+            });
+            
         }
     }
 }

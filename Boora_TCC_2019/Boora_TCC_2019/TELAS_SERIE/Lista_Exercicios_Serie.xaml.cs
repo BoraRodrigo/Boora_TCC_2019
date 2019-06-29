@@ -8,6 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Boora_TCC_2019.DAO;
 using Boora_TCC_2019.TELAS;
+using System.Collections.ObjectModel;
 
 namespace Boora_TCC_2019.TELAS_SERIE
 {
@@ -23,9 +24,11 @@ namespace Boora_TCC_2019.TELAS_SERIE
             InitializeComponent();
             IdSerie = id;
             Exerciciolista = lista;
+            
             BuscaNome();
-            Titulo_Serie.Text = NomeSerie;
+           
             ListaExerciciosSerie.ItemsSource = Exerciciolista;
+            
 
         }
         private async void BuscaNome()
@@ -36,6 +39,10 @@ namespace Boora_TCC_2019.TELAS_SERIE
 
             NomeSerie = seriealuno.Nome_Serie;
 
+            Titulo_Serie.Text = NomeSerie;
+
+            Confere_Dia();
+
         }
 
         private async void ListaExerciciosSerie_ItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -44,6 +51,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
 
             Exerciciolista[Exerciciolista.IndexOf(exercicio)].Imagem_Gif = "Check.png";
 
+                        
             await Navigation.PushAsync(new TELAS_SERIE.Lista_Exercicios_Serie(Exerciciolista, IdSerie));
 
             await ((NavigationPage)App.Current.MainPage).Navigation.PushAsync(new TELAS_SERIE.Execucao_Serie(exercicio, IdSerie));
@@ -61,16 +69,22 @@ namespace Boora_TCC_2019.TELAS_SERIE
             bool Verefica_Dia = false;
             for (int i = 0; i < lista_controle_dia.Count; i++)
             {
-                if (lista_controle_dia[i].Data_Presenca.Equals(DateTime.Now.ToString("dd/MM/yyyy"))&&lista_controle_dia[i].Nome_serie.Equals(NomeSerie))
+                try
                 {
-                    await DisplayAlert("BOORA", "Você já realizou essa Serie HOJE Parça", "OK");
+                    if (lista_controle_dia[i].Data_Presenca.Equals(DateTime.Now.ToString("dd/MM/yyyy")) && lista_controle_dia[i].Nome_serie.Equals(NomeSerie))
+                    {
 
-                    Verefica_Dia = true;
+                        LblAvisoSerieRealizado.Text = ("Já avia realizado esta série hoje - " + (DateTime.Now.ToString("dd/MM/yyyy")));
+                        LblAvisoSerieRealizado.BackgroundColor = Color.Black;
+                        LblAvisoSerieRealizado.IsVisible = true;
+
+                        Verefica_Dia = true;
+                    }
                 }
+                catch { }
             }
 
-            await Navigation.PushAsync(new Inicial());
-
+          
             if (Verefica_Dia==false)
             {
 
@@ -81,6 +95,33 @@ namespace Boora_TCC_2019.TELAS_SERIE
                 await controle_Dia_DAO.Cadastrar_Dia(controle_Dia);
 
             }  //passar aqui o nome da serie que vai salvar e o id do aluno tó fazendo isso de modo direto pra ganhar tempo
+        }
+
+        private async void Confere_Dia()
+        {
+            Controle_Dia_DAO controle_Dia_DAO = new Controle_Dia_DAO();
+            List<Controle_Dia> lista_controle_dia = new List<Controle_Dia>();
+            lista_controle_dia = await controle_Dia_DAO.Busca_Todas__Dias_Do_Aluno(Login.Id_Aluno_Login);
+            for (int i = 0; i < lista_controle_dia.Count; i++)
+            {
+                try
+                {
+                    if (lista_controle_dia[i].Data_Presenca.Equals(DateTime.Now.ToString("dd/MM/yyyy")) && lista_controle_dia[i].Nome_serie.Equals(NomeSerie))
+                    {
+
+                        LblAvisoSerieRealizado.Text = ("Série ja realizada hoje - " + (DateTime.Now.ToString("dd/MM/yyyy")));
+                        LblAvisoSerieRealizado.BackgroundColor = Color.Red;
+                        LblAvisoSerieRealizado.IsVisible = true;
+
+
+                    }
+                }
+                catch 
+                {
+
+                }
+                
+            }
         }
     }
 }

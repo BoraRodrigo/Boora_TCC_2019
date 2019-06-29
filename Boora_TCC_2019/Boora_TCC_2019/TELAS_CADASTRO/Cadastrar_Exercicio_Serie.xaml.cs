@@ -68,6 +68,8 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
             Txt_Quantidade_repeticoes.Text = "";
             Txt_Quantidade_Vezes.Text = "";
             Txt_Quantidade_repeticoes.Text = "";
+            Txt_nome_Exercicio.Text = "";
+            txt_Peso.Text = "";
 
             
             
@@ -78,7 +80,7 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
             base.OnAppearing();
            
             listaInterna = await exercicioDAO.Busca_Exercicio();
-
+            
             for (int i = 0; i < listaInterna.Count; i++)
             {
                 string path = await exercicioDAO.Buscar_IMAGEM(listaInterna[i].Imagem_Gif);
