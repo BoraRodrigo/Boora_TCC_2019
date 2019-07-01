@@ -51,7 +51,7 @@ namespace Boora_TCC_2019.TELAS
             if (dataFim != null)
             {
                 serie.Data_Fim = dataFim;
-                //await serieDAO.Cadastrar_Serie(serie);
+                await serieDAO.Cadastrar_Serie(serie);
                 await Navigation.PushAsync(new TELAS_CADASTRO.Cadastrar_Exercicio_Serie(aluno, serie));
             }
             else

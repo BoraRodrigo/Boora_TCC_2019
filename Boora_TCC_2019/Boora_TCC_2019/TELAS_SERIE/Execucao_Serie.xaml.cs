@@ -59,7 +59,10 @@ namespace Boora_TCC_2019.TELAS_SERIE
 
             
             
-            RepeticoesRealizadas.Text = (i + " Repetições Realizadas");
+            RepeticoesRealizadas.Text = (i +"/" + txtREPETICOES.Text + " Repetições Realizadas");
+
+         
+          
             
 
             

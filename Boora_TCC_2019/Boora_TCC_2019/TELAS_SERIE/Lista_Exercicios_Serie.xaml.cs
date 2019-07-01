@@ -74,7 +74,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
                     if (lista_controle_dia[i].Data_Presenca.Equals(DateTime.Now.ToString("dd/MM/yyyy")) && lista_controle_dia[i].Nome_serie.Equals(NomeSerie))
                     {
 
-                        LblAvisoSerieRealizado.Text = ("Já avia realizado esta série hoje - " + (DateTime.Now.ToString("dd/MM/yyyy")));
+                        LblAvisoSerieRealizado.Text = ("Já realizou esta série hoje - " + (DateTime.Now.ToString("dd/MM/yyyy")));
                         LblAvisoSerieRealizado.BackgroundColor = Color.Black;
                         LblAvisoSerieRealizado.IsVisible = true;
 

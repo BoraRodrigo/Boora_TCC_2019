@@ -30,6 +30,7 @@ namespace Boora_TCC_2019.TELAS
 
 
             ListaAlunos.ItemsSource = listaInterna;
+            
 
             SlCarregandoLista.IsVisible = false;
 

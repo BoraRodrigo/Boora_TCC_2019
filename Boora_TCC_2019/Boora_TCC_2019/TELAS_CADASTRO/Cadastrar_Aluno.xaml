@@ -16,7 +16,7 @@
                     <Entry Placeholder="Altura" PlaceholderColor="Black" x:Name="txt_ALTURA"/>
                     <Entry Placeholder="Idade" PlaceholderColor="Black" x:Name="txt_IDADE"/>
                     <Entry Placeholder="Objetivo" PlaceholderColor="Black" x:Name="txt_OBJETIVO"/>
-                    <Entry Placeholder="Sitiação" PlaceholderColor="Black" x:Name="txt_SITUACAO"/>
+                    <Entry Placeholder="Situação" PlaceholderColor="Black" x:Name="txt_SITUACAO"/>
                 
                  <StackLayout>     
                     <Button Text="Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center" />

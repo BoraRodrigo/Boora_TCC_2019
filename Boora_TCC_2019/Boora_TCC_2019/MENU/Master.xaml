@@ -10,17 +10,17 @@
         <ScrollView>
         <StackLayout BackgroundColor="Black">
             <!--Adiona novo botao, e no Master C# faz o funçao do evento clicked, esse tipo de menu so funciona em masterdateilpage-->
-                    <Button Text="Inicial" Clicked="GoInicial" />
-                    <Button Text="Alunos" Clicked="GoListaAlunos" />
-                    <Button Text="Cadastro Aluno" Clicked="GoCadastroAluno" />
-                    <Button Text="Cadastro Exercicio" Clicked="GoCadastroExercicio"/>
-                    <Button Text="Cadastro Instrutor" Clicked="GoCadastroInstrutor"/>
+                    <Button Text="Inicial" Clicked="GoInicial" BorderWidth="4" BorderRadius="6"/>
+                    <Button Text="Alunos" Clicked="GoListaAlunos" BorderWidth="4" BorderRadius="6"/>
+                    <Button Text="Cadastro Aluno" Clicked="GoCadastroAluno" BorderWidth="4" BorderRadius="6"/>
+                    <Button Text="Cadastro Exercício" Clicked="GoCadastroExercicio" BorderWidth="4" BorderRadius="6"/>
+                    <Button Text="Cadastro Instrutor" Clicked="GoCadastroInstrutor" BorderWidth="4" BorderRadius="6"/>
                     <!-- <Button Text="Cadastro Serie" Clicked="GoCadastroSerie"/>-->
-                    <Button Text="Lista Exercicio" Clicked="GoListExercicios"/>
-                    <Button Text="Minhas Series" Clicked="GoEMinhasSeries"/>
-                    <Button Text="Meu Calendario" Clicked="GoEMeuClendario"/>
-                    <Button Text="Sobre" Clicked="Send"/>
-                    <Button Text="SAIR" Clicked="GoSAIR" BackgroundColor="Red"/>
+                    <Button Text="Lista Exercício" Clicked="GoListExercicios" BorderWidth="4" BorderRadius="6"/>
+                    <Button Text="Minhas Séries" Clicked="GoEMinhasSeries" BorderWidth="4" BorderRadius="6"/>
+                    <Button Text="Meu Calendário" Clicked="GoEMeuClendario" BorderWidth="4" BorderRadius="6"/>
+                    <Button Text="Sobre" Clicked="Send"  BorderColor="Orange" BorderWidth="4" BorderRadius="6"/>
+                    <Button Text="SAIR" Clicked="GoSAIR" BackgroundColor="Red" BorderColor="Red" BorderWidth="4" BorderRadius="6"/>
 
                 </StackLayout>
         </ScrollView>
