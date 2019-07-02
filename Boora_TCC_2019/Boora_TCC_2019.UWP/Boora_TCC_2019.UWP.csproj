@@ -143,6 +143,7 @@
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
     <Content Include="TwitterSobrepng.png" />
+    <Content Include="user.png" />
     <Content Include="WhatsLogo.jpg" />
     <Content Include="WhatsYellow.png" />
     <None Include="logo_Boora.png" />

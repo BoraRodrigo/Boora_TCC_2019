@@ -29,10 +29,21 @@ namespace Boora_TCC_2019.TELAS
             listaInterna = await alunoDAO.Busca_Aluno();
 
 
-            ListaAlunos.ItemsSource = listaInterna;
-            
+            //ListaAlunos.ItemsSource = listaInterna;
+            ListaExerciciosSerie.ItemsSource = listaInterna;
+
+            for (int i = 0; i < listaInterna.Count; i++)
+            {
+                listaInterna[i].objetivo_Aluno = "user.png";
+            }
+           
+
+            ListaExerciciosSerie.ItemsSource = listaInterna;
+
 
             SlCarregandoLista.IsVisible = false;
+
+          
 
         }
 
@@ -41,9 +52,12 @@ namespace Boora_TCC_2019.TELAS
             listaInterna = await alunoDAO.Busca_Aluno();
             
                 listaPesquisa = listaInterna.Where(a => a.Nome.Contains(args.NewTextValue)).ToList();
+            for (int i = 0; i < listaPesquisa.Count; i++)
+            {
+                listaPesquisa[i].objetivo_Aluno = "user.png";
+            }
 
-
-                ListaAlunos.ItemsSource = listaPesquisa;
+            ListaExerciciosSerie.ItemsSource = listaPesquisa;
 
         }
 

@@ -28,6 +28,7 @@
 
                         </StackLayout>
                         <Button Text="Adicionar" Clicked="Btn_Cadastrar_Exercicios_Serie"  HorizontalOptions="Center" />
+                        <Button Text="Finalizar" HorizontalOptions="Center" />
                     </StackLayout>
                 </Frame>
                 <StackLayout>
@@ -57,7 +58,11 @@
                                     </DataTemplate>
                                 </ListView.ItemTemplate>
                             </ListView>
-                        </StackLayout>
+                       
+                      
+                   
+
+                </StackLayout>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>

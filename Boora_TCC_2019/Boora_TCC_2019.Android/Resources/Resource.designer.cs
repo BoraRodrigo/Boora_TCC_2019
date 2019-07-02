@@ -4418,26 +4418,26 @@ namespace Boora_TCC_2019.Droid
 			// aapt resource value: 0x7f020056
 			public const int avd_hide_password = 2130837590;
 			
-			// aapt resource value: 0x7f020141
-			public const int avd_hide_password_1 = 2130837825;
-			
 			// aapt resource value: 0x7f020142
-			public const int avd_hide_password_2 = 2130837826;
+			public const int avd_hide_password_1 = 2130837826;
 			
 			// aapt resource value: 0x7f020143
-			public const int avd_hide_password_3 = 2130837827;
+			public const int avd_hide_password_2 = 2130837827;
+			
+			// aapt resource value: 0x7f020144
+			public const int avd_hide_password_3 = 2130837828;
 			
 			// aapt resource value: 0x7f020057
 			public const int avd_show_password = 2130837591;
 			
-			// aapt resource value: 0x7f020144
-			public const int avd_show_password_1 = 2130837828;
-			
 			// aapt resource value: 0x7f020145
-			public const int avd_show_password_2 = 2130837829;
+			public const int avd_show_password_1 = 2130837829;
 			
 			// aapt resource value: 0x7f020146
-			public const int avd_show_password_3 = 2130837830;
+			public const int avd_show_password_2 = 2130837830;
+			
+			// aapt resource value: 0x7f020147
+			public const int avd_show_password_3 = 2130837831;
 			
 			// aapt resource value: 0x7f020058
 			public const int Check = 2130837592;
@@ -5105,11 +5105,11 @@ namespace Boora_TCC_2019.Droid
 			// aapt resource value: 0x7f020135
 			public const int notification_icon_background = 2130837813;
 			
-			// aapt resource value: 0x7f02013f
-			public const int notification_template_icon_bg = 2130837823;
-			
 			// aapt resource value: 0x7f020140
-			public const int notification_template_icon_low_bg = 2130837824;
+			public const int notification_template_icon_bg = 2130837824;
+			
+			// aapt resource value: 0x7f020141
+			public const int notification_template_icon_low_bg = 2130837825;
 			
 			// aapt resource value: 0x7f020136
 			public const int notification_tile_bg = 2130837814;
@@ -5133,10 +5133,13 @@ namespace Boora_TCC_2019.Droid
 			public const int TwitterSobrepng = 2130837820;
 			
 			// aapt resource value: 0x7f02013d
-			public const int WhatsLogo = 2130837821;
+			public const int user = 2130837821;
 			
 			// aapt resource value: 0x7f02013e
-			public const int WhatsYellow = 2130837822;
+			public const int WhatsLogo = 2130837822;
+			
+			// aapt resource value: 0x7f02013f
+			public const int WhatsYellow = 2130837823;
 			
 			static Drawable()
 			{
