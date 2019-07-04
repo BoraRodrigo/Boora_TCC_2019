@@ -7,6 +7,7 @@
 
             <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Style="{StaticResource SLInicio}" >
                 <Label Text="Bem Vindo!" Style="{StaticResource LblInicio}"/>
+                <Label x:Name="lbl_nome_academia" Text="" Style="{StaticResource LblInicio}"/>
                 <StackLayout Padding="20" VerticalOptions="FillAndExpand" Style="{StaticResource SLInicio}">
                     <Image Source="AngelosFitness.png" />
                 </StackLayout>

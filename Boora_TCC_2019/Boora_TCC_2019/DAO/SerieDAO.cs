@@ -1,4 +1,5 @@
 ﻿using Boora_TCC_2019.MODEL;
+using Boora_TCC_2019.TELAS;
 using Firebase.Database;
 using Firebase.Database.Query;
 using System;
@@ -13,10 +14,14 @@ namespace Boora_TCC_2019.DAO
     {
         FirebaseClient firebase = new FirebaseClient("https://tcc-2019-53a08.firebaseio.com/");
 
+        public  static string id_serieKEY;
+
         public async Task<List<Serie>> Busca_Serie()
         {
 
             return (await firebase
+                .Child("Academias")
+                .Child(Login.Nome_Academia_login)
                 .Child("Serie")
                 .OnceAsync<Serie>()).Select(item => new Serie
                 {
@@ -33,12 +38,13 @@ namespace Boora_TCC_2019.DAO
 
         public async Task Cadastrar_Serie(Serie serie)
         {
-            //Gambiarra para increment de id
-            List<Serie> listaSerie = await Busca_Serie();
+          
 
-            await firebase
-              .Child("Serie")
-              .PostAsync(new Serie() { Id_Serie = listaSerie.Count() + 1,
+         var cadastro_serie=   await firebase
+             .Child("Academias")
+                .Child(Login.Nome_Academia_login)
+                .Child("Serie")
+              .PostAsync(new Serie() { Id_Serie = serie.Id_Serie,
                   
                   Id_Aluno = serie.Id_Aluno,
                   Nome_Serie = serie.Nome_Serie,
@@ -47,12 +53,38 @@ namespace Boora_TCC_2019.DAO
                   Descricao_Serie =serie.Descricao_Serie,
                   Tempo_Execucao = serie.Tempo_Execucao
               });
+             id_serieKEY = cadastro_serie.Key;
+
+            var alterar_serieID = (await firebase
+            .Child("Academias")
+                .Child(Login.Nome_Academia_login)
+                .Child("Serie")
+            .OnceAsync<Serie>()).Where(a => a.Object.Id_Serie == id_serieKEY).FirstOrDefault();
+
+            await firebase
+           .Child("Academias")
+                .Child(Login.Nome_Academia_login)
+                .Child("Serie")
+            .Child(id_serieKEY)
+            .PutAsync(new Serie()
+            {
+                Id_Serie = id_serieKEY,
+
+                Id_Aluno = serie.Id_Aluno,
+                Nome_Serie = serie.Nome_Serie,
+                Data_Inicio = serie.Data_Inicio,
+                Data_Fim = serie.Data_Fim,
+                Descricao_Serie = serie.Descricao_Serie,
+                Tempo_Execucao = serie.Tempo_Execucao
+            });
         }
-        public async Task<Serie> Busca_Serie_ID(int id_Serie)
+        public async Task<Serie> Busca_Serie_ID(string id_Serie)
         {
             var exercicio = await Busca_Serie();
             await firebase
-              .Child("Serie")
+              .Child("Academias")
+                .Child(Login.Nome_Academia_login)
+                .Child("Serie")
               .OnceAsync<Serie>();
             return exercicio.Where(a => a.Id_Serie == id_Serie).FirstOrDefault();
 

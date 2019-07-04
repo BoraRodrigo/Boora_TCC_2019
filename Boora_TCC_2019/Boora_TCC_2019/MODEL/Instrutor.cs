@@ -6,7 +6,7 @@ namespace Boora_TCC_2019.MODEL
 {
    public class Instrutor
     {
-        public int Id_Instrutor { get; set; }
+        public string Id_Instrutor { get; set; }
         public string Nome { get; set; }
         public string Email { get; set; }
         public string Senha { get; set; }

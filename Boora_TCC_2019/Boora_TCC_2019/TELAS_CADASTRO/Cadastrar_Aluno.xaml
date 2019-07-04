@@ -10,7 +10,14 @@
                 <Label Text="CADASTRAR ALUNO" Style="{StaticResource LblTitulo}"/>
                 
                     <Entry Placeholder="Nome Completo" PlaceholderColor="Black" x:Name="txt_NOME" />
-                    <Entry Placeholder="Email" PlaceholderColor="Black" x:Name="txt_EMAIL"/>
+
+
+                <StackLayout Orientation="Horizontal" >
+                    <Entry Placeholder="Email" x:Name="txt_EMAIL" PlaceholderColor="Black"/>
+                    <Label Text="*" x:Name="lbl_validaemail" Style="{StaticResource LblTitulo}" TextColor="Red" />
+                </StackLayout  >
+
+
                     <Entry Placeholder="Senha" PlaceholderColor="Black" x:Name="txt_SENHA" IsPassword="True"/>
                     <Entry Placeholder="Peso aqui" PlaceholderColor="Black" x:Name="txt_PESO"/>
                     <Entry Placeholder="Altura" PlaceholderColor="Black" x:Name="txt_ALTURA"/>
@@ -19,7 +26,7 @@
                     <Entry Placeholder="Situação" PlaceholderColor="Black" x:Name="txt_SITUACAO"/>
                 
                  <StackLayout>     
-                    <Button Text="Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center" />
+                    <Button Text="Cadastrar" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center" />
                     </StackLayout>
                 </StackLayout>
             

@@ -11,14 +11,14 @@
         <StackLayout BackgroundColor="Black">
             <!--Adiona novo botao, e no Master C# faz o funçao do evento clicked, esse tipo de menu so funciona em masterdateilpage-->
                     <Button Text="Inicial" Clicked="GoInicial" BorderWidth="4" BorderRadius="6"/>
-                    <Button Text="Alunos" Clicked="GoListaAlunos" BorderWidth="4" BorderRadius="6"/>
-                    <Button Text="Cadastro Aluno" Clicked="GoCadastroAluno" BorderWidth="4" BorderRadius="6"/>
-                    <Button Text="Cadastro Exercício" Clicked="GoCadastroExercicio" BorderWidth="4" BorderRadius="6"/>
-                    <Button Text="Cadastro Instrutor" Clicked="GoCadastroInstrutor" BorderWidth="4" BorderRadius="6"/>
+                    <Button Text="Alunos" Clicked="GoListaAlunos" BorderWidth="4" BorderRadius="6" x:Name="btn_lista_alunos"/>
+                    <Button Text="Cadastro Aluno" Clicked="GoCadastroAluno" BorderWidth="4" BorderRadius="6" x:Name="btn_cadastro_aluno"/>
+                    <Button Text="Cadastro Exercício" Clicked="GoCadastroExercicio" BorderWidth="4" BorderRadius="6" x:Name="btn_cadastro_exercicio"/>
+                    <Button Text="Cadastro Instrutor" Clicked="GoCadastroInstrutor" BorderWidth="4" BorderRadius="6" x:Name="btn_cadastro_instrutor"/>
                     <!-- <Button Text="Cadastro Serie" Clicked="GoCadastroSerie"/>-->
                     <Button Text="Lista Exercício" Clicked="GoListExercicios" BorderWidth="4" BorderRadius="6"/>
-                    <Button Text="Minhas Séries" Clicked="GoEMinhasSeries" BorderWidth="4" BorderRadius="6"/>
-                    <Button Text="Meu Calendário" Clicked="GoEMeuClendario" BorderWidth="4" BorderRadius="6"/>
+                    <Button Text="Minhas Séries" Clicked="GoEMinhasSeries" BorderWidth="4" BorderRadius="6" x:Name="btn_minhas_Series"/>
+                    <Button Text="Meu Calendário" Clicked="GoEMeuClendario" BorderWidth="4" BorderRadius="6" x:Name="btn_meu_calendario"/>
                     <Button Text="Sobre" Clicked="Send"  BorderColor="Orange" BorderWidth="4" BorderRadius="6"/>
                     <Button Text="SAIR" Clicked="GoSAIR" BackgroundColor="Red" BorderColor="Red" BorderWidth="4" BorderRadius="6"/>
 

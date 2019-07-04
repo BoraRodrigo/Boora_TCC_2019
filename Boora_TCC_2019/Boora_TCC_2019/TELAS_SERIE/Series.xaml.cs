@@ -24,7 +24,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
         List<Exercicio> lista = new List<Exercicio>();
 
 
-        public static int idSerie = 0;//não consigo usar o static 
+        public static string idSerie = "";//não consigo usar o static 
 
         //variavel para controlar o exercicio exibibo na serie
         int serie_da_lista = 0;
@@ -36,8 +36,10 @@ namespace Boora_TCC_2019.TELAS_SERIE
         protected async override void OnAppearing()
         {
             SlCarregandoLogin.IsVisible = true;
-            await Dados_Da_serie();
-            SlCarregandoLogin.IsVisible = false;
+            
+                await Dados_Da_serie();
+                SlCarregandoLogin.IsVisible = false;
+                SlCarregandoLogin.IsVisible = false;
         }
         private async void Proxima_SerieAsync(object sender, EventArgs e)
         {
@@ -134,7 +136,6 @@ namespace Boora_TCC_2019.TELAS_SERIE
                 VerificarLimite.Text = "Está é sua ultima";
                 Device.StartTimer(TimeSpan.FromSeconds(1), () =>
                 {
-
                     i--;
                     if (i < 0)
                     {

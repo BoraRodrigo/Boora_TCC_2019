@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Boora_TCC_2019.TELAS;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace Boora_TCC_2019
 		public Inicial ()
 		{
 			InitializeComponent ();
+            lbl_nome_academia.Text = Login.Nome_Academia_login.ToString().ToUpper();
 		}
 
         public void GoInsta(object sender, EventArgs args)

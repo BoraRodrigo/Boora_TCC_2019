@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Boora_TCC_2019.TELAS_CADASTRO.Cadastrar_Academia">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="0" Margin="15">
+                <Label Text="CADASTRAR ACADEMIA" Style="{StaticResource LblTitulo}"/>
+
+                <Entry Placeholder="Nome Academia" PlaceholderColor="Black" x:Name="txt_NOMEACADEMIA" />
+
+                <Entry Placeholder="Email" x:Name="txt_EMAIL" PlaceholderColor="Black"/>
+                <Entry Placeholder="Senha" PlaceholderColor="Black" x:Name="txt_SENHA" IsPassword="True"/>
+                <Entry Placeholder="CNPJ" PlaceholderColor="Black" x:Name="txt_CNPJ"/>
+                <Entry Placeholder="CIDADE" PlaceholderColor="Black" x:Name="txt_CIDADE"/>
+                <Entry Placeholder="ESTADO" PlaceholderColor="Black" x:Name="txt_ESTADO"/>
+                <Entry Placeholder="LOGO NÂO IMPLEMENTADO" PlaceholderColor="Black" x:Name="txt_logo"/>
+                
+
+                <StackLayout>
+                    <Button Text="Cadastrar" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

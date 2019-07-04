@@ -1,4 +1,5 @@
 ﻿using Boora_TCC_2019.MODEL;
+using Boora_TCC_2019.TELAS;
 using Firebase.Database;
 using Firebase.Database.Query;
 using Firebase.Storage;
@@ -19,6 +20,8 @@ namespace Boora_TCC_2019.DAO
         {
 
             return (await firebase
+               .Child("Academias")
+                .Child(Login.Nome_Academia_login)
                 .Child("Instrutor")
                 .OnceAsync<Instrutor>()).Select(item => new Instrutor
                 {
@@ -32,20 +35,43 @@ namespace Boora_TCC_2019.DAO
                 }).ToList();
 
         }
+        
         public async Task Cadastrar_Instrutor(Instrutor instrutor)
         {
-            //Gambiarra para increment de id se excluir 
-            List<Instrutor> listaInstrutor = await Busca_Instrutor();
-
-            await firebase
-              .Child("Instrutor")
+            var cadastro_instrutor= await firebase
+              .Child("Academias")
+                .Child(Login.Nome_Academia_login)
+                .Child("Instrutor")
               .PostAsync(new Instrutor()
               {
-                  Id_Instrutor = listaInstrutor.Count() + 1,
+                  Id_Instrutor = instrutor.Id_Instrutor,
                   Nome = instrutor.Nome,
                   Email = instrutor.Email,
                   Senha = instrutor.Senha,
+                  Idade=instrutor.Idade,
                   Formacao_Academica= instrutor.Formacao_Academica
+              });
+            string  idinstrutotKEY = cadastro_instrutor.Key;//salva o id de cadastro do firebase
+
+            var alterar_instrutoID = (await firebase
+              .Child("Academias")
+                .Child(Login.Nome_Academia_login)
+                .Child("Instrutor")
+              .OnceAsync<Instrutor>()).Where(a => a.Object.Id_Instrutor == idinstrutotKEY).FirstOrDefault();
+
+            await firebase
+              .Child("Academias")
+                .Child(Login.Nome_Academia_login)
+                .Child("Instrutor")
+               .Child(idinstrutotKEY)
+              .PutAsync(new Instrutor()
+              {
+                  Id_Instrutor = idinstrutotKEY,//altera pelo novo id
+                  Nome = instrutor.Nome,
+                  Email = instrutor.Email,
+                  Senha = instrutor.Senha,
+                  Idade = instrutor.Idade,
+                  Formacao_Academica = instrutor.Formacao_Academica
               });
         }
     }

@@ -51,11 +51,17 @@ namespace Boora_TCC_2019.TELAS
 
         private async void Btn_Upload(object sender, EventArgs e)
         {
+            try
+            {
+                await exercicioDAO.Cadastrar_Exercicio("1", txtNOME.Text, txtDESCRICAO.Text, txtOBJETIVO.Text, file.GetStream(), Path.GetFileName(file.Path));
+                await DisplayAlert("Sucesso", "Exercicio Cadastrado!", "OK");
+            }
+            catch 
+            {
+                await DisplayAlert("erro", "Exercicio  não cadastrado!", "OK");
 
-            await exercicioDAO.Cadastrar_Exercicio(1, txtNOME.Text, txtDESCRICAO.Text, txtOBJETIVO.Text, file.GetStream(), Path.GetFileName(file.Path));
-        
-            //  await exercicioDAO.Upload_Imagem(file.GetStream(), Path.GetFileName(file.Path));
-            await DisplayAlert("Sucesso", "Exercicio Cadastrado!", "OK");
+            }
+
         }
     }
 }

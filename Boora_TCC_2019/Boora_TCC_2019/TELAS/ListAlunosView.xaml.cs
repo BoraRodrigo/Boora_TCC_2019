@@ -28,17 +28,15 @@ namespace Boora_TCC_2019.TELAS
             SlCarregandoLista.IsVisible = true;
             listaInterna = await alunoDAO.Busca_Aluno();
 
-
-            //ListaAlunos.ItemsSource = listaInterna;
-            ListaExerciciosSerie.ItemsSource = listaInterna;
+            ListaAlunos.ItemsSource = listaInterna;
 
             for (int i = 0; i < listaInterna.Count; i++)
             {
                 listaInterna[i].objetivo_Aluno = "user.png";
             }
-           
 
-            ListaExerciciosSerie.ItemsSource = listaInterna;
+
+            ListaAlunos.ItemsSource = listaInterna;
 
 
             SlCarregandoLista.IsVisible = false;
@@ -57,7 +55,7 @@ namespace Boora_TCC_2019.TELAS
                 listaPesquisa[i].objetivo_Aluno = "user.png";
             }
 
-            ListaExerciciosSerie.ItemsSource = listaPesquisa;
+            ListaAlunos.ItemsSource = listaPesquisa;
 
         }
 

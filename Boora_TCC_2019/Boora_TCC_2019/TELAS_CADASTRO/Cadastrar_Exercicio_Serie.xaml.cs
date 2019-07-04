@@ -37,9 +37,9 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
                 Exercicios_Serie_DAO exercicios_Serie_DAO = new Exercicios_Serie_DAO();
                 Exercicios_Serie exercicios_Serie = new Exercicios_Serie();
 
-                exercicios_Serie.Id_Exercicios_Serie = Convert.ToInt32(Txt_Id_Exercicios_Serie.Text);
+                exercicios_Serie.Id_Exercicios_Serie = Txt_Id_Exercicios_Serie.Text;
                 //PASSA O ID DA SERIE PARA CADASTRO DO EXERCICIO
-                exercicios_Serie.Id_Serie = serie.Id_Serie;
+                exercicios_Serie.Id_Serie = SerieDAO.id_serieKEY;//este id é setado no cadastro da serie.
                 exercicios_Serie.Qtd_repeticoes = Convert.ToInt32(Txt_Quantidade_repeticoes.Text);
                 exercicios_Serie.Qtd_Vezes = Convert.ToInt32(Txt_Quantidade_Vezes.Text);
                 exercicios_Serie.Peso = Convert.ToDouble(txt_Peso.Text);
@@ -70,10 +70,6 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
             Txt_Quantidade_repeticoes.Text = "";
             Txt_nome_Exercicio.Text = "";
             txt_Peso.Text = "";
-
-            
-            
-
         }
         protected async override void OnAppearing()
         {
@@ -91,11 +87,6 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
 
             ListaExercicios.ItemsSource = listaInterna;
             
-                
-            
-            
-
-
         }
 
         private async void BuscaRapida(Object sender, TextChangedEventArgs args)

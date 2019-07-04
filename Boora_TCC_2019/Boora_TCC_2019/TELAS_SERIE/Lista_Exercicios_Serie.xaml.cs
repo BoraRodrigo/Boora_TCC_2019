@@ -16,10 +16,10 @@ namespace Boora_TCC_2019.TELAS_SERIE
     public partial class Lista_Exercicios_Serie : ContentPage
     {
         //comentario
-        int IdSerie;
+        string IdSerie;
         string NomeSerie;
         List<Exercicio> Exerciciolista = new List<Exercicio>();
-        public Lista_Exercicios_Serie(List<Exercicio> lista, int id)
+        public Lista_Exercicios_Serie(List<Exercicio> lista, string id)
         {
             InitializeComponent();
             IdSerie = id;

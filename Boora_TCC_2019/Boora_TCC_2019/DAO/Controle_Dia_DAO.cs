@@ -1,4 +1,5 @@
 ﻿using Boora_TCC_2019.MODEL;
+using Boora_TCC_2019.TELAS;
 using Firebase.Database;
 using Firebase.Database.Query;
 using System;
@@ -17,7 +18,9 @@ namespace Boora_TCC_2019.DAO
         {
 
             await firebase
-              .Child("Dia_Presenca")
+             .Child("Academias")
+                .Child(Login.Nome_Academia_login)
+                .Child("Dia_Presenca")
               .PostAsync(new Controle_Dia()
               {
                   Id_Aluno=controle_Dia.Id_Aluno,
@@ -26,10 +29,12 @@ namespace Boora_TCC_2019.DAO
                   Hora_Serie=controle_Dia.Hora_Serie
               });
         }
-        public async Task<List<Controle_Dia>> Busca_Todas__Dias_Do_Aluno(int idAluno)
+        public async Task<List<Controle_Dia>> Busca_Todas__Dias_Do_Aluno(string idAluno)
         {
 
             return (await firebase
+               .Child("Academias")
+                .Child(Login.Nome_Academia_login)
                 .Child("Dia_Presenca").OrderBy("Id_Aluno").EqualTo(idAluno)
                 .OnceAsync<Controle_Dia>()).Select(item => new Controle_Dia
                 {

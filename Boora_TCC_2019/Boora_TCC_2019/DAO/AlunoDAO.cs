@@ -1,5 +1,6 @@
 ﻿
 using Boora_TCC_2019.MODEL;
+using Boora_TCC_2019.TELAS;
 using Firebase.Database;
 using Firebase.Database.Query;
 using Firebase.Storage;
@@ -19,6 +20,8 @@ namespace Boora_TCC_2019.DAO
         {
 
             return (await firebase
+                .Child("Academias")
+                .Child(Login.Nome_Academia_login )
                 .Child("Aluno")
                 .OnceAsync<Aluno>()).Select(item => new Aluno
                 {
@@ -37,14 +40,38 @@ namespace Boora_TCC_2019.DAO
         }
         public async Task Cadastrar_Aluno(Aluno aluno)
         {
-            //Gambiarra para increment de id se excluir 
-            List<Aluno> listaAlunos = await Busca_Aluno();
-
-            await firebase
-              .Child("Aluno")
+            var cadastro_aluno= await firebase
+               .Child("Academias")
+               .Child(Login.Nome_Academia_login)
+               .Child("Aluno")
               .PostAsync(new Aluno()
               {
-                  Id_Aluno = listaAlunos.Count() + 1,
+                  Id_Aluno = aluno.Id_Aluno,
+                  Nome = aluno.Nome,
+                  Email = aluno.Email,
+                  Senha = aluno.Senha,
+                  Peso = aluno.Peso,
+                  Altura = aluno.Altura,
+                  Idade = aluno.Idade,
+                  objetivo_Aluno = aluno.objetivo_Aluno,
+                  Situacao = aluno.Situacao
+              });
+            string id_cadastroalunoKEY = cadastro_aluno.Key;
+
+            var alterar_alunoID = (await firebase
+             .Child("Academias")
+             .Child(Login.Nome_Academia_login)
+             .Child("Aluno")
+             .OnceAsync<Aluno>()).Where(a => a.Object.Id_Aluno == id_cadastroalunoKEY).FirstOrDefault();
+
+            await firebase
+              .Child("Academias")
+              .Child(Login.Nome_Academia_login)
+              .Child("Aluno")
+              .Child(id_cadastroalunoKEY)
+              .PutAsync(new Aluno()
+              {
+                  Id_Aluno = id_cadastroalunoKEY,
                   Nome = aluno.Nome,
                   Email = aluno.Email,
                   Senha = aluno.Senha,
@@ -60,27 +87,28 @@ namespace Boora_TCC_2019.DAO
         //Busca serie aluno e coloca dados em campos de dados ver implementacao -BORA
         //retona os detalhaes do exercicio da serie.
         // esta tabela possui o ID do exercicio vinculado a estas inf
-        public async Task<Exercicios_Serie> Busca_Exercicio_SERIE_ALUNO(int id_serie)
+        public async Task<Exercicios_Serie> Busca_Exercicio_SERIE_ALUNO(string id_serie)
         {
             Exercicios_Serie_DAO exercicios_Serie_DAO = new Exercicios_Serie_DAO();
             var exercicios_serie = await exercicios_Serie_DAO.Busca_Exercicios_Serie();
             await firebase
-              .Child("Exercicios_Serie_DAO")
+              .Child("Academias")
+                .Child(Login.Nome_Academia_login)
+                .Child("Exercicios_Serie_DAO")
               .OnceAsync<Exercicios_Serie_DAO>();
-            return exercicios_serie.Where(a => a.Id_Serie == id_serie).FirstOrDefault();
+            return exercicios_serie.Where(a => a.Id_Serie.Equals( id_serie)).FirstOrDefault();
         }
-
-
-
-
+        
         //Pesquisa da serie do aluno retorna a serie que tiver o ID do aluno, este id
         //de serie que vier no retono é necessario para busca os exercicios  da serie --BORA
-        public async Task<Serie> Busca_Serie_Aluno(int idserie)
+        public async Task<Serie> Busca_Serie_Aluno(string idserie)
         {
             SerieDAO Serie_DAO = new SerieDAO();
             var serie = await Serie_DAO.Busca_Serie();
             await firebase
-              .Child("Serie")
+              .Child("Academias")
+                .Child(Login.Nome_Academia_login)
+                .Child("Serie")
               .OnceAsync<Serie>();
             return serie.Where(a => a.Id_Serie == idserie).FirstOrDefault();
         }
@@ -90,7 +118,9 @@ namespace Boora_TCC_2019.DAO
             {
                 var aluno = await Busca_Aluno();
                 await firebase
-                  .Child("Aluno")
+                 .Child("Academias")
+                .Child(Login.Nome_Academia_login)
+                    .Child("Aluno")
                   .OnceAsync<Aluno>();
                 return aluno.Where(a => a.Nome == nome && a.Senha == senha).FirstOrDefault();
             }

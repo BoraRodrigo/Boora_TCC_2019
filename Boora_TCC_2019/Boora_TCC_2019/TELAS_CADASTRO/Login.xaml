@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
              x:Class="Boora_TCC_2019.TELAS.Login">
     <ContentPage.Content >
         <AbsoluteLayout>
@@ -20,7 +21,29 @@
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Tapped="EsqueceuSenha"/>
                         </Label.GestureRecognizers>
-                    </Label> 
+                    </Label>
+
+                    <Picker x:Name="pckAcademias" TitleColor="Blue" BackgroundColor="Blue" HorizontalOptions="FillAndExpand" TextColor="Red" Title="Selecione o Sexo:" SelectedIndexChanged="Academia_Selecionada">
+                        <Picker.Items>
+                            <x:String>Angelos</x:String>
+                            <x:String>Viper</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <StackLayout Padding="30,0" Spacing="12" BackgroundColor="Black">
+                        <input:RadioButtonGroupView x:Name="chekboxTipo">
+                            <input:RadioButton Text="Aluno" TextColor="White" x:Name="chekAluno" />
+                            <input:RadioButton Text="Academia" TextColor="White" x:Name="chekAcademia"/>
+                            <input:RadioButton Text="Personal" TextColor="White" x:Name="chekPersonal"/>
+                        </input:RadioButtonGroupView>
+                    </StackLayout>
+
+                    <Label Text="Cadastre sua Academia" FontSize="12" Margin="0" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#ffc800">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Cadastre_sua_Academia"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+
                     <ffimageloading:CachedImage Source="angelosfitness.png" />
                 </StackLayout>
                 <Label x:Name="EsqueceuSenhaLbl" HorizontalTextAlignment="Center"  IsVisible="False" BackgroundColor="#ffc800" HorizontalOptions="FillAndExpand"/>
