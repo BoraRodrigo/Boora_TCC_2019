@@ -14,10 +14,13 @@
                 <Entry Placeholder="CNPJ" PlaceholderColor="Black" x:Name="txt_CNPJ"/>
                 <Entry Placeholder="CIDADE" PlaceholderColor="Black" x:Name="txt_CIDADE"/>
                 <Entry Placeholder="ESTADO" PlaceholderColor="Black" x:Name="txt_ESTADO"/>
-                <Entry Placeholder="LOGO NÂO IMPLEMENTADO" PlaceholderColor="Black" x:Name="txt_logo"/>
-                
+               
 
-                <StackLayout>
+                <Image x:Name="imgChoosed" HeightRequest="150"/>
+
+                <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+
+                    <Button x:Name="btnPick" WidthRequest="200" Text="Buscar imagem" Clicked="Btn_Buscar"/>
                     <Button Text="Cadastrar" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center" />
                 </StackLayout>
             </StackLayout>

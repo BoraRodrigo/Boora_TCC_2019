@@ -16,6 +16,8 @@
 
                     <Entry x:Name="txtsenha" Placeholder="Senha" TextColor="#ffc800" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" IsPassword="True"/>
 
+                    <Entry x:Name="txtNome_academia" Placeholder="Nome Academia" TextColor="#ffc800" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
+
                     <Button Text="Logar!" HorizontalOptions="Center" WidthRequest="100" Clicked="EfetuarLogin"/>
                     <Label Text="Esqueceu a senha?" FontSize="12" Margin="0" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#ffc800">
                         <Label.GestureRecognizers>
@@ -23,18 +25,13 @@
                         </Label.GestureRecognizers>
                     </Label>
 
-                    <Picker x:Name="pckAcademias" TitleColor="Blue" BackgroundColor="Blue" HorizontalOptions="FillAndExpand" TextColor="Red" Title="Selecione o Sexo:" SelectedIndexChanged="Academia_Selecionada">
-                        <Picker.Items>
-                            <x:String>Angelos</x:String>
-                            <x:String>Viper</x:String>
-                        </Picker.Items>
-                    </Picker>
+                    
 
-                    <StackLayout Padding="30,0" Spacing="12" BackgroundColor="Black">
-                        <input:RadioButtonGroupView x:Name="chekboxTipo">
-                            <input:RadioButton Text="Aluno" TextColor="White" x:Name="chekAluno" />
-                            <input:RadioButton Text="Academia" TextColor="White" x:Name="chekAcademia"/>
-                            <input:RadioButton Text="Personal" TextColor="White" x:Name="chekPersonal"/>
+                    <StackLayout Padding="30,0" Spacing="12" BackgroundColor="Black" >
+                        <input:RadioButtonGroupView x:Name="chekboxTipo" BackgroundColor="Black" >
+                            <input:RadioButton Text="Aluno" TextColor="White" x:Name="chekAluno" CircleColor="Red" Color="Orange"/>
+                            <input:RadioButton Text="Academia" TextColor="White" x:Name="chekAcademia" CircleColor="Red" Color="Orange"/>
+                            <input:RadioButton Text="Personal" TextColor="White" x:Name="chekPersonal" CircleColor="Red" Color="Orange"/>
                         </input:RadioButtonGroupView>
                     </StackLayout>
 
@@ -43,7 +40,6 @@
                             <TapGestureRecognizer Tapped="Cadastre_sua_Academia"/>
                         </Label.GestureRecognizers>
                     </Label>
-
                     <ffimageloading:CachedImage Source="angelosfitness.png" />
                 </StackLayout>
                 <Label x:Name="EsqueceuSenhaLbl" HorizontalTextAlignment="Center"  IsVisible="False" BackgroundColor="#ffc800" HorizontalOptions="FillAndExpand"/>

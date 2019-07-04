@@ -1,4 +1,5 @@
-﻿using Boora_TCC_2019.TELAS;
+﻿using Boora_TCC_2019.DAO;
+using Boora_TCC_2019.TELAS;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,13 +17,30 @@ namespace Boora_TCC_2019
 		public Inicial ()
 		{
 			InitializeComponent ();
-            lbl_nome_academia.Text = Login.Nome_Academia_login.ToString().ToUpper();
-		}
+            lbl_nome_academia.Text ="ACADEMIA " +Login.Nome_Academia_login.ToString().ToUpper();
+           
+        }
+        protected async override void OnAppearing()
+        {
+            try
+            {
+                AcademiaDAO academiaDAO = new AcademiaDAO();
+                imgagem_logo_Academia.Source = await academiaDAO.Buscar_IMAGEM_Logo_Academia(Login.Id_Academia_Login);
+            }
+            catch 
+            {
+
+               
+            }
+            
+
+        }
 
         public void GoInsta(object sender, EventArgs args)
         {
             // 2 semestre =)
            //Device.OpenUri(new Uri("https://www.instagram.com/angelos_fitness_academia/"));
+           
         }
 
         public void GoWhats(object sender, EventArgs args)

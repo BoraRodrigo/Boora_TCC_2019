@@ -1,7 +1,10 @@
 ﻿using Boora_TCC_2019.DAO;
 using Boora_TCC_2019.MODEL;
+using Plugin.Media;
+using Plugin.Media.Abstractions;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +17,8 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Cadastrar_Academia : ContentPage
 	{
-		public Cadastrar_Academia ()
+        MediaFile file;
+        public Cadastrar_Academia ()
 		{
 			InitializeComponent ();
 		}
@@ -42,9 +46,9 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
                     academia.Cnpj = txt_CNPJ.Text;
                     academia.Email = txt_EMAIL.Text;
                     academia.Estado = txt_ESTADO.Text;
-                    academia.Logo_academia = txt_logo.Text;
+                    academia.Logo_academia = "";
                     academia.Senha = txt_SENHA.Text;
-                    await academiaDAO.Cadastrar_Academia(academia);
+                    await academiaDAO.Cadastrar_Academia(academia, file.GetStream());
                     LimpaCampos();
                 }
                 catch
@@ -56,13 +60,34 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
                 {  
             }
         }
+        private async void Btn_Buscar(object sender, EventArgs e)
+        {
+            await CrossMedia.Current.Initialize();
+            try
+            {
+                file = await Plugin.Media.CrossMedia.Current.PickPhotoAsync(new Plugin.Media.Abstractions.PickMediaOptions
+                {
+                    PhotoSize = Plugin.Media.Abstractions.PhotoSize.Medium
+                });
+                if (file == null)
+                    return;
+                imgChoosed.Source = ImageSource.FromStream(() =>
+                {
+                    var imageStram = file.GetStream();
+                    return imageStram;
+                });
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+        }
         public void LimpaCampos()
         {
             txt_CIDADE.Text = "";
             txt_CNPJ.Text = "";
             txt_EMAIL.Text = "";
             txt_ESTADO.Text = "";
-            txt_logo.Text = "";
             txt_NOMEACADEMIA.Text = "";
             txt_SENHA.Text = "";
         }

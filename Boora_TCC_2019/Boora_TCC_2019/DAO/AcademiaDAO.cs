@@ -2,6 +2,7 @@
 using Boora_TCC_2019.TELAS;
 using Firebase.Database;
 using Firebase.Database.Query;
+using Firebase.Storage;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,7 +15,8 @@ namespace Boora_TCC_2019.DAO
     public class AcademiaDAO
     {
         FirebaseClient firebase = new FirebaseClient("https://tcc-2019-53a08.firebaseio.com/");
-        public async Task Cadastrar_Academia(Academia academia)
+        FirebaseStorage firebaseStorage = new FirebaseStorage("tcc-2019-53a08.appspot.com");
+        public async Task Cadastrar_Academia(Academia academia, Stream fileStream)
         {
             var cadastroAcademia = await firebase
                 .Child("Academias")
@@ -49,12 +51,18 @@ namespace Boora_TCC_2019.DAO
                   Cidade = academia.Cidade,
                   Estado = academia.Estado,
                   Cnpj = academia.Cnpj,
-                  Logo_academia = academia.Logo_academia,
+                  Logo_academia = id_academiaKEY,
                   Email = academia.Email,
                   Nome_academia = academia.Nome_academia,
                   Senha = academia.Senha
 
               });
+
+            var imageUrl = await firebaseStorage
+
+           .Child("Logo_Academias")
+           .Child(cadastroAcademia.Key)
+           .PutAsync(fileStream);
         }
         public async Task<Academia> Busca_Academia_Nome(string nomeAcademia)
         {
@@ -107,8 +115,12 @@ namespace Boora_TCC_2019.DAO
                 throw;
             }
         }
-
-
-
+        public async Task<string> Buscar_IMAGEM_Logo_Academia(string id_Academia)
+        {
+            return await firebaseStorage
+                .Child("Logo_Academias")
+                .Child(id_Academia)
+                .GetDownloadUrlAsync();
+        }
     }
 }

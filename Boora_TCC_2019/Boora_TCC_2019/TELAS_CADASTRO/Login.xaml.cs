@@ -21,21 +21,27 @@ namespace Boora_TCC_2019.TELAS
         public static string Senha_Aluno_Logado { get; set; }
         public static string Nome_Academia_login { get; set; }
 
+        public static string Id_Academia_Login { get; set; }
+
         public static string Tipo_login { get; set; }
 
         public Login ()
 		{
 
             InitializeComponent ();
+            
+            
 
 		}
         private async void EfetuarLogin(object sender, EventArgs args)
         {
+
             Aluno aluno = new Aluno();
             AlunoDAO alunoDAO = new AlunoDAO();
 
             Academia academia = new Academia();
             AcademiaDAO academiaDAO = new AcademiaDAO();
+            Nome_Academia_login = txtNome_academia.Text;
            
             string nome;
             try
@@ -52,6 +58,11 @@ namespace Boora_TCC_2019.TELAS
                     Nome_Aluno_Logado = aluno.Nome;
                     Senha_Aluno_Logado = aluno.Senha;
 
+                   
+                    var academiaLogin = await academiaDAO.Busca_Academia_Nome(txtNome_academia.Text);
+                    Id_Academia_Login = academiaLogin.Id_academia;
+                
+
                     SlCarregandoLogin.IsVisible = false; // apos o retorno do BD o Stacklayout some.
                     Tipo_login = "Aluno";
                     App.Current.MainPage = new NavigationPage(new MENU.Master());
@@ -59,9 +70,11 @@ namespace Boora_TCC_2019.TELAS
                 {
                     SlCarregandoLogin.IsVisible = true;
                     academia = await academiaDAO.Login_Dono_Academia(txtsenha.Text,txtNome.Text);
+                  
 
                     //aqui tem que ajustar esta imporvisado ainda 
                     Id_Aluno_Login = academia.Id_academia;
+                    Id_Academia_Login = academia.Id_academia;
                     Nome_Aluno_Logado = academia.Nome_academia;
                     Senha_Aluno_Logado = academia.Senha;
                     Nome_Academia_login = academia.Nome_academia;
@@ -122,9 +135,6 @@ namespace Boora_TCC_2019.TELAS
         {
             App.Current.MainPage = new NavigationPage(new TELAS_CADASTRO.Cadastrar_Academia());
         }
-        private void Academia_Selecionada(object sender, EventArgs e)
-        {
-            Nome_Academia_login = pckAcademias.Items[pckAcademias.SelectedIndex];//pego o nome de login da academia 
-        }
+
     }
 }

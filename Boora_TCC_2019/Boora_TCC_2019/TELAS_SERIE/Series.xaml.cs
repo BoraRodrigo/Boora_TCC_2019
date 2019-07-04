@@ -36,10 +36,18 @@ namespace Boora_TCC_2019.TELAS_SERIE
         protected async override void OnAppearing()
         {
             SlCarregandoLogin.IsVisible = true;
-            
+            try
+            {
                 await Dados_Da_serie();
                 SlCarregandoLogin.IsVisible = false;
                 SlCarregandoLogin.IsVisible = false;
+            }
+            catch 
+            {
+                await DisplayAlert("Erro", "Você não possui séries", "OK");
+              
+            }
+               
         }
         private async void Proxima_SerieAsync(object sender, EventArgs e)
         {
