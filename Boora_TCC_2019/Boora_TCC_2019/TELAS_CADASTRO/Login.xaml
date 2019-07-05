@@ -4,13 +4,16 @@
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
              x:Class="Boora_TCC_2019.TELAS.Login">
+
+
+
     <ContentPage.Content >
         <AbsoluteLayout>
 
 
-            <StackLayout BackgroundColor="Black" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
-                <StackLayout BackgroundColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                    <ffimageloading:CachedImage Source="logo_boora_preto2.png"  />
+            <StackLayout BackgroundColor="White" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+                <StackLayout BackgroundColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <ffimageloading:CachedImage Source="iconBora.png"  />
 
                     <Entry   x:Name="txtNome" Placeholder="Login" TextColor="#ffc800" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
 
@@ -18,20 +21,40 @@
 
                     <Entry x:Name="txtNome_academia" Placeholder="Nome Academia" TextColor="#ffc800" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
 
-                    <Button Text="Logar!" HorizontalOptions="Center" WidthRequest="100" Clicked="EfetuarLogin"/>
+                    <Button Image="entrar.png" Text="Login" BackgroundColor="White"  Clicked="EfetuarLogin">
+                        <!-- Efeito de click-->
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale"
+                            Value="1" />
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale" 
+                            Value="0.8" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Button>
+                    
                     <Label Text="Esqueceu a senha?" FontSize="12" Margin="0" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#ffc800">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Tapped="EsqueceuSenha"/>
                         </Label.GestureRecognizers>
                     </Label>
 
-                    
 
-                    <StackLayout Padding="30,0" Spacing="12" BackgroundColor="Black" >
-                        <input:RadioButtonGroupView x:Name="chekboxTipo" BackgroundColor="Black" >
-                            <input:RadioButton Text="Aluno" TextColor="White" x:Name="chekAluno" CircleColor="Red" Color="Orange"/>
-                            <input:RadioButton Text="Academia" TextColor="White" x:Name="chekAcademia" CircleColor="Red" Color="Orange"/>
-                            <input:RadioButton Text="Personal" TextColor="White" x:Name="chekPersonal" CircleColor="Red" Color="Orange"/>
+
+                    <StackLayout Padding="30,0" Spacing="12" BackgroundColor="White" >
+                        <input:RadioButtonGroupView x:Name="chekboxTipo" BackgroundColor="White" >
+                            <input:RadioButton Text="Aluno" TextColor="Black" x:Name="chekAluno" CircleColor="Red" Color="Orange"/>
+                            <input:RadioButton Text="Academia" TextColor="Black" x:Name="chekAcademia" CircleColor="Red" Color="Orange"/>
+                            <input:RadioButton Text="Personal" TextColor="Black" x:Name="chekPersonal" CircleColor="Red" Color="Orange"/>
                         </input:RadioButtonGroupView>
                     </StackLayout>
 
@@ -40,7 +63,7 @@
                             <TapGestureRecognizer Tapped="Cadastre_sua_Academia"/>
                         </Label.GestureRecognizers>
                     </Label>
-                    <ffimageloading:CachedImage Source="angelosfitness.png" />
+                 
                 </StackLayout>
                 <Label x:Name="EsqueceuSenhaLbl" HorizontalTextAlignment="Center"  IsVisible="False" BackgroundColor="#ffc800" HorizontalOptions="FillAndExpand"/>
             </StackLayout>

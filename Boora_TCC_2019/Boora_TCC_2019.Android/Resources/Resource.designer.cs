@@ -4317,6 +4317,2100 @@ namespace Boora_TCC_2019.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_id = global::Boora_TCC_2019.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Boora_TCC_2019.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_layout = global::Boora_TCC_2019.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::XFGloss.Droid.Resource.Animation.abc_fade_in = global::Boora_TCC_2019.Droid.Resource.Animation.abc_fade_in;
+			global::XFGloss.Droid.Resource.Animation.abc_fade_out = global::Boora_TCC_2019.Droid.Resource.Animation.abc_fade_out;
+			global::XFGloss.Droid.Resource.Animation.abc_grow_fade_in_from_bottom = global::Boora_TCC_2019.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::XFGloss.Droid.Resource.Animation.abc_popup_enter = global::Boora_TCC_2019.Droid.Resource.Animation.abc_popup_enter;
+			global::XFGloss.Droid.Resource.Animation.abc_popup_exit = global::Boora_TCC_2019.Droid.Resource.Animation.abc_popup_exit;
+			global::XFGloss.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom = global::Boora_TCC_2019.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::XFGloss.Droid.Resource.Animation.abc_slide_in_bottom = global::Boora_TCC_2019.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::XFGloss.Droid.Resource.Animation.abc_slide_in_top = global::Boora_TCC_2019.Droid.Resource.Animation.abc_slide_in_top;
+			global::XFGloss.Droid.Resource.Animation.abc_slide_out_bottom = global::Boora_TCC_2019.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::XFGloss.Droid.Resource.Animation.abc_slide_out_top = global::Boora_TCC_2019.Droid.Resource.Animation.abc_slide_out_top;
+			global::XFGloss.Droid.Resource.Animation.design_bottom_sheet_slide_in = global::Boora_TCC_2019.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::XFGloss.Droid.Resource.Animation.design_bottom_sheet_slide_out = global::Boora_TCC_2019.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::XFGloss.Droid.Resource.Animation.design_snackbar_in = global::Boora_TCC_2019.Droid.Resource.Animation.design_snackbar_in;
+			global::XFGloss.Droid.Resource.Animation.design_snackbar_out = global::Boora_TCC_2019.Droid.Resource.Animation.design_snackbar_out;
+			global::XFGloss.Droid.Resource.Animator.design_appbar_state_list_animator = global::Boora_TCC_2019.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::XFGloss.Droid.Resource.Attribute.actionBarDivider = global::Boora_TCC_2019.Droid.Resource.Attribute.actionBarDivider;
+			global::XFGloss.Droid.Resource.Attribute.actionBarItemBackground = global::Boora_TCC_2019.Droid.Resource.Attribute.actionBarItemBackground;
+			global::XFGloss.Droid.Resource.Attribute.actionBarPopupTheme = global::Boora_TCC_2019.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::XFGloss.Droid.Resource.Attribute.actionBarSize = global::Boora_TCC_2019.Droid.Resource.Attribute.actionBarSize;
+			global::XFGloss.Droid.Resource.Attribute.actionBarSplitStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::XFGloss.Droid.Resource.Attribute.actionBarStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.actionBarStyle;
+			global::XFGloss.Droid.Resource.Attribute.actionBarTabBarStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::XFGloss.Droid.Resource.Attribute.actionBarTabStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.actionBarTabStyle;
+			global::XFGloss.Droid.Resource.Attribute.actionBarTabTextStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::XFGloss.Droid.Resource.Attribute.actionBarTheme = global::Boora_TCC_2019.Droid.Resource.Attribute.actionBarTheme;
+			global::XFGloss.Droid.Resource.Attribute.actionBarWidgetTheme = global::Boora_TCC_2019.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::XFGloss.Droid.Resource.Attribute.actionButtonStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.actionButtonStyle;
+			global::XFGloss.Droid.Resource.Attribute.actionDropDownStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.actionDropDownStyle;
+			global::XFGloss.Droid.Resource.Attribute.actionLayout = global::Boora_TCC_2019.Droid.Resource.Attribute.actionLayout;
+			global::XFGloss.Droid.Resource.Attribute.actionMenuTextAppearance = global::Boora_TCC_2019.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::XFGloss.Droid.Resource.Attribute.actionMenuTextColor = global::Boora_TCC_2019.Droid.Resource.Attribute.actionMenuTextColor;
+			global::XFGloss.Droid.Resource.Attribute.actionModeBackground = global::Boora_TCC_2019.Droid.Resource.Attribute.actionModeBackground;
+			global::XFGloss.Droid.Resource.Attribute.actionModeCloseButtonStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::XFGloss.Droid.Resource.Attribute.actionModeCloseDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::XFGloss.Droid.Resource.Attribute.actionModeCopyDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::XFGloss.Droid.Resource.Attribute.actionModeCutDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::XFGloss.Droid.Resource.Attribute.actionModeFindDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::XFGloss.Droid.Resource.Attribute.actionModePasteDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::XFGloss.Droid.Resource.Attribute.actionModePopupWindowStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::XFGloss.Droid.Resource.Attribute.actionModeSelectAllDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::XFGloss.Droid.Resource.Attribute.actionModeShareDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::XFGloss.Droid.Resource.Attribute.actionModeSplitBackground = global::Boora_TCC_2019.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::XFGloss.Droid.Resource.Attribute.actionModeStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.actionModeStyle;
+			global::XFGloss.Droid.Resource.Attribute.actionModeWebSearchDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::XFGloss.Droid.Resource.Attribute.actionOverflowButtonStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::XFGloss.Droid.Resource.Attribute.actionOverflowMenuStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::XFGloss.Droid.Resource.Attribute.actionProviderClass = global::Boora_TCC_2019.Droid.Resource.Attribute.actionProviderClass;
+			global::XFGloss.Droid.Resource.Attribute.actionViewClass = global::Boora_TCC_2019.Droid.Resource.Attribute.actionViewClass;
+			global::XFGloss.Droid.Resource.Attribute.activityChooserViewStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::XFGloss.Droid.Resource.Attribute.alertDialogButtonGroupStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::XFGloss.Droid.Resource.Attribute.alertDialogCenterButtons = global::Boora_TCC_2019.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::XFGloss.Droid.Resource.Attribute.alertDialogStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.alertDialogStyle;
+			global::XFGloss.Droid.Resource.Attribute.alertDialogTheme = global::Boora_TCC_2019.Droid.Resource.Attribute.alertDialogTheme;
+			global::XFGloss.Droid.Resource.Attribute.allowStacking = global::Boora_TCC_2019.Droid.Resource.Attribute.allowStacking;
+			global::XFGloss.Droid.Resource.Attribute.alpha = global::Boora_TCC_2019.Droid.Resource.Attribute.alpha;
+			global::XFGloss.Droid.Resource.Attribute.arrowHeadLength = global::Boora_TCC_2019.Droid.Resource.Attribute.arrowHeadLength;
+			global::XFGloss.Droid.Resource.Attribute.arrowShaftLength = global::Boora_TCC_2019.Droid.Resource.Attribute.arrowShaftLength;
+			global::XFGloss.Droid.Resource.Attribute.autoCompleteTextViewStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::XFGloss.Droid.Resource.Attribute.background = global::Boora_TCC_2019.Droid.Resource.Attribute.background;
+			global::XFGloss.Droid.Resource.Attribute.backgroundSplit = global::Boora_TCC_2019.Droid.Resource.Attribute.backgroundSplit;
+			global::XFGloss.Droid.Resource.Attribute.backgroundStacked = global::Boora_TCC_2019.Droid.Resource.Attribute.backgroundStacked;
+			global::XFGloss.Droid.Resource.Attribute.backgroundTint = global::Boora_TCC_2019.Droid.Resource.Attribute.backgroundTint;
+			global::XFGloss.Droid.Resource.Attribute.backgroundTintMode = global::Boora_TCC_2019.Droid.Resource.Attribute.backgroundTintMode;
+			global::XFGloss.Droid.Resource.Attribute.barLength = global::Boora_TCC_2019.Droid.Resource.Attribute.barLength;
+			global::XFGloss.Droid.Resource.Attribute.behavior_autoHide = global::Boora_TCC_2019.Droid.Resource.Attribute.behavior_autoHide;
+			global::XFGloss.Droid.Resource.Attribute.behavior_hideable = global::Boora_TCC_2019.Droid.Resource.Attribute.behavior_hideable;
+			global::XFGloss.Droid.Resource.Attribute.behavior_overlapTop = global::Boora_TCC_2019.Droid.Resource.Attribute.behavior_overlapTop;
+			global::XFGloss.Droid.Resource.Attribute.behavior_peekHeight = global::Boora_TCC_2019.Droid.Resource.Attribute.behavior_peekHeight;
+			global::XFGloss.Droid.Resource.Attribute.behavior_skipCollapsed = global::Boora_TCC_2019.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::XFGloss.Droid.Resource.Attribute.borderWidth = global::Boora_TCC_2019.Droid.Resource.Attribute.borderWidth;
+			global::XFGloss.Droid.Resource.Attribute.borderlessButtonStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::XFGloss.Droid.Resource.Attribute.bottomSheetDialogTheme = global::Boora_TCC_2019.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::XFGloss.Droid.Resource.Attribute.bottomSheetStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.bottomSheetStyle;
+			global::XFGloss.Droid.Resource.Attribute.buttonBarButtonStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::XFGloss.Droid.Resource.Attribute.buttonBarNegativeButtonStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::XFGloss.Droid.Resource.Attribute.buttonBarNeutralButtonStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::XFGloss.Droid.Resource.Attribute.buttonBarPositiveButtonStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::XFGloss.Droid.Resource.Attribute.buttonBarStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.buttonBarStyle;
+			global::XFGloss.Droid.Resource.Attribute.buttonGravity = global::Boora_TCC_2019.Droid.Resource.Attribute.buttonGravity;
+			global::XFGloss.Droid.Resource.Attribute.buttonPanelSideLayout = global::Boora_TCC_2019.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::XFGloss.Droid.Resource.Attribute.buttonStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.buttonStyle;
+			global::XFGloss.Droid.Resource.Attribute.buttonStyleSmall = global::Boora_TCC_2019.Droid.Resource.Attribute.buttonStyleSmall;
+			global::XFGloss.Droid.Resource.Attribute.buttonTint = global::Boora_TCC_2019.Droid.Resource.Attribute.buttonTint;
+			global::XFGloss.Droid.Resource.Attribute.buttonTintMode = global::Boora_TCC_2019.Droid.Resource.Attribute.buttonTintMode;
+			global::XFGloss.Droid.Resource.Attribute.cardBackgroundColor = global::Boora_TCC_2019.Droid.Resource.Attribute.cardBackgroundColor;
+			global::XFGloss.Droid.Resource.Attribute.cardCornerRadius = global::Boora_TCC_2019.Droid.Resource.Attribute.cardCornerRadius;
+			global::XFGloss.Droid.Resource.Attribute.cardElevation = global::Boora_TCC_2019.Droid.Resource.Attribute.cardElevation;
+			global::XFGloss.Droid.Resource.Attribute.cardMaxElevation = global::Boora_TCC_2019.Droid.Resource.Attribute.cardMaxElevation;
+			global::XFGloss.Droid.Resource.Attribute.cardPreventCornerOverlap = global::Boora_TCC_2019.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::XFGloss.Droid.Resource.Attribute.cardUseCompatPadding = global::Boora_TCC_2019.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::XFGloss.Droid.Resource.Attribute.checkboxStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.checkboxStyle;
+			global::XFGloss.Droid.Resource.Attribute.checkedTextViewStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::XFGloss.Droid.Resource.Attribute.closeIcon = global::Boora_TCC_2019.Droid.Resource.Attribute.closeIcon;
+			global::XFGloss.Droid.Resource.Attribute.closeItemLayout = global::Boora_TCC_2019.Droid.Resource.Attribute.closeItemLayout;
+			global::XFGloss.Droid.Resource.Attribute.collapseContentDescription = global::Boora_TCC_2019.Droid.Resource.Attribute.collapseContentDescription;
+			global::XFGloss.Droid.Resource.Attribute.collapseIcon = global::Boora_TCC_2019.Droid.Resource.Attribute.collapseIcon;
+			global::XFGloss.Droid.Resource.Attribute.collapsedTitleGravity = global::Boora_TCC_2019.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::XFGloss.Droid.Resource.Attribute.collapsedTitleTextAppearance = global::Boora_TCC_2019.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::XFGloss.Droid.Resource.Attribute.color = global::Boora_TCC_2019.Droid.Resource.Attribute.color;
+			global::XFGloss.Droid.Resource.Attribute.colorAccent = global::Boora_TCC_2019.Droid.Resource.Attribute.colorAccent;
+			global::XFGloss.Droid.Resource.Attribute.colorBackgroundFloating = global::Boora_TCC_2019.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::XFGloss.Droid.Resource.Attribute.colorButtonNormal = global::Boora_TCC_2019.Droid.Resource.Attribute.colorButtonNormal;
+			global::XFGloss.Droid.Resource.Attribute.colorControlActivated = global::Boora_TCC_2019.Droid.Resource.Attribute.colorControlActivated;
+			global::XFGloss.Droid.Resource.Attribute.colorControlHighlight = global::Boora_TCC_2019.Droid.Resource.Attribute.colorControlHighlight;
+			global::XFGloss.Droid.Resource.Attribute.colorControlNormal = global::Boora_TCC_2019.Droid.Resource.Attribute.colorControlNormal;
+			global::XFGloss.Droid.Resource.Attribute.colorPrimary = global::Boora_TCC_2019.Droid.Resource.Attribute.colorPrimary;
+			global::XFGloss.Droid.Resource.Attribute.colorPrimaryDark = global::Boora_TCC_2019.Droid.Resource.Attribute.colorPrimaryDark;
+			global::XFGloss.Droid.Resource.Attribute.colorSwitchThumbNormal = global::Boora_TCC_2019.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::XFGloss.Droid.Resource.Attribute.commitIcon = global::Boora_TCC_2019.Droid.Resource.Attribute.commitIcon;
+			global::XFGloss.Droid.Resource.Attribute.contentInsetEnd = global::Boora_TCC_2019.Droid.Resource.Attribute.contentInsetEnd;
+			global::XFGloss.Droid.Resource.Attribute.contentInsetEndWithActions = global::Boora_TCC_2019.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::XFGloss.Droid.Resource.Attribute.contentInsetLeft = global::Boora_TCC_2019.Droid.Resource.Attribute.contentInsetLeft;
+			global::XFGloss.Droid.Resource.Attribute.contentInsetRight = global::Boora_TCC_2019.Droid.Resource.Attribute.contentInsetRight;
+			global::XFGloss.Droid.Resource.Attribute.contentInsetStart = global::Boora_TCC_2019.Droid.Resource.Attribute.contentInsetStart;
+			global::XFGloss.Droid.Resource.Attribute.contentInsetStartWithNavigation = global::Boora_TCC_2019.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::XFGloss.Droid.Resource.Attribute.contentPadding = global::Boora_TCC_2019.Droid.Resource.Attribute.contentPadding;
+			global::XFGloss.Droid.Resource.Attribute.contentPaddingBottom = global::Boora_TCC_2019.Droid.Resource.Attribute.contentPaddingBottom;
+			global::XFGloss.Droid.Resource.Attribute.contentPaddingLeft = global::Boora_TCC_2019.Droid.Resource.Attribute.contentPaddingLeft;
+			global::XFGloss.Droid.Resource.Attribute.contentPaddingRight = global::Boora_TCC_2019.Droid.Resource.Attribute.contentPaddingRight;
+			global::XFGloss.Droid.Resource.Attribute.contentPaddingTop = global::Boora_TCC_2019.Droid.Resource.Attribute.contentPaddingTop;
+			global::XFGloss.Droid.Resource.Attribute.contentScrim = global::Boora_TCC_2019.Droid.Resource.Attribute.contentScrim;
+			global::XFGloss.Droid.Resource.Attribute.controlBackground = global::Boora_TCC_2019.Droid.Resource.Attribute.controlBackground;
+			global::XFGloss.Droid.Resource.Attribute.counterEnabled = global::Boora_TCC_2019.Droid.Resource.Attribute.counterEnabled;
+			global::XFGloss.Droid.Resource.Attribute.counterMaxLength = global::Boora_TCC_2019.Droid.Resource.Attribute.counterMaxLength;
+			global::XFGloss.Droid.Resource.Attribute.counterOverflowTextAppearance = global::Boora_TCC_2019.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::XFGloss.Droid.Resource.Attribute.counterTextAppearance = global::Boora_TCC_2019.Droid.Resource.Attribute.counterTextAppearance;
+			global::XFGloss.Droid.Resource.Attribute.customNavigationLayout = global::Boora_TCC_2019.Droid.Resource.Attribute.customNavigationLayout;
+			global::XFGloss.Droid.Resource.Attribute.defaultQueryHint = global::Boora_TCC_2019.Droid.Resource.Attribute.defaultQueryHint;
+			global::XFGloss.Droid.Resource.Attribute.dialogPreferredPadding = global::Boora_TCC_2019.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::XFGloss.Droid.Resource.Attribute.dialogTheme = global::Boora_TCC_2019.Droid.Resource.Attribute.dialogTheme;
+			global::XFGloss.Droid.Resource.Attribute.displayOptions = global::Boora_TCC_2019.Droid.Resource.Attribute.displayOptions;
+			global::XFGloss.Droid.Resource.Attribute.divider = global::Boora_TCC_2019.Droid.Resource.Attribute.divider;
+			global::XFGloss.Droid.Resource.Attribute.dividerHorizontal = global::Boora_TCC_2019.Droid.Resource.Attribute.dividerHorizontal;
+			global::XFGloss.Droid.Resource.Attribute.dividerPadding = global::Boora_TCC_2019.Droid.Resource.Attribute.dividerPadding;
+			global::XFGloss.Droid.Resource.Attribute.dividerVertical = global::Boora_TCC_2019.Droid.Resource.Attribute.dividerVertical;
+			global::XFGloss.Droid.Resource.Attribute.drawableSize = global::Boora_TCC_2019.Droid.Resource.Attribute.drawableSize;
+			global::XFGloss.Droid.Resource.Attribute.drawerArrowStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.drawerArrowStyle;
+			global::XFGloss.Droid.Resource.Attribute.dropDownListViewStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::XFGloss.Droid.Resource.Attribute.dropdownListPreferredItemHeight = global::Boora_TCC_2019.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::XFGloss.Droid.Resource.Attribute.editTextBackground = global::Boora_TCC_2019.Droid.Resource.Attribute.editTextBackground;
+			global::XFGloss.Droid.Resource.Attribute.editTextColor = global::Boora_TCC_2019.Droid.Resource.Attribute.editTextColor;
+			global::XFGloss.Droid.Resource.Attribute.editTextStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.editTextStyle;
+			global::XFGloss.Droid.Resource.Attribute.elevation = global::Boora_TCC_2019.Droid.Resource.Attribute.elevation;
+			global::XFGloss.Droid.Resource.Attribute.errorEnabled = global::Boora_TCC_2019.Droid.Resource.Attribute.errorEnabled;
+			global::XFGloss.Droid.Resource.Attribute.errorTextAppearance = global::Boora_TCC_2019.Droid.Resource.Attribute.errorTextAppearance;
+			global::XFGloss.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::XFGloss.Droid.Resource.Attribute.expanded = global::Boora_TCC_2019.Droid.Resource.Attribute.expanded;
+			global::XFGloss.Droid.Resource.Attribute.expandedTitleGravity = global::Boora_TCC_2019.Droid.Resource.Attribute.expandedTitleGravity;
+			global::XFGloss.Droid.Resource.Attribute.expandedTitleMargin = global::Boora_TCC_2019.Droid.Resource.Attribute.expandedTitleMargin;
+			global::XFGloss.Droid.Resource.Attribute.expandedTitleMarginBottom = global::Boora_TCC_2019.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::XFGloss.Droid.Resource.Attribute.expandedTitleMarginEnd = global::Boora_TCC_2019.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::XFGloss.Droid.Resource.Attribute.expandedTitleMarginStart = global::Boora_TCC_2019.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::XFGloss.Droid.Resource.Attribute.expandedTitleMarginTop = global::Boora_TCC_2019.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::XFGloss.Droid.Resource.Attribute.expandedTitleTextAppearance = global::Boora_TCC_2019.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::XFGloss.Droid.Resource.Attribute.externalRouteEnabledDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.externalRouteEnabledDrawable;
+			global::XFGloss.Droid.Resource.Attribute.fabSize = global::Boora_TCC_2019.Droid.Resource.Attribute.fabSize;
+			global::XFGloss.Droid.Resource.Attribute.foregroundInsidePadding = global::Boora_TCC_2019.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::XFGloss.Droid.Resource.Attribute.gapBetweenBars = global::Boora_TCC_2019.Droid.Resource.Attribute.gapBetweenBars;
+			global::XFGloss.Droid.Resource.Attribute.goIcon = global::Boora_TCC_2019.Droid.Resource.Attribute.goIcon;
+			global::XFGloss.Droid.Resource.Attribute.headerLayout = global::Boora_TCC_2019.Droid.Resource.Attribute.headerLayout;
+			global::XFGloss.Droid.Resource.Attribute.height = global::Boora_TCC_2019.Droid.Resource.Attribute.height;
+			global::XFGloss.Droid.Resource.Attribute.hideOnContentScroll = global::Boora_TCC_2019.Droid.Resource.Attribute.hideOnContentScroll;
+			global::XFGloss.Droid.Resource.Attribute.hintAnimationEnabled = global::Boora_TCC_2019.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::XFGloss.Droid.Resource.Attribute.hintEnabled = global::Boora_TCC_2019.Droid.Resource.Attribute.hintEnabled;
+			global::XFGloss.Droid.Resource.Attribute.hintTextAppearance = global::Boora_TCC_2019.Droid.Resource.Attribute.hintTextAppearance;
+			global::XFGloss.Droid.Resource.Attribute.homeAsUpIndicator = global::Boora_TCC_2019.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::XFGloss.Droid.Resource.Attribute.homeLayout = global::Boora_TCC_2019.Droid.Resource.Attribute.homeLayout;
+			global::XFGloss.Droid.Resource.Attribute.icon = global::Boora_TCC_2019.Droid.Resource.Attribute.icon;
+			global::XFGloss.Droid.Resource.Attribute.iconifiedByDefault = global::Boora_TCC_2019.Droid.Resource.Attribute.iconifiedByDefault;
+			global::XFGloss.Droid.Resource.Attribute.imageButtonStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.imageButtonStyle;
+			global::XFGloss.Droid.Resource.Attribute.indeterminateProgressStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::XFGloss.Droid.Resource.Attribute.initialActivityCount = global::Boora_TCC_2019.Droid.Resource.Attribute.initialActivityCount;
+			global::XFGloss.Droid.Resource.Attribute.insetForeground = global::Boora_TCC_2019.Droid.Resource.Attribute.insetForeground;
+			global::XFGloss.Droid.Resource.Attribute.isLightTheme = global::Boora_TCC_2019.Droid.Resource.Attribute.isLightTheme;
+			global::XFGloss.Droid.Resource.Attribute.itemBackground = global::Boora_TCC_2019.Droid.Resource.Attribute.itemBackground;
+			global::XFGloss.Droid.Resource.Attribute.itemIconTint = global::Boora_TCC_2019.Droid.Resource.Attribute.itemIconTint;
+			global::XFGloss.Droid.Resource.Attribute.itemPadding = global::Boora_TCC_2019.Droid.Resource.Attribute.itemPadding;
+			global::XFGloss.Droid.Resource.Attribute.itemTextAppearance = global::Boora_TCC_2019.Droid.Resource.Attribute.itemTextAppearance;
+			global::XFGloss.Droid.Resource.Attribute.itemTextColor = global::Boora_TCC_2019.Droid.Resource.Attribute.itemTextColor;
+			global::XFGloss.Droid.Resource.Attribute.keylines = global::Boora_TCC_2019.Droid.Resource.Attribute.keylines;
+			global::XFGloss.Droid.Resource.Attribute.layout = global::Boora_TCC_2019.Droid.Resource.Attribute.layout;
+			global::XFGloss.Droid.Resource.Attribute.layoutManager = global::Boora_TCC_2019.Droid.Resource.Attribute.layoutManager;
+			global::XFGloss.Droid.Resource.Attribute.layout_anchor = global::Boora_TCC_2019.Droid.Resource.Attribute.layout_anchor;
+			global::XFGloss.Droid.Resource.Attribute.layout_anchorGravity = global::Boora_TCC_2019.Droid.Resource.Attribute.layout_anchorGravity;
+			global::XFGloss.Droid.Resource.Attribute.layout_behavior = global::Boora_TCC_2019.Droid.Resource.Attribute.layout_behavior;
+			global::XFGloss.Droid.Resource.Attribute.layout_collapseMode = global::Boora_TCC_2019.Droid.Resource.Attribute.layout_collapseMode;
+			global::XFGloss.Droid.Resource.Attribute.layout_collapseParallaxMultiplier = global::Boora_TCC_2019.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::XFGloss.Droid.Resource.Attribute.layout_dodgeInsetEdges = global::Boora_TCC_2019.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::XFGloss.Droid.Resource.Attribute.layout_insetEdge = global::Boora_TCC_2019.Droid.Resource.Attribute.layout_insetEdge;
+			global::XFGloss.Droid.Resource.Attribute.layout_keyline = global::Boora_TCC_2019.Droid.Resource.Attribute.layout_keyline;
+			global::XFGloss.Droid.Resource.Attribute.layout_scrollFlags = global::Boora_TCC_2019.Droid.Resource.Attribute.layout_scrollFlags;
+			global::XFGloss.Droid.Resource.Attribute.layout_scrollInterpolator = global::Boora_TCC_2019.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::XFGloss.Droid.Resource.Attribute.listChoiceBackgroundIndicator = global::Boora_TCC_2019.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::XFGloss.Droid.Resource.Attribute.listDividerAlertDialog = global::Boora_TCC_2019.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::XFGloss.Droid.Resource.Attribute.listItemLayout = global::Boora_TCC_2019.Droid.Resource.Attribute.listItemLayout;
+			global::XFGloss.Droid.Resource.Attribute.listLayout = global::Boora_TCC_2019.Droid.Resource.Attribute.listLayout;
+			global::XFGloss.Droid.Resource.Attribute.listMenuViewStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.listMenuViewStyle;
+			global::XFGloss.Droid.Resource.Attribute.listPopupWindowStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::XFGloss.Droid.Resource.Attribute.listPreferredItemHeight = global::Boora_TCC_2019.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::XFGloss.Droid.Resource.Attribute.listPreferredItemHeightLarge = global::Boora_TCC_2019.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::XFGloss.Droid.Resource.Attribute.listPreferredItemHeightSmall = global::Boora_TCC_2019.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::XFGloss.Droid.Resource.Attribute.listPreferredItemPaddingLeft = global::Boora_TCC_2019.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::XFGloss.Droid.Resource.Attribute.listPreferredItemPaddingRight = global::Boora_TCC_2019.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::XFGloss.Droid.Resource.Attribute.logo = global::Boora_TCC_2019.Droid.Resource.Attribute.logo;
+			global::XFGloss.Droid.Resource.Attribute.logoDescription = global::Boora_TCC_2019.Droid.Resource.Attribute.logoDescription;
+			global::XFGloss.Droid.Resource.Attribute.maxActionInlineWidth = global::Boora_TCC_2019.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::XFGloss.Droid.Resource.Attribute.maxButtonHeight = global::Boora_TCC_2019.Droid.Resource.Attribute.maxButtonHeight;
+			global::XFGloss.Droid.Resource.Attribute.measureWithLargestChild = global::Boora_TCC_2019.Droid.Resource.Attribute.measureWithLargestChild;
+			global::XFGloss.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
+			global::XFGloss.Droid.Resource.Attribute.mediaRouteButtonStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.mediaRouteButtonStyle;
+			global::XFGloss.Droid.Resource.Attribute.mediaRouteCloseDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.mediaRouteCloseDrawable;
+			global::XFGloss.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay = global::Boora_TCC_2019.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay;
+			global::XFGloss.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
+			global::XFGloss.Droid.Resource.Attribute.mediaRoutePauseDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.mediaRoutePauseDrawable;
+			global::XFGloss.Droid.Resource.Attribute.mediaRoutePlayDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.mediaRoutePlayDrawable;
+			global::XFGloss.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
+			global::XFGloss.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
+			global::XFGloss.Droid.Resource.Attribute.mediaRouteStopDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.mediaRouteStopDrawable;
+			global::XFGloss.Droid.Resource.Attribute.mediaRouteTheme = global::Boora_TCC_2019.Droid.Resource.Attribute.mediaRouteTheme;
+			global::XFGloss.Droid.Resource.Attribute.mediaRouteTvIconDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
+			global::XFGloss.Droid.Resource.Attribute.menu = global::Boora_TCC_2019.Droid.Resource.Attribute.menu;
+			global::XFGloss.Droid.Resource.Attribute.multiChoiceItemLayout = global::Boora_TCC_2019.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::XFGloss.Droid.Resource.Attribute.navigationContentDescription = global::Boora_TCC_2019.Droid.Resource.Attribute.navigationContentDescription;
+			global::XFGloss.Droid.Resource.Attribute.navigationIcon = global::Boora_TCC_2019.Droid.Resource.Attribute.navigationIcon;
+			global::XFGloss.Droid.Resource.Attribute.navigationMode = global::Boora_TCC_2019.Droid.Resource.Attribute.navigationMode;
+			global::XFGloss.Droid.Resource.Attribute.overlapAnchor = global::Boora_TCC_2019.Droid.Resource.Attribute.overlapAnchor;
+			global::XFGloss.Droid.Resource.Attribute.paddingBottomNoButtons = global::Boora_TCC_2019.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::XFGloss.Droid.Resource.Attribute.paddingEnd = global::Boora_TCC_2019.Droid.Resource.Attribute.paddingEnd;
+			global::XFGloss.Droid.Resource.Attribute.paddingStart = global::Boora_TCC_2019.Droid.Resource.Attribute.paddingStart;
+			global::XFGloss.Droid.Resource.Attribute.paddingTopNoTitle = global::Boora_TCC_2019.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::XFGloss.Droid.Resource.Attribute.panelBackground = global::Boora_TCC_2019.Droid.Resource.Attribute.panelBackground;
+			global::XFGloss.Droid.Resource.Attribute.panelMenuListTheme = global::Boora_TCC_2019.Droid.Resource.Attribute.panelMenuListTheme;
+			global::XFGloss.Droid.Resource.Attribute.panelMenuListWidth = global::Boora_TCC_2019.Droid.Resource.Attribute.panelMenuListWidth;
+			global::XFGloss.Droid.Resource.Attribute.passwordToggleContentDescription = global::Boora_TCC_2019.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::XFGloss.Droid.Resource.Attribute.passwordToggleDrawable = global::Boora_TCC_2019.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::XFGloss.Droid.Resource.Attribute.passwordToggleEnabled = global::Boora_TCC_2019.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::XFGloss.Droid.Resource.Attribute.passwordToggleTint = global::Boora_TCC_2019.Droid.Resource.Attribute.passwordToggleTint;
+			global::XFGloss.Droid.Resource.Attribute.passwordToggleTintMode = global::Boora_TCC_2019.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::XFGloss.Droid.Resource.Attribute.popupMenuStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.popupMenuStyle;
+			global::XFGloss.Droid.Resource.Attribute.popupTheme = global::Boora_TCC_2019.Droid.Resource.Attribute.popupTheme;
+			global::XFGloss.Droid.Resource.Attribute.popupWindowStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.popupWindowStyle;
+			global::XFGloss.Droid.Resource.Attribute.preserveIconSpacing = global::Boora_TCC_2019.Droid.Resource.Attribute.preserveIconSpacing;
+			global::XFGloss.Droid.Resource.Attribute.pressedTranslationZ = global::Boora_TCC_2019.Droid.Resource.Attribute.pressedTranslationZ;
+			global::XFGloss.Droid.Resource.Attribute.progressBarPadding = global::Boora_TCC_2019.Droid.Resource.Attribute.progressBarPadding;
+			global::XFGloss.Droid.Resource.Attribute.progressBarStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.progressBarStyle;
+			global::XFGloss.Droid.Resource.Attribute.queryBackground = global::Boora_TCC_2019.Droid.Resource.Attribute.queryBackground;
+			global::XFGloss.Droid.Resource.Attribute.queryHint = global::Boora_TCC_2019.Droid.Resource.Attribute.queryHint;
+			global::XFGloss.Droid.Resource.Attribute.radioButtonStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.radioButtonStyle;
+			global::XFGloss.Droid.Resource.Attribute.ratingBarStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.ratingBarStyle;
+			global::XFGloss.Droid.Resource.Attribute.ratingBarStyleIndicator = global::Boora_TCC_2019.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::XFGloss.Droid.Resource.Attribute.ratingBarStyleSmall = global::Boora_TCC_2019.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::XFGloss.Droid.Resource.Attribute.reverseLayout = global::Boora_TCC_2019.Droid.Resource.Attribute.reverseLayout;
+			global::XFGloss.Droid.Resource.Attribute.rippleColor = global::Boora_TCC_2019.Droid.Resource.Attribute.rippleColor;
+			global::XFGloss.Droid.Resource.Attribute.scrimAnimationDuration = global::Boora_TCC_2019.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::XFGloss.Droid.Resource.Attribute.scrimVisibleHeightTrigger = global::Boora_TCC_2019.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::XFGloss.Droid.Resource.Attribute.searchHintIcon = global::Boora_TCC_2019.Droid.Resource.Attribute.searchHintIcon;
+			global::XFGloss.Droid.Resource.Attribute.searchIcon = global::Boora_TCC_2019.Droid.Resource.Attribute.searchIcon;
+			global::XFGloss.Droid.Resource.Attribute.searchViewStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.searchViewStyle;
+			global::XFGloss.Droid.Resource.Attribute.seekBarStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.seekBarStyle;
+			global::XFGloss.Droid.Resource.Attribute.selectableItemBackground = global::Boora_TCC_2019.Droid.Resource.Attribute.selectableItemBackground;
+			global::XFGloss.Droid.Resource.Attribute.selectableItemBackgroundBorderless = global::Boora_TCC_2019.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::XFGloss.Droid.Resource.Attribute.showAsAction = global::Boora_TCC_2019.Droid.Resource.Attribute.showAsAction;
+			global::XFGloss.Droid.Resource.Attribute.showDividers = global::Boora_TCC_2019.Droid.Resource.Attribute.showDividers;
+			global::XFGloss.Droid.Resource.Attribute.showText = global::Boora_TCC_2019.Droid.Resource.Attribute.showText;
+			global::XFGloss.Droid.Resource.Attribute.showTitle = global::Boora_TCC_2019.Droid.Resource.Attribute.showTitle;
+			global::XFGloss.Droid.Resource.Attribute.singleChoiceItemLayout = global::Boora_TCC_2019.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::XFGloss.Droid.Resource.Attribute.spanCount = global::Boora_TCC_2019.Droid.Resource.Attribute.spanCount;
+			global::XFGloss.Droid.Resource.Attribute.spinBars = global::Boora_TCC_2019.Droid.Resource.Attribute.spinBars;
+			global::XFGloss.Droid.Resource.Attribute.spinnerDropDownItemStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::XFGloss.Droid.Resource.Attribute.spinnerStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.spinnerStyle;
+			global::XFGloss.Droid.Resource.Attribute.splitTrack = global::Boora_TCC_2019.Droid.Resource.Attribute.splitTrack;
+			global::XFGloss.Droid.Resource.Attribute.srcCompat = global::Boora_TCC_2019.Droid.Resource.Attribute.srcCompat;
+			global::XFGloss.Droid.Resource.Attribute.stackFromEnd = global::Boora_TCC_2019.Droid.Resource.Attribute.stackFromEnd;
+			global::XFGloss.Droid.Resource.Attribute.state_above_anchor = global::Boora_TCC_2019.Droid.Resource.Attribute.state_above_anchor;
+			global::XFGloss.Droid.Resource.Attribute.state_collapsed = global::Boora_TCC_2019.Droid.Resource.Attribute.state_collapsed;
+			global::XFGloss.Droid.Resource.Attribute.state_collapsible = global::Boora_TCC_2019.Droid.Resource.Attribute.state_collapsible;
+			global::XFGloss.Droid.Resource.Attribute.statusBarBackground = global::Boora_TCC_2019.Droid.Resource.Attribute.statusBarBackground;
+			global::XFGloss.Droid.Resource.Attribute.statusBarScrim = global::Boora_TCC_2019.Droid.Resource.Attribute.statusBarScrim;
+			global::XFGloss.Droid.Resource.Attribute.subMenuArrow = global::Boora_TCC_2019.Droid.Resource.Attribute.subMenuArrow;
+			global::XFGloss.Droid.Resource.Attribute.submitBackground = global::Boora_TCC_2019.Droid.Resource.Attribute.submitBackground;
+			global::XFGloss.Droid.Resource.Attribute.subtitle = global::Boora_TCC_2019.Droid.Resource.Attribute.subtitle;
+			global::XFGloss.Droid.Resource.Attribute.subtitleTextAppearance = global::Boora_TCC_2019.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::XFGloss.Droid.Resource.Attribute.subtitleTextColor = global::Boora_TCC_2019.Droid.Resource.Attribute.subtitleTextColor;
+			global::XFGloss.Droid.Resource.Attribute.subtitleTextStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.subtitleTextStyle;
+			global::XFGloss.Droid.Resource.Attribute.suggestionRowLayout = global::Boora_TCC_2019.Droid.Resource.Attribute.suggestionRowLayout;
+			global::XFGloss.Droid.Resource.Attribute.switchMinWidth = global::Boora_TCC_2019.Droid.Resource.Attribute.switchMinWidth;
+			global::XFGloss.Droid.Resource.Attribute.switchPadding = global::Boora_TCC_2019.Droid.Resource.Attribute.switchPadding;
+			global::XFGloss.Droid.Resource.Attribute.switchStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.switchStyle;
+			global::XFGloss.Droid.Resource.Attribute.switchTextAppearance = global::Boora_TCC_2019.Droid.Resource.Attribute.switchTextAppearance;
+			global::XFGloss.Droid.Resource.Attribute.tabBackground = global::Boora_TCC_2019.Droid.Resource.Attribute.tabBackground;
+			global::XFGloss.Droid.Resource.Attribute.tabContentStart = global::Boora_TCC_2019.Droid.Resource.Attribute.tabContentStart;
+			global::XFGloss.Droid.Resource.Attribute.tabGravity = global::Boora_TCC_2019.Droid.Resource.Attribute.tabGravity;
+			global::XFGloss.Droid.Resource.Attribute.tabIndicatorColor = global::Boora_TCC_2019.Droid.Resource.Attribute.tabIndicatorColor;
+			global::XFGloss.Droid.Resource.Attribute.tabIndicatorHeight = global::Boora_TCC_2019.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::XFGloss.Droid.Resource.Attribute.tabMaxWidth = global::Boora_TCC_2019.Droid.Resource.Attribute.tabMaxWidth;
+			global::XFGloss.Droid.Resource.Attribute.tabMinWidth = global::Boora_TCC_2019.Droid.Resource.Attribute.tabMinWidth;
+			global::XFGloss.Droid.Resource.Attribute.tabMode = global::Boora_TCC_2019.Droid.Resource.Attribute.tabMode;
+			global::XFGloss.Droid.Resource.Attribute.tabPadding = global::Boora_TCC_2019.Droid.Resource.Attribute.tabPadding;
+			global::XFGloss.Droid.Resource.Attribute.tabPaddingBottom = global::Boora_TCC_2019.Droid.Resource.Attribute.tabPaddingBottom;
+			global::XFGloss.Droid.Resource.Attribute.tabPaddingEnd = global::Boora_TCC_2019.Droid.Resource.Attribute.tabPaddingEnd;
+			global::XFGloss.Droid.Resource.Attribute.tabPaddingStart = global::Boora_TCC_2019.Droid.Resource.Attribute.tabPaddingStart;
+			global::XFGloss.Droid.Resource.Attribute.tabPaddingTop = global::Boora_TCC_2019.Droid.Resource.Attribute.tabPaddingTop;
+			global::XFGloss.Droid.Resource.Attribute.tabSelectedTextColor = global::Boora_TCC_2019.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::XFGloss.Droid.Resource.Attribute.tabTextAppearance = global::Boora_TCC_2019.Droid.Resource.Attribute.tabTextAppearance;
+			global::XFGloss.Droid.Resource.Attribute.tabTextColor = global::Boora_TCC_2019.Droid.Resource.Attribute.tabTextColor;
+			global::XFGloss.Droid.Resource.Attribute.textAllCaps = global::Boora_TCC_2019.Droid.Resource.Attribute.textAllCaps;
+			global::XFGloss.Droid.Resource.Attribute.textAppearanceLargePopupMenu = global::Boora_TCC_2019.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::XFGloss.Droid.Resource.Attribute.textAppearanceListItem = global::Boora_TCC_2019.Droid.Resource.Attribute.textAppearanceListItem;
+			global::XFGloss.Droid.Resource.Attribute.textAppearanceListItemSecondary = global::Boora_TCC_2019.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::XFGloss.Droid.Resource.Attribute.textAppearanceListItemSmall = global::Boora_TCC_2019.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::XFGloss.Droid.Resource.Attribute.textAppearancePopupMenuHeader = global::Boora_TCC_2019.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::XFGloss.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle = global::Boora_TCC_2019.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::XFGloss.Droid.Resource.Attribute.textAppearanceSearchResultTitle = global::Boora_TCC_2019.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::XFGloss.Droid.Resource.Attribute.textAppearanceSmallPopupMenu = global::Boora_TCC_2019.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::XFGloss.Droid.Resource.Attribute.textColorAlertDialogListItem = global::Boora_TCC_2019.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::XFGloss.Droid.Resource.Attribute.textColorError = global::Boora_TCC_2019.Droid.Resource.Attribute.textColorError;
+			global::XFGloss.Droid.Resource.Attribute.textColorSearchUrl = global::Boora_TCC_2019.Droid.Resource.Attribute.textColorSearchUrl;
+			global::XFGloss.Droid.Resource.Attribute.theme = global::Boora_TCC_2019.Droid.Resource.Attribute.theme;
+			global::XFGloss.Droid.Resource.Attribute.thickness = global::Boora_TCC_2019.Droid.Resource.Attribute.thickness;
+			global::XFGloss.Droid.Resource.Attribute.thumbTextPadding = global::Boora_TCC_2019.Droid.Resource.Attribute.thumbTextPadding;
+			global::XFGloss.Droid.Resource.Attribute.thumbTint = global::Boora_TCC_2019.Droid.Resource.Attribute.thumbTint;
+			global::XFGloss.Droid.Resource.Attribute.thumbTintMode = global::Boora_TCC_2019.Droid.Resource.Attribute.thumbTintMode;
+			global::XFGloss.Droid.Resource.Attribute.tickMark = global::Boora_TCC_2019.Droid.Resource.Attribute.tickMark;
+			global::XFGloss.Droid.Resource.Attribute.tickMarkTint = global::Boora_TCC_2019.Droid.Resource.Attribute.tickMarkTint;
+			global::XFGloss.Droid.Resource.Attribute.tickMarkTintMode = global::Boora_TCC_2019.Droid.Resource.Attribute.tickMarkTintMode;
+			global::XFGloss.Droid.Resource.Attribute.tint = global::Boora_TCC_2019.Droid.Resource.Attribute.tint;
+			global::XFGloss.Droid.Resource.Attribute.tintMode = global::Boora_TCC_2019.Droid.Resource.Attribute.tintMode;
+			global::XFGloss.Droid.Resource.Attribute.title = global::Boora_TCC_2019.Droid.Resource.Attribute.title;
+			global::XFGloss.Droid.Resource.Attribute.titleEnabled = global::Boora_TCC_2019.Droid.Resource.Attribute.titleEnabled;
+			global::XFGloss.Droid.Resource.Attribute.titleMargin = global::Boora_TCC_2019.Droid.Resource.Attribute.titleMargin;
+			global::XFGloss.Droid.Resource.Attribute.titleMarginBottom = global::Boora_TCC_2019.Droid.Resource.Attribute.titleMarginBottom;
+			global::XFGloss.Droid.Resource.Attribute.titleMarginEnd = global::Boora_TCC_2019.Droid.Resource.Attribute.titleMarginEnd;
+			global::XFGloss.Droid.Resource.Attribute.titleMarginStart = global::Boora_TCC_2019.Droid.Resource.Attribute.titleMarginStart;
+			global::XFGloss.Droid.Resource.Attribute.titleMarginTop = global::Boora_TCC_2019.Droid.Resource.Attribute.titleMarginTop;
+			global::XFGloss.Droid.Resource.Attribute.titleMargins = global::Boora_TCC_2019.Droid.Resource.Attribute.titleMargins;
+			global::XFGloss.Droid.Resource.Attribute.titleTextAppearance = global::Boora_TCC_2019.Droid.Resource.Attribute.titleTextAppearance;
+			global::XFGloss.Droid.Resource.Attribute.titleTextColor = global::Boora_TCC_2019.Droid.Resource.Attribute.titleTextColor;
+			global::XFGloss.Droid.Resource.Attribute.titleTextStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.titleTextStyle;
+			global::XFGloss.Droid.Resource.Attribute.toolbarId = global::Boora_TCC_2019.Droid.Resource.Attribute.toolbarId;
+			global::XFGloss.Droid.Resource.Attribute.toolbarNavigationButtonStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::XFGloss.Droid.Resource.Attribute.toolbarStyle = global::Boora_TCC_2019.Droid.Resource.Attribute.toolbarStyle;
+			global::XFGloss.Droid.Resource.Attribute.track = global::Boora_TCC_2019.Droid.Resource.Attribute.track;
+			global::XFGloss.Droid.Resource.Attribute.trackTint = global::Boora_TCC_2019.Droid.Resource.Attribute.trackTint;
+			global::XFGloss.Droid.Resource.Attribute.trackTintMode = global::Boora_TCC_2019.Droid.Resource.Attribute.trackTintMode;
+			global::XFGloss.Droid.Resource.Attribute.useCompatPadding = global::Boora_TCC_2019.Droid.Resource.Attribute.useCompatPadding;
+			global::XFGloss.Droid.Resource.Attribute.voiceIcon = global::Boora_TCC_2019.Droid.Resource.Attribute.voiceIcon;
+			global::XFGloss.Droid.Resource.Attribute.windowActionBar = global::Boora_TCC_2019.Droid.Resource.Attribute.windowActionBar;
+			global::XFGloss.Droid.Resource.Attribute.windowActionBarOverlay = global::Boora_TCC_2019.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::XFGloss.Droid.Resource.Attribute.windowActionModeOverlay = global::Boora_TCC_2019.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::XFGloss.Droid.Resource.Attribute.windowFixedHeightMajor = global::Boora_TCC_2019.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::XFGloss.Droid.Resource.Attribute.windowFixedHeightMinor = global::Boora_TCC_2019.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::XFGloss.Droid.Resource.Attribute.windowFixedWidthMajor = global::Boora_TCC_2019.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::XFGloss.Droid.Resource.Attribute.windowFixedWidthMinor = global::Boora_TCC_2019.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::XFGloss.Droid.Resource.Attribute.windowMinWidthMajor = global::Boora_TCC_2019.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::XFGloss.Droid.Resource.Attribute.windowMinWidthMinor = global::Boora_TCC_2019.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::XFGloss.Droid.Resource.Attribute.windowNoTitle = global::Boora_TCC_2019.Droid.Resource.Attribute.windowNoTitle;
+			global::XFGloss.Droid.Resource.Boolean.abc_action_bar_embed_tabs = global::Boora_TCC_2019.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::XFGloss.Droid.Resource.Boolean.abc_allow_stacked_button_bar = global::Boora_TCC_2019.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::XFGloss.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::Boora_TCC_2019.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::XFGloss.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::Boora_TCC_2019.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::XFGloss.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::Boora_TCC_2019.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::XFGloss.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::XFGloss.Droid.Resource.Color.abc_background_cache_hint_selector_material_light = global::Boora_TCC_2019.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::XFGloss.Droid.Resource.Color.abc_btn_colored_borderless_text_material = global::Boora_TCC_2019.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::XFGloss.Droid.Resource.Color.abc_btn_colored_text_material = global::Boora_TCC_2019.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::XFGloss.Droid.Resource.Color.abc_color_highlight_material = global::Boora_TCC_2019.Droid.Resource.Color.abc_color_highlight_material;
+			global::XFGloss.Droid.Resource.Color.abc_hint_foreground_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::XFGloss.Droid.Resource.Color.abc_hint_foreground_material_light = global::Boora_TCC_2019.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::XFGloss.Droid.Resource.Color.abc_input_method_navigation_guard = global::Boora_TCC_2019.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::XFGloss.Droid.Resource.Color.abc_primary_text_disable_only_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::XFGloss.Droid.Resource.Color.abc_primary_text_disable_only_material_light = global::Boora_TCC_2019.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::XFGloss.Droid.Resource.Color.abc_primary_text_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::XFGloss.Droid.Resource.Color.abc_primary_text_material_light = global::Boora_TCC_2019.Droid.Resource.Color.abc_primary_text_material_light;
+			global::XFGloss.Droid.Resource.Color.abc_search_url_text = global::Boora_TCC_2019.Droid.Resource.Color.abc_search_url_text;
+			global::XFGloss.Droid.Resource.Color.abc_search_url_text_normal = global::Boora_TCC_2019.Droid.Resource.Color.abc_search_url_text_normal;
+			global::XFGloss.Droid.Resource.Color.abc_search_url_text_pressed = global::Boora_TCC_2019.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::XFGloss.Droid.Resource.Color.abc_search_url_text_selected = global::Boora_TCC_2019.Droid.Resource.Color.abc_search_url_text_selected;
+			global::XFGloss.Droid.Resource.Color.abc_secondary_text_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::XFGloss.Droid.Resource.Color.abc_secondary_text_material_light = global::Boora_TCC_2019.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::XFGloss.Droid.Resource.Color.abc_tint_btn_checkable = global::Boora_TCC_2019.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::XFGloss.Droid.Resource.Color.abc_tint_default = global::Boora_TCC_2019.Droid.Resource.Color.abc_tint_default;
+			global::XFGloss.Droid.Resource.Color.abc_tint_edittext = global::Boora_TCC_2019.Droid.Resource.Color.abc_tint_edittext;
+			global::XFGloss.Droid.Resource.Color.abc_tint_seek_thumb = global::Boora_TCC_2019.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::XFGloss.Droid.Resource.Color.abc_tint_spinner = global::Boora_TCC_2019.Droid.Resource.Color.abc_tint_spinner;
+			global::XFGloss.Droid.Resource.Color.abc_tint_switch_track = global::Boora_TCC_2019.Droid.Resource.Color.abc_tint_switch_track;
+			global::XFGloss.Droid.Resource.Color.accent_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.accent_material_dark;
+			global::XFGloss.Droid.Resource.Color.accent_material_light = global::Boora_TCC_2019.Droid.Resource.Color.accent_material_light;
+			global::XFGloss.Droid.Resource.Color.background_floating_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.background_floating_material_dark;
+			global::XFGloss.Droid.Resource.Color.background_floating_material_light = global::Boora_TCC_2019.Droid.Resource.Color.background_floating_material_light;
+			global::XFGloss.Droid.Resource.Color.background_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.background_material_dark;
+			global::XFGloss.Droid.Resource.Color.background_material_light = global::Boora_TCC_2019.Droid.Resource.Color.background_material_light;
+			global::XFGloss.Droid.Resource.Color.bright_foreground_disabled_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::XFGloss.Droid.Resource.Color.bright_foreground_disabled_material_light = global::Boora_TCC_2019.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::XFGloss.Droid.Resource.Color.bright_foreground_inverse_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::XFGloss.Droid.Resource.Color.bright_foreground_inverse_material_light = global::Boora_TCC_2019.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::XFGloss.Droid.Resource.Color.bright_foreground_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.bright_foreground_material_dark;
+			global::XFGloss.Droid.Resource.Color.bright_foreground_material_light = global::Boora_TCC_2019.Droid.Resource.Color.bright_foreground_material_light;
+			global::XFGloss.Droid.Resource.Color.button_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.button_material_dark;
+			global::XFGloss.Droid.Resource.Color.button_material_light = global::Boora_TCC_2019.Droid.Resource.Color.button_material_light;
+			global::XFGloss.Droid.Resource.Color.cardview_dark_background = global::Boora_TCC_2019.Droid.Resource.Color.cardview_dark_background;
+			global::XFGloss.Droid.Resource.Color.cardview_light_background = global::Boora_TCC_2019.Droid.Resource.Color.cardview_light_background;
+			global::XFGloss.Droid.Resource.Color.cardview_shadow_end_color = global::Boora_TCC_2019.Droid.Resource.Color.cardview_shadow_end_color;
+			global::XFGloss.Droid.Resource.Color.cardview_shadow_start_color = global::Boora_TCC_2019.Droid.Resource.Color.cardview_shadow_start_color;
+			global::XFGloss.Droid.Resource.Color.design_bottom_navigation_shadow_color = global::Boora_TCC_2019.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::XFGloss.Droid.Resource.Color.design_error = global::Boora_TCC_2019.Droid.Resource.Color.design_error;
+			global::XFGloss.Droid.Resource.Color.design_fab_shadow_end_color = global::Boora_TCC_2019.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::XFGloss.Droid.Resource.Color.design_fab_shadow_mid_color = global::Boora_TCC_2019.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::XFGloss.Droid.Resource.Color.design_fab_shadow_start_color = global::Boora_TCC_2019.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::XFGloss.Droid.Resource.Color.design_fab_stroke_end_inner_color = global::Boora_TCC_2019.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::XFGloss.Droid.Resource.Color.design_fab_stroke_end_outer_color = global::Boora_TCC_2019.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::XFGloss.Droid.Resource.Color.design_fab_stroke_top_inner_color = global::Boora_TCC_2019.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::XFGloss.Droid.Resource.Color.design_fab_stroke_top_outer_color = global::Boora_TCC_2019.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::XFGloss.Droid.Resource.Color.design_snackbar_background_color = global::Boora_TCC_2019.Droid.Resource.Color.design_snackbar_background_color;
+			global::XFGloss.Droid.Resource.Color.design_tint_password_toggle = global::Boora_TCC_2019.Droid.Resource.Color.design_tint_password_toggle;
+			global::XFGloss.Droid.Resource.Color.dim_foreground_disabled_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::XFGloss.Droid.Resource.Color.dim_foreground_disabled_material_light = global::Boora_TCC_2019.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::XFGloss.Droid.Resource.Color.dim_foreground_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.dim_foreground_material_dark;
+			global::XFGloss.Droid.Resource.Color.dim_foreground_material_light = global::Boora_TCC_2019.Droid.Resource.Color.dim_foreground_material_light;
+			global::XFGloss.Droid.Resource.Color.foreground_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.foreground_material_dark;
+			global::XFGloss.Droid.Resource.Color.foreground_material_light = global::Boora_TCC_2019.Droid.Resource.Color.foreground_material_light;
+			global::XFGloss.Droid.Resource.Color.highlighted_text_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.highlighted_text_material_dark;
+			global::XFGloss.Droid.Resource.Color.highlighted_text_material_light = global::Boora_TCC_2019.Droid.Resource.Color.highlighted_text_material_light;
+			global::XFGloss.Droid.Resource.Color.material_blue_grey_800 = global::Boora_TCC_2019.Droid.Resource.Color.material_blue_grey_800;
+			global::XFGloss.Droid.Resource.Color.material_blue_grey_900 = global::Boora_TCC_2019.Droid.Resource.Color.material_blue_grey_900;
+			global::XFGloss.Droid.Resource.Color.material_blue_grey_950 = global::Boora_TCC_2019.Droid.Resource.Color.material_blue_grey_950;
+			global::XFGloss.Droid.Resource.Color.material_deep_teal_200 = global::Boora_TCC_2019.Droid.Resource.Color.material_deep_teal_200;
+			global::XFGloss.Droid.Resource.Color.material_deep_teal_500 = global::Boora_TCC_2019.Droid.Resource.Color.material_deep_teal_500;
+			global::XFGloss.Droid.Resource.Color.material_grey_100 = global::Boora_TCC_2019.Droid.Resource.Color.material_grey_100;
+			global::XFGloss.Droid.Resource.Color.material_grey_300 = global::Boora_TCC_2019.Droid.Resource.Color.material_grey_300;
+			global::XFGloss.Droid.Resource.Color.material_grey_50 = global::Boora_TCC_2019.Droid.Resource.Color.material_grey_50;
+			global::XFGloss.Droid.Resource.Color.material_grey_600 = global::Boora_TCC_2019.Droid.Resource.Color.material_grey_600;
+			global::XFGloss.Droid.Resource.Color.material_grey_800 = global::Boora_TCC_2019.Droid.Resource.Color.material_grey_800;
+			global::XFGloss.Droid.Resource.Color.material_grey_850 = global::Boora_TCC_2019.Droid.Resource.Color.material_grey_850;
+			global::XFGloss.Droid.Resource.Color.material_grey_900 = global::Boora_TCC_2019.Droid.Resource.Color.material_grey_900;
+			global::XFGloss.Droid.Resource.Color.notification_action_color_filter = global::Boora_TCC_2019.Droid.Resource.Color.notification_action_color_filter;
+			global::XFGloss.Droid.Resource.Color.notification_icon_bg_color = global::Boora_TCC_2019.Droid.Resource.Color.notification_icon_bg_color;
+			global::XFGloss.Droid.Resource.Color.notification_material_background_media_default_color = global::Boora_TCC_2019.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::XFGloss.Droid.Resource.Color.primary_dark_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.primary_dark_material_dark;
+			global::XFGloss.Droid.Resource.Color.primary_dark_material_light = global::Boora_TCC_2019.Droid.Resource.Color.primary_dark_material_light;
+			global::XFGloss.Droid.Resource.Color.primary_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.primary_material_dark;
+			global::XFGloss.Droid.Resource.Color.primary_material_light = global::Boora_TCC_2019.Droid.Resource.Color.primary_material_light;
+			global::XFGloss.Droid.Resource.Color.primary_text_default_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.primary_text_default_material_dark;
+			global::XFGloss.Droid.Resource.Color.primary_text_default_material_light = global::Boora_TCC_2019.Droid.Resource.Color.primary_text_default_material_light;
+			global::XFGloss.Droid.Resource.Color.primary_text_disabled_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::XFGloss.Droid.Resource.Color.primary_text_disabled_material_light = global::Boora_TCC_2019.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::XFGloss.Droid.Resource.Color.ripple_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.ripple_material_dark;
+			global::XFGloss.Droid.Resource.Color.ripple_material_light = global::Boora_TCC_2019.Droid.Resource.Color.ripple_material_light;
+			global::XFGloss.Droid.Resource.Color.secondary_text_default_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::XFGloss.Droid.Resource.Color.secondary_text_default_material_light = global::Boora_TCC_2019.Droid.Resource.Color.secondary_text_default_material_light;
+			global::XFGloss.Droid.Resource.Color.secondary_text_disabled_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::XFGloss.Droid.Resource.Color.secondary_text_disabled_material_light = global::Boora_TCC_2019.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::XFGloss.Droid.Resource.Color.switch_thumb_disabled_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::XFGloss.Droid.Resource.Color.switch_thumb_disabled_material_light = global::Boora_TCC_2019.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::XFGloss.Droid.Resource.Color.switch_thumb_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.switch_thumb_material_dark;
+			global::XFGloss.Droid.Resource.Color.switch_thumb_material_light = global::Boora_TCC_2019.Droid.Resource.Color.switch_thumb_material_light;
+			global::XFGloss.Droid.Resource.Color.switch_thumb_normal_material_dark = global::Boora_TCC_2019.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::XFGloss.Droid.Resource.Color.switch_thumb_normal_material_light = global::Boora_TCC_2019.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::XFGloss.Droid.Resource.Dimension.abc_action_bar_content_inset_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::XFGloss.Droid.Resource.Dimension.abc_action_bar_default_height_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_action_bar_elevation_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_action_bar_progress_bar_size = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::XFGloss.Droid.Resource.Dimension.abc_action_bar_stacked_max_height = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::XFGloss.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::XFGloss.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_action_button_min_height_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_action_button_min_width_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::XFGloss.Droid.Resource.Dimension.abc_button_inset_horizontal_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_button_inset_vertical_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_button_padding_horizontal_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_button_padding_vertical_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::XFGloss.Droid.Resource.Dimension.abc_config_prefDialogWidth = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::XFGloss.Droid.Resource.Dimension.abc_control_corner_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_control_corner_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_control_inset_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_control_inset_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_control_padding_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_control_padding_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_dialog_fixed_height_major = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::XFGloss.Droid.Resource.Dimension.abc_dialog_fixed_height_minor = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::XFGloss.Droid.Resource.Dimension.abc_dialog_fixed_width_major = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::XFGloss.Droid.Resource.Dimension.abc_dialog_fixed_width_minor = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::XFGloss.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::XFGloss.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::XFGloss.Droid.Resource.Dimension.abc_dialog_min_width_major = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::XFGloss.Droid.Resource.Dimension.abc_dialog_min_width_minor = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::XFGloss.Droid.Resource.Dimension.abc_dialog_padding_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_dialog_padding_top_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_dialog_title_divider_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_disabled_alpha_material_dark = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::XFGloss.Droid.Resource.Dimension.abc_disabled_alpha_material_light = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::XFGloss.Droid.Resource.Dimension.abc_dropdownitem_icon_width = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::XFGloss.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::XFGloss.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::XFGloss.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_edit_text_inset_top_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_floating_window_z = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_floating_window_z;
+			global::XFGloss.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_panel_menu_list_width = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::XFGloss.Droid.Resource.Dimension.abc_progress_bar_height_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_search_view_preferred_height = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::XFGloss.Droid.Resource.Dimension.abc_search_view_preferred_width = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::XFGloss.Droid.Resource.Dimension.abc_seekbar_track_background_height_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_select_dialog_padding_start_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_switch_padding = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_switch_padding;
+			global::XFGloss.Droid.Resource.Dimension.abc_text_size_body_1_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_text_size_body_2_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_text_size_button_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_text_size_caption_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_text_size_display_1_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_text_size_display_2_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_text_size_display_3_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_text_size_display_4_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_text_size_headline_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_text_size_large_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_text_size_medium_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_text_size_menu_header_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_text_size_menu_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_text_size_small_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_text_size_subhead_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::XFGloss.Droid.Resource.Dimension.abc_text_size_title_material = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::XFGloss.Droid.Resource.Dimension.abc_text_size_title_material_toolbar = global::Boora_TCC_2019.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::XFGloss.Droid.Resource.Dimension.cardview_compat_inset_shadow = global::Boora_TCC_2019.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::XFGloss.Droid.Resource.Dimension.cardview_default_elevation = global::Boora_TCC_2019.Droid.Resource.Dimension.cardview_default_elevation;
+			global::XFGloss.Droid.Resource.Dimension.cardview_default_radius = global::Boora_TCC_2019.Droid.Resource.Dimension.cardview_default_radius;
+			global::XFGloss.Droid.Resource.Dimension.design_appbar_elevation = global::Boora_TCC_2019.Droid.Resource.Dimension.design_appbar_elevation;
+			global::XFGloss.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::Boora_TCC_2019.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::XFGloss.Droid.Resource.Dimension.design_bottom_navigation_active_text_size = global::Boora_TCC_2019.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::XFGloss.Droid.Resource.Dimension.design_bottom_navigation_elevation = global::Boora_TCC_2019.Droid.Resource.Dimension.design_bottom_navigation_elevation;
+			global::XFGloss.Droid.Resource.Dimension.design_bottom_navigation_height = global::Boora_TCC_2019.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::XFGloss.Droid.Resource.Dimension.design_bottom_navigation_item_max_width = global::Boora_TCC_2019.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::XFGloss.Droid.Resource.Dimension.design_bottom_navigation_item_min_width = global::Boora_TCC_2019.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::XFGloss.Droid.Resource.Dimension.design_bottom_navigation_margin = global::Boora_TCC_2019.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::XFGloss.Droid.Resource.Dimension.design_bottom_navigation_shadow_height = global::Boora_TCC_2019.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::XFGloss.Droid.Resource.Dimension.design_bottom_navigation_text_size = global::Boora_TCC_2019.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::XFGloss.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation = global::Boora_TCC_2019.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::XFGloss.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min = global::Boora_TCC_2019.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::XFGloss.Droid.Resource.Dimension.design_fab_border_width = global::Boora_TCC_2019.Droid.Resource.Dimension.design_fab_border_width;
+			global::XFGloss.Droid.Resource.Dimension.design_fab_elevation = global::Boora_TCC_2019.Droid.Resource.Dimension.design_fab_elevation;
+			global::XFGloss.Droid.Resource.Dimension.design_fab_image_size = global::Boora_TCC_2019.Droid.Resource.Dimension.design_fab_image_size;
+			global::XFGloss.Droid.Resource.Dimension.design_fab_size_mini = global::Boora_TCC_2019.Droid.Resource.Dimension.design_fab_size_mini;
+			global::XFGloss.Droid.Resource.Dimension.design_fab_size_normal = global::Boora_TCC_2019.Droid.Resource.Dimension.design_fab_size_normal;
+			global::XFGloss.Droid.Resource.Dimension.design_fab_translation_z_pressed = global::Boora_TCC_2019.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::XFGloss.Droid.Resource.Dimension.design_navigation_elevation = global::Boora_TCC_2019.Droid.Resource.Dimension.design_navigation_elevation;
+			global::XFGloss.Droid.Resource.Dimension.design_navigation_icon_padding = global::Boora_TCC_2019.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::XFGloss.Droid.Resource.Dimension.design_navigation_icon_size = global::Boora_TCC_2019.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::XFGloss.Droid.Resource.Dimension.design_navigation_max_width = global::Boora_TCC_2019.Droid.Resource.Dimension.design_navigation_max_width;
+			global::XFGloss.Droid.Resource.Dimension.design_navigation_padding_bottom = global::Boora_TCC_2019.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::XFGloss.Droid.Resource.Dimension.design_navigation_separator_vertical_padding = global::Boora_TCC_2019.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::XFGloss.Droid.Resource.Dimension.design_snackbar_action_inline_max_width = global::Boora_TCC_2019.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::XFGloss.Droid.Resource.Dimension.design_snackbar_background_corner_radius = global::Boora_TCC_2019.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::XFGloss.Droid.Resource.Dimension.design_snackbar_elevation = global::Boora_TCC_2019.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::XFGloss.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::Boora_TCC_2019.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::XFGloss.Droid.Resource.Dimension.design_snackbar_max_width = global::Boora_TCC_2019.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::XFGloss.Droid.Resource.Dimension.design_snackbar_min_width = global::Boora_TCC_2019.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::XFGloss.Droid.Resource.Dimension.design_snackbar_padding_horizontal = global::Boora_TCC_2019.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::XFGloss.Droid.Resource.Dimension.design_snackbar_padding_vertical = global::Boora_TCC_2019.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::XFGloss.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::Boora_TCC_2019.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::XFGloss.Droid.Resource.Dimension.design_snackbar_text_size = global::Boora_TCC_2019.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::XFGloss.Droid.Resource.Dimension.design_tab_max_width = global::Boora_TCC_2019.Droid.Resource.Dimension.design_tab_max_width;
+			global::XFGloss.Droid.Resource.Dimension.design_tab_scrollable_min_width = global::Boora_TCC_2019.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::XFGloss.Droid.Resource.Dimension.design_tab_text_size = global::Boora_TCC_2019.Droid.Resource.Dimension.design_tab_text_size;
+			global::XFGloss.Droid.Resource.Dimension.design_tab_text_size_2line = global::Boora_TCC_2019.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::XFGloss.Droid.Resource.Dimension.disabled_alpha_material_dark = global::Boora_TCC_2019.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::XFGloss.Droid.Resource.Dimension.disabled_alpha_material_light = global::Boora_TCC_2019.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::XFGloss.Droid.Resource.Dimension.highlight_alpha_material_colored = global::Boora_TCC_2019.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::XFGloss.Droid.Resource.Dimension.highlight_alpha_material_dark = global::Boora_TCC_2019.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::XFGloss.Droid.Resource.Dimension.highlight_alpha_material_light = global::Boora_TCC_2019.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::XFGloss.Droid.Resource.Dimension.hint_alpha_material_dark = global::Boora_TCC_2019.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::XFGloss.Droid.Resource.Dimension.hint_alpha_material_light = global::Boora_TCC_2019.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::XFGloss.Droid.Resource.Dimension.hint_pressed_alpha_material_dark = global::Boora_TCC_2019.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::XFGloss.Droid.Resource.Dimension.hint_pressed_alpha_material_light = global::Boora_TCC_2019.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::XFGloss.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::Boora_TCC_2019.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::XFGloss.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::Boora_TCC_2019.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::XFGloss.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::Boora_TCC_2019.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::XFGloss.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height = global::Boora_TCC_2019.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
+			global::XFGloss.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::Boora_TCC_2019.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
+			global::XFGloss.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height = global::Boora_TCC_2019.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
+			global::XFGloss.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::Boora_TCC_2019.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
+			global::XFGloss.Droid.Resource.Dimension.mr_dialog_fixed_width_major = global::Boora_TCC_2019.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
+			global::XFGloss.Droid.Resource.Dimension.mr_dialog_fixed_width_minor = global::Boora_TCC_2019.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
+			global::XFGloss.Droid.Resource.Dimension.notification_action_icon_size = global::Boora_TCC_2019.Droid.Resource.Dimension.notification_action_icon_size;
+			global::XFGloss.Droid.Resource.Dimension.notification_action_text_size = global::Boora_TCC_2019.Droid.Resource.Dimension.notification_action_text_size;
+			global::XFGloss.Droid.Resource.Dimension.notification_big_circle_margin = global::Boora_TCC_2019.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::XFGloss.Droid.Resource.Dimension.notification_content_margin_start = global::Boora_TCC_2019.Droid.Resource.Dimension.notification_content_margin_start;
+			global::XFGloss.Droid.Resource.Dimension.notification_large_icon_height = global::Boora_TCC_2019.Droid.Resource.Dimension.notification_large_icon_height;
+			global::XFGloss.Droid.Resource.Dimension.notification_large_icon_width = global::Boora_TCC_2019.Droid.Resource.Dimension.notification_large_icon_width;
+			global::XFGloss.Droid.Resource.Dimension.notification_main_column_padding_top = global::Boora_TCC_2019.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::XFGloss.Droid.Resource.Dimension.notification_media_narrow_margin = global::Boora_TCC_2019.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::XFGloss.Droid.Resource.Dimension.notification_right_icon_size = global::Boora_TCC_2019.Droid.Resource.Dimension.notification_right_icon_size;
+			global::XFGloss.Droid.Resource.Dimension.notification_right_side_padding_top = global::Boora_TCC_2019.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::XFGloss.Droid.Resource.Dimension.notification_small_icon_background_padding = global::Boora_TCC_2019.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::XFGloss.Droid.Resource.Dimension.notification_small_icon_size_as_large = global::Boora_TCC_2019.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::XFGloss.Droid.Resource.Dimension.notification_subtext_size = global::Boora_TCC_2019.Droid.Resource.Dimension.notification_subtext_size;
+			global::XFGloss.Droid.Resource.Dimension.notification_top_pad = global::Boora_TCC_2019.Droid.Resource.Dimension.notification_top_pad;
+			global::XFGloss.Droid.Resource.Dimension.notification_top_pad_large_text = global::Boora_TCC_2019.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::XFGloss.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::XFGloss.Droid.Resource.Drawable.abc_action_bar_item_background_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_btn_borderless_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_btn_check_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_btn_check_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::XFGloss.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::XFGloss.Droid.Resource.Drawable.abc_btn_colored_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_btn_default_mtrl_shape = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::XFGloss.Droid.Resource.Drawable.abc_btn_radio_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::XFGloss.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::XFGloss.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::XFGloss.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::XFGloss.Droid.Resource.Drawable.abc_cab_background_internal_bg = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::XFGloss.Droid.Resource.Drawable.abc_cab_background_top_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::XFGloss.Droid.Resource.Drawable.abc_control_background_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_control_background_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_dialog_material_background = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::XFGloss.Droid.Resource.Drawable.abc_edit_text_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_edit_text_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_ic_ab_back_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::XFGloss.Droid.Resource.Drawable.abc_ic_clear_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::XFGloss.Droid.Resource.Drawable.abc_ic_go_search_api_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::XFGloss.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::XFGloss.Droid.Resource.Drawable.abc_ic_menu_overflow_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::XFGloss.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::XFGloss.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::XFGloss.Droid.Resource.Drawable.abc_ic_search_api_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_ic_star_black_16dp = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::XFGloss.Droid.Resource.Drawable.abc_ic_star_black_36dp = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::XFGloss.Droid.Resource.Drawable.abc_ic_star_black_48dp = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::XFGloss.Droid.Resource.Drawable.abc_ic_star_half_black_16dp = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::XFGloss.Droid.Resource.Drawable.abc_ic_star_half_black_36dp = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::XFGloss.Droid.Resource.Drawable.abc_ic_star_half_black_48dp = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::XFGloss.Droid.Resource.Drawable.abc_ic_voice_search_api_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_item_background_holo_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::XFGloss.Droid.Resource.Drawable.abc_item_background_holo_light = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::XFGloss.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::XFGloss.Droid.Resource.Drawable.abc_list_focused_holo = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::XFGloss.Droid.Resource.Drawable.abc_list_longpressed_holo = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::XFGloss.Droid.Resource.Drawable.abc_list_pressed_holo_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::XFGloss.Droid.Resource.Drawable.abc_list_pressed_holo_light = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::XFGloss.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::XFGloss.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::XFGloss.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::XFGloss.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::XFGloss.Droid.Resource.Drawable.abc_list_selector_holo_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::XFGloss.Droid.Resource.Drawable.abc_list_selector_holo_light = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::XFGloss.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::XFGloss.Droid.Resource.Drawable.abc_popup_background_mtrl_mult = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::XFGloss.Droid.Resource.Drawable.abc_ratingbar_indicator_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_ratingbar_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_ratingbar_small_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::XFGloss.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::XFGloss.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::XFGloss.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::XFGloss.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::XFGloss.Droid.Resource.Drawable.abc_seekbar_thumb_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_seekbar_tick_mark_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_seekbar_track_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::XFGloss.Droid.Resource.Drawable.abc_spinner_textfield_background_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_switch_thumb_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::XFGloss.Droid.Resource.Drawable.abc_tab_indicator_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::XFGloss.Droid.Resource.Drawable.abc_text_cursor_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::XFGloss.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::XFGloss.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::XFGloss.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::XFGloss.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::XFGloss.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::XFGloss.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::XFGloss.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::XFGloss.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::XFGloss.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::XFGloss.Droid.Resource.Drawable.abc_textfield_search_material = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::XFGloss.Droid.Resource.Drawable.abc_vector_test = global::Boora_TCC_2019.Droid.Resource.Drawable.abc_vector_test;
+			global::XFGloss.Droid.Resource.Drawable.avd_hide_password = global::Boora_TCC_2019.Droid.Resource.Drawable.avd_hide_password;
+			global::XFGloss.Droid.Resource.Drawable.avd_hide_password_1 = global::Boora_TCC_2019.Droid.Resource.Drawable.avd_hide_password_1;
+			global::XFGloss.Droid.Resource.Drawable.avd_hide_password_2 = global::Boora_TCC_2019.Droid.Resource.Drawable.avd_hide_password_2;
+			global::XFGloss.Droid.Resource.Drawable.avd_hide_password_3 = global::Boora_TCC_2019.Droid.Resource.Drawable.avd_hide_password_3;
+			global::XFGloss.Droid.Resource.Drawable.avd_show_password = global::Boora_TCC_2019.Droid.Resource.Drawable.avd_show_password;
+			global::XFGloss.Droid.Resource.Drawable.avd_show_password_1 = global::Boora_TCC_2019.Droid.Resource.Drawable.avd_show_password_1;
+			global::XFGloss.Droid.Resource.Drawable.avd_show_password_2 = global::Boora_TCC_2019.Droid.Resource.Drawable.avd_show_password_2;
+			global::XFGloss.Droid.Resource.Drawable.avd_show_password_3 = global::Boora_TCC_2019.Droid.Resource.Drawable.avd_show_password_3;
+			global::XFGloss.Droid.Resource.Drawable.design_bottom_navigation_item_background = global::Boora_TCC_2019.Droid.Resource.Drawable.design_bottom_navigation_item_background;
+			global::XFGloss.Droid.Resource.Drawable.design_fab_background = global::Boora_TCC_2019.Droid.Resource.Drawable.design_fab_background;
+			global::XFGloss.Droid.Resource.Drawable.design_ic_visibility = global::Boora_TCC_2019.Droid.Resource.Drawable.design_ic_visibility;
+			global::XFGloss.Droid.Resource.Drawable.design_ic_visibility_off = global::Boora_TCC_2019.Droid.Resource.Drawable.design_ic_visibility_off;
+			global::XFGloss.Droid.Resource.Drawable.design_password_eye = global::Boora_TCC_2019.Droid.Resource.Drawable.design_password_eye;
+			global::XFGloss.Droid.Resource.Drawable.design_snackbar_background = global::Boora_TCC_2019.Droid.Resource.Drawable.design_snackbar_background;
+			global::XFGloss.Droid.Resource.Drawable.ic_audiotrack_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_audiotrack_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_audiotrack_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_audiotrack_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_dialog_close_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_dialog_close_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_dialog_close_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_dialog_close_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_collapse_00 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_collapse_00;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_collapse_01 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_collapse_01;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_collapse_02 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_collapse_02;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_collapse_03 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_collapse_03;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_collapse_04 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_collapse_04;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_collapse_05 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_collapse_05;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_collapse_06 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_collapse_06;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_collapse_07 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_collapse_07;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_collapse_08 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_collapse_08;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_collapse_09 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_collapse_09;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_collapse_10 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_collapse_10;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_collapse_11 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_collapse_11;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_collapse_12 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_collapse_12;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_collapse_13 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_collapse_13;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_collapse_14 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_collapse_14;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_collapse_15 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_collapse_15;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_expand_00 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_expand_00;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_expand_01 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_expand_01;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_expand_02 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_expand_02;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_expand_03 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_expand_03;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_expand_04 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_expand_04;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_expand_05 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_expand_05;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_expand_06 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_expand_06;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_expand_07 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_expand_07;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_expand_08 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_expand_08;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_expand_09 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_expand_09;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_expand_10 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_expand_10;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_expand_11 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_expand_11;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_expand_12 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_expand_12;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_expand_13 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_expand_13;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_expand_14 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_expand_14;
+			global::XFGloss.Droid.Resource.Drawable.ic_group_expand_15 = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_group_expand_15;
+			global::XFGloss.Droid.Resource.Drawable.ic_media_pause_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_media_pause_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_media_pause_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_media_pause_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_media_play_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_media_play_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_media_play_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_media_play_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_media_stop_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_media_stop_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_media_stop_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_media_stop_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_00_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_00_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_00_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_00_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_01_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_01_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_01_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_01_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_02_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_02_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_02_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_02_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_03_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_03_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_03_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_03_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_04_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_04_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_04_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_04_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_05_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_05_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_05_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_05_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_06_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_06_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_06_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_06_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_07_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_07_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_07_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_07_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_08_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_08_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_08_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_08_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_09_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_09_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_09_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_09_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_10_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_10_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_10_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_10_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_11_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_11_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_11_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_11_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_12_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_12_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_12_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_12_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_13_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_13_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_13_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_13_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_14_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_14_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_14_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_14_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_15_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_15_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_15_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_15_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_16_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_16_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_16_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_16_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_17_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_17_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_17_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_17_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_18_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_18_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_18_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_18_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_19_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_19_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_19_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_19_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_20_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_20_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_20_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_20_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_21_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_21_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_21_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_21_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_22_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_22_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connected_22_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connected_22_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_00_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_00_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_01_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_01_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_02_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_02_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_03_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_03_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_04_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_04_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_05_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_05_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_06_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_06_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_07_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_07_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_08_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_08_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_09_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_09_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_10_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_10_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_11_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_11_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_12_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_12_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_13_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_13_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_14_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_14_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_15_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_15_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_16_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_16_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_17_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_17_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_18_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_18_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_19_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_19_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_20_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_20_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_21_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_21_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_connecting_22_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_connecting_22_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_disabled_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_disabled_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_disabled_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_disabled_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_disconnected_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_disconnected_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_disconnected_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_disconnected_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_mr_button_grey = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_mr_button_grey;
+			global::XFGloss.Droid.Resource.Drawable.ic_vol_type_speaker_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_vol_type_speaker_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_vol_type_speaker_group_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_vol_type_speaker_group_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_vol_type_speaker_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_vol_type_speaker_light;
+			global::XFGloss.Droid.Resource.Drawable.ic_vol_type_tv_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_vol_type_tv_dark;
+			global::XFGloss.Droid.Resource.Drawable.ic_vol_type_tv_light = global::Boora_TCC_2019.Droid.Resource.Drawable.ic_vol_type_tv_light;
+			global::XFGloss.Droid.Resource.Drawable.mr_button_connected_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_button_connected_dark;
+			global::XFGloss.Droid.Resource.Drawable.mr_button_connected_light = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_button_connected_light;
+			global::XFGloss.Droid.Resource.Drawable.mr_button_connecting_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_button_connecting_dark;
+			global::XFGloss.Droid.Resource.Drawable.mr_button_connecting_light = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_button_connecting_light;
+			global::XFGloss.Droid.Resource.Drawable.mr_button_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_button_dark;
+			global::XFGloss.Droid.Resource.Drawable.mr_button_light = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_button_light;
+			global::XFGloss.Droid.Resource.Drawable.mr_dialog_close_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_dialog_close_dark;
+			global::XFGloss.Droid.Resource.Drawable.mr_dialog_close_light = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_dialog_close_light;
+			global::XFGloss.Droid.Resource.Drawable.mr_dialog_material_background_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_dialog_material_background_dark;
+			global::XFGloss.Droid.Resource.Drawable.mr_dialog_material_background_light = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_dialog_material_background_light;
+			global::XFGloss.Droid.Resource.Drawable.mr_group_collapse = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_group_collapse;
+			global::XFGloss.Droid.Resource.Drawable.mr_group_expand = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_group_expand;
+			global::XFGloss.Droid.Resource.Drawable.mr_media_pause_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_media_pause_dark;
+			global::XFGloss.Droid.Resource.Drawable.mr_media_pause_light = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_media_pause_light;
+			global::XFGloss.Droid.Resource.Drawable.mr_media_play_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_media_play_dark;
+			global::XFGloss.Droid.Resource.Drawable.mr_media_play_light = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_media_play_light;
+			global::XFGloss.Droid.Resource.Drawable.mr_media_stop_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_media_stop_dark;
+			global::XFGloss.Droid.Resource.Drawable.mr_media_stop_light = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_media_stop_light;
+			global::XFGloss.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark;
+			global::XFGloss.Droid.Resource.Drawable.mr_vol_type_audiotrack_light = global::Boora_TCC_2019.Droid.Resource.Drawable.mr_vol_type_audiotrack_light;
+			global::XFGloss.Droid.Resource.Drawable.navigation_empty_icon = global::Boora_TCC_2019.Droid.Resource.Drawable.navigation_empty_icon;
+			global::XFGloss.Droid.Resource.Drawable.notification_action_background = global::Boora_TCC_2019.Droid.Resource.Drawable.notification_action_background;
+			global::XFGloss.Droid.Resource.Drawable.notification_bg = global::Boora_TCC_2019.Droid.Resource.Drawable.notification_bg;
+			global::XFGloss.Droid.Resource.Drawable.notification_bg_low = global::Boora_TCC_2019.Droid.Resource.Drawable.notification_bg_low;
+			global::XFGloss.Droid.Resource.Drawable.notification_bg_low_normal = global::Boora_TCC_2019.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::XFGloss.Droid.Resource.Drawable.notification_bg_low_pressed = global::Boora_TCC_2019.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::XFGloss.Droid.Resource.Drawable.notification_bg_normal = global::Boora_TCC_2019.Droid.Resource.Drawable.notification_bg_normal;
+			global::XFGloss.Droid.Resource.Drawable.notification_bg_normal_pressed = global::Boora_TCC_2019.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::XFGloss.Droid.Resource.Drawable.notification_icon_background = global::Boora_TCC_2019.Droid.Resource.Drawable.notification_icon_background;
+			global::XFGloss.Droid.Resource.Drawable.notification_template_icon_bg = global::Boora_TCC_2019.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::XFGloss.Droid.Resource.Drawable.notification_template_icon_low_bg = global::Boora_TCC_2019.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::XFGloss.Droid.Resource.Drawable.notification_tile_bg = global::Boora_TCC_2019.Droid.Resource.Drawable.notification_tile_bg;
+			global::XFGloss.Droid.Resource.Drawable.notify_panel_notification_icon_bg = global::Boora_TCC_2019.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::XFGloss.Droid.Resource.Id.action0 = global::Boora_TCC_2019.Droid.Resource.Id.action0;
+			global::XFGloss.Droid.Resource.Id.action_bar = global::Boora_TCC_2019.Droid.Resource.Id.action_bar;
+			global::XFGloss.Droid.Resource.Id.action_bar_activity_content = global::Boora_TCC_2019.Droid.Resource.Id.action_bar_activity_content;
+			global::XFGloss.Droid.Resource.Id.action_bar_container = global::Boora_TCC_2019.Droid.Resource.Id.action_bar_container;
+			global::XFGloss.Droid.Resource.Id.action_bar_root = global::Boora_TCC_2019.Droid.Resource.Id.action_bar_root;
+			global::XFGloss.Droid.Resource.Id.action_bar_spinner = global::Boora_TCC_2019.Droid.Resource.Id.action_bar_spinner;
+			global::XFGloss.Droid.Resource.Id.action_bar_subtitle = global::Boora_TCC_2019.Droid.Resource.Id.action_bar_subtitle;
+			global::XFGloss.Droid.Resource.Id.action_bar_title = global::Boora_TCC_2019.Droid.Resource.Id.action_bar_title;
+			global::XFGloss.Droid.Resource.Id.action_container = global::Boora_TCC_2019.Droid.Resource.Id.action_container;
+			global::XFGloss.Droid.Resource.Id.action_context_bar = global::Boora_TCC_2019.Droid.Resource.Id.action_context_bar;
+			global::XFGloss.Droid.Resource.Id.action_divider = global::Boora_TCC_2019.Droid.Resource.Id.action_divider;
+			global::XFGloss.Droid.Resource.Id.action_image = global::Boora_TCC_2019.Droid.Resource.Id.action_image;
+			global::XFGloss.Droid.Resource.Id.action_menu_divider = global::Boora_TCC_2019.Droid.Resource.Id.action_menu_divider;
+			global::XFGloss.Droid.Resource.Id.action_menu_presenter = global::Boora_TCC_2019.Droid.Resource.Id.action_menu_presenter;
+			global::XFGloss.Droid.Resource.Id.action_mode_bar = global::Boora_TCC_2019.Droid.Resource.Id.action_mode_bar;
+			global::XFGloss.Droid.Resource.Id.action_mode_bar_stub = global::Boora_TCC_2019.Droid.Resource.Id.action_mode_bar_stub;
+			global::XFGloss.Droid.Resource.Id.action_mode_close_button = global::Boora_TCC_2019.Droid.Resource.Id.action_mode_close_button;
+			global::XFGloss.Droid.Resource.Id.action_text = global::Boora_TCC_2019.Droid.Resource.Id.action_text;
+			global::XFGloss.Droid.Resource.Id.actions = global::Boora_TCC_2019.Droid.Resource.Id.actions;
+			global::XFGloss.Droid.Resource.Id.activity_chooser_view_content = global::Boora_TCC_2019.Droid.Resource.Id.activity_chooser_view_content;
+			global::XFGloss.Droid.Resource.Id.add = global::Boora_TCC_2019.Droid.Resource.Id.add;
+			global::XFGloss.Droid.Resource.Id.alertTitle = global::Boora_TCC_2019.Droid.Resource.Id.alertTitle;
+			global::XFGloss.Droid.Resource.Id.all = global::Boora_TCC_2019.Droid.Resource.Id.all;
+			global::XFGloss.Droid.Resource.Id.always = global::Boora_TCC_2019.Droid.Resource.Id.always;
+			global::XFGloss.Droid.Resource.Id.auto = global::Boora_TCC_2019.Droid.Resource.Id.auto;
+			global::XFGloss.Droid.Resource.Id.beginning = global::Boora_TCC_2019.Droid.Resource.Id.beginning;
+			global::XFGloss.Droid.Resource.Id.bottom = global::Boora_TCC_2019.Droid.Resource.Id.bottom;
+			global::XFGloss.Droid.Resource.Id.buttonPanel = global::Boora_TCC_2019.Droid.Resource.Id.buttonPanel;
+			global::XFGloss.Droid.Resource.Id.cancel_action = global::Boora_TCC_2019.Droid.Resource.Id.cancel_action;
+			global::XFGloss.Droid.Resource.Id.center = global::Boora_TCC_2019.Droid.Resource.Id.center;
+			global::XFGloss.Droid.Resource.Id.center_horizontal = global::Boora_TCC_2019.Droid.Resource.Id.center_horizontal;
+			global::XFGloss.Droid.Resource.Id.center_vertical = global::Boora_TCC_2019.Droid.Resource.Id.center_vertical;
+			global::XFGloss.Droid.Resource.Id.checkbox = global::Boora_TCC_2019.Droid.Resource.Id.checkbox;
+			global::XFGloss.Droid.Resource.Id.chronometer = global::Boora_TCC_2019.Droid.Resource.Id.chronometer;
+			global::XFGloss.Droid.Resource.Id.clip_horizontal = global::Boora_TCC_2019.Droid.Resource.Id.clip_horizontal;
+			global::XFGloss.Droid.Resource.Id.clip_vertical = global::Boora_TCC_2019.Droid.Resource.Id.clip_vertical;
+			global::XFGloss.Droid.Resource.Id.collapseActionView = global::Boora_TCC_2019.Droid.Resource.Id.collapseActionView;
+			global::XFGloss.Droid.Resource.Id.container = global::Boora_TCC_2019.Droid.Resource.Id.container;
+			global::XFGloss.Droid.Resource.Id.contentPanel = global::Boora_TCC_2019.Droid.Resource.Id.contentPanel;
+			global::XFGloss.Droid.Resource.Id.coordinator = global::Boora_TCC_2019.Droid.Resource.Id.coordinator;
+			global::XFGloss.Droid.Resource.Id.custom = global::Boora_TCC_2019.Droid.Resource.Id.custom;
+			global::XFGloss.Droid.Resource.Id.customPanel = global::Boora_TCC_2019.Droid.Resource.Id.customPanel;
+			global::XFGloss.Droid.Resource.Id.decor_content_parent = global::Boora_TCC_2019.Droid.Resource.Id.decor_content_parent;
+			global::XFGloss.Droid.Resource.Id.default_activity_button = global::Boora_TCC_2019.Droid.Resource.Id.default_activity_button;
+			global::XFGloss.Droid.Resource.Id.design_bottom_sheet = global::Boora_TCC_2019.Droid.Resource.Id.design_bottom_sheet;
+			global::XFGloss.Droid.Resource.Id.design_menu_item_action_area = global::Boora_TCC_2019.Droid.Resource.Id.design_menu_item_action_area;
+			global::XFGloss.Droid.Resource.Id.design_menu_item_action_area_stub = global::Boora_TCC_2019.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::XFGloss.Droid.Resource.Id.design_menu_item_text = global::Boora_TCC_2019.Droid.Resource.Id.design_menu_item_text;
+			global::XFGloss.Droid.Resource.Id.design_navigation_view = global::Boora_TCC_2019.Droid.Resource.Id.design_navigation_view;
+			global::XFGloss.Droid.Resource.Id.disableHome = global::Boora_TCC_2019.Droid.Resource.Id.disableHome;
+			global::XFGloss.Droid.Resource.Id.edit_query = global::Boora_TCC_2019.Droid.Resource.Id.edit_query;
+			global::XFGloss.Droid.Resource.Id.end = global::Boora_TCC_2019.Droid.Resource.Id.end;
+			global::XFGloss.Droid.Resource.Id.end_padder = global::Boora_TCC_2019.Droid.Resource.Id.end_padder;
+			global::XFGloss.Droid.Resource.Id.enterAlways = global::Boora_TCC_2019.Droid.Resource.Id.enterAlways;
+			global::XFGloss.Droid.Resource.Id.enterAlwaysCollapsed = global::Boora_TCC_2019.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::XFGloss.Droid.Resource.Id.exitUntilCollapsed = global::Boora_TCC_2019.Droid.Resource.Id.exitUntilCollapsed;
+			global::XFGloss.Droid.Resource.Id.expand_activities_button = global::Boora_TCC_2019.Droid.Resource.Id.expand_activities_button;
+			global::XFGloss.Droid.Resource.Id.expanded_menu = global::Boora_TCC_2019.Droid.Resource.Id.expanded_menu;
+			global::XFGloss.Droid.Resource.Id.fill = global::Boora_TCC_2019.Droid.Resource.Id.fill;
+			global::XFGloss.Droid.Resource.Id.fill_horizontal = global::Boora_TCC_2019.Droid.Resource.Id.fill_horizontal;
+			global::XFGloss.Droid.Resource.Id.fill_vertical = global::Boora_TCC_2019.Droid.Resource.Id.fill_vertical;
+			global::XFGloss.Droid.Resource.Id.@fixed = global::Boora_TCC_2019.Droid.Resource.Id.@fixed;
+			global::XFGloss.Droid.Resource.Id.home = global::Boora_TCC_2019.Droid.Resource.Id.home;
+			global::XFGloss.Droid.Resource.Id.homeAsUp = global::Boora_TCC_2019.Droid.Resource.Id.homeAsUp;
+			global::XFGloss.Droid.Resource.Id.icon = global::Boora_TCC_2019.Droid.Resource.Id.icon;
+			global::XFGloss.Droid.Resource.Id.icon_group = global::Boora_TCC_2019.Droid.Resource.Id.icon_group;
+			global::XFGloss.Droid.Resource.Id.ifRoom = global::Boora_TCC_2019.Droid.Resource.Id.ifRoom;
+			global::XFGloss.Droid.Resource.Id.image = global::Boora_TCC_2019.Droid.Resource.Id.image;
+			global::XFGloss.Droid.Resource.Id.info = global::Boora_TCC_2019.Droid.Resource.Id.info;
+			global::XFGloss.Droid.Resource.Id.item_touch_helper_previous_elevation = global::Boora_TCC_2019.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::XFGloss.Droid.Resource.Id.largeLabel = global::Boora_TCC_2019.Droid.Resource.Id.largeLabel;
+			global::XFGloss.Droid.Resource.Id.left = global::Boora_TCC_2019.Droid.Resource.Id.left;
+			global::XFGloss.Droid.Resource.Id.line1 = global::Boora_TCC_2019.Droid.Resource.Id.line1;
+			global::XFGloss.Droid.Resource.Id.line3 = global::Boora_TCC_2019.Droid.Resource.Id.line3;
+			global::XFGloss.Droid.Resource.Id.listMode = global::Boora_TCC_2019.Droid.Resource.Id.listMode;
+			global::XFGloss.Droid.Resource.Id.list_item = global::Boora_TCC_2019.Droid.Resource.Id.list_item;
+			global::XFGloss.Droid.Resource.Id.masked = global::Boora_TCC_2019.Droid.Resource.Id.masked;
+			global::XFGloss.Droid.Resource.Id.media_actions = global::Boora_TCC_2019.Droid.Resource.Id.media_actions;
+			global::XFGloss.Droid.Resource.Id.middle = global::Boora_TCC_2019.Droid.Resource.Id.middle;
+			global::XFGloss.Droid.Resource.Id.mini = global::Boora_TCC_2019.Droid.Resource.Id.mini;
+			global::XFGloss.Droid.Resource.Id.mr_art = global::Boora_TCC_2019.Droid.Resource.Id.mr_art;
+			global::XFGloss.Droid.Resource.Id.mr_chooser_list = global::Boora_TCC_2019.Droid.Resource.Id.mr_chooser_list;
+			global::XFGloss.Droid.Resource.Id.mr_chooser_route_desc = global::Boora_TCC_2019.Droid.Resource.Id.mr_chooser_route_desc;
+			global::XFGloss.Droid.Resource.Id.mr_chooser_route_icon = global::Boora_TCC_2019.Droid.Resource.Id.mr_chooser_route_icon;
+			global::XFGloss.Droid.Resource.Id.mr_chooser_route_name = global::Boora_TCC_2019.Droid.Resource.Id.mr_chooser_route_name;
+			global::XFGloss.Droid.Resource.Id.mr_chooser_title = global::Boora_TCC_2019.Droid.Resource.Id.mr_chooser_title;
+			global::XFGloss.Droid.Resource.Id.mr_close = global::Boora_TCC_2019.Droid.Resource.Id.mr_close;
+			global::XFGloss.Droid.Resource.Id.mr_control_divider = global::Boora_TCC_2019.Droid.Resource.Id.mr_control_divider;
+			global::XFGloss.Droid.Resource.Id.mr_control_playback_ctrl = global::Boora_TCC_2019.Droid.Resource.Id.mr_control_playback_ctrl;
+			global::XFGloss.Droid.Resource.Id.mr_control_subtitle = global::Boora_TCC_2019.Droid.Resource.Id.mr_control_subtitle;
+			global::XFGloss.Droid.Resource.Id.mr_control_title = global::Boora_TCC_2019.Droid.Resource.Id.mr_control_title;
+			global::XFGloss.Droid.Resource.Id.mr_control_title_container = global::Boora_TCC_2019.Droid.Resource.Id.mr_control_title_container;
+			global::XFGloss.Droid.Resource.Id.mr_custom_control = global::Boora_TCC_2019.Droid.Resource.Id.mr_custom_control;
+			global::XFGloss.Droid.Resource.Id.mr_default_control = global::Boora_TCC_2019.Droid.Resource.Id.mr_default_control;
+			global::XFGloss.Droid.Resource.Id.mr_dialog_area = global::Boora_TCC_2019.Droid.Resource.Id.mr_dialog_area;
+			global::XFGloss.Droid.Resource.Id.mr_expandable_area = global::Boora_TCC_2019.Droid.Resource.Id.mr_expandable_area;
+			global::XFGloss.Droid.Resource.Id.mr_group_expand_collapse = global::Boora_TCC_2019.Droid.Resource.Id.mr_group_expand_collapse;
+			global::XFGloss.Droid.Resource.Id.mr_media_main_control = global::Boora_TCC_2019.Droid.Resource.Id.mr_media_main_control;
+			global::XFGloss.Droid.Resource.Id.mr_name = global::Boora_TCC_2019.Droid.Resource.Id.mr_name;
+			global::XFGloss.Droid.Resource.Id.mr_playback_control = global::Boora_TCC_2019.Droid.Resource.Id.mr_playback_control;
+			global::XFGloss.Droid.Resource.Id.mr_title_bar = global::Boora_TCC_2019.Droid.Resource.Id.mr_title_bar;
+			global::XFGloss.Droid.Resource.Id.mr_volume_control = global::Boora_TCC_2019.Droid.Resource.Id.mr_volume_control;
+			global::XFGloss.Droid.Resource.Id.mr_volume_group_list = global::Boora_TCC_2019.Droid.Resource.Id.mr_volume_group_list;
+			global::XFGloss.Droid.Resource.Id.mr_volume_item_icon = global::Boora_TCC_2019.Droid.Resource.Id.mr_volume_item_icon;
+			global::XFGloss.Droid.Resource.Id.mr_volume_slider = global::Boora_TCC_2019.Droid.Resource.Id.mr_volume_slider;
+			global::XFGloss.Droid.Resource.Id.multiply = global::Boora_TCC_2019.Droid.Resource.Id.multiply;
+			global::XFGloss.Droid.Resource.Id.navigation_header_container = global::Boora_TCC_2019.Droid.Resource.Id.navigation_header_container;
+			global::XFGloss.Droid.Resource.Id.never = global::Boora_TCC_2019.Droid.Resource.Id.never;
+			global::XFGloss.Droid.Resource.Id.none = global::Boora_TCC_2019.Droid.Resource.Id.none;
+			global::XFGloss.Droid.Resource.Id.normal = global::Boora_TCC_2019.Droid.Resource.Id.normal;
+			global::XFGloss.Droid.Resource.Id.notification_background = global::Boora_TCC_2019.Droid.Resource.Id.notification_background;
+			global::XFGloss.Droid.Resource.Id.notification_main_column = global::Boora_TCC_2019.Droid.Resource.Id.notification_main_column;
+			global::XFGloss.Droid.Resource.Id.notification_main_column_container = global::Boora_TCC_2019.Droid.Resource.Id.notification_main_column_container;
+			global::XFGloss.Droid.Resource.Id.parallax = global::Boora_TCC_2019.Droid.Resource.Id.parallax;
+			global::XFGloss.Droid.Resource.Id.parentPanel = global::Boora_TCC_2019.Droid.Resource.Id.parentPanel;
+			global::XFGloss.Droid.Resource.Id.pin = global::Boora_TCC_2019.Droid.Resource.Id.pin;
+			global::XFGloss.Droid.Resource.Id.progress_circular = global::Boora_TCC_2019.Droid.Resource.Id.progress_circular;
+			global::XFGloss.Droid.Resource.Id.progress_horizontal = global::Boora_TCC_2019.Droid.Resource.Id.progress_horizontal;
+			global::XFGloss.Droid.Resource.Id.radio = global::Boora_TCC_2019.Droid.Resource.Id.radio;
+			global::XFGloss.Droid.Resource.Id.right = global::Boora_TCC_2019.Droid.Resource.Id.right;
+			global::XFGloss.Droid.Resource.Id.right_icon = global::Boora_TCC_2019.Droid.Resource.Id.right_icon;
+			global::XFGloss.Droid.Resource.Id.right_side = global::Boora_TCC_2019.Droid.Resource.Id.right_side;
+			global::XFGloss.Droid.Resource.Id.screen = global::Boora_TCC_2019.Droid.Resource.Id.screen;
+			global::XFGloss.Droid.Resource.Id.scroll = global::Boora_TCC_2019.Droid.Resource.Id.scroll;
+			global::XFGloss.Droid.Resource.Id.scrollIndicatorDown = global::Boora_TCC_2019.Droid.Resource.Id.scrollIndicatorDown;
+			global::XFGloss.Droid.Resource.Id.scrollIndicatorUp = global::Boora_TCC_2019.Droid.Resource.Id.scrollIndicatorUp;
+			global::XFGloss.Droid.Resource.Id.scrollView = global::Boora_TCC_2019.Droid.Resource.Id.scrollView;
+			global::XFGloss.Droid.Resource.Id.scrollable = global::Boora_TCC_2019.Droid.Resource.Id.scrollable;
+			global::XFGloss.Droid.Resource.Id.search_badge = global::Boora_TCC_2019.Droid.Resource.Id.search_badge;
+			global::XFGloss.Droid.Resource.Id.search_bar = global::Boora_TCC_2019.Droid.Resource.Id.search_bar;
+			global::XFGloss.Droid.Resource.Id.search_button = global::Boora_TCC_2019.Droid.Resource.Id.search_button;
+			global::XFGloss.Droid.Resource.Id.search_close_btn = global::Boora_TCC_2019.Droid.Resource.Id.search_close_btn;
+			global::XFGloss.Droid.Resource.Id.search_edit_frame = global::Boora_TCC_2019.Droid.Resource.Id.search_edit_frame;
+			global::XFGloss.Droid.Resource.Id.search_go_btn = global::Boora_TCC_2019.Droid.Resource.Id.search_go_btn;
+			global::XFGloss.Droid.Resource.Id.search_mag_icon = global::Boora_TCC_2019.Droid.Resource.Id.search_mag_icon;
+			global::XFGloss.Droid.Resource.Id.search_plate = global::Boora_TCC_2019.Droid.Resource.Id.search_plate;
+			global::XFGloss.Droid.Resource.Id.search_src_text = global::Boora_TCC_2019.Droid.Resource.Id.search_src_text;
+			global::XFGloss.Droid.Resource.Id.search_voice_btn = global::Boora_TCC_2019.Droid.Resource.Id.search_voice_btn;
+			global::XFGloss.Droid.Resource.Id.select_dialog_listview = global::Boora_TCC_2019.Droid.Resource.Id.select_dialog_listview;
+			global::XFGloss.Droid.Resource.Id.shortcut = global::Boora_TCC_2019.Droid.Resource.Id.shortcut;
+			global::XFGloss.Droid.Resource.Id.showCustom = global::Boora_TCC_2019.Droid.Resource.Id.showCustom;
+			global::XFGloss.Droid.Resource.Id.showHome = global::Boora_TCC_2019.Droid.Resource.Id.showHome;
+			global::XFGloss.Droid.Resource.Id.showTitle = global::Boora_TCC_2019.Droid.Resource.Id.showTitle;
+			global::XFGloss.Droid.Resource.Id.smallLabel = global::Boora_TCC_2019.Droid.Resource.Id.smallLabel;
+			global::XFGloss.Droid.Resource.Id.snackbar_action = global::Boora_TCC_2019.Droid.Resource.Id.snackbar_action;
+			global::XFGloss.Droid.Resource.Id.snackbar_text = global::Boora_TCC_2019.Droid.Resource.Id.snackbar_text;
+			global::XFGloss.Droid.Resource.Id.snap = global::Boora_TCC_2019.Droid.Resource.Id.snap;
+			global::XFGloss.Droid.Resource.Id.spacer = global::Boora_TCC_2019.Droid.Resource.Id.spacer;
+			global::XFGloss.Droid.Resource.Id.split_action_bar = global::Boora_TCC_2019.Droid.Resource.Id.split_action_bar;
+			global::XFGloss.Droid.Resource.Id.src_atop = global::Boora_TCC_2019.Droid.Resource.Id.src_atop;
+			global::XFGloss.Droid.Resource.Id.src_in = global::Boora_TCC_2019.Droid.Resource.Id.src_in;
+			global::XFGloss.Droid.Resource.Id.src_over = global::Boora_TCC_2019.Droid.Resource.Id.src_over;
+			global::XFGloss.Droid.Resource.Id.start = global::Boora_TCC_2019.Droid.Resource.Id.start;
+			global::XFGloss.Droid.Resource.Id.status_bar_latest_event_content = global::Boora_TCC_2019.Droid.Resource.Id.status_bar_latest_event_content;
+			global::XFGloss.Droid.Resource.Id.submenuarrow = global::Boora_TCC_2019.Droid.Resource.Id.submenuarrow;
+			global::XFGloss.Droid.Resource.Id.submit_area = global::Boora_TCC_2019.Droid.Resource.Id.submit_area;
+			global::XFGloss.Droid.Resource.Id.tabMode = global::Boora_TCC_2019.Droid.Resource.Id.tabMode;
+			global::XFGloss.Droid.Resource.Id.text = global::Boora_TCC_2019.Droid.Resource.Id.text;
+			global::XFGloss.Droid.Resource.Id.text2 = global::Boora_TCC_2019.Droid.Resource.Id.text2;
+			global::XFGloss.Droid.Resource.Id.textSpacerNoButtons = global::Boora_TCC_2019.Droid.Resource.Id.textSpacerNoButtons;
+			global::XFGloss.Droid.Resource.Id.textSpacerNoTitle = global::Boora_TCC_2019.Droid.Resource.Id.textSpacerNoTitle;
+			global::XFGloss.Droid.Resource.Id.text_input_password_toggle = global::Boora_TCC_2019.Droid.Resource.Id.text_input_password_toggle;
+			global::XFGloss.Droid.Resource.Id.textinput_counter = global::Boora_TCC_2019.Droid.Resource.Id.textinput_counter;
+			global::XFGloss.Droid.Resource.Id.textinput_error = global::Boora_TCC_2019.Droid.Resource.Id.textinput_error;
+			global::XFGloss.Droid.Resource.Id.time = global::Boora_TCC_2019.Droid.Resource.Id.time;
+			global::XFGloss.Droid.Resource.Id.title = global::Boora_TCC_2019.Droid.Resource.Id.title;
+			global::XFGloss.Droid.Resource.Id.titleDividerNoCustom = global::Boora_TCC_2019.Droid.Resource.Id.titleDividerNoCustom;
+			global::XFGloss.Droid.Resource.Id.title_template = global::Boora_TCC_2019.Droid.Resource.Id.title_template;
+			global::XFGloss.Droid.Resource.Id.top = global::Boora_TCC_2019.Droid.Resource.Id.top;
+			global::XFGloss.Droid.Resource.Id.topPanel = global::Boora_TCC_2019.Droid.Resource.Id.topPanel;
+			global::XFGloss.Droid.Resource.Id.touch_outside = global::Boora_TCC_2019.Droid.Resource.Id.touch_outside;
+			global::XFGloss.Droid.Resource.Id.transition_current_scene = global::Boora_TCC_2019.Droid.Resource.Id.transition_current_scene;
+			global::XFGloss.Droid.Resource.Id.transition_scene_layoutid_cache = global::Boora_TCC_2019.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::XFGloss.Droid.Resource.Id.up = global::Boora_TCC_2019.Droid.Resource.Id.up;
+			global::XFGloss.Droid.Resource.Id.useLogo = global::Boora_TCC_2019.Droid.Resource.Id.useLogo;
+			global::XFGloss.Droid.Resource.Id.view_offset_helper = global::Boora_TCC_2019.Droid.Resource.Id.view_offset_helper;
+			global::XFGloss.Droid.Resource.Id.visible = global::Boora_TCC_2019.Droid.Resource.Id.visible;
+			global::XFGloss.Droid.Resource.Id.volume_item_container = global::Boora_TCC_2019.Droid.Resource.Id.volume_item_container;
+			global::XFGloss.Droid.Resource.Id.withText = global::Boora_TCC_2019.Droid.Resource.Id.withText;
+			global::XFGloss.Droid.Resource.Id.wrap_content = global::Boora_TCC_2019.Droid.Resource.Id.wrap_content;
+			global::XFGloss.Droid.Resource.Integer.abc_config_activityDefaultDur = global::Boora_TCC_2019.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::XFGloss.Droid.Resource.Integer.abc_config_activityShortDur = global::Boora_TCC_2019.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::XFGloss.Droid.Resource.Integer.app_bar_elevation_anim_duration = global::Boora_TCC_2019.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::XFGloss.Droid.Resource.Integer.bottom_sheet_slide_duration = global::Boora_TCC_2019.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::XFGloss.Droid.Resource.Integer.cancel_button_image_alpha = global::Boora_TCC_2019.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::XFGloss.Droid.Resource.Integer.design_snackbar_text_max_lines = global::Boora_TCC_2019.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::XFGloss.Droid.Resource.Integer.hide_password_duration = global::Boora_TCC_2019.Droid.Resource.Integer.hide_password_duration;
+			global::XFGloss.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::Boora_TCC_2019.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
+			global::XFGloss.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::Boora_TCC_2019.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
+			global::XFGloss.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::Boora_TCC_2019.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
+			global::XFGloss.Droid.Resource.Integer.show_password_duration = global::Boora_TCC_2019.Droid.Resource.Integer.show_password_duration;
+			global::XFGloss.Droid.Resource.Integer.status_bar_notification_info_maxnum = global::Boora_TCC_2019.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::XFGloss.Droid.Resource.Interpolator.mr_fast_out_slow_in = global::Boora_TCC_2019.Droid.Resource.Interpolator.mr_fast_out_slow_in;
+			global::XFGloss.Droid.Resource.Interpolator.mr_linear_out_slow_in = global::Boora_TCC_2019.Droid.Resource.Interpolator.mr_linear_out_slow_in;
+			global::XFGloss.Droid.Resource.Layout.abc_action_bar_title_item = global::Boora_TCC_2019.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::XFGloss.Droid.Resource.Layout.abc_action_bar_up_container = global::Boora_TCC_2019.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::XFGloss.Droid.Resource.Layout.abc_action_menu_item_layout = global::Boora_TCC_2019.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::XFGloss.Droid.Resource.Layout.abc_action_menu_layout = global::Boora_TCC_2019.Droid.Resource.Layout.abc_action_menu_layout;
+			global::XFGloss.Droid.Resource.Layout.abc_action_mode_bar = global::Boora_TCC_2019.Droid.Resource.Layout.abc_action_mode_bar;
+			global::XFGloss.Droid.Resource.Layout.abc_action_mode_close_item_material = global::Boora_TCC_2019.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::XFGloss.Droid.Resource.Layout.abc_activity_chooser_view = global::Boora_TCC_2019.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::XFGloss.Droid.Resource.Layout.abc_activity_chooser_view_list_item = global::Boora_TCC_2019.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::XFGloss.Droid.Resource.Layout.abc_alert_dialog_button_bar_material = global::Boora_TCC_2019.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::XFGloss.Droid.Resource.Layout.abc_alert_dialog_material = global::Boora_TCC_2019.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::XFGloss.Droid.Resource.Layout.abc_alert_dialog_title_material = global::Boora_TCC_2019.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::XFGloss.Droid.Resource.Layout.abc_dialog_title_material = global::Boora_TCC_2019.Droid.Resource.Layout.abc_dialog_title_material;
+			global::XFGloss.Droid.Resource.Layout.abc_expanded_menu_layout = global::Boora_TCC_2019.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::XFGloss.Droid.Resource.Layout.abc_list_menu_item_checkbox = global::Boora_TCC_2019.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::XFGloss.Droid.Resource.Layout.abc_list_menu_item_icon = global::Boora_TCC_2019.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::XFGloss.Droid.Resource.Layout.abc_list_menu_item_layout = global::Boora_TCC_2019.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::XFGloss.Droid.Resource.Layout.abc_list_menu_item_radio = global::Boora_TCC_2019.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::XFGloss.Droid.Resource.Layout.abc_popup_menu_header_item_layout = global::Boora_TCC_2019.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::XFGloss.Droid.Resource.Layout.abc_popup_menu_item_layout = global::Boora_TCC_2019.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::XFGloss.Droid.Resource.Layout.abc_screen_content_include = global::Boora_TCC_2019.Droid.Resource.Layout.abc_screen_content_include;
+			global::XFGloss.Droid.Resource.Layout.abc_screen_simple = global::Boora_TCC_2019.Droid.Resource.Layout.abc_screen_simple;
+			global::XFGloss.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode = global::Boora_TCC_2019.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::XFGloss.Droid.Resource.Layout.abc_screen_toolbar = global::Boora_TCC_2019.Droid.Resource.Layout.abc_screen_toolbar;
+			global::XFGloss.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line = global::Boora_TCC_2019.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::XFGloss.Droid.Resource.Layout.abc_search_view = global::Boora_TCC_2019.Droid.Resource.Layout.abc_search_view;
+			global::XFGloss.Droid.Resource.Layout.abc_select_dialog_material = global::Boora_TCC_2019.Droid.Resource.Layout.abc_select_dialog_material;
+			global::XFGloss.Droid.Resource.Layout.design_bottom_navigation_item = global::Boora_TCC_2019.Droid.Resource.Layout.design_bottom_navigation_item;
+			global::XFGloss.Droid.Resource.Layout.design_bottom_sheet_dialog = global::Boora_TCC_2019.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::XFGloss.Droid.Resource.Layout.design_layout_snackbar = global::Boora_TCC_2019.Droid.Resource.Layout.design_layout_snackbar;
+			global::XFGloss.Droid.Resource.Layout.design_layout_snackbar_include = global::Boora_TCC_2019.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::XFGloss.Droid.Resource.Layout.design_layout_tab_icon = global::Boora_TCC_2019.Droid.Resource.Layout.design_layout_tab_icon;
+			global::XFGloss.Droid.Resource.Layout.design_layout_tab_text = global::Boora_TCC_2019.Droid.Resource.Layout.design_layout_tab_text;
+			global::XFGloss.Droid.Resource.Layout.design_menu_item_action_area = global::Boora_TCC_2019.Droid.Resource.Layout.design_menu_item_action_area;
+			global::XFGloss.Droid.Resource.Layout.design_navigation_item = global::Boora_TCC_2019.Droid.Resource.Layout.design_navigation_item;
+			global::XFGloss.Droid.Resource.Layout.design_navigation_item_header = global::Boora_TCC_2019.Droid.Resource.Layout.design_navigation_item_header;
+			global::XFGloss.Droid.Resource.Layout.design_navigation_item_separator = global::Boora_TCC_2019.Droid.Resource.Layout.design_navigation_item_separator;
+			global::XFGloss.Droid.Resource.Layout.design_navigation_item_subheader = global::Boora_TCC_2019.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::XFGloss.Droid.Resource.Layout.design_navigation_menu = global::Boora_TCC_2019.Droid.Resource.Layout.design_navigation_menu;
+			global::XFGloss.Droid.Resource.Layout.design_navigation_menu_item = global::Boora_TCC_2019.Droid.Resource.Layout.design_navigation_menu_item;
+			global::XFGloss.Droid.Resource.Layout.design_text_input_password_icon = global::Boora_TCC_2019.Droid.Resource.Layout.design_text_input_password_icon;
+			global::XFGloss.Droid.Resource.Layout.mr_chooser_dialog = global::Boora_TCC_2019.Droid.Resource.Layout.mr_chooser_dialog;
+			global::XFGloss.Droid.Resource.Layout.mr_chooser_list_item = global::Boora_TCC_2019.Droid.Resource.Layout.mr_chooser_list_item;
+			global::XFGloss.Droid.Resource.Layout.mr_controller_material_dialog_b = global::Boora_TCC_2019.Droid.Resource.Layout.mr_controller_material_dialog_b;
+			global::XFGloss.Droid.Resource.Layout.mr_controller_volume_item = global::Boora_TCC_2019.Droid.Resource.Layout.mr_controller_volume_item;
+			global::XFGloss.Droid.Resource.Layout.mr_playback_control = global::Boora_TCC_2019.Droid.Resource.Layout.mr_playback_control;
+			global::XFGloss.Droid.Resource.Layout.mr_volume_control = global::Boora_TCC_2019.Droid.Resource.Layout.mr_volume_control;
+			global::XFGloss.Droid.Resource.Layout.notification_action = global::Boora_TCC_2019.Droid.Resource.Layout.notification_action;
+			global::XFGloss.Droid.Resource.Layout.notification_action_tombstone = global::Boora_TCC_2019.Droid.Resource.Layout.notification_action_tombstone;
+			global::XFGloss.Droid.Resource.Layout.notification_media_action = global::Boora_TCC_2019.Droid.Resource.Layout.notification_media_action;
+			global::XFGloss.Droid.Resource.Layout.notification_media_cancel_action = global::Boora_TCC_2019.Droid.Resource.Layout.notification_media_cancel_action;
+			global::XFGloss.Droid.Resource.Layout.notification_template_big_media = global::Boora_TCC_2019.Droid.Resource.Layout.notification_template_big_media;
+			global::XFGloss.Droid.Resource.Layout.notification_template_big_media_custom = global::Boora_TCC_2019.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::XFGloss.Droid.Resource.Layout.notification_template_big_media_narrow = global::Boora_TCC_2019.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::XFGloss.Droid.Resource.Layout.notification_template_big_media_narrow_custom = global::Boora_TCC_2019.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::XFGloss.Droid.Resource.Layout.notification_template_custom_big = global::Boora_TCC_2019.Droid.Resource.Layout.notification_template_custom_big;
+			global::XFGloss.Droid.Resource.Layout.notification_template_icon_group = global::Boora_TCC_2019.Droid.Resource.Layout.notification_template_icon_group;
+			global::XFGloss.Droid.Resource.Layout.notification_template_lines_media = global::Boora_TCC_2019.Droid.Resource.Layout.notification_template_lines_media;
+			global::XFGloss.Droid.Resource.Layout.notification_template_media = global::Boora_TCC_2019.Droid.Resource.Layout.notification_template_media;
+			global::XFGloss.Droid.Resource.Layout.notification_template_media_custom = global::Boora_TCC_2019.Droid.Resource.Layout.notification_template_media_custom;
+			global::XFGloss.Droid.Resource.Layout.notification_template_part_chronometer = global::Boora_TCC_2019.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::XFGloss.Droid.Resource.Layout.notification_template_part_time = global::Boora_TCC_2019.Droid.Resource.Layout.notification_template_part_time;
+			global::XFGloss.Droid.Resource.Layout.select_dialog_item_material = global::Boora_TCC_2019.Droid.Resource.Layout.select_dialog_item_material;
+			global::XFGloss.Droid.Resource.Layout.select_dialog_multichoice_material = global::Boora_TCC_2019.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::XFGloss.Droid.Resource.Layout.select_dialog_singlechoice_material = global::Boora_TCC_2019.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::XFGloss.Droid.Resource.Layout.support_simple_spinner_dropdown_item = global::Boora_TCC_2019.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::XFGloss.Droid.Resource.String.abc_action_bar_home_description = global::Boora_TCC_2019.Droid.Resource.String.abc_action_bar_home_description;
+			global::XFGloss.Droid.Resource.String.abc_action_bar_up_description = global::Boora_TCC_2019.Droid.Resource.String.abc_action_bar_up_description;
+			global::XFGloss.Droid.Resource.String.abc_action_menu_overflow_description = global::Boora_TCC_2019.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::XFGloss.Droid.Resource.String.abc_action_mode_done = global::Boora_TCC_2019.Droid.Resource.String.abc_action_mode_done;
+			global::XFGloss.Droid.Resource.String.abc_activity_chooser_view_see_all = global::Boora_TCC_2019.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::XFGloss.Droid.Resource.String.abc_activitychooserview_choose_application = global::Boora_TCC_2019.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::XFGloss.Droid.Resource.String.abc_capital_off = global::Boora_TCC_2019.Droid.Resource.String.abc_capital_off;
+			global::XFGloss.Droid.Resource.String.abc_capital_on = global::Boora_TCC_2019.Droid.Resource.String.abc_capital_on;
+			global::XFGloss.Droid.Resource.String.abc_font_family_body_1_material = global::Boora_TCC_2019.Droid.Resource.String.abc_font_family_body_1_material;
+			global::XFGloss.Droid.Resource.String.abc_font_family_body_2_material = global::Boora_TCC_2019.Droid.Resource.String.abc_font_family_body_2_material;
+			global::XFGloss.Droid.Resource.String.abc_font_family_button_material = global::Boora_TCC_2019.Droid.Resource.String.abc_font_family_button_material;
+			global::XFGloss.Droid.Resource.String.abc_font_family_caption_material = global::Boora_TCC_2019.Droid.Resource.String.abc_font_family_caption_material;
+			global::XFGloss.Droid.Resource.String.abc_font_family_display_1_material = global::Boora_TCC_2019.Droid.Resource.String.abc_font_family_display_1_material;
+			global::XFGloss.Droid.Resource.String.abc_font_family_display_2_material = global::Boora_TCC_2019.Droid.Resource.String.abc_font_family_display_2_material;
+			global::XFGloss.Droid.Resource.String.abc_font_family_display_3_material = global::Boora_TCC_2019.Droid.Resource.String.abc_font_family_display_3_material;
+			global::XFGloss.Droid.Resource.String.abc_font_family_display_4_material = global::Boora_TCC_2019.Droid.Resource.String.abc_font_family_display_4_material;
+			global::XFGloss.Droid.Resource.String.abc_font_family_headline_material = global::Boora_TCC_2019.Droid.Resource.String.abc_font_family_headline_material;
+			global::XFGloss.Droid.Resource.String.abc_font_family_menu_material = global::Boora_TCC_2019.Droid.Resource.String.abc_font_family_menu_material;
+			global::XFGloss.Droid.Resource.String.abc_font_family_subhead_material = global::Boora_TCC_2019.Droid.Resource.String.abc_font_family_subhead_material;
+			global::XFGloss.Droid.Resource.String.abc_font_family_title_material = global::Boora_TCC_2019.Droid.Resource.String.abc_font_family_title_material;
+			global::XFGloss.Droid.Resource.String.abc_search_hint = global::Boora_TCC_2019.Droid.Resource.String.abc_search_hint;
+			global::XFGloss.Droid.Resource.String.abc_searchview_description_clear = global::Boora_TCC_2019.Droid.Resource.String.abc_searchview_description_clear;
+			global::XFGloss.Droid.Resource.String.abc_searchview_description_query = global::Boora_TCC_2019.Droid.Resource.String.abc_searchview_description_query;
+			global::XFGloss.Droid.Resource.String.abc_searchview_description_search = global::Boora_TCC_2019.Droid.Resource.String.abc_searchview_description_search;
+			global::XFGloss.Droid.Resource.String.abc_searchview_description_submit = global::Boora_TCC_2019.Droid.Resource.String.abc_searchview_description_submit;
+			global::XFGloss.Droid.Resource.String.abc_searchview_description_voice = global::Boora_TCC_2019.Droid.Resource.String.abc_searchview_description_voice;
+			global::XFGloss.Droid.Resource.String.abc_shareactionprovider_share_with = global::Boora_TCC_2019.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::XFGloss.Droid.Resource.String.abc_shareactionprovider_share_with_application = global::Boora_TCC_2019.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::XFGloss.Droid.Resource.String.abc_toolbar_collapse_description = global::Boora_TCC_2019.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::XFGloss.Droid.Resource.String.appbar_scrolling_view_behavior = global::Boora_TCC_2019.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::XFGloss.Droid.Resource.String.bottom_sheet_behavior = global::Boora_TCC_2019.Droid.Resource.String.bottom_sheet_behavior;
+			global::XFGloss.Droid.Resource.String.character_counter_pattern = global::Boora_TCC_2019.Droid.Resource.String.character_counter_pattern;
+			global::XFGloss.Droid.Resource.String.library_name = global::Boora_TCC_2019.Droid.Resource.String.library_name;
+			global::XFGloss.Droid.Resource.String.mr_button_content_description = global::Boora_TCC_2019.Droid.Resource.String.mr_button_content_description;
+			global::XFGloss.Droid.Resource.String.mr_cast_button_connected = global::Boora_TCC_2019.Droid.Resource.String.mr_cast_button_connected;
+			global::XFGloss.Droid.Resource.String.mr_cast_button_connecting = global::Boora_TCC_2019.Droid.Resource.String.mr_cast_button_connecting;
+			global::XFGloss.Droid.Resource.String.mr_cast_button_disconnected = global::Boora_TCC_2019.Droid.Resource.String.mr_cast_button_disconnected;
+			global::XFGloss.Droid.Resource.String.mr_chooser_searching = global::Boora_TCC_2019.Droid.Resource.String.mr_chooser_searching;
+			global::XFGloss.Droid.Resource.String.mr_chooser_title = global::Boora_TCC_2019.Droid.Resource.String.mr_chooser_title;
+			global::XFGloss.Droid.Resource.String.mr_controller_album_art = global::Boora_TCC_2019.Droid.Resource.String.mr_controller_album_art;
+			global::XFGloss.Droid.Resource.String.mr_controller_casting_screen = global::Boora_TCC_2019.Droid.Resource.String.mr_controller_casting_screen;
+			global::XFGloss.Droid.Resource.String.mr_controller_close_description = global::Boora_TCC_2019.Droid.Resource.String.mr_controller_close_description;
+			global::XFGloss.Droid.Resource.String.mr_controller_collapse_group = global::Boora_TCC_2019.Droid.Resource.String.mr_controller_collapse_group;
+			global::XFGloss.Droid.Resource.String.mr_controller_disconnect = global::Boora_TCC_2019.Droid.Resource.String.mr_controller_disconnect;
+			global::XFGloss.Droid.Resource.String.mr_controller_expand_group = global::Boora_TCC_2019.Droid.Resource.String.mr_controller_expand_group;
+			global::XFGloss.Droid.Resource.String.mr_controller_no_info_available = global::Boora_TCC_2019.Droid.Resource.String.mr_controller_no_info_available;
+			global::XFGloss.Droid.Resource.String.mr_controller_no_media_selected = global::Boora_TCC_2019.Droid.Resource.String.mr_controller_no_media_selected;
+			global::XFGloss.Droid.Resource.String.mr_controller_pause = global::Boora_TCC_2019.Droid.Resource.String.mr_controller_pause;
+			global::XFGloss.Droid.Resource.String.mr_controller_play = global::Boora_TCC_2019.Droid.Resource.String.mr_controller_play;
+			global::XFGloss.Droid.Resource.String.mr_controller_stop = global::Boora_TCC_2019.Droid.Resource.String.mr_controller_stop;
+			global::XFGloss.Droid.Resource.String.mr_controller_stop_casting = global::Boora_TCC_2019.Droid.Resource.String.mr_controller_stop_casting;
+			global::XFGloss.Droid.Resource.String.mr_controller_volume_slider = global::Boora_TCC_2019.Droid.Resource.String.mr_controller_volume_slider;
+			global::XFGloss.Droid.Resource.String.mr_system_route_name = global::Boora_TCC_2019.Droid.Resource.String.mr_system_route_name;
+			global::XFGloss.Droid.Resource.String.mr_user_route_category_name = global::Boora_TCC_2019.Droid.Resource.String.mr_user_route_category_name;
+			global::XFGloss.Droid.Resource.String.password_toggle_content_description = global::Boora_TCC_2019.Droid.Resource.String.password_toggle_content_description;
+			global::XFGloss.Droid.Resource.String.path_password_eye = global::Boora_TCC_2019.Droid.Resource.String.path_password_eye;
+			global::XFGloss.Droid.Resource.String.path_password_eye_mask_strike_through = global::Boora_TCC_2019.Droid.Resource.String.path_password_eye_mask_strike_through;
+			global::XFGloss.Droid.Resource.String.path_password_eye_mask_visible = global::Boora_TCC_2019.Droid.Resource.String.path_password_eye_mask_visible;
+			global::XFGloss.Droid.Resource.String.path_password_strike_through = global::Boora_TCC_2019.Droid.Resource.String.path_password_strike_through;
+			global::XFGloss.Droid.Resource.String.search_menu_title = global::Boora_TCC_2019.Droid.Resource.String.search_menu_title;
+			global::XFGloss.Droid.Resource.String.status_bar_notification_info_overflow = global::Boora_TCC_2019.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::XFGloss.Droid.Resource.Style.AlertDialog_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::XFGloss.Droid.Resource.Style.AlertDialog_AppCompat_Light = global::Boora_TCC_2019.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::XFGloss.Droid.Resource.Style.Animation_AppCompat_Dialog = global::Boora_TCC_2019.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::XFGloss.Droid.Resource.Style.Animation_AppCompat_DropDownUp = global::Boora_TCC_2019.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::XFGloss.Droid.Resource.Style.Animation_Design_BottomSheetDialog = global::Boora_TCC_2019.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::XFGloss.Droid.Resource.Style.Base_AlertDialog_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::XFGloss.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light = global::Boora_TCC_2019.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::XFGloss.Droid.Resource.Style.Base_Animation_AppCompat_Dialog = global::Boora_TCC_2019.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::XFGloss.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Boora_TCC_2019.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::XFGloss.Droid.Resource.Style.Base_CardView = global::Boora_TCC_2019.Droid.Resource.Style.Base_CardView;
+			global::XFGloss.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::XFGloss.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::XFGloss.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::Boora_TCC_2019.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::XFGloss.Droid.Resource.Style.Base_Theme_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::XFGloss.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Boora_TCC_2019.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::XFGloss.Droid.Resource.Style.Base_Theme_AppCompat_Dialog = global::Boora_TCC_2019.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::XFGloss.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Boora_TCC_2019.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::XFGloss.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Boora_TCC_2019.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::XFGloss.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Boora_TCC_2019.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::XFGloss.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Boora_TCC_2019.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::XFGloss.Droid.Resource.Style.Base_Theme_AppCompat_Light = global::Boora_TCC_2019.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::XFGloss.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Boora_TCC_2019.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::XFGloss.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Boora_TCC_2019.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::XFGloss.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Boora_TCC_2019.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::XFGloss.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Boora_TCC_2019.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::XFGloss.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Boora_TCC_2019.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::XFGloss.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Boora_TCC_2019.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::XFGloss.Droid.Resource.Style.Base_ThemeOverlay_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::XFGloss.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::Boora_TCC_2019.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::XFGloss.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::Boora_TCC_2019.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::XFGloss.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::Boora_TCC_2019.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::XFGloss.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::Boora_TCC_2019.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::XFGloss.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::Boora_TCC_2019.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::XFGloss.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::Boora_TCC_2019.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::XFGloss.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::Boora_TCC_2019.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::XFGloss.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::Boora_TCC_2019.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::XFGloss.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::Boora_TCC_2019.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
+			global::XFGloss.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::Boora_TCC_2019.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::XFGloss.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::Boora_TCC_2019.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::XFGloss.Droid.Resource.Style.Base_V21_Theme_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::XFGloss.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Boora_TCC_2019.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::XFGloss.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Boora_TCC_2019.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::XFGloss.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Boora_TCC_2019.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::XFGloss.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::Boora_TCC_2019.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::XFGloss.Droid.Resource.Style.Base_V22_Theme_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::XFGloss.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Boora_TCC_2019.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::XFGloss.Droid.Resource.Style.Base_V23_Theme_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::XFGloss.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light = global::Boora_TCC_2019.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::XFGloss.Droid.Resource.Style.Base_V7_Theme_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::XFGloss.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Boora_TCC_2019.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::XFGloss.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Boora_TCC_2019.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::XFGloss.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::Boora_TCC_2019.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::XFGloss.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::Boora_TCC_2019.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::XFGloss.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Boora_TCC_2019.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::XFGloss.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Boora_TCC_2019.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_Button = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_EditText = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ListView = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_SearchView = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_Spinner = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_Design_AppBarLayout = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_Design_AppBarLayout;
+			global::XFGloss.Droid.Resource.Style.Base_Widget_Design_TabLayout = global::Boora_TCC_2019.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::XFGloss.Droid.Resource.Style.CardView = global::Boora_TCC_2019.Droid.Resource.Style.CardView;
+			global::XFGloss.Droid.Resource.Style.CardView_Dark = global::Boora_TCC_2019.Droid.Resource.Style.CardView_Dark;
+			global::XFGloss.Droid.Resource.Style.CardView_Light = global::Boora_TCC_2019.Droid.Resource.Style.CardView_Light;
+			global::XFGloss.Droid.Resource.Style.Platform_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.Platform_AppCompat;
+			global::XFGloss.Droid.Resource.Style.Platform_AppCompat_Light = global::Boora_TCC_2019.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::XFGloss.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::XFGloss.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::Boora_TCC_2019.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::XFGloss.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::Boora_TCC_2019.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::XFGloss.Droid.Resource.Style.Platform_V11_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.Platform_V11_AppCompat;
+			global::XFGloss.Droid.Resource.Style.Platform_V11_AppCompat_Light = global::Boora_TCC_2019.Droid.Resource.Style.Platform_V11_AppCompat_Light;
+			global::XFGloss.Droid.Resource.Style.Platform_V14_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.Platform_V14_AppCompat;
+			global::XFGloss.Droid.Resource.Style.Platform_V14_AppCompat_Light = global::Boora_TCC_2019.Droid.Resource.Style.Platform_V14_AppCompat_Light;
+			global::XFGloss.Droid.Resource.Style.Platform_V21_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::XFGloss.Droid.Resource.Style.Platform_V21_AppCompat_Light = global::Boora_TCC_2019.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::XFGloss.Droid.Resource.Style.Platform_V25_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::XFGloss.Droid.Resource.Style.Platform_V25_AppCompat_Light = global::Boora_TCC_2019.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::XFGloss.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner = global::Boora_TCC_2019.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::XFGloss.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::XFGloss.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::Boora_TCC_2019.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::XFGloss.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::Boora_TCC_2019.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::XFGloss.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::Boora_TCC_2019.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::XFGloss.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::Boora_TCC_2019.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::XFGloss.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::Boora_TCC_2019.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::XFGloss.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::Boora_TCC_2019.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::XFGloss.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::Boora_TCC_2019.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::XFGloss.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::Boora_TCC_2019.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::XFGloss.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::Boora_TCC_2019.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::XFGloss.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Boora_TCC_2019.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::XFGloss.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Boora_TCC_2019.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::XFGloss.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::Boora_TCC_2019.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::XFGloss.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::Boora_TCC_2019.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Body1 = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Body2 = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Button = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Caption = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Display1 = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Display2 = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Display3 = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Display4 = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Headline = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Large = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Medium = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Menu = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Small = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Subhead = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Title = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_Design_Counter = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_Design_Error = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_Design_Hint = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_Design_Tab = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_MediaRouter_Title = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_MediaRouter_Title;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::XFGloss.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::Boora_TCC_2019.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_CompactMenu = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_DayNight = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_Dialog = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_Light = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_Light_Dialog = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::XFGloss.Droid.Resource.Style.Theme_AppCompat_NoActionBar = global::Boora_TCC_2019.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::XFGloss.Droid.Resource.Style.Theme_Design = global::Boora_TCC_2019.Droid.Resource.Style.Theme_Design;
+			global::XFGloss.Droid.Resource.Style.Theme_Design_BottomSheetDialog = global::Boora_TCC_2019.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::XFGloss.Droid.Resource.Style.Theme_Design_Light = global::Boora_TCC_2019.Droid.Resource.Style.Theme_Design_Light;
+			global::XFGloss.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::Boora_TCC_2019.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::XFGloss.Droid.Resource.Style.Theme_Design_Light_NoActionBar = global::Boora_TCC_2019.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::XFGloss.Droid.Resource.Style.Theme_Design_NoActionBar = global::Boora_TCC_2019.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::XFGloss.Droid.Resource.Style.Theme_MediaRouter = global::Boora_TCC_2019.Droid.Resource.Style.Theme_MediaRouter;
+			global::XFGloss.Droid.Resource.Style.Theme_MediaRouter_Light = global::Boora_TCC_2019.Droid.Resource.Style.Theme_MediaRouter_Light;
+			global::XFGloss.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::Boora_TCC_2019.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
+			global::XFGloss.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel = global::Boora_TCC_2019.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
+			global::XFGloss.Droid.Resource.Style.ThemeOverlay_AppCompat = global::Boora_TCC_2019.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::XFGloss.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Boora_TCC_2019.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::XFGloss.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Boora_TCC_2019.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::XFGloss.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::Boora_TCC_2019.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::XFGloss.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::Boora_TCC_2019.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::XFGloss.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::Boora_TCC_2019.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::XFGloss.Droid.Resource.Style.ThemeOverlay_AppCompat_Light = global::Boora_TCC_2019.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::XFGloss.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark = global::Boora_TCC_2019.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark;
+			global::XFGloss.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light = global::Boora_TCC_2019.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ActionBar = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ActionButton = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ActionMode = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Button = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Button_Borderless = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Button_Colored = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Button_Small = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ButtonBar = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_EditText = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ImageButton = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_SearchView = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ListMenuView = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ListView = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ListView_Menu = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_PopupMenu = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_PopupWindow = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ProgressBar = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_RatingBar = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_SearchView = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_SeekBar = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Spinner = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Toolbar = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::XFGloss.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::Boora_TCC_2019.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::XFGloss.Droid.Resource.Style.Widget_Design_AppBarLayout = global::Boora_TCC_2019.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::XFGloss.Droid.Resource.Style.Widget_Design_BottomNavigationView = global::Boora_TCC_2019.Droid.Resource.Style.Widget_Design_BottomNavigationView;
+			global::XFGloss.Droid.Resource.Style.Widget_Design_BottomSheet_Modal = global::Boora_TCC_2019.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::XFGloss.Droid.Resource.Style.Widget_Design_CollapsingToolbar = global::Boora_TCC_2019.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::XFGloss.Droid.Resource.Style.Widget_Design_CoordinatorLayout = global::Boora_TCC_2019.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
+			global::XFGloss.Droid.Resource.Style.Widget_Design_FloatingActionButton = global::Boora_TCC_2019.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::XFGloss.Droid.Resource.Style.Widget_Design_NavigationView = global::Boora_TCC_2019.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::XFGloss.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::Boora_TCC_2019.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::XFGloss.Droid.Resource.Style.Widget_Design_Snackbar = global::Boora_TCC_2019.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::XFGloss.Droid.Resource.Style.Widget_Design_TabLayout = global::Boora_TCC_2019.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::XFGloss.Droid.Resource.Style.Widget_Design_TextInputLayout = global::Boora_TCC_2019.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::XFGloss.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::Boora_TCC_2019.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
+			global::XFGloss.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::Boora_TCC_2019.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_background = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_background;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_backgroundSplit = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_backgroundStacked = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_contentInsetEnd = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_contentInsetLeft = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_contentInsetRight = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_contentInsetStart = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_customNavigationLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_displayOptions = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_divider = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_divider;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_elevation = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_elevation;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_height = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_height;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_hideOnContentScroll = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_homeLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_icon = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_icon;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_itemPadding = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_logo = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_logo;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_navigationMode = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_popupTheme = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_progressBarPadding = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_progressBarStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_subtitle = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_subtitleTextStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_title = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_title;
+			global::XFGloss.Droid.Resource.Styleable.ActionBar_titleTextStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::XFGloss.Droid.Resource.Styleable.ActionBarLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBarLayout;
+			global::XFGloss.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::XFGloss.Droid.Resource.Styleable.ActionMenuItemView = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionMenuItemView;
+			global::XFGloss.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::XFGloss.Droid.Resource.Styleable.ActionMenuView = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionMenuView;
+			global::XFGloss.Droid.Resource.Styleable.ActionMode = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionMode;
+			global::XFGloss.Droid.Resource.Styleable.ActionMode_background = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionMode_background;
+			global::XFGloss.Droid.Resource.Styleable.ActionMode_backgroundSplit = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::XFGloss.Droid.Resource.Styleable.ActionMode_closeItemLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::XFGloss.Droid.Resource.Styleable.ActionMode_height = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionMode_height;
+			global::XFGloss.Droid.Resource.Styleable.ActionMode_subtitleTextStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::XFGloss.Droid.Resource.Styleable.ActionMode_titleTextStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::XFGloss.Droid.Resource.Styleable.ActivityChooserView = global::Boora_TCC_2019.Droid.Resource.Styleable.ActivityChooserView;
+			global::XFGloss.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::Boora_TCC_2019.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::XFGloss.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount = global::Boora_TCC_2019.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::XFGloss.Droid.Resource.Styleable.AlertDialog = global::Boora_TCC_2019.Droid.Resource.Styleable.AlertDialog;
+			global::XFGloss.Droid.Resource.Styleable.AlertDialog_android_layout = global::Boora_TCC_2019.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::XFGloss.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::XFGloss.Droid.Resource.Styleable.AlertDialog_listItemLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::XFGloss.Droid.Resource.Styleable.AlertDialog_listLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::XFGloss.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::XFGloss.Droid.Resource.Styleable.AlertDialog_showTitle = global::Boora_TCC_2019.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::XFGloss.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::XFGloss.Droid.Resource.Styleable.AppBarLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.AppBarLayout;
+			global::XFGloss.Droid.Resource.Styleable.AppBarLayout_android_background = global::Boora_TCC_2019.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::XFGloss.Droid.Resource.Styleable.AppBarLayout_elevation = global::Boora_TCC_2019.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::XFGloss.Droid.Resource.Styleable.AppBarLayout_expanded = global::Boora_TCC_2019.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::XFGloss.Droid.Resource.Styleable.AppBarLayoutStates = global::Boora_TCC_2019.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::XFGloss.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::Boora_TCC_2019.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::XFGloss.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::Boora_TCC_2019.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::XFGloss.Droid.Resource.Styleable.AppBarLayout_Layout = global::Boora_TCC_2019.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::XFGloss.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::Boora_TCC_2019.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::XFGloss.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::Boora_TCC_2019.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatImageView = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatImageView;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatImageView_android_src = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatImageView_srcCompat = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatImageView_tint = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatImageView_tintMode = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatSeekBar = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatSeekBar_tickMark = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTextHelper = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTextView = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTextView;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTextView_textAllCaps = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionBarSize = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_buttonStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_colorAccent = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_colorPrimary = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_controlBackground = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_dialogTheme = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_dividerVertical = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_editTextBackground = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_editTextColor = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_editTextStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_panelBackground = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_switchStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_windowActionBar = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::XFGloss.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle = global::Boora_TCC_2019.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::XFGloss.Droid.Resource.Styleable.BottomNavigationView = global::Boora_TCC_2019.Droid.Resource.Styleable.BottomNavigationView;
+			global::XFGloss.Droid.Resource.Styleable.BottomNavigationView_elevation = global::Boora_TCC_2019.Droid.Resource.Styleable.BottomNavigationView_elevation;
+			global::XFGloss.Droid.Resource.Styleable.BottomNavigationView_itemBackground = global::Boora_TCC_2019.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::XFGloss.Droid.Resource.Styleable.BottomNavigationView_itemIconTint = global::Boora_TCC_2019.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::XFGloss.Droid.Resource.Styleable.BottomNavigationView_itemTextColor = global::Boora_TCC_2019.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::XFGloss.Droid.Resource.Styleable.BottomNavigationView_menu = global::Boora_TCC_2019.Droid.Resource.Styleable.BottomNavigationView_menu;
+			global::XFGloss.Droid.Resource.Styleable.BottomSheetBehavior_Layout = global::Boora_TCC_2019.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::XFGloss.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::Boora_TCC_2019.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::XFGloss.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::Boora_TCC_2019.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::XFGloss.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::Boora_TCC_2019.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::XFGloss.Droid.Resource.Styleable.ButtonBarLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.ButtonBarLayout;
+			global::XFGloss.Droid.Resource.Styleable.ButtonBarLayout_allowStacking = global::Boora_TCC_2019.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::XFGloss.Droid.Resource.Styleable.CardView = global::Boora_TCC_2019.Droid.Resource.Styleable.CardView;
+			global::XFGloss.Droid.Resource.Styleable.CardView_android_minHeight = global::Boora_TCC_2019.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::XFGloss.Droid.Resource.Styleable.CardView_android_minWidth = global::Boora_TCC_2019.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::XFGloss.Droid.Resource.Styleable.CardView_cardBackgroundColor = global::Boora_TCC_2019.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::XFGloss.Droid.Resource.Styleable.CardView_cardCornerRadius = global::Boora_TCC_2019.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::XFGloss.Droid.Resource.Styleable.CardView_cardElevation = global::Boora_TCC_2019.Droid.Resource.Styleable.CardView_cardElevation;
+			global::XFGloss.Droid.Resource.Styleable.CardView_cardMaxElevation = global::Boora_TCC_2019.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::XFGloss.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap = global::Boora_TCC_2019.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::XFGloss.Droid.Resource.Styleable.CardView_cardUseCompatPadding = global::Boora_TCC_2019.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::XFGloss.Droid.Resource.Styleable.CardView_contentPadding = global::Boora_TCC_2019.Droid.Resource.Styleable.CardView_contentPadding;
+			global::XFGloss.Droid.Resource.Styleable.CardView_contentPaddingBottom = global::Boora_TCC_2019.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::XFGloss.Droid.Resource.Styleable.CardView_contentPaddingLeft = global::Boora_TCC_2019.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::XFGloss.Droid.Resource.Styleable.CardView_contentPaddingRight = global::Boora_TCC_2019.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::XFGloss.Droid.Resource.Styleable.CardView_contentPaddingTop = global::Boora_TCC_2019.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout_title = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::XFGloss.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::Boora_TCC_2019.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::XFGloss.Droid.Resource.Styleable.ColorStateListItem = global::Boora_TCC_2019.Droid.Resource.Styleable.ColorStateListItem;
+			global::XFGloss.Droid.Resource.Styleable.ColorStateListItem_alpha = global::Boora_TCC_2019.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::XFGloss.Droid.Resource.Styleable.ColorStateListItem_android_alpha = global::Boora_TCC_2019.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::XFGloss.Droid.Resource.Styleable.ColorStateListItem_android_color = global::Boora_TCC_2019.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::XFGloss.Droid.Resource.Styleable.CompoundButton = global::Boora_TCC_2019.Droid.Resource.Styleable.CompoundButton;
+			global::XFGloss.Droid.Resource.Styleable.CompoundButton_android_button = global::Boora_TCC_2019.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::XFGloss.Droid.Resource.Styleable.CompoundButton_buttonTint = global::Boora_TCC_2019.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::XFGloss.Droid.Resource.Styleable.CompoundButton_buttonTintMode = global::Boora_TCC_2019.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::XFGloss.Droid.Resource.Styleable.CoordinatorLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.CoordinatorLayout;
+			global::XFGloss.Droid.Resource.Styleable.CoordinatorLayout_keylines = global::Boora_TCC_2019.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::XFGloss.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Boora_TCC_2019.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::XFGloss.Droid.Resource.Styleable.CoordinatorLayout_Layout = global::Boora_TCC_2019.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::XFGloss.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::Boora_TCC_2019.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::XFGloss.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::Boora_TCC_2019.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::XFGloss.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::Boora_TCC_2019.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::XFGloss.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::Boora_TCC_2019.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::XFGloss.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::Boora_TCC_2019.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::XFGloss.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::Boora_TCC_2019.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::XFGloss.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::Boora_TCC_2019.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::XFGloss.Droid.Resource.Styleable.DesignTheme = global::Boora_TCC_2019.Droid.Resource.Styleable.DesignTheme;
+			global::XFGloss.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::Boora_TCC_2019.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::XFGloss.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::XFGloss.Droid.Resource.Styleable.DesignTheme_textColorError = global::Boora_TCC_2019.Droid.Resource.Styleable.DesignTheme_textColorError;
+			global::XFGloss.Droid.Resource.Styleable.DrawerArrowToggle = global::Boora_TCC_2019.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::XFGloss.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::Boora_TCC_2019.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::XFGloss.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::Boora_TCC_2019.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::XFGloss.Droid.Resource.Styleable.DrawerArrowToggle_barLength = global::Boora_TCC_2019.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::XFGloss.Droid.Resource.Styleable.DrawerArrowToggle_color = global::Boora_TCC_2019.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::XFGloss.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize = global::Boora_TCC_2019.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::XFGloss.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::Boora_TCC_2019.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::XFGloss.Droid.Resource.Styleable.DrawerArrowToggle_spinBars = global::Boora_TCC_2019.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::XFGloss.Droid.Resource.Styleable.DrawerArrowToggle_thickness = global::Boora_TCC_2019.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::XFGloss.Droid.Resource.Styleable.FloatingActionButton = global::Boora_TCC_2019.Droid.Resource.Styleable.FloatingActionButton;
+			global::XFGloss.Droid.Resource.Styleable.FloatingActionButton_backgroundTint = global::Boora_TCC_2019.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::XFGloss.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::Boora_TCC_2019.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::XFGloss.Droid.Resource.Styleable.FloatingActionButton_borderWidth = global::Boora_TCC_2019.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::XFGloss.Droid.Resource.Styleable.FloatingActionButton_elevation = global::Boora_TCC_2019.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::XFGloss.Droid.Resource.Styleable.FloatingActionButton_fabSize = global::Boora_TCC_2019.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::XFGloss.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::Boora_TCC_2019.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::XFGloss.Droid.Resource.Styleable.FloatingActionButton_rippleColor = global::Boora_TCC_2019.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::XFGloss.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding = global::Boora_TCC_2019.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::XFGloss.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::Boora_TCC_2019.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::XFGloss.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::Boora_TCC_2019.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::XFGloss.Droid.Resource.Styleable.ForegroundLinearLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::XFGloss.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::Boora_TCC_2019.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::XFGloss.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::Boora_TCC_2019.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::XFGloss.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::Boora_TCC_2019.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::XFGloss.Droid.Resource.Styleable.LinearLayoutCompat = global::Boora_TCC_2019.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::XFGloss.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::Boora_TCC_2019.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::XFGloss.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::Boora_TCC_2019.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::XFGloss.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity = global::Boora_TCC_2019.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::XFGloss.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation = global::Boora_TCC_2019.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::XFGloss.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::Boora_TCC_2019.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::XFGloss.Droid.Resource.Styleable.LinearLayoutCompat_divider = global::Boora_TCC_2019.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::XFGloss.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::Boora_TCC_2019.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::XFGloss.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Boora_TCC_2019.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::XFGloss.Droid.Resource.Styleable.LinearLayoutCompat_showDividers = global::Boora_TCC_2019.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::XFGloss.Droid.Resource.Styleable.LinearLayoutCompat_Layout = global::Boora_TCC_2019.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::XFGloss.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::Boora_TCC_2019.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::XFGloss.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::Boora_TCC_2019.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::XFGloss.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::Boora_TCC_2019.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::XFGloss.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::Boora_TCC_2019.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::XFGloss.Droid.Resource.Styleable.ListPopupWindow = global::Boora_TCC_2019.Droid.Resource.Styleable.ListPopupWindow;
+			global::XFGloss.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::Boora_TCC_2019.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::XFGloss.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::Boora_TCC_2019.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::XFGloss.Droid.Resource.Styleable.MediaRouteButton = global::Boora_TCC_2019.Droid.Resource.Styleable.MediaRouteButton;
+			global::XFGloss.Droid.Resource.Styleable.MediaRouteButton_android_minHeight = global::Boora_TCC_2019.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
+			global::XFGloss.Droid.Resource.Styleable.MediaRouteButton_android_minWidth = global::Boora_TCC_2019.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
+			global::XFGloss.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::Boora_TCC_2019.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
+			global::XFGloss.Droid.Resource.Styleable.MenuGroup = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuGroup;
+			global::XFGloss.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::XFGloss.Droid.Resource.Styleable.MenuGroup_android_enabled = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::XFGloss.Droid.Resource.Styleable.MenuGroup_android_id = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::XFGloss.Droid.Resource.Styleable.MenuGroup_android_menuCategory = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::XFGloss.Droid.Resource.Styleable.MenuGroup_android_orderInCategory = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::XFGloss.Droid.Resource.Styleable.MenuGroup_android_visible = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::XFGloss.Droid.Resource.Styleable.MenuItem = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuItem;
+			global::XFGloss.Droid.Resource.Styleable.MenuItem_actionLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::XFGloss.Droid.Resource.Styleable.MenuItem_actionProviderClass = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::XFGloss.Droid.Resource.Styleable.MenuItem_actionViewClass = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::XFGloss.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::XFGloss.Droid.Resource.Styleable.MenuItem_android_checkable = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::XFGloss.Droid.Resource.Styleable.MenuItem_android_checked = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::XFGloss.Droid.Resource.Styleable.MenuItem_android_enabled = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::XFGloss.Droid.Resource.Styleable.MenuItem_android_icon = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::XFGloss.Droid.Resource.Styleable.MenuItem_android_id = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuItem_android_id;
+			global::XFGloss.Droid.Resource.Styleable.MenuItem_android_menuCategory = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::XFGloss.Droid.Resource.Styleable.MenuItem_android_numericShortcut = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::XFGloss.Droid.Resource.Styleable.MenuItem_android_onClick = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::XFGloss.Droid.Resource.Styleable.MenuItem_android_orderInCategory = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::XFGloss.Droid.Resource.Styleable.MenuItem_android_title = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuItem_android_title;
+			global::XFGloss.Droid.Resource.Styleable.MenuItem_android_titleCondensed = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::XFGloss.Droid.Resource.Styleable.MenuItem_android_visible = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::XFGloss.Droid.Resource.Styleable.MenuItem_showAsAction = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::XFGloss.Droid.Resource.Styleable.MenuView = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuView;
+			global::XFGloss.Droid.Resource.Styleable.MenuView_android_headerBackground = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::XFGloss.Droid.Resource.Styleable.MenuView_android_horizontalDivider = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::XFGloss.Droid.Resource.Styleable.MenuView_android_itemBackground = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::XFGloss.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::XFGloss.Droid.Resource.Styleable.MenuView_android_itemTextAppearance = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::XFGloss.Droid.Resource.Styleable.MenuView_android_verticalDivider = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::XFGloss.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::XFGloss.Droid.Resource.Styleable.MenuView_preserveIconSpacing = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::XFGloss.Droid.Resource.Styleable.MenuView_subMenuArrow = global::Boora_TCC_2019.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::XFGloss.Droid.Resource.Styleable.NavigationView = global::Boora_TCC_2019.Droid.Resource.Styleable.NavigationView;
+			global::XFGloss.Droid.Resource.Styleable.NavigationView_android_background = global::Boora_TCC_2019.Droid.Resource.Styleable.NavigationView_android_background;
+			global::XFGloss.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::Boora_TCC_2019.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::XFGloss.Droid.Resource.Styleable.NavigationView_android_maxWidth = global::Boora_TCC_2019.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::XFGloss.Droid.Resource.Styleable.NavigationView_elevation = global::Boora_TCC_2019.Droid.Resource.Styleable.NavigationView_elevation;
+			global::XFGloss.Droid.Resource.Styleable.NavigationView_headerLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::XFGloss.Droid.Resource.Styleable.NavigationView_itemBackground = global::Boora_TCC_2019.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::XFGloss.Droid.Resource.Styleable.NavigationView_itemIconTint = global::Boora_TCC_2019.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::XFGloss.Droid.Resource.Styleable.NavigationView_itemTextAppearance = global::Boora_TCC_2019.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::XFGloss.Droid.Resource.Styleable.NavigationView_itemTextColor = global::Boora_TCC_2019.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::XFGloss.Droid.Resource.Styleable.NavigationView_menu = global::Boora_TCC_2019.Droid.Resource.Styleable.NavigationView_menu;
+			global::XFGloss.Droid.Resource.Styleable.PopupWindow = global::Boora_TCC_2019.Droid.Resource.Styleable.PopupWindow;
+			global::XFGloss.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::XFGloss.Droid.Resource.Styleable.PopupWindow_android_popupBackground = global::Boora_TCC_2019.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::XFGloss.Droid.Resource.Styleable.PopupWindow_overlapAnchor = global::Boora_TCC_2019.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::XFGloss.Droid.Resource.Styleable.PopupWindowBackgroundState = global::Boora_TCC_2019.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::XFGloss.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Boora_TCC_2019.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::XFGloss.Droid.Resource.Styleable.RecycleListView = global::Boora_TCC_2019.Droid.Resource.Styleable.RecycleListView;
+			global::XFGloss.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::Boora_TCC_2019.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::XFGloss.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::Boora_TCC_2019.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::XFGloss.Droid.Resource.Styleable.RecyclerView = global::Boora_TCC_2019.Droid.Resource.Styleable.RecyclerView;
+			global::XFGloss.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability = global::Boora_TCC_2019.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::XFGloss.Droid.Resource.Styleable.RecyclerView_android_orientation = global::Boora_TCC_2019.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::XFGloss.Droid.Resource.Styleable.RecyclerView_layoutManager = global::Boora_TCC_2019.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::XFGloss.Droid.Resource.Styleable.RecyclerView_reverseLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::XFGloss.Droid.Resource.Styleable.RecyclerView_spanCount = global::Boora_TCC_2019.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::XFGloss.Droid.Resource.Styleable.RecyclerView_stackFromEnd = global::Boora_TCC_2019.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::XFGloss.Droid.Resource.Styleable.ScrimInsetsFrameLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::XFGloss.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::Boora_TCC_2019.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::XFGloss.Droid.Resource.Styleable.ScrollingViewBehavior_Layout = global::Boora_TCC_2019.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::XFGloss.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::Boora_TCC_2019.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::XFGloss.Droid.Resource.Styleable.SearchView = global::Boora_TCC_2019.Droid.Resource.Styleable.SearchView;
+			global::XFGloss.Droid.Resource.Styleable.SearchView_android_focusable = global::Boora_TCC_2019.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::XFGloss.Droid.Resource.Styleable.SearchView_android_imeOptions = global::Boora_TCC_2019.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::XFGloss.Droid.Resource.Styleable.SearchView_android_inputType = global::Boora_TCC_2019.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::XFGloss.Droid.Resource.Styleable.SearchView_android_maxWidth = global::Boora_TCC_2019.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::XFGloss.Droid.Resource.Styleable.SearchView_closeIcon = global::Boora_TCC_2019.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::XFGloss.Droid.Resource.Styleable.SearchView_commitIcon = global::Boora_TCC_2019.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::XFGloss.Droid.Resource.Styleable.SearchView_defaultQueryHint = global::Boora_TCC_2019.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::XFGloss.Droid.Resource.Styleable.SearchView_goIcon = global::Boora_TCC_2019.Droid.Resource.Styleable.SearchView_goIcon;
+			global::XFGloss.Droid.Resource.Styleable.SearchView_iconifiedByDefault = global::Boora_TCC_2019.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::XFGloss.Droid.Resource.Styleable.SearchView_layout = global::Boora_TCC_2019.Droid.Resource.Styleable.SearchView_layout;
+			global::XFGloss.Droid.Resource.Styleable.SearchView_queryBackground = global::Boora_TCC_2019.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::XFGloss.Droid.Resource.Styleable.SearchView_queryHint = global::Boora_TCC_2019.Droid.Resource.Styleable.SearchView_queryHint;
+			global::XFGloss.Droid.Resource.Styleable.SearchView_searchHintIcon = global::Boora_TCC_2019.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::XFGloss.Droid.Resource.Styleable.SearchView_searchIcon = global::Boora_TCC_2019.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::XFGloss.Droid.Resource.Styleable.SearchView_submitBackground = global::Boora_TCC_2019.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::XFGloss.Droid.Resource.Styleable.SearchView_suggestionRowLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::XFGloss.Droid.Resource.Styleable.SearchView_voiceIcon = global::Boora_TCC_2019.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::XFGloss.Droid.Resource.Styleable.SnackbarLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.SnackbarLayout;
+			global::XFGloss.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth = global::Boora_TCC_2019.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::XFGloss.Droid.Resource.Styleable.SnackbarLayout_elevation = global::Boora_TCC_2019.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::XFGloss.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::Boora_TCC_2019.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::XFGloss.Droid.Resource.Styleable.Spinner = global::Boora_TCC_2019.Droid.Resource.Styleable.Spinner;
+			global::XFGloss.Droid.Resource.Styleable.Spinner_android_dropDownWidth = global::Boora_TCC_2019.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::XFGloss.Droid.Resource.Styleable.Spinner_android_entries = global::Boora_TCC_2019.Droid.Resource.Styleable.Spinner_android_entries;
+			global::XFGloss.Droid.Resource.Styleable.Spinner_android_popupBackground = global::Boora_TCC_2019.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::XFGloss.Droid.Resource.Styleable.Spinner_android_prompt = global::Boora_TCC_2019.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::XFGloss.Droid.Resource.Styleable.Spinner_popupTheme = global::Boora_TCC_2019.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::XFGloss.Droid.Resource.Styleable.SwitchCompat = global::Boora_TCC_2019.Droid.Resource.Styleable.SwitchCompat;
+			global::XFGloss.Droid.Resource.Styleable.SwitchCompat_android_textOff = global::Boora_TCC_2019.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::XFGloss.Droid.Resource.Styleable.SwitchCompat_android_textOn = global::Boora_TCC_2019.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::XFGloss.Droid.Resource.Styleable.SwitchCompat_android_thumb = global::Boora_TCC_2019.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::XFGloss.Droid.Resource.Styleable.SwitchCompat_showText = global::Boora_TCC_2019.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::XFGloss.Droid.Resource.Styleable.SwitchCompat_splitTrack = global::Boora_TCC_2019.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::XFGloss.Droid.Resource.Styleable.SwitchCompat_switchMinWidth = global::Boora_TCC_2019.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::XFGloss.Droid.Resource.Styleable.SwitchCompat_switchPadding = global::Boora_TCC_2019.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::XFGloss.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance = global::Boora_TCC_2019.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::XFGloss.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding = global::Boora_TCC_2019.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::XFGloss.Droid.Resource.Styleable.SwitchCompat_thumbTint = global::Boora_TCC_2019.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::XFGloss.Droid.Resource.Styleable.SwitchCompat_thumbTintMode = global::Boora_TCC_2019.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::XFGloss.Droid.Resource.Styleable.SwitchCompat_track = global::Boora_TCC_2019.Droid.Resource.Styleable.SwitchCompat_track;
+			global::XFGloss.Droid.Resource.Styleable.SwitchCompat_trackTint = global::Boora_TCC_2019.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::XFGloss.Droid.Resource.Styleable.SwitchCompat_trackTintMode = global::Boora_TCC_2019.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::XFGloss.Droid.Resource.Styleable.TabItem = global::Boora_TCC_2019.Droid.Resource.Styleable.TabItem;
+			global::XFGloss.Droid.Resource.Styleable.TabItem_android_icon = global::Boora_TCC_2019.Droid.Resource.Styleable.TabItem_android_icon;
+			global::XFGloss.Droid.Resource.Styleable.TabItem_android_layout = global::Boora_TCC_2019.Droid.Resource.Styleable.TabItem_android_layout;
+			global::XFGloss.Droid.Resource.Styleable.TabItem_android_text = global::Boora_TCC_2019.Droid.Resource.Styleable.TabItem_android_text;
+			global::XFGloss.Droid.Resource.Styleable.TabLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.TabLayout;
+			global::XFGloss.Droid.Resource.Styleable.TabLayout_tabBackground = global::Boora_TCC_2019.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::XFGloss.Droid.Resource.Styleable.TabLayout_tabContentStart = global::Boora_TCC_2019.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::XFGloss.Droid.Resource.Styleable.TabLayout_tabGravity = global::Boora_TCC_2019.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::XFGloss.Droid.Resource.Styleable.TabLayout_tabIndicatorColor = global::Boora_TCC_2019.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::XFGloss.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight = global::Boora_TCC_2019.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::XFGloss.Droid.Resource.Styleable.TabLayout_tabMaxWidth = global::Boora_TCC_2019.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::XFGloss.Droid.Resource.Styleable.TabLayout_tabMinWidth = global::Boora_TCC_2019.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::XFGloss.Droid.Resource.Styleable.TabLayout_tabMode = global::Boora_TCC_2019.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::XFGloss.Droid.Resource.Styleable.TabLayout_tabPadding = global::Boora_TCC_2019.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::XFGloss.Droid.Resource.Styleable.TabLayout_tabPaddingBottom = global::Boora_TCC_2019.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::XFGloss.Droid.Resource.Styleable.TabLayout_tabPaddingEnd = global::Boora_TCC_2019.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::XFGloss.Droid.Resource.Styleable.TabLayout_tabPaddingStart = global::Boora_TCC_2019.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::XFGloss.Droid.Resource.Styleable.TabLayout_tabPaddingTop = global::Boora_TCC_2019.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::XFGloss.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor = global::Boora_TCC_2019.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::XFGloss.Droid.Resource.Styleable.TabLayout_tabTextAppearance = global::Boora_TCC_2019.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::XFGloss.Droid.Resource.Styleable.TabLayout_tabTextColor = global::Boora_TCC_2019.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::XFGloss.Droid.Resource.Styleable.TextAppearance = global::Boora_TCC_2019.Droid.Resource.Styleable.TextAppearance;
+			global::XFGloss.Droid.Resource.Styleable.TextAppearance_android_shadowColor = global::Boora_TCC_2019.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::XFGloss.Droid.Resource.Styleable.TextAppearance_android_shadowDx = global::Boora_TCC_2019.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::XFGloss.Droid.Resource.Styleable.TextAppearance_android_shadowDy = global::Boora_TCC_2019.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::XFGloss.Droid.Resource.Styleable.TextAppearance_android_shadowRadius = global::Boora_TCC_2019.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::XFGloss.Droid.Resource.Styleable.TextAppearance_android_textColor = global::Boora_TCC_2019.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::XFGloss.Droid.Resource.Styleable.TextAppearance_android_textColorHint = global::Boora_TCC_2019.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::XFGloss.Droid.Resource.Styleable.TextAppearance_android_textSize = global::Boora_TCC_2019.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::XFGloss.Droid.Resource.Styleable.TextAppearance_android_textStyle = global::Boora_TCC_2019.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::XFGloss.Droid.Resource.Styleable.TextAppearance_android_typeface = global::Boora_TCC_2019.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::XFGloss.Droid.Resource.Styleable.TextAppearance_textAllCaps = global::Boora_TCC_2019.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::XFGloss.Droid.Resource.Styleable.TextInputLayout = global::Boora_TCC_2019.Droid.Resource.Styleable.TextInputLayout;
+			global::XFGloss.Droid.Resource.Styleable.TextInputLayout_android_hint = global::Boora_TCC_2019.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::XFGloss.Droid.Resource.Styleable.TextInputLayout_android_textColorHint = global::Boora_TCC_2019.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::XFGloss.Droid.Resource.Styleable.TextInputLayout_counterEnabled = global::Boora_TCC_2019.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::XFGloss.Droid.Resource.Styleable.TextInputLayout_counterMaxLength = global::Boora_TCC_2019.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::XFGloss.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::Boora_TCC_2019.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::XFGloss.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance = global::Boora_TCC_2019.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::XFGloss.Droid.Resource.Styleable.TextInputLayout_errorEnabled = global::Boora_TCC_2019.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::XFGloss.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance = global::Boora_TCC_2019.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::XFGloss.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::Boora_TCC_2019.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::XFGloss.Droid.Resource.Styleable.TextInputLayout_hintEnabled = global::Boora_TCC_2019.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::XFGloss.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance = global::Boora_TCC_2019.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::XFGloss.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::Boora_TCC_2019.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::XFGloss.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::Boora_TCC_2019.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::XFGloss.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::Boora_TCC_2019.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::XFGloss.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint = global::Boora_TCC_2019.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::XFGloss.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::Boora_TCC_2019.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_android_gravity = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_android_minHeight = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_buttonGravity = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_collapseContentDescription = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_collapseIcon = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_contentInsetEnd = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_contentInsetLeft = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_contentInsetRight = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_contentInsetStart = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_logo = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_logo;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_logoDescription = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_maxButtonHeight = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_navigationContentDescription = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_navigationIcon = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_popupTheme = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_subtitle = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_subtitleTextColor = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_title = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_title;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_titleMargin = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_titleMarginBottom = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_titleMarginEnd = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_titleMarginStart = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_titleMarginTop = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_titleMargins = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_titleTextAppearance = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::XFGloss.Droid.Resource.Styleable.Toolbar_titleTextColor = global::Boora_TCC_2019.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::XFGloss.Droid.Resource.Styleable.View = global::Boora_TCC_2019.Droid.Resource.Styleable.View;
+			global::XFGloss.Droid.Resource.Styleable.View_android_focusable = global::Boora_TCC_2019.Droid.Resource.Styleable.View_android_focusable;
+			global::XFGloss.Droid.Resource.Styleable.View_android_theme = global::Boora_TCC_2019.Droid.Resource.Styleable.View_android_theme;
+			global::XFGloss.Droid.Resource.Styleable.View_paddingEnd = global::Boora_TCC_2019.Droid.Resource.Styleable.View_paddingEnd;
+			global::XFGloss.Droid.Resource.Styleable.View_paddingStart = global::Boora_TCC_2019.Droid.Resource.Styleable.View_paddingStart;
+			global::XFGloss.Droid.Resource.Styleable.View_theme = global::Boora_TCC_2019.Droid.Resource.Styleable.View_theme;
+			global::XFGloss.Droid.Resource.Styleable.ViewBackgroundHelper = global::Boora_TCC_2019.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::XFGloss.Droid.Resource.Styleable.ViewBackgroundHelper_android_background = global::Boora_TCC_2019.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::XFGloss.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::Boora_TCC_2019.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::XFGloss.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::Boora_TCC_2019.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::XFGloss.Droid.Resource.Styleable.ViewStubCompat = global::Boora_TCC_2019.Droid.Resource.Styleable.ViewStubCompat;
+			global::XFGloss.Droid.Resource.Styleable.ViewStubCompat_android_id = global::Boora_TCC_2019.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::XFGloss.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Boora_TCC_2019.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::XFGloss.Droid.Resource.Styleable.ViewStubCompat_android_layout = global::Boora_TCC_2019.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 		}
 		
 		public partial class Animation
@@ -6683,731 +8777,764 @@ namespace Boora_TCC_2019.Droid
 			// aapt resource value: 0x7f020056
 			public const int avd_hide_password = 2130837590;
 			
-			// aapt resource value: 0x7f020143
-			public const int avd_hide_password_1 = 2130837827;
+			// aapt resource value: 0x7f02014e
+			public const int avd_hide_password_1 = 2130837838;
 			
-			// aapt resource value: 0x7f020144
-			public const int avd_hide_password_2 = 2130837828;
+			// aapt resource value: 0x7f02014f
+			public const int avd_hide_password_2 = 2130837839;
 			
-			// aapt resource value: 0x7f020145
-			public const int avd_hide_password_3 = 2130837829;
+			// aapt resource value: 0x7f020150
+			public const int avd_hide_password_3 = 2130837840;
 			
 			// aapt resource value: 0x7f020057
 			public const int avd_show_password = 2130837591;
 			
-			// aapt resource value: 0x7f020146
-			public const int avd_show_password_1 = 2130837830;
+			// aapt resource value: 0x7f020151
+			public const int avd_show_password_1 = 2130837841;
 			
-			// aapt resource value: 0x7f020147
-			public const int avd_show_password_2 = 2130837831;
+			// aapt resource value: 0x7f020152
+			public const int avd_show_password_2 = 2130837842;
 			
-			// aapt resource value: 0x7f020148
-			public const int avd_show_password_3 = 2130837832;
+			// aapt resource value: 0x7f020153
+			public const int avd_show_password_3 = 2130837843;
 			
 			// aapt resource value: 0x7f020058
-			public const int Check = 2130837592;
+			public const int cadastro_icon = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int design_bottom_navigation_item_background = 2130837593;
+			public const int cadastro_serie = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int design_fab_background = 2130837594;
+			public const int calendario = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int design_ic_visibility = 2130837595;
+			public const int Check = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int design_ic_visibility_off = 2130837596;
+			public const int design_bottom_navigation_item_background = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int design_password_eye = 2130837597;
+			public const int design_fab_background = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int design_snackbar_background = 2130837598;
+			public const int design_ic_visibility = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int facebook = 2130837599;
+			public const int design_ic_visibility_off = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int FaceSobre = 2130837600;
+			public const int design_password_eye = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int fail = 2130837601;
+			public const int design_snackbar_background = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int ic_audiotrack_dark = 2130837602;
+			public const int entrar = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int ic_audiotrack_light = 2130837603;
+			public const int facebook = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int ic_dialog_close_dark = 2130837604;
+			public const int FaceSobre = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int ic_dialog_close_light = 2130837605;
+			public const int fail = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int ic_group_collapse_00 = 2130837606;
+			public const int ic_audiotrack_dark = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int ic_group_collapse_01 = 2130837607;
+			public const int ic_audiotrack_light = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int ic_group_collapse_02 = 2130837608;
+			public const int ic_dialog_close_dark = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int ic_group_collapse_03 = 2130837609;
+			public const int ic_dialog_close_light = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int ic_group_collapse_04 = 2130837610;
+			public const int ic_group_collapse_00 = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int ic_group_collapse_05 = 2130837611;
+			public const int ic_group_collapse_01 = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int ic_group_collapse_06 = 2130837612;
+			public const int ic_group_collapse_02 = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int ic_group_collapse_07 = 2130837613;
+			public const int ic_group_collapse_03 = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int ic_group_collapse_08 = 2130837614;
+			public const int ic_group_collapse_04 = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int ic_group_collapse_09 = 2130837615;
+			public const int ic_group_collapse_05 = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int ic_group_collapse_10 = 2130837616;
+			public const int ic_group_collapse_06 = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int ic_group_collapse_11 = 2130837617;
+			public const int ic_group_collapse_07 = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int ic_group_collapse_12 = 2130837618;
+			public const int ic_group_collapse_08 = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int ic_group_collapse_13 = 2130837619;
+			public const int ic_group_collapse_09 = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int ic_group_collapse_14 = 2130837620;
+			public const int ic_group_collapse_10 = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int ic_group_collapse_15 = 2130837621;
+			public const int ic_group_collapse_11 = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int ic_group_expand_00 = 2130837622;
+			public const int ic_group_collapse_12 = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int ic_group_expand_01 = 2130837623;
+			public const int ic_group_collapse_13 = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int ic_group_expand_02 = 2130837624;
+			public const int ic_group_collapse_14 = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int ic_group_expand_03 = 2130837625;
+			public const int ic_group_collapse_15 = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int ic_group_expand_04 = 2130837626;
+			public const int ic_group_expand_00 = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_group_expand_05 = 2130837627;
+			public const int ic_group_expand_01 = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_group_expand_06 = 2130837628;
+			public const int ic_group_expand_02 = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_group_expand_07 = 2130837629;
+			public const int ic_group_expand_03 = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_group_expand_08 = 2130837630;
+			public const int ic_group_expand_04 = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_group_expand_09 = 2130837631;
+			public const int ic_group_expand_05 = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_group_expand_10 = 2130837632;
+			public const int ic_group_expand_06 = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_group_expand_11 = 2130837633;
+			public const int ic_group_expand_07 = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_group_expand_12 = 2130837634;
+			public const int ic_group_expand_08 = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_group_expand_13 = 2130837635;
+			public const int ic_group_expand_09 = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_group_expand_14 = 2130837636;
+			public const int ic_group_expand_10 = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_group_expand_15 = 2130837637;
+			public const int ic_group_expand_11 = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_media_pause_dark = 2130837638;
+			public const int ic_group_expand_12 = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_media_pause_light = 2130837639;
+			public const int ic_group_expand_13 = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_media_play_dark = 2130837640;
+			public const int ic_group_expand_14 = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int ic_media_play_light = 2130837641;
+			public const int ic_group_expand_15 = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int ic_media_stop_dark = 2130837642;
+			public const int ic_media_pause_dark = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int ic_media_stop_light = 2130837643;
+			public const int ic_media_pause_light = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int ic_mr_button_connected_00_dark = 2130837644;
+			public const int ic_media_play_dark = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int ic_mr_button_connected_00_light = 2130837645;
+			public const int ic_media_play_light = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int ic_mr_button_connected_01_dark = 2130837646;
+			public const int ic_media_stop_dark = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int ic_mr_button_connected_01_light = 2130837647;
+			public const int ic_media_stop_light = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int ic_mr_button_connected_02_dark = 2130837648;
+			public const int ic_mr_button_connected_00_dark = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int ic_mr_button_connected_02_light = 2130837649;
+			public const int ic_mr_button_connected_00_light = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int ic_mr_button_connected_03_dark = 2130837650;
+			public const int ic_mr_button_connected_01_dark = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int ic_mr_button_connected_03_light = 2130837651;
+			public const int ic_mr_button_connected_01_light = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int ic_mr_button_connected_04_dark = 2130837652;
+			public const int ic_mr_button_connected_02_dark = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int ic_mr_button_connected_04_light = 2130837653;
+			public const int ic_mr_button_connected_02_light = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int ic_mr_button_connected_05_dark = 2130837654;
+			public const int ic_mr_button_connected_03_dark = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int ic_mr_button_connected_05_light = 2130837655;
+			public const int ic_mr_button_connected_03_light = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int ic_mr_button_connected_06_dark = 2130837656;
+			public const int ic_mr_button_connected_04_dark = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int ic_mr_button_connected_06_light = 2130837657;
+			public const int ic_mr_button_connected_04_light = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int ic_mr_button_connected_07_dark = 2130837658;
+			public const int ic_mr_button_connected_05_dark = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int ic_mr_button_connected_07_light = 2130837659;
+			public const int ic_mr_button_connected_05_light = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int ic_mr_button_connected_08_dark = 2130837660;
+			public const int ic_mr_button_connected_06_dark = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int ic_mr_button_connected_08_light = 2130837661;
+			public const int ic_mr_button_connected_06_light = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int ic_mr_button_connected_09_dark = 2130837662;
+			public const int ic_mr_button_connected_07_dark = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int ic_mr_button_connected_09_light = 2130837663;
+			public const int ic_mr_button_connected_07_light = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int ic_mr_button_connected_10_dark = 2130837664;
+			public const int ic_mr_button_connected_08_dark = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int ic_mr_button_connected_10_light = 2130837665;
+			public const int ic_mr_button_connected_08_light = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int ic_mr_button_connected_11_dark = 2130837666;
+			public const int ic_mr_button_connected_09_dark = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int ic_mr_button_connected_11_light = 2130837667;
+			public const int ic_mr_button_connected_09_light = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int ic_mr_button_connected_12_dark = 2130837668;
+			public const int ic_mr_button_connected_10_dark = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int ic_mr_button_connected_12_light = 2130837669;
+			public const int ic_mr_button_connected_10_light = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int ic_mr_button_connected_13_dark = 2130837670;
+			public const int ic_mr_button_connected_11_dark = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int ic_mr_button_connected_13_light = 2130837671;
+			public const int ic_mr_button_connected_11_light = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int ic_mr_button_connected_14_dark = 2130837672;
+			public const int ic_mr_button_connected_12_dark = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int ic_mr_button_connected_14_light = 2130837673;
+			public const int ic_mr_button_connected_12_light = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int ic_mr_button_connected_15_dark = 2130837674;
+			public const int ic_mr_button_connected_13_dark = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int ic_mr_button_connected_15_light = 2130837675;
+			public const int ic_mr_button_connected_13_light = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int ic_mr_button_connected_16_dark = 2130837676;
+			public const int ic_mr_button_connected_14_dark = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int ic_mr_button_connected_16_light = 2130837677;
+			public const int ic_mr_button_connected_14_light = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int ic_mr_button_connected_17_dark = 2130837678;
+			public const int ic_mr_button_connected_15_dark = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int ic_mr_button_connected_17_light = 2130837679;
+			public const int ic_mr_button_connected_15_light = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int ic_mr_button_connected_18_dark = 2130837680;
+			public const int ic_mr_button_connected_16_dark = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int ic_mr_button_connected_18_light = 2130837681;
+			public const int ic_mr_button_connected_16_light = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int ic_mr_button_connected_19_dark = 2130837682;
+			public const int ic_mr_button_connected_17_dark = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int ic_mr_button_connected_19_light = 2130837683;
+			public const int ic_mr_button_connected_17_light = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int ic_mr_button_connected_20_dark = 2130837684;
+			public const int ic_mr_button_connected_18_dark = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int ic_mr_button_connected_20_light = 2130837685;
+			public const int ic_mr_button_connected_18_light = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int ic_mr_button_connected_21_dark = 2130837686;
+			public const int ic_mr_button_connected_19_dark = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int ic_mr_button_connected_21_light = 2130837687;
+			public const int ic_mr_button_connected_19_light = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int ic_mr_button_connected_22_dark = 2130837688;
+			public const int ic_mr_button_connected_20_dark = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int ic_mr_button_connected_22_light = 2130837689;
+			public const int ic_mr_button_connected_20_light = 2130837689;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int ic_mr_button_connected_23_dark = 2130837690;
+			public const int ic_mr_button_connected_21_dark = 2130837690;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int ic_mr_button_connected_23_light = 2130837691;
+			public const int ic_mr_button_connected_21_light = 2130837691;
 			
 			// aapt resource value: 0x7f0200bc
-			public const int ic_mr_button_connected_24_dark = 2130837692;
+			public const int ic_mr_button_connected_22_dark = 2130837692;
 			
 			// aapt resource value: 0x7f0200bd
-			public const int ic_mr_button_connected_24_light = 2130837693;
+			public const int ic_mr_button_connected_22_light = 2130837693;
 			
 			// aapt resource value: 0x7f0200be
-			public const int ic_mr_button_connected_25_dark = 2130837694;
+			public const int ic_mr_button_connected_23_dark = 2130837694;
 			
 			// aapt resource value: 0x7f0200bf
-			public const int ic_mr_button_connected_25_light = 2130837695;
+			public const int ic_mr_button_connected_23_light = 2130837695;
 			
 			// aapt resource value: 0x7f0200c0
-			public const int ic_mr_button_connected_26_dark = 2130837696;
+			public const int ic_mr_button_connected_24_dark = 2130837696;
 			
 			// aapt resource value: 0x7f0200c1
-			public const int ic_mr_button_connected_26_light = 2130837697;
+			public const int ic_mr_button_connected_24_light = 2130837697;
 			
 			// aapt resource value: 0x7f0200c2
-			public const int ic_mr_button_connected_27_dark = 2130837698;
+			public const int ic_mr_button_connected_25_dark = 2130837698;
 			
 			// aapt resource value: 0x7f0200c3
-			public const int ic_mr_button_connected_27_light = 2130837699;
+			public const int ic_mr_button_connected_25_light = 2130837699;
 			
 			// aapt resource value: 0x7f0200c4
-			public const int ic_mr_button_connected_28_dark = 2130837700;
+			public const int ic_mr_button_connected_26_dark = 2130837700;
 			
 			// aapt resource value: 0x7f0200c5
-			public const int ic_mr_button_connected_28_light = 2130837701;
+			public const int ic_mr_button_connected_26_light = 2130837701;
 			
 			// aapt resource value: 0x7f0200c6
-			public const int ic_mr_button_connected_29_dark = 2130837702;
+			public const int ic_mr_button_connected_27_dark = 2130837702;
 			
 			// aapt resource value: 0x7f0200c7
-			public const int ic_mr_button_connected_29_light = 2130837703;
+			public const int ic_mr_button_connected_27_light = 2130837703;
 			
 			// aapt resource value: 0x7f0200c8
-			public const int ic_mr_button_connected_30_dark = 2130837704;
+			public const int ic_mr_button_connected_28_dark = 2130837704;
 			
 			// aapt resource value: 0x7f0200c9
-			public const int ic_mr_button_connected_30_light = 2130837705;
+			public const int ic_mr_button_connected_28_light = 2130837705;
 			
 			// aapt resource value: 0x7f0200ca
-			public const int ic_mr_button_connecting_00_dark = 2130837706;
+			public const int ic_mr_button_connected_29_dark = 2130837706;
 			
 			// aapt resource value: 0x7f0200cb
-			public const int ic_mr_button_connecting_00_light = 2130837707;
+			public const int ic_mr_button_connected_29_light = 2130837707;
 			
 			// aapt resource value: 0x7f0200cc
-			public const int ic_mr_button_connecting_01_dark = 2130837708;
+			public const int ic_mr_button_connected_30_dark = 2130837708;
 			
 			// aapt resource value: 0x7f0200cd
-			public const int ic_mr_button_connecting_01_light = 2130837709;
+			public const int ic_mr_button_connected_30_light = 2130837709;
 			
 			// aapt resource value: 0x7f0200ce
-			public const int ic_mr_button_connecting_02_dark = 2130837710;
+			public const int ic_mr_button_connecting_00_dark = 2130837710;
 			
 			// aapt resource value: 0x7f0200cf
-			public const int ic_mr_button_connecting_02_light = 2130837711;
+			public const int ic_mr_button_connecting_00_light = 2130837711;
 			
 			// aapt resource value: 0x7f0200d0
-			public const int ic_mr_button_connecting_03_dark = 2130837712;
+			public const int ic_mr_button_connecting_01_dark = 2130837712;
 			
 			// aapt resource value: 0x7f0200d1
-			public const int ic_mr_button_connecting_03_light = 2130837713;
+			public const int ic_mr_button_connecting_01_light = 2130837713;
 			
 			// aapt resource value: 0x7f0200d2
-			public const int ic_mr_button_connecting_04_dark = 2130837714;
+			public const int ic_mr_button_connecting_02_dark = 2130837714;
 			
 			// aapt resource value: 0x7f0200d3
-			public const int ic_mr_button_connecting_04_light = 2130837715;
+			public const int ic_mr_button_connecting_02_light = 2130837715;
 			
 			// aapt resource value: 0x7f0200d4
-			public const int ic_mr_button_connecting_05_dark = 2130837716;
+			public const int ic_mr_button_connecting_03_dark = 2130837716;
 			
 			// aapt resource value: 0x7f0200d5
-			public const int ic_mr_button_connecting_05_light = 2130837717;
+			public const int ic_mr_button_connecting_03_light = 2130837717;
 			
 			// aapt resource value: 0x7f0200d6
-			public const int ic_mr_button_connecting_06_dark = 2130837718;
+			public const int ic_mr_button_connecting_04_dark = 2130837718;
 			
 			// aapt resource value: 0x7f0200d7
-			public const int ic_mr_button_connecting_06_light = 2130837719;
+			public const int ic_mr_button_connecting_04_light = 2130837719;
 			
 			// aapt resource value: 0x7f0200d8
-			public const int ic_mr_button_connecting_07_dark = 2130837720;
+			public const int ic_mr_button_connecting_05_dark = 2130837720;
 			
 			// aapt resource value: 0x7f0200d9
-			public const int ic_mr_button_connecting_07_light = 2130837721;
+			public const int ic_mr_button_connecting_05_light = 2130837721;
 			
 			// aapt resource value: 0x7f0200da
-			public const int ic_mr_button_connecting_08_dark = 2130837722;
+			public const int ic_mr_button_connecting_06_dark = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int ic_mr_button_connecting_08_light = 2130837723;
+			public const int ic_mr_button_connecting_06_light = 2130837723;
 			
 			// aapt resource value: 0x7f0200dc
-			public const int ic_mr_button_connecting_09_dark = 2130837724;
+			public const int ic_mr_button_connecting_07_dark = 2130837724;
 			
 			// aapt resource value: 0x7f0200dd
-			public const int ic_mr_button_connecting_09_light = 2130837725;
+			public const int ic_mr_button_connecting_07_light = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int ic_mr_button_connecting_10_dark = 2130837726;
+			public const int ic_mr_button_connecting_08_dark = 2130837726;
 			
 			// aapt resource value: 0x7f0200df
-			public const int ic_mr_button_connecting_10_light = 2130837727;
+			public const int ic_mr_button_connecting_08_light = 2130837727;
 			
 			// aapt resource value: 0x7f0200e0
-			public const int ic_mr_button_connecting_11_dark = 2130837728;
+			public const int ic_mr_button_connecting_09_dark = 2130837728;
 			
 			// aapt resource value: 0x7f0200e1
-			public const int ic_mr_button_connecting_11_light = 2130837729;
+			public const int ic_mr_button_connecting_09_light = 2130837729;
 			
 			// aapt resource value: 0x7f0200e2
-			public const int ic_mr_button_connecting_12_dark = 2130837730;
+			public const int ic_mr_button_connecting_10_dark = 2130837730;
 			
 			// aapt resource value: 0x7f0200e3
-			public const int ic_mr_button_connecting_12_light = 2130837731;
+			public const int ic_mr_button_connecting_10_light = 2130837731;
 			
 			// aapt resource value: 0x7f0200e4
-			public const int ic_mr_button_connecting_13_dark = 2130837732;
+			public const int ic_mr_button_connecting_11_dark = 2130837732;
 			
 			// aapt resource value: 0x7f0200e5
-			public const int ic_mr_button_connecting_13_light = 2130837733;
+			public const int ic_mr_button_connecting_11_light = 2130837733;
 			
 			// aapt resource value: 0x7f0200e6
-			public const int ic_mr_button_connecting_14_dark = 2130837734;
+			public const int ic_mr_button_connecting_12_dark = 2130837734;
 			
 			// aapt resource value: 0x7f0200e7
-			public const int ic_mr_button_connecting_14_light = 2130837735;
+			public const int ic_mr_button_connecting_12_light = 2130837735;
 			
 			// aapt resource value: 0x7f0200e8
-			public const int ic_mr_button_connecting_15_dark = 2130837736;
+			public const int ic_mr_button_connecting_13_dark = 2130837736;
 			
 			// aapt resource value: 0x7f0200e9
-			public const int ic_mr_button_connecting_15_light = 2130837737;
+			public const int ic_mr_button_connecting_13_light = 2130837737;
 			
 			// aapt resource value: 0x7f0200ea
-			public const int ic_mr_button_connecting_16_dark = 2130837738;
+			public const int ic_mr_button_connecting_14_dark = 2130837738;
 			
 			// aapt resource value: 0x7f0200eb
-			public const int ic_mr_button_connecting_16_light = 2130837739;
+			public const int ic_mr_button_connecting_14_light = 2130837739;
 			
 			// aapt resource value: 0x7f0200ec
-			public const int ic_mr_button_connecting_17_dark = 2130837740;
+			public const int ic_mr_button_connecting_15_dark = 2130837740;
 			
 			// aapt resource value: 0x7f0200ed
-			public const int ic_mr_button_connecting_17_light = 2130837741;
+			public const int ic_mr_button_connecting_15_light = 2130837741;
 			
 			// aapt resource value: 0x7f0200ee
-			public const int ic_mr_button_connecting_18_dark = 2130837742;
+			public const int ic_mr_button_connecting_16_dark = 2130837742;
 			
 			// aapt resource value: 0x7f0200ef
-			public const int ic_mr_button_connecting_18_light = 2130837743;
+			public const int ic_mr_button_connecting_16_light = 2130837743;
 			
 			// aapt resource value: 0x7f0200f0
-			public const int ic_mr_button_connecting_19_dark = 2130837744;
+			public const int ic_mr_button_connecting_17_dark = 2130837744;
 			
 			// aapt resource value: 0x7f0200f1
-			public const int ic_mr_button_connecting_19_light = 2130837745;
+			public const int ic_mr_button_connecting_17_light = 2130837745;
 			
 			// aapt resource value: 0x7f0200f2
-			public const int ic_mr_button_connecting_20_dark = 2130837746;
+			public const int ic_mr_button_connecting_18_dark = 2130837746;
 			
 			// aapt resource value: 0x7f0200f3
-			public const int ic_mr_button_connecting_20_light = 2130837747;
+			public const int ic_mr_button_connecting_18_light = 2130837747;
 			
 			// aapt resource value: 0x7f0200f4
-			public const int ic_mr_button_connecting_21_dark = 2130837748;
+			public const int ic_mr_button_connecting_19_dark = 2130837748;
 			
 			// aapt resource value: 0x7f0200f5
-			public const int ic_mr_button_connecting_21_light = 2130837749;
+			public const int ic_mr_button_connecting_19_light = 2130837749;
 			
 			// aapt resource value: 0x7f0200f6
-			public const int ic_mr_button_connecting_22_dark = 2130837750;
+			public const int ic_mr_button_connecting_20_dark = 2130837750;
 			
 			// aapt resource value: 0x7f0200f7
-			public const int ic_mr_button_connecting_22_light = 2130837751;
+			public const int ic_mr_button_connecting_20_light = 2130837751;
 			
 			// aapt resource value: 0x7f0200f8
-			public const int ic_mr_button_connecting_23_dark = 2130837752;
+			public const int ic_mr_button_connecting_21_dark = 2130837752;
 			
 			// aapt resource value: 0x7f0200f9
-			public const int ic_mr_button_connecting_23_light = 2130837753;
+			public const int ic_mr_button_connecting_21_light = 2130837753;
 			
 			// aapt resource value: 0x7f0200fa
-			public const int ic_mr_button_connecting_24_dark = 2130837754;
+			public const int ic_mr_button_connecting_22_dark = 2130837754;
 			
 			// aapt resource value: 0x7f0200fb
-			public const int ic_mr_button_connecting_24_light = 2130837755;
+			public const int ic_mr_button_connecting_22_light = 2130837755;
 			
 			// aapt resource value: 0x7f0200fc
-			public const int ic_mr_button_connecting_25_dark = 2130837756;
+			public const int ic_mr_button_connecting_23_dark = 2130837756;
 			
 			// aapt resource value: 0x7f0200fd
-			public const int ic_mr_button_connecting_25_light = 2130837757;
+			public const int ic_mr_button_connecting_23_light = 2130837757;
 			
 			// aapt resource value: 0x7f0200fe
-			public const int ic_mr_button_connecting_26_dark = 2130837758;
+			public const int ic_mr_button_connecting_24_dark = 2130837758;
 			
 			// aapt resource value: 0x7f0200ff
-			public const int ic_mr_button_connecting_26_light = 2130837759;
+			public const int ic_mr_button_connecting_24_light = 2130837759;
 			
 			// aapt resource value: 0x7f020100
-			public const int ic_mr_button_connecting_27_dark = 2130837760;
+			public const int ic_mr_button_connecting_25_dark = 2130837760;
 			
 			// aapt resource value: 0x7f020101
-			public const int ic_mr_button_connecting_27_light = 2130837761;
+			public const int ic_mr_button_connecting_25_light = 2130837761;
 			
 			// aapt resource value: 0x7f020102
-			public const int ic_mr_button_connecting_28_dark = 2130837762;
+			public const int ic_mr_button_connecting_26_dark = 2130837762;
 			
 			// aapt resource value: 0x7f020103
-			public const int ic_mr_button_connecting_28_light = 2130837763;
+			public const int ic_mr_button_connecting_26_light = 2130837763;
 			
 			// aapt resource value: 0x7f020104
-			public const int ic_mr_button_connecting_29_dark = 2130837764;
+			public const int ic_mr_button_connecting_27_dark = 2130837764;
 			
 			// aapt resource value: 0x7f020105
-			public const int ic_mr_button_connecting_29_light = 2130837765;
+			public const int ic_mr_button_connecting_27_light = 2130837765;
 			
 			// aapt resource value: 0x7f020106
-			public const int ic_mr_button_connecting_30_dark = 2130837766;
+			public const int ic_mr_button_connecting_28_dark = 2130837766;
 			
 			// aapt resource value: 0x7f020107
-			public const int ic_mr_button_connecting_30_light = 2130837767;
+			public const int ic_mr_button_connecting_28_light = 2130837767;
 			
 			// aapt resource value: 0x7f020108
-			public const int ic_mr_button_disabled_dark = 2130837768;
+			public const int ic_mr_button_connecting_29_dark = 2130837768;
 			
 			// aapt resource value: 0x7f020109
-			public const int ic_mr_button_disabled_light = 2130837769;
+			public const int ic_mr_button_connecting_29_light = 2130837769;
 			
 			// aapt resource value: 0x7f02010a
-			public const int ic_mr_button_disconnected_dark = 2130837770;
+			public const int ic_mr_button_connecting_30_dark = 2130837770;
 			
 			// aapt resource value: 0x7f02010b
-			public const int ic_mr_button_disconnected_light = 2130837771;
+			public const int ic_mr_button_connecting_30_light = 2130837771;
 			
 			// aapt resource value: 0x7f02010c
-			public const int ic_mr_button_grey = 2130837772;
+			public const int ic_mr_button_disabled_dark = 2130837772;
 			
 			// aapt resource value: 0x7f02010d
-			public const int ic_vol_type_speaker_dark = 2130837773;
+			public const int ic_mr_button_disabled_light = 2130837773;
 			
 			// aapt resource value: 0x7f02010e
-			public const int ic_vol_type_speaker_group_dark = 2130837774;
+			public const int ic_mr_button_disconnected_dark = 2130837774;
 			
 			// aapt resource value: 0x7f02010f
-			public const int ic_vol_type_speaker_group_light = 2130837775;
+			public const int ic_mr_button_disconnected_light = 2130837775;
 			
 			// aapt resource value: 0x7f020110
-			public const int ic_vol_type_speaker_light = 2130837776;
+			public const int ic_mr_button_grey = 2130837776;
 			
 			// aapt resource value: 0x7f020111
-			public const int ic_vol_type_tv_dark = 2130837777;
+			public const int ic_vol_type_speaker_dark = 2130837777;
 			
 			// aapt resource value: 0x7f020112
-			public const int ic_vol_type_tv_light = 2130837778;
+			public const int ic_vol_type_speaker_group_dark = 2130837778;
 			
 			// aapt resource value: 0x7f020113
-			public const int iconBora = 2130837779;
+			public const int ic_vol_type_speaker_group_light = 2130837779;
 			
 			// aapt resource value: 0x7f020114
-			public const int inputlayout_togglecollapseicon = 2130837780;
+			public const int ic_vol_type_speaker_light = 2130837780;
 			
 			// aapt resource value: 0x7f020115
-			public const int inputlayout_togglevisibleicon = 2130837781;
+			public const int ic_vol_type_tv_dark = 2130837781;
 			
 			// aapt resource value: 0x7f020116
-			public const int InstaAmarelo = 2130837782;
+			public const int ic_vol_type_tv_light = 2130837782;
 			
 			// aapt resource value: 0x7f020117
-			public const int InstaSobre = 2130837783;
+			public const int iconBora = 2130837783;
 			
 			// aapt resource value: 0x7f020118
-			public const int logo_Boora_Preto2 = 2130837784;
+			public const int inicial = 2130837784;
 			
 			// aapt resource value: 0x7f020119
-			public const int LogoF = 2130837785;
+			public const int inputlayout_togglecollapseicon = 2130837785;
 			
 			// aapt resource value: 0x7f02011a
-			public const int mr_button_connected_dark = 2130837786;
+			public const int inputlayout_togglevisibleicon = 2130837786;
 			
 			// aapt resource value: 0x7f02011b
-			public const int mr_button_connected_light = 2130837787;
+			public const int InstaAmarelo = 2130837787;
 			
 			// aapt resource value: 0x7f02011c
-			public const int mr_button_connecting_dark = 2130837788;
+			public const int InstaSobre = 2130837788;
 			
 			// aapt resource value: 0x7f02011d
-			public const int mr_button_connecting_light = 2130837789;
+			public const int lista = 2130837789;
 			
 			// aapt resource value: 0x7f02011e
-			public const int mr_button_dark = 2130837790;
+			public const int logo_Boora_Preto2 = 2130837790;
 			
 			// aapt resource value: 0x7f02011f
-			public const int mr_button_light = 2130837791;
+			public const int LogoF = 2130837791;
 			
 			// aapt resource value: 0x7f020120
-			public const int mr_dialog_close_dark = 2130837792;
+			public const int minhasseries = 2130837792;
 			
 			// aapt resource value: 0x7f020121
-			public const int mr_dialog_close_light = 2130837793;
+			public const int mr_button_connected_dark = 2130837793;
 			
 			// aapt resource value: 0x7f020122
-			public const int mr_dialog_material_background_dark = 2130837794;
+			public const int mr_button_connected_light = 2130837794;
 			
 			// aapt resource value: 0x7f020123
-			public const int mr_dialog_material_background_light = 2130837795;
+			public const int mr_button_connecting_dark = 2130837795;
 			
 			// aapt resource value: 0x7f020124
-			public const int mr_group_collapse = 2130837796;
+			public const int mr_button_connecting_light = 2130837796;
 			
 			// aapt resource value: 0x7f020125
-			public const int mr_group_expand = 2130837797;
+			public const int mr_button_dark = 2130837797;
 			
 			// aapt resource value: 0x7f020126
-			public const int mr_media_pause_dark = 2130837798;
+			public const int mr_button_light = 2130837798;
 			
 			// aapt resource value: 0x7f020127
-			public const int mr_media_pause_light = 2130837799;
+			public const int mr_dialog_close_dark = 2130837799;
 			
 			// aapt resource value: 0x7f020128
-			public const int mr_media_play_dark = 2130837800;
+			public const int mr_dialog_close_light = 2130837800;
 			
 			// aapt resource value: 0x7f020129
-			public const int mr_media_play_light = 2130837801;
+			public const int mr_dialog_material_background_dark = 2130837801;
 			
 			// aapt resource value: 0x7f02012a
-			public const int mr_media_stop_dark = 2130837802;
+			public const int mr_dialog_material_background_light = 2130837802;
 			
 			// aapt resource value: 0x7f02012b
-			public const int mr_media_stop_light = 2130837803;
+			public const int mr_group_collapse = 2130837803;
 			
 			// aapt resource value: 0x7f02012c
-			public const int mr_vol_type_audiotrack_dark = 2130837804;
+			public const int mr_group_expand = 2130837804;
 			
 			// aapt resource value: 0x7f02012d
-			public const int mr_vol_type_audiotrack_light = 2130837805;
+			public const int mr_media_pause_dark = 2130837805;
 			
 			// aapt resource value: 0x7f02012e
-			public const int navigation_empty_icon = 2130837806;
+			public const int mr_media_pause_light = 2130837806;
 			
 			// aapt resource value: 0x7f02012f
-			public const int notification_action_background = 2130837807;
+			public const int mr_media_play_dark = 2130837807;
 			
 			// aapt resource value: 0x7f020130
-			public const int notification_bg = 2130837808;
+			public const int mr_media_play_light = 2130837808;
 			
 			// aapt resource value: 0x7f020131
-			public const int notification_bg_low = 2130837809;
+			public const int mr_media_stop_dark = 2130837809;
 			
 			// aapt resource value: 0x7f020132
-			public const int notification_bg_low_normal = 2130837810;
+			public const int mr_media_stop_light = 2130837810;
 			
 			// aapt resource value: 0x7f020133
-			public const int notification_bg_low_pressed = 2130837811;
+			public const int mr_vol_type_audiotrack_dark = 2130837811;
 			
 			// aapt resource value: 0x7f020134
-			public const int notification_bg_normal = 2130837812;
+			public const int mr_vol_type_audiotrack_light = 2130837812;
 			
 			// aapt resource value: 0x7f020135
-			public const int notification_bg_normal_pressed = 2130837813;
+			public const int navigation_empty_icon = 2130837813;
 			
 			// aapt resource value: 0x7f020136
-			public const int notification_icon_background = 2130837814;
-			
-			// aapt resource value: 0x7f020141
-			public const int notification_template_icon_bg = 2130837825;
-			
-			// aapt resource value: 0x7f020142
-			public const int notification_template_icon_low_bg = 2130837826;
+			public const int notification_action_background = 2130837814;
 			
 			// aapt resource value: 0x7f020137
-			public const int notification_tile_bg = 2130837815;
+			public const int notification_bg = 2130837815;
 			
 			// aapt resource value: 0x7f020138
-			public const int notify_panel_notification_icon_bg = 2130837816;
+			public const int notification_bg_low = 2130837816;
 			
 			// aapt resource value: 0x7f020139
-			public const int Recurrence = 2130837817;
+			public const int notification_bg_low_normal = 2130837817;
 			
 			// aapt resource value: 0x7f02013a
-			public const int SupinoReto = 2130837818;
+			public const int notification_bg_low_pressed = 2130837818;
 			
 			// aapt resource value: 0x7f02013b
-			public const int tooltip_frame_dark = 2130837819;
+			public const int notification_bg_normal = 2130837819;
 			
 			// aapt resource value: 0x7f02013c
-			public const int tooltip_frame_light = 2130837820;
+			public const int notification_bg_normal_pressed = 2130837820;
 			
 			// aapt resource value: 0x7f02013d
-			public const int TwitterSobrepng = 2130837821;
+			public const int notification_icon_background = 2130837821;
+			
+			// aapt resource value: 0x7f02014c
+			public const int notification_template_icon_bg = 2130837836;
+			
+			// aapt resource value: 0x7f02014d
+			public const int notification_template_icon_low_bg = 2130837837;
 			
 			// aapt resource value: 0x7f02013e
-			public const int user = 2130837822;
+			public const int notification_tile_bg = 2130837822;
 			
 			// aapt resource value: 0x7f02013f
-			public const int WhatsLogo = 2130837823;
+			public const int notify_panel_notification_icon_bg = 2130837823;
 			
 			// aapt resource value: 0x7f020140
-			public const int WhatsYellow = 2130837824;
+			public const int Recurrence = 2130837824;
+			
+			// aapt resource value: 0x7f020141
+			public const int sair = 2130837825;
+			
+			// aapt resource value: 0x7f020142
+			public const int sobre = 2130837826;
+			
+			// aapt resource value: 0x7f020143
+			public const int SupinoReto = 2130837827;
+			
+			// aapt resource value: 0x7f020144
+			public const int testebotao = 2130837828;
+			
+			// aapt resource value: 0x7f020145
+			public const int testebotao_sem_Fundo = 2130837829;
+			
+			// aapt resource value: 0x7f020146
+			public const int tooltip_frame_dark = 2130837830;
+			
+			// aapt resource value: 0x7f020147
+			public const int tooltip_frame_light = 2130837831;
+			
+			// aapt resource value: 0x7f020148
+			public const int TwitterSobrepng = 2130837832;
+			
+			// aapt resource value: 0x7f020149
+			public const int user = 2130837833;
+			
+			// aapt resource value: 0x7f02014a
+			public const int WhatsLogo = 2130837834;
+			
+			// aapt resource value: 0x7f02014b
+			public const int WhatsYellow = 2130837835;
 			
 			static Drawable()
 			{
