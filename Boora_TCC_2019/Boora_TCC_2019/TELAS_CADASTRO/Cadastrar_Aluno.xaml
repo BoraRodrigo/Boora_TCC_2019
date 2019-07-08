@@ -26,7 +26,7 @@
                     <Entry Placeholder="Situação" PlaceholderColor="Black" x:Name="txt_SITUACAO"/>
                 
                  <StackLayout>     
-                    <Button Text="Cadastrar" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center" />
+                    <Button Image="cadastro_icon.png" Text="Cadastrar" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center" />
                     </StackLayout>
                 </StackLayout>
             

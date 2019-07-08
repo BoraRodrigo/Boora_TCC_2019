@@ -18,8 +18,8 @@
                 <Entry Placeholder="Senha" x:Name="txt_SENHA" PlaceholderColor="Black"/>
                 <Entry Placeholder="Idade" x:Name="txt_IDADE" PlaceholderColor="Black"/>
                 <Entry Placeholder="Formacão Academica" x:Name="txt_FORMACAO" PlaceholderColor="Black"/>
-                   
-                <Button Text="Cadastrar Instrutor" x:Name="btn_Cadastrar" BackgroundColor="Orange" Clicked="Cadastrar_InstrutorAsync" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" />
+
+                <Button Image="cadastro_icon.png" Text="Cadastrar Instrutor" x:Name="btn_Cadastrar"  Clicked="Cadastrar_InstrutorAsync" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

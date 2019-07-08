@@ -20,17 +20,20 @@ namespace Boora_TCC_2019.MENU
             
                 
             InitializeComponent();
+          
             if (Login.Tipo_login.Equals("Aluno"))
             {
                 btn_cadastro_aluno.IsVisible=false;
                 btn_cadastro_exercicio.IsVisible = false;
                 btn_cadastro_instrutor.IsVisible = false;
                 btn_lista_alunos.IsVisible = false;
+                lblNomeUsuario.Text = Login.Nome_Aluno_Logado;
             }
             else if (Login.Tipo_login.Equals("Dono_Academia"))
             {
                 btn_minhas_Series.IsVisible = false;
                 btn_meu_calendario.IsVisible = false;
+                lblNomeUsuario.Text = Login.Nome_Academia_login;
             }
         }
         // aqui vc instancia novo navigationPage com a tela que vc quer cadastrar. cada metodo para um botao.

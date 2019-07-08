@@ -27,8 +27,8 @@
                             </StackLayout>
 
                         </StackLayout>
-                        <Button Text="Adicionar" Clicked="Btn_Cadastrar_Exercicios_Serie"  HorizontalOptions="Center" />
-                        <Button Text="Finalizar" HorizontalOptions="Center" />
+                        <Button Image="cadastro_serie" Text="Adicionar" Clicked="Btn_Cadastrar_Exercicios_Serie"  HorizontalOptions="Center" />
+                        <Button Image="inicial.png" Text="Finalizar" HorizontalOptions="Center" />
                     </StackLayout>
                 </Frame>
                 <StackLayout>
@@ -37,7 +37,7 @@
                             <Label Text="Exercícios Cadastrados" Style="{StaticResource LblTitulo}"/>
                             <Entry Placeholder="Pesquisar" x:Name="Pesquisar_Exercicios" TextChanged="BuscaRapida"/>
 
-                            <ListView x:Name="ListaExercicios" BackgroundColor="#ffc800"  ItemSelected="SelecaoExercicioAction">
+                            <ListView x:Name="ListaExercicios" BackgroundColor="White"  ItemSelected="SelecaoExercicioAction">
                                 <ListView.ItemTemplate>
                                     <DataTemplate >
                                         <TextCell Text="{Binding Nome}" TextColor="Black"  Detail="{Binding Objetivo}" DetailColor="Black" />
@@ -51,7 +51,7 @@
                                 
                             </StackLayout>
                             
-                            <ListView x:Name="ListaExerciciosSeriesView"  BackgroundColor="#ffc800">
+                            <ListView x:Name="ListaExerciciosSeriesView"  BackgroundColor="White">
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <TextCell Text="{Binding Nome}" TextColor="Black" />

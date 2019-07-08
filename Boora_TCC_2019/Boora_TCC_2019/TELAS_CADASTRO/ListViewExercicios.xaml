@@ -10,7 +10,7 @@
                     <Label Text="EXERCÍCIOS CADASTRADOS" Style="{StaticResource LblTitulo}"/>
                     <Entry Placeholder="Pesquisar" x:Name="Pesquisar_Exercicios" TextChanged="BuscaRapida"/>
 
-                    <ListView x:Name="ListaExercicios" BackgroundColor="#ffc800"  >
+                    <ListView x:Name="ListaExercicios" BackgroundColor="White"  >
                         <ListView.ItemTemplate>
                             <DataTemplate >
                                 <ImageCell Text="{Binding Nome}" TextColor="Black" ImageSource="{Binding Imagem_Gif}"  Detail="{Binding Objetivo}" DetailColor="Black" />

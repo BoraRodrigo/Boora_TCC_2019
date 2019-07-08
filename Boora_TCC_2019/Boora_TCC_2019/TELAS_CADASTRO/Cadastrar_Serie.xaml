@@ -5,7 +5,7 @@
              x:Class="Boora_TCC_2019.TELAS.Cadastrar_Serie">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout BackgroundColor="#ffc800">
+            <StackLayout BackgroundColor="White">
 
                 <StackLayout Padding="0" Margin="15">
                     <Label Text="CADASTRAR SÉRIE" Style="{StaticResource LblTitulo}"/>
@@ -37,7 +37,7 @@
                     </StackLayout>
 
                     <Label Text="Data final não selecionada" x:Name="dataFinalIsVisible"   IsVisible="False" Style="{StaticResource LblAvisos}"/>
-                    <Button Text="Cadastrar Série"  Clicked="Btn_Cadastrar_Serie" HorizontalOptions="Center" />
+                    <Button Image="cadastro_serie.png" Text="Cadastrar Série"  Clicked="Btn_Cadastrar_Serie" HorizontalOptions="Center" />
 
                 </StackLayout>
             </StackLayout>

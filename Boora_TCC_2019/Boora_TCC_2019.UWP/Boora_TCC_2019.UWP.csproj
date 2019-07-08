@@ -105,6 +105,7 @@
   <ItemGroup>
     <AndroidResource Include="facebook.png" />
     <Content Include="AngelosFitness.png" />
+    <Content Include="anterior.png" />
     <Content Include="cadastro_icon.png" />
     <Content Include="cadastro_serie.png" />
     <Content Include="calendario.png" />
@@ -120,6 +121,7 @@
     <Content Include="LogoF.png" />
     <Content Include="logo_Boora_Preto2.png" />
     <Content Include="minhasseries.png" />
+    <Content Include="proxima.png" />
     <Content Include="sair.png" />
     <Content Include="sobre.png" />
     <Content Include="SupinoReto.gif" />

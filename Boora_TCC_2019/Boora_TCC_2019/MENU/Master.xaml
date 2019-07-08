@@ -10,6 +10,13 @@
         <ScrollView>
         <StackLayout BackgroundColor="White" >
             <!--Adiona novo botao, e no Master C# faz o funçao do evento clicked, esse tipo de menu so funciona em masterdateilpage-->
+
+
+                    <StackLayout  BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="Start" Image="user.png" BackgroundColor="Transparent" x:Name="btn_Perfil" WidthRequest="200" CornerRadius="500"/>
+                        <Label x:Name="lblNomeUsuario" WidthRequest="200"  VerticalTextAlignment="Center"/>
+                    </StackLayout>
+            
                     <Button Image="inicial.png"  BackgroundColor="Transparent" Text="Inicial" Clicked="GoInicial" BorderWidth="4" BorderRadius="6"/>
                     <Button Image="lista.png" BackgroundColor="Transparent" Text="Alunos" Clicked="GoListaAlunos" BorderWidth="4" BorderRadius="6" x:Name="btn_lista_alunos"/>
                     <Button Image="cadastro_icon.png" BackgroundColor="Transparent" Text="Cadastro Aluno" Clicked="GoCadastroAluno" BorderWidth="4" BorderRadius="6" x:Name="btn_cadastro_aluno"/>

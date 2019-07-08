@@ -18,7 +18,7 @@
                     <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
                         
                         <Button x:Name="btnPick" WidthRequest="200" Text="Buscar imagem" Clicked="Btn_Buscar"/>
-                        <Button x:Name="btnUpload" WidthRequest="200" Text="Cadastrar" Clicked="Btn_Upload" />
+                        <Button Image="cadastro_serie.png" x:Name="btnUpload" WidthRequest="200" Text="Cadastrar" Clicked="Btn_Upload" />
 
                     </StackLayout>
                 </StackLayout>

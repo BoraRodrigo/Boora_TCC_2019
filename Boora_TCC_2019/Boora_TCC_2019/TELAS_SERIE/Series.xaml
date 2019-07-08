@@ -45,8 +45,8 @@
                         <StackLayout Orientation="Vertical">
                             <StackLayout Orientation="Horizontal" >
 
-                                <Button Text="Anterior" Margin="0,0,0,50" HorizontalOptions="FillAndExpand"  Clicked="Anterior_SerieAsync"/>
-                                <Button Text="Proxima" Margin="0,0,0,50" HorizontalOptions="FillAndExpand"  Clicked="Proxima_SerieAsync" />
+                                <Button Image="anterior.png" Text="Anterior" Margin="0,0,0,50" HorizontalOptions="FillAndExpand"  Clicked="Anterior_SerieAsync"/>
+                                <Button  Image="proxima.png" Text="Proxima" Margin="0,0,0,50" HorizontalOptions="FillAndExpand"  Clicked="Proxima_SerieAsync" />
                                 <!--troquei os displays alerts por essa label-->
                                 
                             </StackLayout>

@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Boora_TCC_2019.TELAS.TelaSobre">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#ffc800" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="10">
+        <StackLayout BackgroundColor="White" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="10">
             
             <Label Text="Mais Detalhes" TextColor="Black" x:Name="Lbl_MaisDetalhes" HorizontalTextAlignment="Center">
                 <Label.GestureRecognizers>

@@ -6,13 +6,12 @@
         <!--aqui que se seta os styles que serao usado no projeto-->
             <ResourceDictionary>
             <Style TargetType="StackLayout">
-                <Setter Property="BackgroundColor" Value="#ffc800"/>
+                <Setter Property="BackgroundColor" Value="White"/>
             </Style>
             <Style TargetType="Frame">
                 <Setter Property="WidthRequest" Value="200"/>
                 <Setter Property="BorderColor" Value="Black"/>
-                <Setter Property="BackgroundColor" Value="#ffc800"/>
-                
+                <Setter Property="BackgroundColor" Value="White"/>
             </Style>
             <Style TargetType="Label">
                 <Setter Property="TextColor" Value="Black"/>
@@ -21,7 +20,7 @@
                 <Setter Property="PlaceholderColor" Value="Black"/>
             </Style>
             <Style TargetType="Button">
-                <Setter Property="BackgroundColor" Value="Orange"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
                 <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="WidthRequest" Value="160"/>

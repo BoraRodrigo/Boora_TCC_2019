@@ -29,10 +29,10 @@ namespace Boora_TCC_2019.TELAS
 		{
 
             InitializeComponent ();
-            
-            
+    
 
-		}
+
+        }
         private async void EfetuarLogin(object sender, EventArgs args)
         {
 
