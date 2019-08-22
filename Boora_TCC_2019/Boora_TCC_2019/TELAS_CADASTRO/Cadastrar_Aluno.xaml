@@ -4,29 +4,29 @@
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="Boora_TCC_2019.TELAS.Cadastrar_Aluno">
     <ContentPage.Content>
-        <StackLayout>
-           
-            <StackLayout Padding="0" Margin="15">
-                <Label Text="CADASTRAR ALUNO" Style="{StaticResource LblTitulo}"/>
-                
-                    <Entry Placeholder="Nome Completo" PlaceholderColor="Black" x:Name="txt_NOME" />
+        <StackLayout BackgroundColor="{StaticResource ColorStacklayout}">
+
+            <StackLayout Padding="0" Margin="15" BackgroundColor="{StaticResource ColorStacklayout}">
+                <Label Text="CADASTRAR ALUNO" Style="{StaticResource LblTitulo}" TextColor="{StaticResource  ColorLabel}"/>
+
+                <Entry Placeholder="Nome Completo" PlaceholderColor="{StaticResource  ColorLabel}" x:Name="txt_NOME" />
 
 
-                <StackLayout Orientation="Horizontal" >
-                    <Entry Placeholder="Email" x:Name="txt_EMAIL" PlaceholderColor="Black"/>
+                <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}">
+                    <Entry Placeholder="Email" x:Name="txt_EMAIL" PlaceholderColor="{StaticResource ColorLabel}"/>
                     <Label Text="*" x:Name="lbl_validaemail" Style="{StaticResource LblTitulo}" TextColor="Red" />
                 </StackLayout  >
 
 
-                    <Entry Placeholder="Senha" PlaceholderColor="Black" x:Name="txt_SENHA" IsPassword="True"/>
-                    <Entry Placeholder="Peso aqui" PlaceholderColor="Black" x:Name="txt_PESO"/>
-                    <Entry Placeholder="Altura" PlaceholderColor="Black" x:Name="txt_ALTURA"/>
-                    <Entry Placeholder="Idade" PlaceholderColor="Black" x:Name="txt_IDADE"/>
-                    <Entry Placeholder="Objetivo" PlaceholderColor="Black" x:Name="txt_OBJETIVO"/>
-                    <Entry Placeholder="Situação" PlaceholderColor="Black" x:Name="txt_SITUACAO"/>
-                
-                 <StackLayout>     
-                    <Button Image="cadastro_icon.png" Text="Cadastrar" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center" />
+                <Entry Placeholder="Senha" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SENHA" IsPassword="True"/>
+                <Entry Placeholder="Peso aqui" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_PESO"/>
+                <Entry Placeholder="Altura" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_ALTURA"/>
+                <Entry Placeholder="Idade" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_IDADE"/>
+                <Entry Placeholder="Objetivo" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_OBJETIVO"/>
+                <Entry Placeholder="Situação" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SITUACAO"/>
+
+                <StackLayout BackgroundColor="{StaticResource ColorStacklayout}">     
+                    <Button Image="cadastro_icon.png" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center" />
                     </StackLayout>
                 </StackLayout>
             

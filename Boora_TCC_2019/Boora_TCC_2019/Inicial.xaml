@@ -3,21 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Boora_TCC_2019.Inicial">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" Style="{StaticResource SLInicio}">
+        <StackLayout Orientation="Vertical" Style="{StaticResource SLInicio}" BackgroundColor="{StaticResource ColorStacklayout}">
 
-            <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Style="{StaticResource SLInicio}" >
-                <Label Text="Bem Vindo!" Style="{StaticResource LblInicio}"/>
-                <Label x:Name="lbl_nome_academia" Text="" Style="{StaticResource LblInicio}"/>
-                <StackLayout Padding="20" VerticalOptions="FillAndExpand" Style="{StaticResource SLInicio}">
+            <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Style="{StaticResource SLInicio}" BackgroundColor="{StaticResource ColorStacklayout}">
+                <Label Text="Bem Vindo!" Style="{StaticResource LblInicio}" TextColor="{StaticResource ColorLabel}"/>
+                <Label x:Name="lbl_nome_academia" Text="" Style="{StaticResource LblInicio}" TextColor="{StaticResource  ColorLabel}"/>
+                <StackLayout Padding="20" VerticalOptions="FillAndExpand" BackgroundColor="{StaticResource ColorStacklayout}" Style="{StaticResource SLInicio}">
                     <Image x:Name="imgagem_logo_Academia" Source="AngelosFitness.png" />
                 </StackLayout>
             </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="End" Style="{StaticResource SLInicio}">
-                <StackLayout Padding="5" Orientation="Vertical" Style="{StaticResource SLInicio}" HorizontalOptions="Start" >
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="End" Style="{StaticResource SLInicio}" BackgroundColor="{StaticResource ColorStacklayout}">
+                <StackLayout Padding="5" Orientation="Vertical" Style="{StaticResource SLInicio}" HorizontalOptions="Start" BackgroundColor="{StaticResource ColorStacklayout}">
                     <ImageButton Source="InstaAmarelo.png" WidthRequest="65" HeightRequest="65" Clicked="GoInsta"/>
                     <Label Text="Siga-nos" TextColor="#ffc800" FontSize="16" HorizontalTextAlignment="Center"/>
                 </StackLayout>
-                <StackLayout Padding="5" Orientation="Vertical" Style="{StaticResource SLInicio}" HorizontalOptions="End" >
+                <StackLayout Padding="5" Orientation="Vertical" Style="{StaticResource SLInicio}" HorizontalOptions="End" BackgroundColor="{StaticResource ColorStacklayout}" >
                     <ImageButton Source="WhatsYellow.png" WidthRequest="65" HeightRequest="65" Clicked="GoWhats"/>
                     <Label Text="Contato" TextColor="#ffc800" FontSize="16" HorizontalTextAlignment="Center"/>
                 </StackLayout>

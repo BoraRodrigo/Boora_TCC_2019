@@ -1,11 +1,11 @@
 ﻿using Boora_TCC_2019.TELAS;
-using Boora_TCC_2019.TELAS_SERIE;
+using Boora_TCC_2019.MODEL;
 using Boora_TCC_2019.TELAS_CADASTRO;
-
-using System;
+using Boora_TCC_2019.BancoSQlite;
+using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
+using System.Collections.Generic;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Boora_TCC_2019
@@ -14,12 +14,13 @@ namespace Boora_TCC_2019
     {
         public App()
         {
+            
 
             //chave de licensa do calendario 
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MTEzNDM5QDMxMzcyZTMxMmUzMEFxUTdKRUFOdk9ueEljR1dRM1B1dk5LaWpZTTE2bHd1ZG56WnJxQkY0Qk" +
                                                                             "k9;MTEzNDQwQDMxMzcyZTMxMmUzMEtjem5Rem4rb3pXMVpiSTFxcjFZUUxPMk9uQzBHTGZ1R2FWbkczOTR1R0U9");
             InitializeComponent();
-            
+            MudarCorPersonalizacao();
             MainPage = new Login();
         }
 
@@ -37,5 +38,24 @@ namespace Boora_TCC_2019
         {
             // Handle when your app resumes
         }
+
+        public void MudarCorPersonalizacao()
+        {
+            List<Cores> cores = new List<Cores>();
+            Db_SqlLite db = new Db_SqlLite();
+
+            cores = db.Consultar();
+            if (cores.Capacity > 0)
+            {
+                this.Resources["ColorLabel"] = Color.FromHex(cores[0].CorLabel);
+                this.Resources["ColorStacklayout"] = Color.FromHex(cores[0].CorStackLayout);
+            }
+            else
+            {
+                this.Resources["ColorLabel"] = Color.Blue;
+                this.Resources["ColorStacklayout"] = Color.Pink;
+            }
+        }
+        
     }
 }

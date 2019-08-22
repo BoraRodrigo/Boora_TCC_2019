@@ -22,7 +22,7 @@
                     <Button Image="cadastro_icon.png" BackgroundColor="Transparent" Text="Cadastro Aluno" Clicked="GoCadastroAluno" BorderWidth="4" BorderRadius="6" x:Name="btn_cadastro_aluno"/>
                     <Button Image="cadastro_serie.png" BackgroundColor="Transparent" Text="Cadastro Exercício" Clicked="GoCadastroExercicio" BorderWidth="4" BorderRadius="6" x:Name="btn_cadastro_exercicio"/>
                     <Button Image="cadastro_icon.png" BackgroundColor="Transparent" Text="Cadastro Instrutor" Clicked="GoCadastroInstrutor" BorderWidth="4" BorderRadius="6" x:Name="btn_cadastro_instrutor"/>
-                    <!-- <Button Text="Cadastro Serie" Clicked="GoCadastroSerie"/>-->
+                    <Button Text="Alterar Tema" Clicked="GoPersonalizacao"/>
                     <Button Image="lista.png" BackgroundColor="Transparent" Text="Lista Exercício" Clicked="GoListExercicios" BorderWidth="4" BorderRadius="6"/>
                     <Button Image="minhasseries.png" BackgroundColor="Transparent" Text="Minhas Séries" Clicked="GoEMinhasSeries" BorderWidth="4" BorderRadius="6" x:Name="btn_minhas_Series"/>
                     <Button Image="calendario.png" BackgroundColor="Transparent" Text="Meu Calendário" Clicked="GoEMeuClendario" BorderWidth="4" BorderRadius="6" x:Name="btn_meu_calendario"/>

@@ -5,8 +5,8 @@
     <ContentPage.Content>
         <AbsoluteLayout>
             <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
-                <StackLayout Padding="0" Margin="15">
-                    <Label Text="ALUNOS CADASTRADOS" Style="{StaticResource LblTitulo}"/>
+                <StackLayout Padding="0" Margin="15" BackgroundColor="{StaticResource ColorStacklayout}">
+                    <Label Text="ALUNOS CADASTRADOS" Style="{StaticResource LblTitulo}" TextColor="{StaticResource ColorLabel}"/>
                     <Entry Placeholder="Pesquisar" x:Name="Pesquisar_Alunos" TextChanged="BuscaRapida"/>
 
                     <!--Carregando...

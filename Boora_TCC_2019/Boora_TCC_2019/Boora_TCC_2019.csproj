@@ -21,6 +21,7 @@
     <PackageReference Include="Ansuria.XFGloss" Version="1.1.3" />
     <PackageReference Include="FirebaseDatabase.net" Version="4.0.1" />
     <PackageReference Include="FirebaseStorage.net" Version="1.0.3" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.5.231" />
     <PackageReference Include="Syncfusion.Xamarin.SfSchedule" Version="17.1.0.52" />
     <PackageReference Include="Xam.Plugin.Media" Version="4.0.1.5" />
     <PackageReference Include="Xamarin.FFImageLoading" Version="2.4.11.982" />
@@ -50,6 +51,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="TELAS\ListAlunosView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TELAS\Personalizacao.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="TELAS\TelaSobre.xaml">

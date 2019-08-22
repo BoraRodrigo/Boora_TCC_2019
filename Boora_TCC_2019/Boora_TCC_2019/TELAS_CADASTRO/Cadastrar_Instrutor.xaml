@@ -3,23 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Boora_TCC_2019.TELAS.Cadastrar_Instrutor">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout Padding="0" Margin="15" >
-                <Label Text="CADASTRAR INSTRUTOR" Style="{StaticResource LblTitulo}"/>
+        <StackLayout BackgroundColor="{StaticResource ColorStacklayout}">
+            <StackLayout Padding="0" Margin="15" BackgroundColor="{StaticResource ColorStacklayout}" >
+                <Label Text="CADASTRAR INSTRUTOR" Style="{StaticResource LblTitulo}" TextColor="{StaticResource ColorLabel}"/>
 
-                <Entry Placeholder="Nome" x:Name="txt_NOME" PlaceholderColor="Black"/>
+                <Entry Placeholder="Nome" x:Name="txt_NOME" PlaceholderColor="{StaticResource ColorLabel}"/>
 
-                <StackLayout Orientation="Horizontal" >
-                   <Entry Placeholder="Email" x:Name="txt_EMAIL" PlaceholderColor="Black"/>
+                <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}">
+                    <Entry Placeholder="Email" x:Name="txt_EMAIL" PlaceholderColor="{StaticResource ColorLabel}"/>
                    <Label Text="*" x:Name="lbl_validaemail" Style="{StaticResource LblTitulo}" TextColor="Red" />
                 </StackLayout  >
 
 
-                <Entry Placeholder="Senha" x:Name="txt_SENHA" PlaceholderColor="Black"/>
-                <Entry Placeholder="Idade" x:Name="txt_IDADE" PlaceholderColor="Black"/>
-                <Entry Placeholder="Formacão Academica" x:Name="txt_FORMACAO" PlaceholderColor="Black"/>
+                <Entry Placeholder="Senha" x:Name="txt_SENHA" PlaceholderColor="{StaticResource ColorLabel}"/>
+                <Entry Placeholder="Idade" x:Name="txt_IDADE" PlaceholderColor="{StaticResource ColorLabel}"/>
+                <Entry Placeholder="Formacão Academica" x:Name="txt_FORMACAO" PlaceholderColor="{StaticResource ColorLabel}"/>
 
-                <Button Image="cadastro_icon.png" Text="Cadastrar Instrutor" x:Name="btn_Cadastrar"  Clicked="Cadastrar_InstrutorAsync" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" />
+                <Button Image="cadastro_icon.png" Text="Cadastrar Instrutor" x:Name="btn_Cadastrar" TextColor="{StaticResource ColorLabel}" Clicked="Cadastrar_InstrutorAsync"  FontAttributes="Bold" HorizontalOptions="Center" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

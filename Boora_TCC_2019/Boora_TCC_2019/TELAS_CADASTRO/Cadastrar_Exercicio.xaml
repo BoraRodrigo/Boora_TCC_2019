@@ -5,20 +5,20 @@
     <ContentPage.Content>
         <ScrollView>
 
-            <StackLayout>
+            <StackLayout BackgroundColor="{StaticResource ColorStacklayout}">
 
-                <StackLayout  Padding="0" Margin="15">
+                <StackLayout  Padding="0" Margin="15" BackgroundColor="{StaticResource ColorStacklayout}">
                     
-                    <Label Text="CADASTRAR EXERCÍCIO" Style="{StaticResource LblTitulo}" />
-                    <Entry x:Name="txtNOME" Placeholder="Nome"  PlaceholderColor="Black" />
-                    <Entry x:Name="txtDESCRICAO" Placeholder="Descrição" PlaceholderColor="Black" />
-                    <Editor x:Name="txtOBJETIVO" Placeholder="Objetivo" HeightRequest="150" PlaceholderColor="Black" />
+                    <Label Text="CADASTRAR EXERCÍCIO" Style="{StaticResource LblTitulo}" TextColor="{StaticResource ColorLabel}" />
+                    <Entry x:Name="txtNOME" Placeholder="Nome"  PlaceholderColor="{StaticResource ColorLabel}" />
+                    <Entry x:Name="txtDESCRICAO" Placeholder="Descrição" PlaceholderColor="{StaticResource ColorLabel}" />
+                    <Editor x:Name="txtOBJETIVO" Placeholder="Objetivo" HeightRequest="150" PlaceholderColor="{StaticResource ColorLabel}" />
                     <Image x:Name="imgChoosed" HeightRequest="150"/>
-                    
-                    <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+
+                    <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}">
                         
-                        <Button x:Name="btnPick" WidthRequest="200" Text="Buscar imagem" Clicked="Btn_Buscar"/>
-                        <Button Image="cadastro_serie.png" x:Name="btnUpload" WidthRequest="200" Text="Cadastrar" Clicked="Btn_Upload" />
+                        <Button x:Name="btnPick" WidthRequest="200" Text="Buscar imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar"/>
+                        <Button Image="cadastro_serie.png" x:Name="btnUpload" WidthRequest="200" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Upload" />
 
                     </StackLayout>
                 </StackLayout>

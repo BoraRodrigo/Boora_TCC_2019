@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Boora_TCC_2019.TELAS.Personalizacao">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="CorLabel">Black</Color>
+            <Color x:Key="CorStack">White</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                
+                <StackLayout Orientation="Vertical">
+                    <StackLayout>
+                        <Label Text="Letras" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                    </StackLayout>
+                    <StackLayout >
+                        <Label BackgroundColor="Brown">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="CorBrownSelection"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label BackgroundColor="Red">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="CorRedSelection"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                        
+                    </StackLayout >
+                    <StackLayout Orientation="Horizontal">
+                        <Entry Placeholder="Cor em Hexa" x:Name="txt_corLabel"/>
+                        <Button Text="OK" Clicked="OkLetrasAction"/>
+                    </StackLayout>
+                    
+                </StackLayout>
+                
+                <StackLayout Orientation="Vertical">
+                    <StackLayout>
+                        <Label Text="Fundo" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                    </StackLayout>
+                    <StackLayout >
+                        <Label BackgroundColor="Green">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="CorGreenSelection"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label BackgroundColor="Orange">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="CorOrangeSelection"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Entry Placeholder="Cor em Hexa" x:Name="txt_corStack"/>
+                        <Button Text="OK" Clicked="OkStackAction"/>
+                    </StackLayout>
+                </StackLayout>
+                       
+            </StackLayout>
+            <StackLayout>
+                <Button Text="Experimentar" Clicked="TestarAction"/>
+            </StackLayout>
+            
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="{DynamicResource CorStack}">
+                <Label Text="Bem Vindo!" TextColor="{DynamicResource CorLabel}" FontAttributes="Bold"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+            <StackLayout>
+                <Button Text="Salvar" Clicked="SalvarAction"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -4,16 +4,16 @@
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="Boora_TCC_2019.TELAS_CADASTRO.ListViewExercicios">
     <ContentPage.Content>
-        <AbsoluteLayout>
-            <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
-                <StackLayout Padding="0" Margin="15">
-                    <Label Text="EXERCÍCIOS CADASTRADOS" Style="{StaticResource LblTitulo}"/>
+        <AbsoluteLayout BackgroundColor="{StaticResource ColorStacklayout}">
+            <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="{StaticResource ColorStacklayout}">
+                <StackLayout Padding="0" Margin="15" BackgroundColor="{StaticResource ColorStacklayout}">
+                    <Label Text="EXERCÍCIOS CADASTRADOS" Style="{StaticResource LblTitulo}" TextColor="{StaticResource ColorLabel}"/>
                     <Entry Placeholder="Pesquisar" x:Name="Pesquisar_Exercicios" TextChanged="BuscaRapida"/>
 
-                    <ListView x:Name="ListaExercicios" BackgroundColor="White"  >
+                    <ListView x:Name="ListaExercicios" BackgroundColor="{StaticResource ColorStacklayout}"  >
                         <ListView.ItemTemplate>
                             <DataTemplate >
-                                <ImageCell Text="{Binding Nome}" TextColor="Black" ImageSource="{Binding Imagem_Gif}"  Detail="{Binding Objetivo}" DetailColor="Black" />
+                                <ImageCell Text="{Binding Nome}" TextColor="{StaticResource ColorLabel}" ImageSource="{Binding Imagem_Gif}"  Detail="{Binding Objetivo}" DetailColor="Black" />
                             </DataTemplate >
                         </ListView.ItemTemplate>
                     </ListView>

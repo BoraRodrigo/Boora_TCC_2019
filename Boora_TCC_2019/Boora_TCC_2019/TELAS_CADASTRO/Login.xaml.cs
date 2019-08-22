@@ -16,6 +16,7 @@ namespace Boora_TCC_2019.TELAS
 
     public partial class Login : ContentPage
 	{
+      
         public static string Id_Aluno_Login { get; set; }
         public static string Nome_Aluno_Logado { get; set; }
         public static string Senha_Aluno_Logado { get; set; }
@@ -29,12 +30,12 @@ namespace Boora_TCC_2019.TELAS
 		{
 
             InitializeComponent ();
-    
-
+           
 
         }
         private async void EfetuarLogin(object sender, EventArgs args)
         {
+
 
             Aluno aluno = new Aluno();
             AlunoDAO alunoDAO = new AlunoDAO();
@@ -42,14 +43,14 @@ namespace Boora_TCC_2019.TELAS
             Academia academia = new Academia();
             AcademiaDAO academiaDAO = new AcademiaDAO();
             Nome_Academia_login = txtNome_academia.Text;
-           
+
             string nome;
             try
             {
                 // resolve a questao do espaço
 
                 nome = txtNome.Text.Trim();
-                if (chekAluno.IsChecked==true)
+                if (chekAluno.IsChecked == true)
                 {
                     SlCarregandoLogin.IsVisible = true; // enquanto espera resposta do BD sobe um stacklayout com indicador(carregadndo) rodadndo.
                     aluno = await alunoDAO.Login_Aluno(nome, txtsenha.Text);
@@ -58,19 +59,20 @@ namespace Boora_TCC_2019.TELAS
                     Nome_Aluno_Logado = aluno.Nome;
                     Senha_Aluno_Logado = aluno.Senha;
 
-                   
+
                     var academiaLogin = await academiaDAO.Busca_Academia_Nome(txtNome_academia.Text);
                     Id_Academia_Login = academiaLogin.Id_academia;
-                
+
 
                     SlCarregandoLogin.IsVisible = false; // apos o retorno do BD o Stacklayout some.
                     Tipo_login = "Aluno";
                     App.Current.MainPage = new NavigationPage(new MENU.Master());
-                }else if (chekAcademia.IsChecked==true)
+                }
+                else if (chekAcademia.IsChecked == true)
                 {
                     SlCarregandoLogin.IsVisible = true;
-                    academia = await academiaDAO.Login_Dono_Academia(txtsenha.Text,txtNome.Text);
-                  
+                    academia = await academiaDAO.Login_Dono_Academia(txtsenha.Text, txtNome.Text);
+
 
                     //aqui tem que ajustar esta imporvisado ainda 
                     Id_Aluno_Login = academia.Id_academia;
@@ -83,13 +85,14 @@ namespace Boora_TCC_2019.TELAS
                     App.Current.MainPage = new NavigationPage(new MENU.Master());
                     SlCarregandoLogin.IsVisible = false;
                 }
-                else if(chekPersonal.IsChecked==true){
-                     await DisplayAlert("","Não Implementado","");
+                else if (chekPersonal.IsChecked == true)
+                {
+                    await DisplayAlert("", "Não Implementado", "");
                 }
 
-               
+
             }
-            catch 
+            catch
             {
                 int i = 4;
                 bool aux = true;
@@ -106,10 +109,10 @@ namespace Boora_TCC_2019.TELAS
                     }
                     return aux;
                 });
-                
 
-            } 
-           
+
+            }
+
         }
         public void EsqueceuSenha(object sender, EventArgs args)
         {
@@ -136,5 +139,6 @@ namespace Boora_TCC_2019.TELAS
             App.Current.MainPage = new NavigationPage(new TELAS_CADASTRO.Cadastrar_Academia());
         }
 
+        
     }
 }
