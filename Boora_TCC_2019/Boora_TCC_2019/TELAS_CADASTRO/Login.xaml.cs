@@ -1,4 +1,5 @@
-﻿using Boora_TCC_2019.DAO;
+﻿using Boora_TCC_2019.ClassesUTEIS;
+using Boora_TCC_2019.DAO;
 using Boora_TCC_2019.MODEL;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,10 @@ namespace Boora_TCC_2019.TELAS
         public static string Nome_Aluno_Logado { get; set; }
         public static string Senha_Aluno_Logado { get; set; }
         public static string Nome_Academia_login { get; set; }
+
+        public static string Telefone_Academia { get; set; }
+        public static string Instagran_Academia { get; set; }
+
 
         public static string Id_Academia_Login { get; set; }
 
@@ -61,6 +66,8 @@ namespace Boora_TCC_2019.TELAS
 
 
                     var academiaLogin = await academiaDAO.Busca_Academia_Nome(txtNome_academia.Text);
+                    Telefone_Academia = academiaLogin.Whats;
+                    Instagran_Academia = academiaLogin.Instagran;
                     Id_Academia_Login = academiaLogin.Id_academia;
 
 
@@ -117,22 +124,20 @@ namespace Boora_TCC_2019.TELAS
         public void EsqueceuSenha(object sender, EventArgs args)
         {
             // TODO - Desenvolver metodo da esqueceu a senha
-            int i = 4;
-            bool aux = true;
-            EsqueceuSenhaLbl.Text = "Em desenvolvimento";
-            EsqueceuSenhaLbl.IsVisible = true;
-            Device.StartTimer(TimeSpan.FromSeconds(1), () =>
-            {
 
-                i--;
-                if (i < 0)
-                {
-                    EsqueceuSenhaLbl.IsVisible = false;
-                    aux = false;
-                }
-                return aux;
-            });
+            txt_email_redefinir_senha.IsVisible = true;
+            btn_RedefinirSenha.IsVisible = true;
             
+           
+        }
+        public async void RedefinirSenhaAsync(object sender,EventArgs args)
+        {
+
+            Email email = new Email();
+           await email.RedefinirSenha(txt_email_redefinir_senha.Text,txtNome_academia.Text);
+
+            txt_email_redefinir_senha.IsVisible = false;
+            btn_RedefinirSenha.IsVisible = false;
         }
        public void Cadastre_sua_Academia(object sender, EventArgs args)
         {

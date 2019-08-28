@@ -41,7 +41,9 @@
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
                     </Button>
-                    
+
+                    <Entry IsVisible="False" x:Name="txt_email_redefinir_senha" Placeholder="Email" TextColor="#ffc800" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
+                    <Button  Text="Enviar Email" BackgroundColor="White" x:Name="btn_RedefinirSenha"  Clicked="RedefinirSenhaAsync" IsVisible="False"/>
                     <Label Text="Esqueceu a senha?" FontSize="12" Margin="0" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#ffc800">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Tapped="EsqueceuSenha"/>

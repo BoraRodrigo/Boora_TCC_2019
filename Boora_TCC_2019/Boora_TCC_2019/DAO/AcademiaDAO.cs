@@ -30,7 +30,9 @@ namespace Boora_TCC_2019.DAO
                     Logo_academia=academia.Logo_academia,
                     Email=academia.Email,
                     Nome_academia = academia.Nome_academia,
-                    Senha=academia.Senha
+                    Senha=academia.Senha,
+                    Whats=academia.Whats,
+                    Instagran=academia.Instagran
 
                 });
 
@@ -54,7 +56,10 @@ namespace Boora_TCC_2019.DAO
                   Logo_academia = id_academiaKEY,
                   Email = academia.Email,
                   Nome_academia = academia.Nome_academia,
-                  Senha = academia.Senha
+                  Senha = academia.Senha,
+                  Whats = academia.Whats,
+                  Instagran = academia.Instagran
+
 
               });
 
@@ -93,7 +98,10 @@ namespace Boora_TCC_2019.DAO
                         Logo_academia = item.Object.Logo_academia,
                         Email = item.Object.Email,
                         Nome_academia = item.Object.Nome_academia,
-                        Senha = item.Object.Senha
+                        Senha = item.Object.Senha,
+                        Whats = item.Object.Whats,
+                        Instagran = item.Object.Instagran
+
                     };
                 }).ToList();
 

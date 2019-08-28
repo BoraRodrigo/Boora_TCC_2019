@@ -59,6 +59,9 @@
     <EmbeddedResource Update="TELAS\TelaSobre.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Telas_Alterar\Alterar_Dados_Aluno.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="TELAS_CADASTRO\Cadastrar_Academia.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

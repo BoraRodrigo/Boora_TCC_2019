@@ -17,24 +17,23 @@ namespace Boora_TCC_2019.MENU
     {
         public Master()
         {
-            
-                
+
             InitializeComponent();
           //tirar depois
-            //if (Login.Tipo_login.Equals("Aluno"))
-            //{
-            //    btn_cadastro_aluno.IsVisible=false;
-            //    btn_cadastro_exercicio.IsVisible = false;
-            //    btn_cadastro_instrutor.IsVisible = false;
-            //    btn_lista_alunos.IsVisible = false;
-            //    lblNomeUsuario.Text = Login.Nome_Aluno_Logado;
-            //}
-            //else if (Login.Tipo_login.Equals("Dono_Academia"))
-            //{
-            //    btn_minhas_Series.IsVisible = false;
-            //    btn_meu_calendario.IsVisible = false;
-            //    lblNomeUsuario.Text = Login.Nome_Academia_login;
-            //}
+            if (Login.Tipo_login.Equals("Aluno"))
+            {
+                btn_cadastro_aluno.IsVisible=false;
+                btn_cadastro_exercicio.IsVisible = false;
+                btn_cadastro_instrutor.IsVisible = false;
+                btn_lista_alunos.IsVisible = false;
+                lblNomeUsuario.Text = Login.Nome_Aluno_Logado;
+            }
+            else if (Login.Tipo_login.Equals("Dono_Academia"))
+            {
+                btn_minhas_Series.IsVisible = false;
+                btn_meu_calendario.IsVisible = false;
+                lblNomeUsuario.Text = Login.Nome_Academia_login;
+            }
         }
         // aqui vc instancia novo navigationPage com a tela que vc quer cadastrar. cada metodo para um botao.
         private void GoCadastroAluno(object sender, EventArgs args)
@@ -107,13 +106,19 @@ namespace Boora_TCC_2019.MENU
             IsPresented = false;
 
         }
+        private void alterarDados(object sender, EventArgs e)
+        {
+            Detail = new NavigationPage(new Telas_Alterar.Alterar_Dados_Aluno());
+            IsPresented = false;
+
+        }
+        
+
         private void GoListaAlunos(object sender, EventArgs e)
         {
             Detail = new NavigationPage(new TELAS.ListAlunosView());
             IsPresented = false;
 
         }
-        
-
     }
 }

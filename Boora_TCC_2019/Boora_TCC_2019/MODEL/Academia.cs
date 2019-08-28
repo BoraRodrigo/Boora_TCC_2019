@@ -16,6 +16,8 @@ namespace Boora_TCC_2019.MODEL
         public string Cnpj { get; set; }
         public string Logo_academia { get; set; }
         public string Email { get; set; }
+        public string Whats { get; set; }
+        public string Instagran { get; set; }
         public string Senha { get; set; }
 
 

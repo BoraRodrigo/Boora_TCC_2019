@@ -6,28 +6,29 @@
                   
                   x:Class="Boora_TCC_2019.MENU.Master">
     <MasterDetailPage.Master >
-    <ContentPage Title="Menu" BackgroundColor="White">
-        <ScrollView>
-        <StackLayout BackgroundColor="White" >
-            <!--Adiona novo botao, e no Master C# faz o funçao do evento clicked, esse tipo de menu so funciona em masterdateilpage-->
+        <ContentPage Title="Menu" BackgroundColor="White">
+            <ScrollView>
+                <StackLayout BackgroundColor="White" >
+                    <!--Adiona novo botao, e no Master C# faz o funçao do evento clicked, esse tipo de menu so funciona em masterdateilpage-->
 
 
                     <StackLayout  BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
                         <Button VerticalOptions="Start" Image="user.png" BackgroundColor="Transparent" x:Name="btn_Perfil" WidthRequest="200" CornerRadius="500"/>
                         <Label x:Name="lblNomeUsuario" WidthRequest="200"  VerticalTextAlignment="Center"/>
                     </StackLayout>
-            
+
                     <Button Image="inicial.png"  BackgroundColor="Transparent" Text="Inicial" Clicked="GoInicial" BorderWidth="4" BorderRadius="6"/>
                     <Button Image="lista.png" BackgroundColor="Transparent" Text="Alunos" Clicked="GoListaAlunos" BorderWidth="4" BorderRadius="6" x:Name="btn_lista_alunos"/>
                     <Button Image="cadastro_icon.png" BackgroundColor="Transparent" Text="Cadastro Aluno" Clicked="GoCadastroAluno" BorderWidth="4" BorderRadius="6" x:Name="btn_cadastro_aluno"/>
                     <Button Image="cadastro_serie.png" BackgroundColor="Transparent" Text="Cadastro Exercício" Clicked="GoCadastroExercicio" BorderWidth="4" BorderRadius="6" x:Name="btn_cadastro_exercicio"/>
                     <Button Image="cadastro_icon.png" BackgroundColor="Transparent" Text="Cadastro Instrutor" Clicked="GoCadastroInstrutor" BorderWidth="4" BorderRadius="6" x:Name="btn_cadastro_instrutor"/>
-                    <Button Text="Alterar Tema" Clicked="GoPersonalizacao"/>
+                    <Button Image="corestema.png"  Text="Alterar Tema" Clicked="GoPersonalizacao"/>
                     <Button Image="lista.png" BackgroundColor="Transparent" Text="Lista Exercício" Clicked="GoListExercicios" BorderWidth="4" BorderRadius="6"/>
                     <Button Image="minhasseries.png" BackgroundColor="Transparent" Text="Minhas Séries" Clicked="GoEMinhasSeries" BorderWidth="4" BorderRadius="6" x:Name="btn_minhas_Series"/>
                     <Button Image="calendario.png" BackgroundColor="Transparent" Text="Meu Calendário" Clicked="GoEMeuClendario" BorderWidth="4" BorderRadius="6" x:Name="btn_meu_calendario"/>
                     <Button Image="sobre.png" BackgroundColor="Transparent" Text="Sobre" Clicked="Send"  BorderWidth="4" BorderRadius="6"/>
-                    
+                    <Button Image="alterar.png"  BackgroundColor="Transparent" Text="Alterar Dados" Clicked="alterarDados"  BorderWidth="4" BorderRadius="6"/>
+
                     <Button Image="sair.png" BackgroundColor="Transparent" Text="SAIR" Clicked="GoSAIR"  BorderWidth="4" BorderRadius="6">
                         <!-- Efeito de click-->
                         <VisualStateManager.VisualStateGroups>
@@ -48,10 +49,10 @@
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
                     </Button>
-            
+
                 </StackLayout>
-        </ScrollView>
-    </ContentPage>
+            </ScrollView>
+        </ContentPage>
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
         <NavigationPage>

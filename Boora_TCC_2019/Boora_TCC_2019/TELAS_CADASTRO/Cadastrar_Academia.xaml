@@ -3,8 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Boora_TCC_2019.TELAS_CADASTRO.Cadastrar_Academia">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout BackgroundColor="{StaticResource ColorStacklayout}">
+            
             <StackLayout Padding="0" Margin="15" BackgroundColor="{StaticResource ColorStacklayout}">
+            
                 <Label Text="CADASTRAR ACADEMIA" Style="{StaticResource LblTitulo}" TextColor="{StaticResource ColorLabel}"/>
 
                 <Entry Placeholder="Nome Academia" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_NOMEACADEMIA" />
@@ -14,16 +17,19 @@
                 <Entry Placeholder="CNPJ" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_CNPJ"/>
                 <Entry Placeholder="CIDADE" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_CIDADE"/>
                 <Entry Placeholder="ESTADO" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_ESTADO"/>
-               
+
+                <Entry Placeholder="TELEFONE" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_TELEFONE"/>
+                <Entry Placeholder="INSTAGRAN" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_INSTAGRAN"/>
 
                 <Image x:Name="imgChoosed" HeightRequest="150"/>
 
                 <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}">
 
-                    <Button x:Name="btnPick" WidthRequest="200" Text="Buscar imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar"/>
-                    <Button Text="Cadastrar" TextColor="{StaticResource ColorLabel}" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center" />
+                    <Button Image="buscar.png"  x:Name="btnPick" WidthRequest="200" Text="Buscar imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar"/>
+                    <Button Image="cadastro_serie.png" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center" />
                 </StackLayout>
             </StackLayout>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

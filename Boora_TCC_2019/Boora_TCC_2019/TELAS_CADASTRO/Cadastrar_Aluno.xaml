@@ -4,6 +4,7 @@
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="Boora_TCC_2019.TELAS.Cadastrar_Aluno">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout BackgroundColor="{StaticResource ColorStacklayout}">
 
             <StackLayout Padding="0" Margin="15" BackgroundColor="{StaticResource ColorStacklayout}">
@@ -12,16 +13,19 @@
                 <Entry Placeholder="Nome Completo" PlaceholderColor="{StaticResource  ColorLabel}" x:Name="txt_NOME" />
 
 
-                <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}">
-                    <Entry Placeholder="Email" x:Name="txt_EMAIL" PlaceholderColor="{StaticResource ColorLabel}"/>
+                <StackLayout  Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}">
+                    <Entry Placeholder="Email                                                                  " x:Name="txt_EMAIL"  PlaceholderColor="{StaticResource ColorLabel}"/>
                     <Label Text="*" x:Name="lbl_validaemail" Style="{StaticResource LblTitulo}" TextColor="Red" />
                 </StackLayout  >
 
+                <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}">
+                    <Label  Text="Data Nascimento:" HorizontalOptions="FillAndExpand" x:Name="DataNascimento" FontSize="18" TextColor="{StaticResource ColorLabel}"/>
+                    <DatePicker  FontSize="18" HorizontalOptions="FillAndExpand" TextColor="{StaticResource ColorLabel}" Format="dd/MM/yyyy" x:Name="txt_IDADE" MinimumDate="01/01/1980" DateSelected="DataSelecionada"/>
+                </StackLayout>
 
-                <Entry Placeholder="Senha" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SENHA" IsPassword="True"/>
+
                 <Entry Placeholder="Peso aqui" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_PESO"/>
                 <Entry Placeholder="Altura" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_ALTURA"/>
-                <Entry Placeholder="Idade" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_IDADE"/>
                 <Entry Placeholder="Objetivo" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_OBJETIVO"/>
                 <Entry Placeholder="Situação" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SITUACAO"/>
 
@@ -31,6 +35,7 @@
                 </StackLayout>
             
         </StackLayout>
+        </ScrollView>
 
     </ContentPage.Content>
 </ContentPage>

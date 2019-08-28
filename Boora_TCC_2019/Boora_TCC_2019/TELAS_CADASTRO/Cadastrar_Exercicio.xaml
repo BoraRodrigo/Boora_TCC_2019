@@ -16,8 +16,8 @@
                     <Image x:Name="imgChoosed" HeightRequest="150"/>
 
                     <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}">
-                        
-                        <Button x:Name="btnPick" WidthRequest="200" Text="Buscar imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar"/>
+
+                        <Button Image="buscar.png" x:Name="btnPick" WidthRequest="200" Text="Buscar imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar"/>
                         <Button Image="cadastro_serie.png" x:Name="btnUpload" WidthRequest="200" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Upload" />
 
                     </StackLayout>

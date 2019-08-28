@@ -1,25 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Boora_TCC_2019.Inicial">
+             x:Class="Boora_TCC_2019.Inicial" BackgroundImage="fundo.png" >
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" Style="{StaticResource SLInicio}" BackgroundColor="{StaticResource ColorStacklayout}">
+       
+        <StackLayout  Orientation="Vertical" Style="{StaticResource SLInicio}"  BackgroundColor="Transparent">
 
-            <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Style="{StaticResource SLInicio}" BackgroundColor="{StaticResource ColorStacklayout}">
+            <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Style="{StaticResource SLInicio}" BackgroundColor="Transparent">
                 <Label Text="Bem Vindo!" Style="{StaticResource LblInicio}" TextColor="{StaticResource ColorLabel}"/>
                 <Label x:Name="lbl_nome_academia" Text="" Style="{StaticResource LblInicio}" TextColor="{StaticResource  ColorLabel}"/>
-                <StackLayout Padding="20" VerticalOptions="FillAndExpand" BackgroundColor="{StaticResource ColorStacklayout}" Style="{StaticResource SLInicio}">
+                <StackLayout Padding="20" VerticalOptions="FillAndExpand" BackgroundColor="Transparent" Style="{StaticResource SLInicio}">
                     <Image x:Name="imgagem_logo_Academia" Source="AngelosFitness.png" />
+               
                 </StackLayout>
             </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="End" Style="{StaticResource SLInicio}" BackgroundColor="{StaticResource ColorStacklayout}">
-                <StackLayout Padding="5" Orientation="Vertical" Style="{StaticResource SLInicio}" HorizontalOptions="Start" BackgroundColor="{StaticResource ColorStacklayout}">
-                    <ImageButton Source="InstaAmarelo.png" WidthRequest="65" HeightRequest="65" Clicked="GoInsta"/>
-                    <Label Text="Siga-nos" TextColor="#ffc800" FontSize="16" HorizontalTextAlignment="Center"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="End" Style="{StaticResource SLInicio}" BackgroundColor="Transparent">
+
+                <!--Deixar estes valores de cor fixo pq é o botão da imagem-->
+                <StackLayout Padding="5" Orientation="Vertical"  HorizontalOptions="Start" BackgroundColor="Transparent">
+                    <ImageButton Source="instagranIcon.png" WidthRequest="65" HeightRequest="65" Clicked="GoInsta"/>
+                    <Label Text="Siga-nos" TextColor="Black" FontSize="16" HorizontalTextAlignment="Center"/>
                 </StackLayout>
-                <StackLayout Padding="5" Orientation="Vertical" Style="{StaticResource SLInicio}" HorizontalOptions="End" BackgroundColor="{StaticResource ColorStacklayout}" >
-                    <ImageButton Source="WhatsYellow.png" WidthRequest="65" HeightRequest="65" Clicked="GoWhats"/>
-                    <Label Text="Contato" TextColor="#ffc800" FontSize="16" HorizontalTextAlignment="Center"/>
+                <StackLayout Padding="5" Orientation="Vertical"  HorizontalOptions="End" BackgroundColor="Transparent" >
+                    <ImageButton Source="wthaicon.png" WidthRequest="65" HeightRequest="65" Clicked="GoWhats"/>
+                    <Label Text="Contato" TextColor="Black" FontSize="16" HorizontalTextAlignment="Center"/>
                 </StackLayout>
             </StackLayout>
             

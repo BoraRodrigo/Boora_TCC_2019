@@ -48,6 +48,8 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
                     academia.Estado = txt_ESTADO.Text;
                     academia.Logo_academia = "";
                     academia.Senha = txt_SENHA.Text;
+                    academia.Whats = txt_TELEFONE.Text;
+                    academia.Instagran = txt_INSTAGRAN.Text;
                     await academiaDAO.Cadastrar_Academia(academia, file.GetStream());
                     LimpaCampos();
                 }
@@ -90,6 +92,8 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
             txt_ESTADO.Text = "";
             txt_NOMEACADEMIA.Text = "";
             txt_SENHA.Text = "";
+            txt_INSTAGRAN.Text = "";
+            txt_TELEFONE.Text = "";
         }
     }
 }

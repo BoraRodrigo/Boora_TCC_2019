@@ -105,17 +105,23 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="facebook.png" />
+    <Content Include="alterar.png" />
     <Content Include="AngelosFitness.png" />
     <Content Include="anterior.png" />
+    <Content Include="buscar.png" />
     <Content Include="cadastro_icon.png" />
     <Content Include="cadastro_serie.png" />
     <Content Include="calendario.png" />
     <Content Include="Check.png" />
+    <Content Include="corestema.png" />
     <Content Include="FaceSobre.png" />
     <Content Include="fail.png" />
+    <Content Include="fundoinicial.jpg" />
+    <Content Include="fundoinicial.png" />
     <Content Include="iconBora.png" />
     <Content Include="inicial.png" />
     <Content Include="InstaAmarelo.png" />
+    <Content Include="instagranIcon.png" />
     <Content Include="InstaSobre.jpg" />
     <Content Include="like.png" />
     <Content Include="lista.png" />
@@ -157,6 +163,7 @@
     <Content Include="user.png" />
     <Content Include="WhatsLogo.jpg" />
     <Content Include="WhatsYellow.png" />
+    <Content Include="wthaicon.png" />
     <None Include="logo_Boora.png" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>

@@ -38,6 +38,29 @@ namespace Boora_TCC_2019.DAO
                 }).ToList();
 
         }
+
+        public async Task<List<Aluno>> Busca_Aluno_Por_nome_Academia_Enviar_Email(string nome_Academia)
+        {
+
+            return (await firebase
+                .Child("Academias")
+                .Child(nome_Academia)
+                .Child("Aluno")
+                .OnceAsync<Aluno>()).Select(item => new Aluno
+                {
+                    Id_Aluno = item.Object.Id_Aluno,
+                    Nome = item.Object.Nome,
+                    Email = item.Object.Email,
+                    Senha = item.Object.Senha,
+                    Peso = item.Object.Peso,
+                    Altura = item.Object.Altura,
+                    Idade = item.Object.Idade,
+                    objetivo_Aluno = item.Object.objetivo_Aluno,
+                    Situacao = item.Object.Situacao,
+
+                }).ToList();
+
+        }
         public async Task Cadastrar_Aluno(Aluno aluno)
         {
             var cadastro_aluno= await firebase
@@ -98,11 +121,46 @@ namespace Boora_TCC_2019.DAO
               .OnceAsync<Exercicios_Serie_DAO>();
             return exercicios_serie.Where(a => a.Id_Serie.Equals( id_serie)).FirstOrDefault();
         }
-        
-        //Pesquisa da serie do aluno retorna a serie que tiver o ID do aluno, este id
-        //de serie que vier no retono é necessario para busca os exercicios  da serie --BORA
-        public async Task<Serie> Busca_Serie_Aluno(string idserie)
+
+        public async Task<Aluno> Busca_Dados_Aluno_Para_carregar_Tela_Alterar(string id_alunoAlterar)
         {
+            var aluno = await Busca_Aluno();
+            await firebase
+                .Child("Aluno")
+              .OnceAsync<Aluno>();
+            return aluno.Where(a => a.Id_Aluno == id_alunoAlterar).FirstOrDefault();
+
+        }
+        public async Task<Aluno> Busca_Dados_Aluno_Por_Email(string email, string academia)
+        {
+
+            //busca o aluno pelo email para pode enviar um email para alterar a senha
+            var aluno = await Busca_Aluno_Por_nome_Academia_Enviar_Email(academia);
+            await firebase
+                .Child("Academias")
+                .Child(academia)
+                .Child("Aluno")
+              .OnceAsync<Aluno>();
+            return aluno.Where(a => a.Email == email).FirstOrDefault();
+
+        }
+
+        public async Task<Aluno> Verefica_Se_Email_Ja_Cadastrado_Academia(string email)
+        {
+   
+            var aluno = await Busca_Aluno_Por_nome_Academia_Enviar_Email(Login.Nome_Academia_login);
+            await firebase
+                .Child("Academias")
+                .Child(Login.Nome_Academia_login)
+                .Child("Aluno")
+              .OnceAsync<Aluno>();
+            return aluno.Where(a => a.Email == email).FirstOrDefault();
+        }
+
+            //Pesquisa da serie do aluno retorna a serie que tiver o ID do aluno, este id
+            //de serie que vier no retono é necessario para busca os exercicios  da serie --BORA
+            public async Task<Serie> Busca_Serie_Aluno(string idserie)
+             {
             SerieDAO Serie_DAO = new SerieDAO();
             var serie = await Serie_DAO.Busca_Serie();
             await firebase
@@ -112,6 +170,66 @@ namespace Boora_TCC_2019.DAO
               .OnceAsync<Serie>();
             return serie.Where(a => a.Id_Serie == idserie).FirstOrDefault();
         }
+
+        public async Task AlterarALUNO(string idAluno, Aluno aluno)
+        {
+            var alunoAlterar = (await firebase
+               .Child("Academias")
+               .Child(Login.Nome_Academia_login)
+               .Child("Aluno")
+              .OnceAsync<Aluno>()).Where(a => a.Object.Id_Aluno == idAluno).FirstOrDefault();
+
+            await firebase
+              .Child("Academias")
+              .Child(Login.Nome_Academia_login)
+               .Child("Aluno")
+              .Child(alunoAlterar.Key)
+              .PutAsync(new Aluno()
+              {
+                  Id_Aluno = alunoAlterar.Key,
+                  Nome = aluno.Nome,
+                  Email = aluno.Email,
+                  Senha = aluno.Senha,
+                  Peso = aluno.Peso,
+                  Altura = aluno.Altura,
+                  Idade = aluno.Idade,
+                  objetivo_Aluno = aluno.objetivo_Aluno,
+                  Situacao = aluno.Situacao
+              });
+        }
+
+        public async Task Aterar_senha(string email, string novasenha,string academia)
+        {
+
+            var aluno = await  Busca_Dados_Aluno_Por_Email(email, academia);
+
+            var alunoAlterar = (await firebase
+               .Child("Academias")
+               .Child(academia)
+               .Child("Aluno")
+              .OnceAsync<Aluno>()).Where(a => a.Object.Email == email).FirstOrDefault();
+
+
+            await firebase
+              .Child("Academias")
+              .Child(academia)
+               .Child("Aluno")
+              .Child(alunoAlterar.Key)
+              .PutAsync(new Aluno()
+              {
+                  Id_Aluno = aluno.Id_Aluno,
+                  Nome = aluno.Nome,
+                  Email = aluno.Email,
+                  Senha = novasenha,
+                  Peso = aluno.Peso,
+                  Altura = aluno.Altura,
+                  Idade = aluno.Idade,
+                  objetivo_Aluno = aluno.objetivo_Aluno,
+                  Situacao = aluno.Situacao
+              });
+
+        }
+
         public async Task<Aluno> Login_Aluno(string nome, string senha)
         {
             try

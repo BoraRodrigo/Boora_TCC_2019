@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Boora_TCC_2019.Telas_Alterar.Alterar_Dados_Aluno">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="{StaticResource ColorStacklayout}">
+                <StackLayout Padding="0" Margin="15" BackgroundColor="{StaticResource ColorStacklayout}">
+                    <Label Text="ALTERAR ALUNO" Style="{StaticResource LblTitulo}" TextColor="{StaticResource  ColorLabel}"/>
+                    <Entry Placeholder="Nome Completo" PlaceholderColor="{StaticResource  ColorLabel}" x:Name="txt_NOME" />
+                    <StackLayout  Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}">
+                        <Entry Placeholder="Email                                                                  " x:Name="txt_EMAIL"  PlaceholderColor="{StaticResource ColorLabel}"/>
+                        <Label Text="*" x:Name="lbl_validaemail" Style="{StaticResource LblTitulo}" TextColor="Red" />
+                    </StackLayout  >
+
+                    <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}">
+                        <Label  Text="Data Nascimento:" HorizontalOptions="FillAndExpand" x:Name="DataNascimento" FontSize="18" TextColor="{StaticResource ColorLabel}"/>
+                        <DatePicker FontSize="18" HorizontalOptions="FillAndExpand" TextColor="{StaticResource ColorLabel}" Format="dd/MM/yyyy" x:Name="txt_IDADE" MinimumDate="01/01/1980" DateSelected="DataSelecionada"/>
+                    </StackLayout>
+
+                    <Entry Placeholder="Senha" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SENHA" IsPassword="False"/>
+                    <Entry Placeholder="Peso aqui" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_PESO"/>
+                    <Entry Placeholder="Altura" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_ALTURA"/>
+                    <Entry Placeholder="Objetivo" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_OBJETIVO"/>
+                    <Entry Placeholder="Situação" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SITUACAO"/>
+                    <StackLayout BackgroundColor="{StaticResource ColorStacklayout}">
+                        <Button Image="alterar.png" Text="ALTERAR" TextColor="{StaticResource ColorLabel}" x:Name="AlterarDados" Clicked="Btn_AlterarDados_ClickedAsync" HorizontalOptions="Center" />
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

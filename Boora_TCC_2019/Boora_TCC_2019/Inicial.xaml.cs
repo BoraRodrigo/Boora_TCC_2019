@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Boora_TCC_2019.TELAS_SERIE;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Forms.OpenWhatsApp;
 
 namespace Boora_TCC_2019
 {
@@ -16,7 +17,14 @@ namespace Boora_TCC_2019
 	{
 		public Inicial ()
 		{
-			InitializeComponent ();
+
+
+           
+          //  NavigationPage.SetHasNavigationBar(this, false);
+    
+
+
+            InitializeComponent ();
             
             lbl_nome_academia.Text = "ACADEMIA " + Login.Nome_Academia_login.ToString().ToUpper();
            
@@ -34,29 +42,27 @@ namespace Boora_TCC_2019
 
                
             }
-            
-
         }
 
         public void GoInsta(object sender, EventArgs args)
-        {            
+        {
             // 2 semestre =)
-            //Device.OpenUri(new Uri("https://www.instagram.com/angelos_fitness_academia/"));
+            string instagramacadeia = "https://www.instagram.com/"+Login.Instagran_Academia+"/";
+            Device.OpenUri(new Uri(instagramacadeia));
 
         }
 
         public void GoWhats(object sender, EventArgs args)
         {
-                        
-            // 2 semestre =)
-            //try
-            //{
-            //    Chat.Open("+5541996114270", "Fala parça!");
-            //}
-            //catch (Exception ex)
-            //{
-            //    DisplayAlert("Erro", ex.Message, "OK");
-            //}
+            string telefoneacademia = Login.Telefone_Academia;
+            try
+            {
+                Chat.Open(telefoneacademia, "Fala parça!");
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Erro", ex.Message, "OK");
+            }
         }
     }
 }

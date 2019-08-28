@@ -12,7 +12,7 @@ namespace Boora_TCC_2019.MODEL
         public string Senha { get; set; }
         public double Peso { get; set; }
         public double Altura { get; set; }
-        public double Idade { get; set; }
+        public string Idade { get; set; }
         public string objetivo_Aluno { get; set; }
         public int Situacao { get; set; }
 

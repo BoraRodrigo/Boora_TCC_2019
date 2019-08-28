@@ -44,6 +44,17 @@
                 <Setter Property="FontSize" Value="24"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
             </Style>
-            </ResourceDictionary>
+
+
+                    <Style TargetType="NavigationPage">
+                        <Setter Property="BarBackgroundColor" Value="Black"/>
+                        <Setter Property="BarTextColor" Value="Black"/>
+                      </Style>
+
+ 
+
+
+
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
