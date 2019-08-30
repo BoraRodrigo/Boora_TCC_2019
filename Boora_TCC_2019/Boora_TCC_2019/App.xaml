@@ -34,6 +34,7 @@
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
             </Style>
             <Style TargetType="Label" x:Key="LblInicio" >
+                <Setter Property="FontFamily" Value="comic sans ms"/>
                 <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
                 <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
@@ -46,12 +47,12 @@
             </Style>
 
 
-                    <Style TargetType="NavigationPage">
-                        <Setter Property="BarBackgroundColor" Value="Black"/>
-                        <Setter Property="BarTextColor" Value="Black"/>
-                      </Style>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="LightGray"/>
+                
+            </Style>
 
- 
+
 
 
 

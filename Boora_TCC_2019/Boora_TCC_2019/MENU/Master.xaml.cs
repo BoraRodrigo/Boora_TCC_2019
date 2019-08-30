@@ -38,17 +38,17 @@ namespace Boora_TCC_2019.MENU
         // aqui vc instancia novo navigationPage com a tela que vc quer cadastrar. cada metodo para um botao.
         private void GoCadastroAluno(object sender, EventArgs args)
         {
-            Detail = new NavigationPage(new TELAS.Cadastrar_Aluno());
+            this.Detail = new NavigationPage(new TELAS.Cadastrar_Aluno());
             IsPresented = false;
         }
         private void GoCadastroExercicio(object sender, EventArgs args)
         {
-            Detail = new NavigationPage(new TELAS.Cadastrar_Exercicio());
+            this.Detail = new NavigationPage(new TELAS.Cadastrar_Exercicio());
             IsPresented = false;
         }
         private void GoCadastroInstrutor(object sender, EventArgs args)
         {
-            Detail = new NavigationPage(new TELAS.Cadastrar_Instrutor());
+            this.Detail = new NavigationPage(new TELAS.Cadastrar_Instrutor());
             IsPresented = false;
         }
 
@@ -59,31 +59,31 @@ namespace Boora_TCC_2019.MENU
 
         private void GoPersonalizacao(object sender, EventArgs args)
         {
-            Detail = new NavigationPage(new TELAS.Personalizacao());
+            this.Detail = new NavigationPage(new TELAS.Personalizacao());
             IsPresented = false;
         }
         private void GoListExercicios(object sender, EventArgs args)
         {
-            Detail = new NavigationPage(new TELAS_CADASTRO.ListViewExercicios());
+            this.Detail = new NavigationPage(new TELAS_CADASTRO.ListViewExercicios());
             IsPresented = false;
         }
 
         private void GoInicial(object sender, EventArgs args)
         {
-            Detail = new NavigationPage(new Inicial());
+            this.Detail = new NavigationPage(new Inicial());
             IsPresented = false;
         }
 
         private void GoEMinhasSeries(object sender, EventArgs args)
         {
-            Detail = new NavigationPage(new TELAS_SERIE.Serie());
+            this.Detail = new NavigationPage(new TELAS_SERIE.Serie());
             IsPresented = false;
         }
 
         private void GoEMeuClendario(object sender, EventArgs args)
         {
 
-            Detail = new NavigationPage(new ScheduleSimpleSamplePage());
+            this.Detail = new NavigationPage(new ScheduleSimpleSamplePage());
             IsPresented = false;
         }
         private void GoSAIR(object sender, EventArgs args)
@@ -94,21 +94,15 @@ namespace Boora_TCC_2019.MENU
 
         }
 
-        //private void abrirfacebook(object sender, EventArgs args)
-        //{
-
-        //    Device.OpenUri(new Uri("https://www.facebook.com/angelosfitness/"));
-        //}
-
         private void Send(object sender, EventArgs e)
         {
-            Detail = new NavigationPage(new TELAS.TelaSobre());
+            this.Detail = new NavigationPage(new TELAS.TelaSobre());
             IsPresented = false;
 
         }
         private void alterarDados(object sender, EventArgs e)
         {
-            Detail = new NavigationPage(new Telas_Alterar.Alterar_Dados_Aluno());
+            this.Detail = new NavigationPage(new Telas_Alterar.Alterar_Dados_Aluno());
             IsPresented = false;
 
         }
@@ -116,7 +110,7 @@ namespace Boora_TCC_2019.MENU
 
         private void GoListaAlunos(object sender, EventArgs e)
         {
-            Detail = new NavigationPage(new TELAS.ListAlunosView());
+            this.Detail = new NavigationPage(new TELAS.ListAlunosView());
             IsPresented = false;
 
         }

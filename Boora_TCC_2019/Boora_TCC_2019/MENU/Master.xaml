@@ -2,19 +2,20 @@
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:page="clr-namespace:Boora_TCC_2019"
-                  
-                  
-                  x:Class="Boora_TCC_2019.MENU.Master">
+                  x:Class="Boora_TCC_2019.MENU.Master"
+                  BackgroundColor="WhiteSmoke"
+                  >
+
     <MasterDetailPage.Master >
-        <ContentPage Title="Menu" BackgroundColor="White">
+        <ContentPage Title="Menu">
             <ScrollView>
                 <StackLayout BackgroundColor="White" >
                     <!--Adiona novo botao, e no Master C# faz o funçao do evento clicked, esse tipo de menu so funciona em masterdateilpage-->
 
 
-                    <StackLayout  BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
-                        <Button VerticalOptions="Start" Image="user.png" BackgroundColor="Transparent" x:Name="btn_Perfil" WidthRequest="200" CornerRadius="500"/>
-                        <Label x:Name="lblNomeUsuario" WidthRequest="200"  VerticalTextAlignment="Center"/>
+                    <StackLayout  BackgroundColor="LightGray" HorizontalOptions="CenterAndExpand" Orientation="Horizontal" >
+                        <Button VerticalOptions="StartAndExpand" Image="user.png"  BackgroundColor="LightGray" x:Name="btn_Perfil" WidthRequest="200" HeightRequest="180" />
+                        <Label x:Name="lblNomeUsuario" WidthRequest="200"   HeightRequest="180" VerticalOptions="EndAndExpand" BackgroundColor="LightGray" VerticalTextAlignment="Center"/>
                     </StackLayout>
 
                     <Button Image="inicial.png"  BackgroundColor="Transparent" Text="Inicial" Clicked="GoInicial" BorderWidth="4" BorderRadius="6"/>

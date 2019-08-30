@@ -73,7 +73,8 @@ namespace Boora_TCC_2019.TELAS
 
                     SlCarregandoLogin.IsVisible = false; // apos o retorno do BD o Stacklayout some.
                     Tipo_login = "Aluno";
-                    App.Current.MainPage = new NavigationPage(new MENU.Master());
+                   
+                    App.Current.MainPage = new MENU.Master();
                 }
                 else if (chekAcademia.IsChecked == true)
                 {
@@ -89,7 +90,8 @@ namespace Boora_TCC_2019.TELAS
                     Nome_Academia_login = academia.Nome_academia;
                     Tipo_login = "Dono_Academia";
 
-                    App.Current.MainPage = new NavigationPage(new MENU.Master());
+                   
+                    App.Current.MainPage = new MENU.Master();
                     SlCarregandoLogin.IsVisible = false;
                 }
                 else if (chekPersonal.IsChecked == true)
@@ -141,7 +143,7 @@ namespace Boora_TCC_2019.TELAS
         }
        public void Cadastre_sua_Academia(object sender, EventArgs args)
         {
-            App.Current.MainPage = new NavigationPage(new TELAS_CADASTRO.Cadastrar_Academia());
+            App.Current.MainPage = new TELAS_CADASTRO.Cadastrar_Academia();
         }
 
         
