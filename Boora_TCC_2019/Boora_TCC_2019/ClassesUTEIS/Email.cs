@@ -30,7 +30,7 @@ namespace Boora_TCC_2019.ClassesUTEIS
             MailMessage mail = new MailMessage();
             mail.To.Add(emailEnviarsenha);
             mail.From = new MailAddress(remetenteEmail, "Aplicativo Boora", System.Text.Encoding.UTF8);
-            mail.Subject = "Assunto: AMO VOCE!";
+            mail.Subject = "Assunto: Redefinição de senha!";
             mail.SubjectEncoding = System.Text.Encoding.UTF8;
             mail.Body = "Olá sua nova senha de acesso é: " + senha_para_alterar;
             mail.BodyEncoding = System.Text.Encoding.UTF8;
