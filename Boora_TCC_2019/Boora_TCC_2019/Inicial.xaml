@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Boora_TCC_2019.Inicial" BackgroundImage="FundoInicial2.jpg" >
     <ContentPage.Content>
-       
+
         <StackLayout  Orientation="Vertical" Style="{StaticResource SLInicio}"  BackgroundColor="Transparent">
 
             <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Style="{StaticResource SLInicio}" BackgroundColor="Transparent">
@@ -17,17 +17,56 @@
             <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" VerticalOptions="End" Style="{StaticResource SLInicio}" BackgroundColor="Transparent">
 
                 <!--Deixar estes valores de cor fixo pq é o botão da imagem-->
-                <StackLayout Padding="5" Orientation="Vertical"  HorizontalOptions="End" BackgroundColor="Transparent">
-                    <ImageButton Source="instagranIcon.png" WidthRequest="55" HeightRequest="55" BackgroundColor="Transparent" Clicked="GoInsta"/>
-                    
+               
+                <StackLayout Padding="0" Orientation="Vertical"  HorizontalOptions="End" BackgroundColor="Transparent">
+                    <ImageButton Source="instagranIcon.png" WidthRequest="65" HeightRequest="65" Clicked="GoInsta" BackgroundColor="Transparent">
+                        <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="Scale"
+                            Value="1" />
+                                </VisualState.Setters>
+                            </VisualState>
+
+                            <VisualState x:Name="Pressed">
+                                <VisualState.Setters>
+                                    <Setter Property="Scale" 
+                            Value="0.8" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        </ImageButton>
+                    <Label Text="Siga-nos" TextColor="Black" FontSize="16" HorizontalTextAlignment="Center"/>
                 </StackLayout>
-                <StackLayout Padding="5" Orientation="Vertical"  HorizontalOptions="End" BackgroundColor="Transparent" >
-                    <ImageButton Source="wthaicon.png" WidthRequest="55" HeightRequest="55" BackgroundColor="Transparent" Clicked="GoWhats"/>
-                   
+                <StackLayout Padding="0" Orientation="Vertical"  HorizontalOptions="End" BackgroundColor="Transparent"  >
+                    <ImageButton Source="wthaicon.png" WidthRequest="65" HeightRequest="65" Clicked="GoWhats" BackgroundColor="Transparent">
+                        <!-- Efeito de click, não sei como colocar ele no app xaml-->
+
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale"
+                            Value="1" />
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale" 
+                            Value="0.8" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </ImageButton>
+                    <Label Text="Contato" TextColor="Black" FontSize="16" HorizontalTextAlignment="Center"/>
                 </StackLayout>
             </StackLayout>
-            
-            
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

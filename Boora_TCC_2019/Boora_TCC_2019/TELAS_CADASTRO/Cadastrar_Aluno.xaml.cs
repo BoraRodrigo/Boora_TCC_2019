@@ -124,7 +124,7 @@ namespace Boora_TCC_2019.TELAS
         }
         protected async Task Enviar_Senha_EmailAsync(string emailEnviarsenha)
         {
-            string remetenteEmail = "rodrigobora93@gmail.com"; //O e-mail do remetente
+            string remetenteEmail = "booraappcontato@gmail.com"; //O e-mail do remetente
             MailMessage mail = new MailMessage();
             mail.To.Add(emailEnviarsenha);
             mail.From = new MailAddress(remetenteEmail, "Aplicativo Boora", System.Text.Encoding.UTF8);
@@ -136,7 +136,7 @@ namespace Boora_TCC_2019.TELAS
             mail.Priority = MailPriority.High; //Prioridade do E-Mail
 
             SmtpClient client = new SmtpClient();  //Adicionando as credenciais do seu e-mail e senha:
-            client.Credentials = new System.Net.NetworkCredential(remetenteEmail, "Aa@222abcdegrb36");
+            client.Credentials = new System.Net.NetworkCredential(remetenteEmail, "qwe123QWE!@#");
      
             client.Port = 587; // Esta porta é a utilizada pelo Gmail para envio
             client.Host = "smtp.gmail.com"; //Definindo o provedor que irá disparar o e-mail

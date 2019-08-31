@@ -12,7 +12,7 @@
 
 
             <StackLayout BackgroundColor="White" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
-                <StackLayout BackgroundColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout Padding="0" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                     <ffimageloading:CachedImage Source="iconBora.png"  />
 
                     <Entry   x:Name="txtNome" Placeholder="Login" TextColor="#ffc800" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
@@ -21,7 +21,7 @@
 
                     <Entry x:Name="txtNome_academia" Placeholder="Nome Academia" TextColor="#ffc800" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
 
-                    <Button Image="entrar.png" Text="Login" BackgroundColor="White"  Clicked="EfetuarLogin">
+                    <ImageButton Source="loginbot.png" Padding="0" BackgroundColor="Transparent"  Clicked="EfetuarLogin">
                         <!-- Efeito de click-->
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
@@ -40,7 +40,7 @@
                                 </VisualState>
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
-                    </Button>
+                    </ImageButton>
 
                     <Entry IsVisible="False" x:Name="txt_email_redefinir_senha" Placeholder="Email" TextColor="#ffc800" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
                     <Button  Text="Enviar Email" BackgroundColor="White" x:Name="btn_RedefinirSenha"  Clicked="RedefinirSenhaAsync" IsVisible="False"/>
