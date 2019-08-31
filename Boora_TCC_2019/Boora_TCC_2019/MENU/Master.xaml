@@ -2,9 +2,7 @@
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:page="clr-namespace:Boora_TCC_2019"
-                  x:Class="Boora_TCC_2019.MENU.Master"
-                  BackgroundColor="WhiteSmoke"
-                  >
+                  x:Class="Boora_TCC_2019.MENU.Master">
 
     <MasterDetailPage.Master >
         <ContentPage Title="Menu">
@@ -13,9 +11,9 @@
                     <!--Adiona novo botao, e no Master C# faz o funçao do evento clicked, esse tipo de menu so funciona em masterdateilpage-->
 
 
-                    <StackLayout  BackgroundColor="LightGray" HorizontalOptions="CenterAndExpand" Orientation="Horizontal" >
-                        <Button VerticalOptions="StartAndExpand" Image="user.png"  BackgroundColor="LightGray" x:Name="btn_Perfil" WidthRequest="200" HeightRequest="180" />
-                        <Label x:Name="lblNomeUsuario" WidthRequest="200"   HeightRequest="180" VerticalOptions="EndAndExpand" BackgroundColor="LightGray" VerticalTextAlignment="Center"/>
+                    <StackLayout  BackgroundColor="#0d0b24" HorizontalOptions="CenterAndExpand" Orientation="Horizontal" >
+                        <Button VerticalOptions="StartAndExpand" Image="user.png"  BackgroundColor="#0d0b24" x:Name="btn_Perfil" WidthRequest="200" HeightRequest="180" />
+                        <Label x:Name="lblNomeUsuario" WidthRequest="200"   HeightRequest="180" VerticalOptions="EndAndExpand" BackgroundColor="#0d0b24" VerticalTextAlignment="Center"/>
                     </StackLayout>
 
                     <Button Image="inicial.png"  BackgroundColor="Transparent" Text="Inicial" Clicked="GoInicial" BorderWidth="4" BorderRadius="6"/>

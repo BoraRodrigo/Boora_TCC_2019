@@ -17,9 +17,11 @@
             </Style>
             
             <Style TargetType="Entry">
+                <Setter Property="FontFamily" Value="Comic Sans Ms"/>
                 <Setter Property="PlaceholderColor" Value="Black"/>
             </Style>
             <Style TargetType="Button">
+                <Setter Property="FontFamily" Value="Comic Sans Ms"/>
                 <Setter Property="BackgroundColor" Value="Transparent"/>
                 <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
@@ -29,18 +31,20 @@
                 
             </Style>
             <Style TargetType="Label" x:Key="LblAvisos" >
+                <Setter Property="FontFamily" Value="Comic Sans Ms"/>
                 <Setter Property="BackgroundColor" Value="Black"/>
                 <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
             </Style>
             <Style TargetType="Label" x:Key="LblInicio" >
-                <Setter Property="FontFamily" Value="comic sans ms"/>
+                <Setter Property="FontFamily" Value="Comic Sans Ms"/>
                 <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
                 <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
-                <Setter Property="FontSize" Value="34"/>
+                <Setter Property="FontSize" Value="28"/>
             </Style>
             <Style TargetType="Label" x:Key="LblTitulo">
+                <Setter Property="FontFamily" Value="Comic Sans Ms"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="FontSize" Value="24"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
@@ -48,7 +52,7 @@
 
 
             <Style TargetType="NavigationPage">
-                <Setter Property="BarBackgroundColor" Value="LightGray"/>
+                <Setter Property="BarBackgroundColor" Value="#0d0b24"/>
                 
             </Style>
 
