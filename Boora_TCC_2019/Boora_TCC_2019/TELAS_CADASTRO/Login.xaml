@@ -73,7 +73,7 @@
             <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="#8785a6" x:Name="SlCarregandoLogin" IsVisible="False">
                 <StackLayout BackgroundColor="#8785a6" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                    <!-- <ActivityIndicator IsRunning="True" Color="#ffc800" /> -->
-                    <ffimageloading:CachedImage Source="Loading.gif" HeightRequest="90" WidthRequest="90"/>
+                    <ffimageloading:CachedImage Source="gif_login.gif" HeightRequest="90" WidthRequest="90"/>
                     <Label TextColor="Purple" Text="Carregando..." HorizontalOptions="Center" FontSize="14"/>
                 </StackLayout>
             </StackLayout>
