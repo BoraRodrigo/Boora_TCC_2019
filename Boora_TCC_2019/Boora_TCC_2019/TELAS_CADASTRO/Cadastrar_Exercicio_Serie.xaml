@@ -4,23 +4,23 @@
              x:Class="Boora_TCC_2019.TELAS_CADASTRO.Cadastrar_Exercicio_Serie">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout BackgroundColor="{StaticResource ColorStacklayout}">
+            <StackLayout>
                 <Frame>
-                    <StackLayout BackgroundColor="{StaticResource ColorStacklayout}">
+                    <StackLayout>
                         <Label Margin="10" Text="CADASTRAR EXERCÍCIOS NA SÉRIE" HorizontalOptions="Center" Style="{StaticResource LblTitulo}" TextColor="{StaticResource ColorLabel}"/>
-                        <StackLayout Orientation="Vertical" BackgroundColor="{StaticResource ColorStacklayout}">
-                            <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}" >
+                        <StackLayout Orientation="Vertical">
+                            <StackLayout Orientation="Horizontal">
                                 <Label HorizontalOptions="FillAndExpand" Text="Id. Exercício - " FontAttributes="Bold" TextColor="{StaticResource ColorLabel}"/>
                                 <Label HorizontalOptions="FillAndExpand"  x:Name="Txt_Id_Exercicios_Serie" TextColor="{StaticResource ColorLabel}"/>
                                 <Label HorizontalOptions="FillAndExpand" Text="Exercício - " FontAttributes="Bold" TextColor="{StaticResource ColorLabel}"/>
                                 <Label HorizontalOptions="FillAndExpand" x:Name="Txt_nome_Exercicio" TextColor="{StaticResource ColorLabel}"/>
                             </StackLayout>
-                            <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}">
+                            <StackLayout Orientation="Horizontal">
                                 <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="{StaticResource ColorLabel}" Placeholder="Repetiçoes" x:Name="Txt_Quantidade_repeticoes" />
                                 <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="{StaticResource ColorLabel}" Placeholder="Vezes" x:Name="Txt_Quantidade_Vezes"/>
                             </StackLayout>
 
-                            <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}">
+                            <StackLayout Orientation="Horizontal">
                                 <Label HorizontalOptions="FillAndExpand" Text="{StaticResource ColorLabel}" FontAttributes="Bold" TextColor="{StaticResource ColorLabel}"/>
                                     <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="{StaticResource ColorLabel}" Placeholder="Peso" x:Name="txt_Peso"/>
 
@@ -32,8 +32,8 @@
                     </StackLayout>
                 </Frame>
                 <StackLayout>
-                    <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}">
-                        <StackLayout Padding="0" Margin="15" BackgroundColor="{StaticResource ColorStacklayout}">
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Padding="0" Margin="15">
                             <Label Text="Exercícios Cadastrados" Style="{StaticResource LblTitulo}" TextColor="{StaticResource ColorLabel}"/>
                             <Entry Placeholder="{StaticResource ColorLabel}" x:Name="Pesquisar_Exercicios" TextChanged="BuscaRapida"/>
 
@@ -45,13 +45,13 @@
                                 </ListView.ItemTemplate>
                             </ListView>
                         </StackLayout>
-                        <StackLayout Padding="0" Margin="15" VerticalOptions="StartAndExpand" BackgroundColor="{StaticResource ColorStacklayout}">
-                            <StackLayout Orientation="Vertical" BackgroundColor="{StaticResource ColorStacklayout}">
+                        <StackLayout Padding="0" Margin="15" VerticalOptions="StartAndExpand">
+                            <StackLayout Orientation="Vertical">
                                 <Label Text="Exercícios na Série" Style="{StaticResource LblTitulo}" TextColor="{StaticResource ColorLabel}"/>
                                 
                             </StackLayout>
 
-                            <ListView x:Name="ListaExerciciosSeriesView"  BackgroundColor="{StaticResource ColorStacklayout}">
+                            <ListView x:Name="ListaExerciciosSeriesView">
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <TextCell Text="{Binding Nome}" TextColor="{StaticResource ColorLabel}" />

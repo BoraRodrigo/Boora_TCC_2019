@@ -94,10 +94,10 @@ namespace Boora_TCC_2019.TELAS
                     App.Current.MainPage = new MENU.Master();
                     SlCarregandoLogin.IsVisible = false;
                 }
-                else if (chekPersonal.IsChecked == true)
-                {
-                    await DisplayAlert("", "Não Implementado", "");
-                }
+                //else if (chekPersonal.IsChecked == true)
+                //{
+                //    await DisplayAlert("", "Não Implementado", "");
+                //}
 
 
             }

@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="Boora_TCC_2019.TELAS.ListAlunosView">
     <ContentPage.Content>
         <AbsoluteLayout>
             <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
-                <StackLayout Padding="0" Margin="15" BackgroundColor="{StaticResource ColorStacklayout}">
+                <StackLayout Padding="0" Margin="15">
                     <Label Text="ALUNOS CADASTRADOS" Style="{StaticResource LblTitulo}" TextColor="{StaticResource ColorLabel}"/>
                     <Entry Placeholder="Pesquisar" x:Name="Pesquisar_Alunos" TextChanged="BuscaRapida"/>
 
@@ -31,7 +32,7 @@
             <!--Carregando...-->
             <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="Black" x:Name="SlCarregandoLista" IsVisible="False">
                 <StackLayout BackgroundColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                    <ActivityIndicator IsRunning="True" Color="#ffc800" />
+                    <ffimageloading:CachedImage Source="gif_login.gif" HeightRequest="90" WidthRequest="90"/>
                     <Label TextColor="#ffc800" Text="Carregando..." HorizontalOptions="Center" FontSize="12"/>
                 </StackLayout>
             </StackLayout>

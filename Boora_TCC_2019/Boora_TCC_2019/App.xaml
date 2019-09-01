@@ -6,7 +6,6 @@
         <!--aqui que se seta os styles que serao usado no projeto-->
             <ResourceDictionary>
             <Color x:Key="ColorLabel">#00f2ff</Color>
-            <Color x:Key="ColorStacklayout">#000000</Color>
             <Style TargetType="StackLayout">
                 <Setter Property="BackgroundColor" Value="White"/>
             </Style>
@@ -18,12 +17,11 @@
             
             <Style TargetType="Entry">
                 <Setter Property="FontFamily" Value="Comic Sans Ms"/>
-                <Setter Property="PlaceholderColor" Value="Black"/>
+                
             </Style>
             <Style TargetType="Button">
                 <Setter Property="FontFamily" Value="Comic Sans Ms"/>
                 <Setter Property="BackgroundColor" Value="Transparent"/>
-                <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="WidthRequest" Value="160"/>
             </Style>
@@ -47,17 +45,10 @@
                 <Setter Property="FontSize" Value="24"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
             </Style>
-
-
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="#0d0b24"/>
                 
             </Style>
-
-
-
-
-
-        </ResourceDictionary>
+         </ResourceDictionary>
     </Application.Resources>
 </Application>

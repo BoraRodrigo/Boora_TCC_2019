@@ -51,10 +51,11 @@ namespace Boora_TCC_2019.TELAS_SERIE
 
             Exerciciolista[Exerciciolista.IndexOf(exercicio)].Imagem_Gif = "Check.png";
 
-                        
-            await Navigation.PushAsync(new TELAS_SERIE.Lista_Exercicios_Serie(Exerciciolista, IdSerie));
 
-            await ((NavigationPage)App.Current.MainPage).Navigation.PushAsync(new TELAS_SERIE.Execucao_Serie(exercicio, IdSerie));
+            //await Navigation.PushAsync(new TELAS_SERIE.Lista_Exercicios_Serie(Exerciciolista, IdSerie));
+            await Navigation.PushAsync(new TELAS_SERIE.Execucao_Serie(exercicio, IdSerie));
+
+            await Navigation.PushAsync(new TELAS_SERIE.Execucao_Serie(exercicio, IdSerie));
 
         }
         private async void finalizarSerie(object sender, EventArgs e)

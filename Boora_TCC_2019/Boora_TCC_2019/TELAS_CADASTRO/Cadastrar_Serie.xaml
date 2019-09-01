@@ -5,33 +5,33 @@
              x:Class="Boora_TCC_2019.TELAS.Cadastrar_Serie">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout BackgroundColor="{StaticResource ColorStacklayout}">
+            <StackLayout>
 
-                <StackLayout Padding="0" Margin="15" BackgroundColor="{StaticResource ColorStacklayout}">
+                <StackLayout Padding="0" Margin="15" >
                     <Label Text="CADASTRAR SÉRIE" Style="{StaticResource LblTitulo}"/>
-                    <StackLayout Orientation="Vertical" BackgroundColor="{StaticResource ColorStacklayout}">
-                        <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}" >
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout Orientation="Horizontal" >
                             <Label Text="Identificação do Aluno: " FontAttributes="Bold" TextColor="{StaticResource ColorLabel}"/>
                             <Label HorizontalOptions="FillAndExpand" x:Name="Txt_Id_Do_Aluno" TextColor="{StaticResource ColorLabel}"/>
                         </StackLayout>
-                        <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}">
+                        <StackLayout Orientation="Horizontal">
                             <Label Text="Nome da Série: " TextColor="{StaticResource ColorLabel}"/>
                             <Entry Placeholder="Nome Série" PlaceholderColor="{StaticResource ColorLabel}" x:Name="Txt_nome_Serie" HorizontalOptions="FillAndExpand"/>
                         </StackLayout>
 
                         <Entry Placeholder="Descrição" PlaceholderColor="Black" x:Name="Txt_Descricao_Serie"/>
-                        <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}" >
+                        <StackLayout Orientation="Horizontal">
                             <Label FontSize="18" TextColor="{StaticResource ColorLabel}" Text="Data Inicial:" HorizontalOptions="FillAndExpand" />
 
                             <Label Text="Data Final:" FontSize="18" TextColor="{StaticResource ColorLabel}" HorizontalOptions="FillAndExpand"/>
                         </StackLayout>
-                        <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}">
+                        <StackLayout Orientation="Horizontal">
                             <Label HorizontalOptions="FillAndExpand" x:Name="Lbl_data_Inicial" FontSize="18" TextColor="{StaticResource ColorLabel}"/>
 
                             <DatePicker  FontSize="18" HorizontalOptions="FillAndExpand" TextColor="{StaticResource ColorLabel}" Format="dd/MM/yyyy" x:Name="Txt_Data_Fim" MinimumDate="01/01/2019" DateSelected="DataSelecionada"/>
                         </StackLayout>
 
-                        <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}">
+                        <StackLayout Orientation="Horizontal">
                             <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="{StaticResource ColorLabel}" Placeholder="Tempo Execução" x:Name="txt_tempo_execucao"/>
                         </StackLayout>
                     </StackLayout>

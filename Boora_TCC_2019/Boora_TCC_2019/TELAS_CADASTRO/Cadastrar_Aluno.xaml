@@ -5,15 +5,15 @@
              x:Class="Boora_TCC_2019.TELAS.Cadastrar_Aluno">
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout BackgroundColor="{StaticResource ColorStacklayout}">
+        <StackLayout>
 
-            <StackLayout Padding="0" Margin="15" BackgroundColor="{StaticResource ColorStacklayout}">
+            <StackLayout Padding="0" Margin="15" >
                 <Label Text="CADASTRAR ALUNO" Style="{StaticResource LblTitulo}" TextColor="{StaticResource  ColorLabel}"/>
 
                 <Entry Placeholder="Nome Completo" PlaceholderColor="{StaticResource  ColorLabel}" x:Name="txt_NOME" />
 
 
-                <StackLayout  Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}">
+                <StackLayout  Orientation="Horizontal">
                     <Entry Placeholder="Email                                                                  " x:Name="txt_EMAIL"  PlaceholderColor="{StaticResource ColorLabel}"/>
                     <Label Text="*" x:Name="lbl_validaemail" Style="{StaticResource LblTitulo}" TextColor="Red" />
                 </StackLayout  >
@@ -29,7 +29,7 @@
                 <Entry Placeholder="Objetivo" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_OBJETIVO"/>
                 <Entry Placeholder="Situação" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SITUACAO"/>
 
-                <StackLayout BackgroundColor="{StaticResource ColorStacklayout}">     
+                <StackLayout>     
                     <Button Image="cadastro_icon.png" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center" />
                     </StackLayout>
                 </StackLayout>

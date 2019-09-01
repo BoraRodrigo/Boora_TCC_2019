@@ -71,7 +71,7 @@ namespace Boora_TCC_2019
             else
             {
                 this.Resources["ColorLabel"] = Color.Black;
-               this.Resources["ColorStacklayout"] = Color.White;
+                this.Resources["ColorStacklayout"] = Color.White;
             }
         }
         

@@ -56,7 +56,7 @@
                         <input:RadioButtonGroupView x:Name="chekboxTipo" BackgroundColor="White" >
                             <input:RadioButton Text="Aluno" TextColor="Black" x:Name="chekAluno" CircleColor="Red" Color="Orange"/>
                             <input:RadioButton Text="Academia" TextColor="Black" x:Name="chekAcademia" CircleColor="Red" Color="Orange"/>
-                            <input:RadioButton Text="Personal" TextColor="Black" x:Name="chekPersonal" CircleColor="Red" Color="Orange"/>
+                           <!-- <input:RadioButton Text="Personal" TextColor="Black" x:Name="chekPersonal" CircleColor="Red" Color="Orange"/> -->
                         </input:RadioButtonGroupView>
                     </StackLayout>
 

@@ -3,13 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Boora_TCC_2019.TELAS.Cadastrar_Instrutor">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="{StaticResource ColorStacklayout}">
-            <StackLayout Padding="0" Margin="15" BackgroundColor="{StaticResource ColorStacklayout}" >
+        <StackLayout >
+            <StackLayout Padding="0" Margin="15">
                 <Label Text="CADASTRAR INSTRUTOR" Style="{StaticResource LblTitulo}" TextColor="{StaticResource ColorLabel}"/>
 
                 <Entry Placeholder="Nome" x:Name="txt_NOME" PlaceholderColor="{StaticResource ColorLabel}"/>
 
-                <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}">
+                <StackLayout Orientation="Horizontal">
                     <Entry Placeholder="Email" x:Name="txt_EMAIL" PlaceholderColor="{StaticResource ColorLabel}"/>
                    <Label Text="*" x:Name="lbl_validaemail" Style="{StaticResource LblTitulo}" TextColor="Red" />
                 </StackLayout  >
