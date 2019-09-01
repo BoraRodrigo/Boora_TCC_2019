@@ -47,13 +47,31 @@ namespace Boora_TCC_2019
             cores = db.Consultar();
             if (cores.Capacity > 0)
             {
-                this.Resources["ColorLabel"] = Color.FromHex(cores[0].CorLabel);
-                this.Resources["ColorStacklayout"] = Color.FromHex(cores[0].CorStackLayout);
+                try
+                {
+                    this.Resources["ColorLabel"] = Color.FromHex(cores[0].CorLabel);
+                }
+                catch (System.Exception)
+                {
+                    this.Resources["ColorLabel"] = Color.Black;
+                    
+                }
+               // try
+               // {
+                    //this.Resources["ColorStacklayout"] = Color.FromHex(cores[0].CorStackLayout);
+               // }
+              //  catch (System.Exception)
+               // {
+               //     this.Resources["ColorStacklayout"] = Color.White;
+                    
+              //  }
+                
+                
             }
             else
             {
-                this.Resources["ColorLabel"] = Color.Blue;
-                this.Resources["ColorStacklayout"] = Color.Pink;
+                this.Resources["ColorLabel"] = Color.Black;
+               this.Resources["ColorStacklayout"] = Color.White;
             }
         }
         

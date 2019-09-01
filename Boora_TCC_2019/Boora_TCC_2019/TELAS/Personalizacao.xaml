@@ -11,59 +11,106 @@
     <ContentPage.Content>
 
         <ScrollView>
-        <StackLayout Orientation="Vertical">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
-                
-                <StackLayout Orientation="Vertical">
-                    <StackLayout>
-                        <Label Text="Letras" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-                    </StackLayout>
-                    <StackLayout >
-                        <Label BackgroundColor="Brown">
-                            <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="CorBrownSelection"/>
-                            </Label.GestureRecognizers>
-                        </Label>
-                        <Label BackgroundColor="Red">
-                            <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="CorRedSelection"/>
-                            </Label.GestureRecognizers>
-                        </Label>
-                        
-                    </StackLayout >
-                    <StackLayout Orientation="Horizontal">
-                        <Entry Placeholder="Cor em Hexa" x:Name="txt_corLabel"/>
-                        <Button Text="OK" Clicked="OkLetrasAction"/>
-                    </StackLayout>
+            <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+                <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                    <Grid.ColumnDefinitions>
+                        <!-- define colunas -->
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="150"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <!-- define as linhas -->
+                        <RowDefinition Height="100 "/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+
+                    </Grid.RowDefinitions>
+
+                    <BoxView Grid.Column="0" Grid.Row="0" BackgroundColor="Black" 
+                     HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="CorBlackSelection"/>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
+                    <BoxView Grid.Column="0" Grid.Row="1" BackgroundColor="Green" 
+                     HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="CorGreenSelection"/>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
+                    <BoxView Grid.Column="0" Grid.Row="2" BackgroundColor="Red" 
+                     HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="CorRedSelection"/>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
+                    <BoxView Grid.Column="0" Grid.Row="3" BackgroundColor="Orange" 
+                     HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="CorOrangeSelection"/>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
+                    <BoxView Grid.Column="1" Grid.Row="0" BackgroundColor="Yellow" 
+                     HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="CorYellowSelection"/>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
+                    <BoxView Grid.Column="1" Grid.Row="1" BackgroundColor="LightGray" 
+                     HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="CorLightGraySelection"/>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
+                    <BoxView Grid.Column="1" Grid.Row="2" BackgroundColor="Blue" 
+                     HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="CorBlueSelection"/>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
+                    <BoxView Grid.Column="1" Grid.Row="3" BackgroundColor="Indigo" 
+                     HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="CorIndigoSelection"/>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
+                    <BoxView Grid.Column="2" Grid.Row="0"  BackgroundColor="Violet" 
+                     HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="CorVioletSelection"/>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
+                    <BoxView Grid.Column="2" Grid.Row="1" BackgroundColor="#007167" 
+                     HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="CorAccentSelection"/>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
+                    <BoxView Grid.Column="2" Grid.Row="2"  BackgroundColor="Gray" 
+                     HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="CorGraySelection"/>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
+                    <BoxView Grid.Column="2" Grid.Row="3" BackgroundColor="Brown" 
+                     HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="CorBrownSelection"/>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
+                                       
+
                     
-                </StackLayout>
-                
-                <StackLayout Orientation="Vertical">
-                    <StackLayout>
-                        <Label Text="Fundo" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-                    </StackLayout>
-                    <StackLayout >
-                        <Label BackgroundColor="Green">
-                            <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="CorGreenSelection"/>
-                            </Label.GestureRecognizers>
-                        </Label>
-                        <Label BackgroundColor="Orange">
-                            <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="CorOrangeSelection"/>
-                            </Label.GestureRecognizers>
-                        </Label>
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal">
-                        <Entry Placeholder="Cor em Hexa" x:Name="txt_corStack"/>
-                        <Button Text="OK" Clicked="OkStackAction"/>
-                    </StackLayout>
-                </StackLayout>
-                       
-            </StackLayout>
-            <StackLayout>
-                <Button Text="Experimentar" Clicked="TestarAction"/>
-            </StackLayout>
+
+                </Grid>
+            
+                <!--<Button Text="OK" Clicked="OkStackAction"/>-->
+               
+                <!--<Button Text="Experimentar" Clicked="TestarAction"/>-->
+            
             
             <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="{DynamicResource CorStack}">
                 <Label Text="Bem Vindo!" TextColor="{DynamicResource CorLabel}" FontAttributes="Bold"

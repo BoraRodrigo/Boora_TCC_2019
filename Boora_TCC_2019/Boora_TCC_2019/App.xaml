@@ -27,9 +27,7 @@
                 <Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="WidthRequest" Value="160"/>
             </Style>
-            <Style TargetType="StackLayout" x:Key="SLInicio">
-                
-            </Style>
+            
             <Style TargetType="Label" x:Key="LblAvisos" >
                 <Setter Property="FontFamily" Value="Comic Sans Ms"/>
                 <Setter Property="BackgroundColor" Value="Black"/>

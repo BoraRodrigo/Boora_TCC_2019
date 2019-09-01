@@ -21,7 +21,7 @@
 
                     <Entry x:Name="txtNome_academia" Placeholder="Nome Academia" TextColor="#ffc800" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
 
-                    <ImageButton Source="loginbot.png" Padding="0" BackgroundColor="Transparent"  Clicked="EfetuarLogin">
+                    <ImageButton Source="proxima.png" Padding="0" BackgroundColor="Transparent"  Clicked="EfetuarLogin">
                         <!-- Efeito de click-->
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">

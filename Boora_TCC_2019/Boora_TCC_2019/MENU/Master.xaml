@@ -7,13 +7,13 @@
     <MasterDetailPage.Master >
         <ContentPage Title="Menu">
             <ScrollView>
-                <StackLayout BackgroundColor="White">
+                <StackLayout>
                     <!--Adiona novo botao, e no Master C# faz o funçao do evento clicked, esse tipo de menu so funciona em masterdateilpage-->
 
 
                     <StackLayout  BackgroundColor="#0d0b24" HorizontalOptions="CenterAndExpand" Orientation="Horizontal" >
                         <Button VerticalOptions="StartAndExpand" Image="user.png"  BackgroundColor="#0d0b24" x:Name="btn_Perfil" WidthRequest="200" HeightRequest="180" />
-                        <Label x:Name="lblNomeUsuario" WidthRequest="200"   HeightRequest="180" VerticalOptions="EndAndExpand" BackgroundColor="#0d0b24" VerticalTextAlignment="Center"/>
+                        <Label x:Name="lblNomeUsuario" WidthRequest="200"  TextColor="White" HeightRequest="180" VerticalOptions="EndAndExpand" BackgroundColor="#0d0b24" VerticalTextAlignment="Center"/>
                     </StackLayout>
 
                     <Button Image="inicial.png"  BackgroundColor="Transparent" Text="Inicial" Clicked="GoInicial" BorderWidth="4" BorderRadius="6" BorderColor="Black"/>
@@ -52,6 +52,7 @@
             </ScrollView>
         </ContentPage>
     </MasterDetailPage.Master>
+    
     <MasterDetailPage.Detail>
         <NavigationPage>
             <x:Arguments>
