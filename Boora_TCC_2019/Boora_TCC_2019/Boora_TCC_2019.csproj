@@ -27,7 +27,9 @@
     <PackageReference Include="Xamarin.FFImageLoading" Version="2.4.11.982" />
     <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
     <PackageReference Include="Xamarin.Forms" Version="3.6.0.344457" />
+    <PackageReference Include="Xamarin.Forms.BehaviorValidationPack" Version="1.0.2" />
     <PackageReference Include="Xamarin.Forms.InputKit" Version="3.0.12" />
+    <PackageReference Include="Xamarin.Forms.MaskedEntry" Version="1.0.0" />
     <PackageReference Include="Xamarin.Forms.OpenWhatsApp" Version="1.0.1" />
   </ItemGroup>
 

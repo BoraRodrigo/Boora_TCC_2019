@@ -26,7 +26,7 @@
                     <Button Image="minhasseries.png" BackgroundColor="Transparent" Text="Minhas Séries" Clicked="GoEMinhasSeries" BorderWidth="4" BorderRadius="6" x:Name="btn_minhas_Series" BorderColor="Black"/>
                     <Button Image="calendario.png" BackgroundColor="Transparent" Text="Meu Calendário" Clicked="GoEMeuClendario" BorderWidth="4" BorderRadius="6" x:Name="btn_meu_calendario" BorderColor="Black"/>
                     <Button Image="sobre.png" BackgroundColor="Transparent" Text="Sobre" Clicked="Send"  BorderWidth="4" BorderRadius="6" BorderColor="Black"/>
-                    <Button Image="alterar.png"  BackgroundColor="Transparent" Text="Alterar Dados" Clicked="alterarDados"  BorderWidth="4" BorderRadius="6" BorderColor="Black"/>
+                    <Button Image="alterar.png"  BackgroundColor="Transparent" Text="Alterar Dados" Clicked="alterarDados"  BorderWidth="4" BorderRadius="6" BorderColor="Black" x:Name="btn_Alterar_dados_Aluno"/>
 
                     <Button Image="sair.png" BackgroundColor="Transparent" Text="SAIR" Clicked="GoSAIR"  BorderWidth="4" BorderRadius="6" BorderColor="Black">
                         <!-- Efeito de click-->

@@ -32,6 +32,8 @@ namespace Boora_TCC_2019.MENU
             {
                 btn_minhas_Series.IsVisible = false;
                 btn_meu_calendario.IsVisible = false;
+                btn_Alterar_dados_Aluno.IsVisible = false;
+                btn_cadastro_instrutor.IsVisible = false;//deixa de fora de momento
                 lblNomeUsuario.Text = Login.Nome_Academia_login;
             }
         }
@@ -89,8 +91,8 @@ namespace Boora_TCC_2019.MENU
         private void GoSAIR(object sender, EventArgs args)
         {
             //Alterado pq ficava liberado o menu apos deslogar, assim nao tem menu
-            Navigation.PushAsync(new TELAS.Login());
-           
+            App.Current.MainPage = new Login();
+
 
         }
 

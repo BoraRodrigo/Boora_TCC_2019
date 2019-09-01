@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry"
+             xmlns:behaviorPack="clr-namespace:Xamarin.Forms.BehaviorValidationPack;assembly=Xamarin.Forms.BehaviorValidationPack"
              x:Class="Boora_TCC_2019.TELAS_CADASTRO.Cadastrar_Academia">
     <ContentPage.Content>
         <ScrollView>
@@ -12,23 +14,39 @@
 
                 <Entry Placeholder="Nome Academia" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_NOMEACADEMIA" />
 
-                <Entry Placeholder="Email" x:Name="txt_EMAIL" PlaceholderColor="{StaticResource ColorLabel}"/>
-                <Entry Placeholder="Senha" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SENHA" IsPassword="True"/>
-                <Entry Placeholder="CNPJ" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_CNPJ"/>
+                    <Entry Placeholder="Email" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_EMAIL">
+                        <Entry.Behaviors>
+                            <behaviorPack:EmailValidationBehavior />
+                        </Entry.Behaviors>
+                    </Entry>
+
+                    <Entry Placeholder="Senha" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SENHA" IsPassword="True"/>
+
+
+                    <Entry  Placeholder="CNPJ" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_CNPJ">
+                        <Entry.Behaviors>
+                            <behaviorPack:CNPJValidationBehavior />
+                            <behaviorPack:MaskedBehavior Mask="XX.XXX.XXX/XXXX-XX" />
+                        </Entry.Behaviors>
+                    </Entry>
+                
                 <Entry Placeholder="CIDADE" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_CIDADE"/>
                 <Entry Placeholder="ESTADO" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_ESTADO"/>
 
-                <Entry Placeholder="TELEFONE" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_TELEFONE"/>
+
+                <control:MaskedEntry Placeholder="TELEFONE" Mask="(XX)X XXXX-XXXX" Keyboard="Numeric" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_TELEFONE" ></control:MaskedEntry>
                 <Entry Placeholder="INSTAGRAN" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_INSTAGRAN"/>
 
                 <Image x:Name="imgChoosed" HeightRequest="150"/>
 
                 <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
 
-                    <Button Image="buscar.png"  x:Name="btnPick" WidthRequest="200" Text="Buscar imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar"/>
-                    <Button Image="cadastro_serie.png" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center" />
+                <Button Image="buscar.png"  x:Name="btnPick" WidthRequest="200" Text="Buscar imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar"/>
+                 <Button Image="cadastro_serie.png" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center" />
                 </StackLayout>
-            </StackLayout>
+
+
+                </StackLayout>
         </StackLayout>
         </ScrollView>
     </ContentPage.Content>

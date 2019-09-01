@@ -18,14 +18,30 @@
                         <DatePicker FontSize="18" HorizontalOptions="FillAndExpand" TextColor="{StaticResource ColorLabel}" Format="dd/MM/yyyy" x:Name="txt_IDADE" MinimumDate="01/01/1980" DateSelected="DataSelecionada"/>
                     </StackLayout>
 
-                    <Entry Placeholder="Senha" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SENHA" IsPassword="False"/>
-                    <Entry Placeholder="Peso aqui" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_PESO"/>
-                    <Entry Placeholder="Altura" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_ALTURA"/>
-                    <Entry Placeholder="Objetivo" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_OBJETIVO"/>
-                    <Entry Placeholder="Situação" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SITUACAO"/>
+                    <StackLayout  Orientation="Horizontal" >
+                        <Label  Text="Senha:"  x:Name="Senha" FontSize="18" TextColor="{StaticResource ColorLabel}"/>
+                        <Entry Placeholder="Senha"  HorizontalOptions="FillAndExpand" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SENHA" IsPassword="False"/>
+                    </StackLayout>
+                    <StackLayout  Orientation="Horizontal" >
+                        <Label  Text="Peso:"  x:Name="Peso" FontSize="18" TextColor="{StaticResource ColorLabel}"/>
+                        <Entry Placeholder="Peso"  HorizontalOptions="FillAndExpand" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_PESO" Keyboard="Numeric"/>
+                    </StackLayout>
+                    <StackLayout  Orientation="Horizontal" >
+                        <Label  Text="Altura:"  x:Name="Altura" FontSize="18" TextColor="{StaticResource ColorLabel}" />
+                        <Entry Placeholder="Altura"  HorizontalOptions="FillAndExpand" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_ALTURA" Keyboard="Numeric"/>
+                    </StackLayout>
+                    <StackLayout  Orientation="Horizontal" >
+                        <Label  Text="Objetivo:" x:Name="SeObjetivonha" FontSize="18" TextColor="{StaticResource ColorLabel}"/>
+                        <Entry Placeholder="Objetivo"  HorizontalOptions="FillAndExpand" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_OBJETIVO"/>
+                    </StackLayout>
+                    <StackLayout  Orientation="Horizontal" >
+                        <Label  Text="Situação:"  x:Name="Situação" FontSize="18" TextColor="{StaticResource ColorLabel}"/>
+                        <Entry Placeholder="Situação"  HorizontalOptions="FillAndExpand" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SITUACAO"/>
+                    </StackLayout>
                     <StackLayout>
                         <Button Image="alterar.png" Text="ALTERAR" TextColor="{StaticResource ColorLabel}" x:Name="AlterarDados" Clicked="Btn_AlterarDados_ClickedAsync" HorizontalOptions="Center" />
                     </StackLayout>
+                
                 </StackLayout>
             </StackLayout>
         </ScrollView>

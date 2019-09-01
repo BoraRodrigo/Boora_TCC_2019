@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry"
+             xmlns:behaviorPack="clr-namespace:Xamarin.Forms.BehaviorValidationPack;assembly=Xamarin.Forms.BehaviorValidationPack"
              x:Class="Boora_TCC_2019.TELAS.Cadastrar_Aluno">
     <ContentPage.Content>
         <ScrollView>
@@ -23,9 +25,10 @@
                     <DatePicker  FontSize="18" HorizontalOptions="FillAndExpand" TextColor="{StaticResource ColorLabel}" Format="dd/MM/yyyy" x:Name="txt_IDADE" MinimumDate="01/01/1980" DateSelected="DataSelecionada"/>
                 </StackLayout>
 
+                <control:MaskedEntry Placeholder="Peso"  Keyboard="Numeric" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_PESO" ></control:MaskedEntry>
+                <control:MaskedEntry Placeholder="Altura" Mask="X.XX" Keyboard="Numeric" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_ALTURA" ></control:MaskedEntry>
 
-                <Entry Placeholder="Peso aqui" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_PESO"/>
-                <Entry Placeholder="Altura" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_ALTURA"/>
+
                 <Entry Placeholder="Objetivo" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_OBJETIVO"/>
                 <Entry Placeholder="Situação" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SITUACAO"/>
 

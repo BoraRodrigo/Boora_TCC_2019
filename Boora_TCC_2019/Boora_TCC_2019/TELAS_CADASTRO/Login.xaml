@@ -21,7 +21,7 @@
 
                     <Entry x:Name="txtNome_academia" Placeholder="Nome Academia" TextColor="#ffc800" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
 
-                    <ImageButton Source="proxima.png" Padding="0" BackgroundColor="Transparent"  Clicked="EfetuarLogin">
+                    <ImageButton Source="loginbot.png" Padding="0" BackgroundColor="Transparent"  Clicked="EfetuarLogin">
                         <!-- Efeito de click-->
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
@@ -65,6 +65,7 @@
                             <TapGestureRecognizer Tapped="Cadastre_sua_Academia"/>
                         </Label.GestureRecognizers>
                     </Label>
+
                  
                 </StackLayout>
                 <Label x:Name="EsqueceuSenhaLbl" HorizontalTextAlignment="Center"  IsVisible="False" BackgroundColor="#ffc800" HorizontalOptions="FillAndExpand"/>

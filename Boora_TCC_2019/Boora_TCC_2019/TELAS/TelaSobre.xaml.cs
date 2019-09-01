@@ -23,7 +23,7 @@ namespace Boora_TCC_2019.TELAS
         public void MaisDetalhesAction(object sender, EventArgs args)
         {
             Lbl_MaisDetalhes.Text = "Software Versão 1.0 - Deselvolvido por Augusto de Lima, Rodrigo Bora";
-            Lbl_MaisDetalhes2.Text = "Contato - agtaugusto92@hotmail.com";
+            Lbl_MaisDetalhes2.Text = "Contato - booraappcontato@gmail.com";
             Lbl_MaisDetalhes2.IsVisible = true;
         }
 

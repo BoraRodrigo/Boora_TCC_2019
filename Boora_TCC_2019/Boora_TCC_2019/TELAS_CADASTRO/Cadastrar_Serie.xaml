@@ -32,7 +32,7 @@
                         </StackLayout>
 
                         <StackLayout Orientation="Horizontal">
-                            <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="{StaticResource ColorLabel}" Placeholder="Tempo Execução" x:Name="txt_tempo_execucao"/>
+                            <Entry HorizontalOptions="FillAndExpand" Keyboard="Numeric" PlaceholderColor="{StaticResource ColorLabel}" Placeholder="Tempo Execução" x:Name="txt_tempo_execucao"/>
                         </StackLayout>
                     </StackLayout>
 

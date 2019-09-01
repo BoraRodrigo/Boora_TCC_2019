@@ -16,13 +16,13 @@
                                 <Label HorizontalOptions="FillAndExpand" x:Name="Txt_nome_Exercicio" TextColor="{StaticResource ColorLabel}"/>
                             </StackLayout>
                             <StackLayout Orientation="Horizontal">
-                                <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="{StaticResource ColorLabel}" Placeholder="Repetiçoes" x:Name="Txt_Quantidade_repeticoes" />
-                                <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="{StaticResource ColorLabel}" Placeholder="Vezes" x:Name="Txt_Quantidade_Vezes"/>
+                                <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="{StaticResource ColorLabel}" Placeholder="Repetiçoes" x:Name="Txt_Quantidade_repeticoes"  Keyboard="Numeric"/>
+                                <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="{StaticResource ColorLabel}" Placeholder="Vezes" x:Name="Txt_Quantidade_Vezes" Keyboard="Numeric"/>
                             </StackLayout>
 
                             <StackLayout Orientation="Horizontal">
                                 <Label HorizontalOptions="FillAndExpand" Text="{StaticResource ColorLabel}" FontAttributes="Bold" TextColor="{StaticResource ColorLabel}"/>
-                                    <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="{StaticResource ColorLabel}" Placeholder="Peso" x:Name="txt_Peso"/>
+                                <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="{StaticResource ColorLabel}" Placeholder="Peso" x:Name="txt_Peso" Keyboard="Numeric" />
 
                             </StackLayout>
 

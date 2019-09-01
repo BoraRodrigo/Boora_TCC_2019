@@ -6,6 +6,7 @@
         <!--aqui que se seta os styles que serao usado no projeto-->
             <ResourceDictionary>
             <Color x:Key="ColorLabel">#00f2ff</Color>
+            <Color x:Key="ColorStacklayout">#000000</Color>
             <Style TargetType="StackLayout">
                 <Setter Property="BackgroundColor" Value="White"/>
             </Style>
