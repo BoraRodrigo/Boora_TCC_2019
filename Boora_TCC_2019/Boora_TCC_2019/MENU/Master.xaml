@@ -2,6 +2,7 @@
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:page="clr-namespace:Boora_TCC_2019"
+                  xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
                   x:Class="Boora_TCC_2019.MENU.Master">
 
     <MasterDetailPage.Master >
@@ -11,24 +12,38 @@
                     <!--Adiona novo botao, e no Master C# faz o funçao do evento clicked, esse tipo de menu so funciona em masterdateilpage-->
 
 
-                    <StackLayout  BackgroundColor="#0d0b24" HorizontalOptions="CenterAndExpand" Orientation="Horizontal" >
-                        <Button VerticalOptions="StartAndExpand" Image="user.png"  BackgroundColor="#0d0b24" x:Name="btn_Perfil" WidthRequest="200" HeightRequest="180" />
-                        <Label x:Name="lblNomeUsuario" WidthRequest="200"  TextColor="White" HeightRequest="180" VerticalOptions="EndAndExpand" BackgroundColor="#0d0b24" VerticalTextAlignment="Center"/>
+                    <StackLayout  BackgroundColor="#0d0b24" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Orientation="Vertical" WidthRequest="200" HeightRequest="180" >
+                        <controls:CircleImage Source="addfoto.png"  HorizontalOptions="Center" VerticalOptions="Center" BorderThickness="2">
+                            <controls:CircleImage.WidthRequest>
+                                <OnPlatform x:TypeArguments="x:Double">
+                                    <On Platform="Android, iOS">120</On>
+                                    <On Platform="UWP">150</On>
+                                </OnPlatform>
+                            </controls:CircleImage.WidthRequest>
+                            <controls:CircleImage.HeightRequest>
+                                <OnPlatform x:TypeArguments="x:Double">
+                                    <On Platform="Android, iOS">120</On>
+                                    <On Platform="UWP">150</On>
+                                </OnPlatform>
+                            </controls:CircleImage.HeightRequest>
+                        </controls:CircleImage>
+                        
+                        <Label x:Name="lblNomeUsuario"   TextColor="White" HorizontalOptions="Center" VerticalOptions="End" BackgroundColor="#0d0b24" VerticalTextAlignment="Center"/>
                     </StackLayout>
 
-                    <Button Image="inicial.png"  BackgroundColor="Transparent" Text="Inicial" Clicked="GoInicial" BorderWidth="4" BorderRadius="6" BorderColor="Black"/>
-                    <Button Image="lista.png" BackgroundColor="Transparent" Text="Alunos" Clicked="GoListaAlunos" BorderWidth="4" BorderRadius="6" x:Name="btn_lista_alunos" BorderColor="Black"/>
-                    <Button Image="cadastro_icon.png" BackgroundColor="Transparent" Text="Cadastro Aluno" Clicked="GoCadastroAluno" BorderWidth="4" BorderRadius="6" x:Name="btn_cadastro_aluno" BorderColor="Black"/>
-                    <Button Image="cadastro_serie.png" BackgroundColor="Transparent" Text="Cadastro Exercício" Clicked="GoCadastroExercicio" BorderWidth="4" BorderRadius="6" x:Name="btn_cadastro_exercicio" BorderColor="Black"/>
-                    <Button Image="cadastro_icon.png" BackgroundColor="Transparent" Text="Cadastro Instrutor" Clicked="GoCadastroInstrutor" BorderWidth="4" BorderRadius="6" x:Name="btn_cadastro_instrutor" BorderColor="Black"/>
-                    <Button Image="corestema.png"  Text="Alterar Tema" Clicked="GoPersonalizacao" BorderWidth="4" BorderRadius="6" BorderColor="Black"/>
-                    <Button Image="lista.png" BackgroundColor="Transparent" Text="Lista Exercício" Clicked="GoListExercicios" BorderWidth="4" BorderRadius="6" BorderColor="Black"/>
-                    <Button Image="minhasseries.png" BackgroundColor="Transparent" Text="Minhas Séries" Clicked="GoEMinhasSeries" BorderWidth="4" BorderRadius="6" x:Name="btn_minhas_Series" BorderColor="Black"/>
-                    <Button Image="calendario.png" BackgroundColor="Transparent" Text="Meu Calendário" Clicked="GoEMeuClendario" BorderWidth="4" BorderRadius="6" x:Name="btn_meu_calendario" BorderColor="Black"/>
-                    <Button Image="sobre.png" BackgroundColor="Transparent" Text="Sobre" Clicked="Send"  BorderWidth="4" BorderRadius="6" BorderColor="Black"/>
-                    <Button Image="alterar.png"  BackgroundColor="Transparent" Text="Alterar Dados" Clicked="alterarDados"  BorderWidth="4" BorderRadius="6" BorderColor="Black" x:Name="btn_Alterar_dados_Aluno"/>
+                    <Button Image="inicial.png"  BackgroundColor="Transparent" Text="Inicial" Clicked="GoInicial" BorderWidth="1" BorderColor="Black" Padding="0" Margin="0"/>
+                    <Button Image="lista.png" BackgroundColor="Transparent" Text="Alunos" Clicked="GoListaAlunos" BorderWidth="1"  x:Name="btn_lista_alunos" BorderColor="Black" Padding="0" Margin="0"/>
+                    <Button Image="cadastro_icon.png" BackgroundColor="Transparent" Text="Cadastro Aluno" Clicked="GoCadastroAluno" BorderWidth="1" x:Name="btn_cadastro_aluno" BorderColor="Black" Padding="0"/>
+                    <Button Image="cadastro_serie.png" BackgroundColor="Transparent" Text="Cadastro Exercício" Clicked="GoCadastroExercicio" BorderWidth="1"  x:Name="btn_cadastro_exercicio" BorderColor="Black" Margin="0"/>
+                    <Button Image="cadastro_icon.png" BackgroundColor="Transparent" Text="Cadastro Instrutor" Clicked="GoCadastroInstrutor" BorderWidth="1"  x:Name="btn_cadastro_instrutor" BorderColor="Black"/>
+                    <Button Image="corestema.png"  Text="Alterar Tema" Clicked="GoPersonalizacao" BorderWidth="1"  BorderColor="Black"/>
+                    <Button Image="lista.png" BackgroundColor="Transparent" Text="Lista Exercício" Clicked="GoListExercicios" BorderWidth="1" BorderColor="Black"/>
+                    <Button Image="minhasseries.png" BackgroundColor="Transparent" Text="Minhas Séries" Clicked="GoEMinhasSeries" BorderWidth="1" x:Name="btn_minhas_Series" BorderColor="Black"/>
+                    <Button Image="calendario.png" BackgroundColor="Transparent" Text="Meu Calendário" Clicked="GoEMeuClendario" BorderWidth="1" x:Name="btn_meu_calendario" BorderColor="Black"/>
+                    <Button Image="sobre.png" BackgroundColor="Transparent" Text="Sobre" Clicked="Send"  BorderWidth="1" BorderColor="Black"/>
+                    <Button Image="alterar.png"  BackgroundColor="Transparent" Text="Alterar Dados" Clicked="alterarDados"  BorderWidth="1" BorderColor="Black" x:Name="btn_Alterar_dados_Aluno"/>
 
-                    <Button Image="sair.png" BackgroundColor="Transparent" Text="SAIR" Clicked="GoSAIR"  BorderWidth="4" BorderRadius="6" BorderColor="Black">
+                    <Button Image="sair.png" BackgroundColor="Transparent" Text="SAIR" Clicked="GoSAIR"  BorderWidth="1"  BorderColor="Black">
                         <!-- Efeito de click-->
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">

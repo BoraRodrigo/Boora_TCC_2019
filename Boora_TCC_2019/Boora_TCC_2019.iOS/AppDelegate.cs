@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+
 using FFImageLoading.Forms.Platform;
 using Foundation;
+using ImageCircle.Forms.Plugin.iOS;
 using UIKit;
 
 namespace Boora_TCC_2019.iOS
@@ -23,6 +25,8 @@ namespace Boora_TCC_2019.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+            ImageCircleRenderer.Init();
 
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init();//Adicionado para utilizar plugin FFImageLoading
 

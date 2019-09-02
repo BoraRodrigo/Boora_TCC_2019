@@ -7,6 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Plugin.CurrentActivity;
+using ImageCircle.Forms.Plugin.Droid;
 
 namespace Boora_TCC_2019.Droid
 {
@@ -20,6 +21,7 @@ namespace Boora_TCC_2019.Droid
            
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            ImageCircleRenderer.Init();
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(enableFastRenderer: true); //Adicionado para utilizar FFloading
             CrossCurrentActivity.Current.Init(this, savedInstanceState);
 
