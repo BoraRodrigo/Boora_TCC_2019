@@ -1,7 +1,10 @@
 ﻿using Boora_TCC_2019.TELAS;
+using Plugin.Media;
+using Plugin.Media.Abstractions;
 using ScheduleSimpleSample;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +18,7 @@ namespace Boora_TCC_2019.MENU
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Master : MasterDetailPage
     {
+        MediaFile file;
         public Master()
         {
 
@@ -108,13 +112,37 @@ namespace Boora_TCC_2019.MENU
             IsPresented = false;
 
         }
-        
-
         private void GoListaAlunos(object sender, EventArgs e)
         {
             this.Detail = new NavigationPage(new TELAS.ListAlunosView());
             IsPresented = false;
 
+        }
+        private async void Btn_Alterar_Imagem(object sender, EventArgs e)
+        {
+            await CrossMedia.Current.Initialize();
+            try
+            {
+
+                file = await Plugin.Media.CrossMedia.Current.PickPhotoAsync(new Plugin.Media.Abstractions.PickMediaOptions
+                {
+
+                    PhotoSize = Plugin.Media.Abstractions.PhotoSize.Medium
+                    // PhotoSize = PhotoSize.Custom,
+                    // CustomPhotoSize = 40
+                });
+                if (file == null)
+                    return;
+                foto_Perfil.Source = ImageSource.FromStream(() =>
+                {
+                    var imageStram = file.GetStream();
+                    return imageStram;
+                });
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
         }
     }
 }

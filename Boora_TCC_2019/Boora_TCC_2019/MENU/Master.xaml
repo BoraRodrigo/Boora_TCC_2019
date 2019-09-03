@@ -10,12 +10,10 @@
             <ScrollView>
                 <StackLayout>
                     <!--Adiona novo botao, e no Master C# faz o funçao do evento clicked, esse tipo de menu so funciona em masterdateilpage-->
-
-
                     <StackLayout  BackgroundColor="#0d0b24" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Orientation="Vertical" WidthRequest="200" HeightRequest="180" >
-                        <controls:CircleImage Source="addfoto.png"  HorizontalOptions="Center" VerticalOptions="Center" BorderThickness="2">
-                            <controls:CircleImage.WidthRequest>
-                                <OnPlatform x:TypeArguments="x:Double">
+                        <controls:CircleImage Source="addfoto.png"  HorizontalOptions="Center" VerticalOptions="Center" BorderThickness="2" x:Name="foto_Perfil">
+                            <controls:CircleImage.WidthRequest >
+                                <OnPlatform x:TypeArguments="x:Double" >
                                     <On Platform="Android, iOS">120</On>
                                     <On Platform="UWP">150</On>
                                 </OnPlatform>
@@ -26,8 +24,12 @@
                                     <On Platform="UWP">150</On>
                                 </OnPlatform>
                             </controls:CircleImage.HeightRequest>
+                            
                         </controls:CircleImage>
-                        
+
+                        <Button Text="Alterar" BackgroundColor="Transparent"  Clicked="Btn_Alterar_Imagem"  BorderWidth="1"  BorderColor="Black"/>
+
+
                         <Label x:Name="lblNomeUsuario"   TextColor="White" HorizontalOptions="Center" VerticalOptions="End" BackgroundColor="#0d0b24" VerticalTextAlignment="Center"/>
                     </StackLayout>
 
