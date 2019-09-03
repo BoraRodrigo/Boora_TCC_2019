@@ -32,7 +32,12 @@
                 <Entry Placeholder="Objetivo" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_OBJETIVO"/>
                 <Entry Placeholder="Situação" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SITUACAO"/>
 
-                <StackLayout>     
+
+                <Image x:Name="imgChoosed" HeightRequest="150"/>
+                <Button Image="buscar.png"  x:Name="btnPick" WidthRequest="200" Text="Buscar imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar_Foto_Perfil"/>
+
+
+                    <StackLayout>     
                     <Button Image="cadastro_icon.png" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center" />
                     </StackLayout>
                 </StackLayout>

@@ -1,7 +1,10 @@
 ﻿using Boora_TCC_2019.DAO;
 using Boora_TCC_2019.MODEL;
+using Plugin.Media;
+using Plugin.Media.Abstractions;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net.Mail;
 using System.Text;
@@ -19,6 +22,7 @@ namespace Boora_TCC_2019.TELAS
     public partial class Cadastrar_Aluno : ContentPage
     {
         AlunoDAO alunoDAO = new AlunoDAO();
+        MediaFile file;
 
         string  senha_para_Cadastro;
 
@@ -37,6 +41,7 @@ namespace Boora_TCC_2019.TELAS
         //aqui limitei o cadastro de um email por login, se o email já for cadastrado na academia não consegue
         //em outras sim.  
             bool controle = false;
+
 
             try
             {
@@ -67,20 +72,41 @@ namespace Boora_TCC_2019.TELAS
                         aluno.objetivo_Aluno = txt_OBJETIVO.Text;
                         aluno.Situacao = 1;
 
-                        await alunoDAO.Cadastrar_Aluno(aluno);
+                        await alunoDAO.Cadastrar_Aluno(aluno,file.GetStream());
                         limpaCampos();
 
                     }
-
                 }
                 catch
                 {
-
                     await DisplayAlert("ERRO", "Verefique as informações", "OK");
                     btn_Cadastrar.IsEnabled = true;
                 }
-            } 
-            
+            }            
+        }
+        private async void Btn_Buscar_Foto_Perfil(object sender, EventArgs e)
+        {
+            await CrossMedia.Current.Initialize();
+            try
+            {
+                file = await Plugin.Media.CrossMedia.Current.PickPhotoAsync(new Plugin.Media.Abstractions.PickMediaOptions
+                {
+                    //PhotoSize = Plugin.Media.Abstractions.PhotoSize.Medium
+                    PhotoSize = PhotoSize.Small,
+                    CustomPhotoSize = 15
+                });
+                if (file == null)
+                    return;
+                imgChoosed.Source = ImageSource.FromStream(() =>
+                {
+                    var imageStram = file.GetStream();
+                    return imageStram;
+                });
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
         }
         public void limpaCampos()
         {

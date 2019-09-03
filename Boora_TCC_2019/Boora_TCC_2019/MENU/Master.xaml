@@ -26,10 +26,9 @@
                             </controls:CircleImage.HeightRequest>
                             
                         </controls:CircleImage>
+                        <!--Colocar este evento de clique no botão não sei fazer isso, quando o dono de academia loga estou desabilitando o botão pq não implementei isso  -->
 
-                        <Button Text="Alterar" BackgroundColor="Transparent"  Clicked="Btn_Alterar_Imagem"  BorderWidth="1"  BorderColor="Black"/>
-
-
+                        <Button x:Name="btn_Alterar" Text="Alterar" BackgroundColor="Transparent"  Clicked="Btn_Alterar_Imagem"  BorderWidth="1"  BorderColor="Black"/>
                         <Label x:Name="lblNomeUsuario"   TextColor="White" HorizontalOptions="Center" VerticalOptions="End" BackgroundColor="#0d0b24" VerticalTextAlignment="Center"/>
                     </StackLayout>
 

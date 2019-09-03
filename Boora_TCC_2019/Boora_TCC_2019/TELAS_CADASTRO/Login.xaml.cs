@@ -73,6 +73,7 @@ namespace Boora_TCC_2019.TELAS
 
                     SlCarregandoLogin.IsVisible = false; // apos o retorno do BD o Stacklayout some.
                     Tipo_login = "Aluno";
+
                    
                     App.Current.MainPage = new MENU.Master();
                 }
@@ -87,6 +88,7 @@ namespace Boora_TCC_2019.TELAS
                     Id_Academia_Login = academia.Id_academia;
                     Nome_Aluno_Logado = academia.Nome_academia;
                     Senha_Aluno_Logado = academia.Senha;
+                    Telefone_Academia = academia.Whats;
                     Nome_Academia_login = academia.Nome_academia;
                     Tipo_login = "Dono_Academia";
 
@@ -109,7 +111,6 @@ namespace Boora_TCC_2019.TELAS
                 EsqueceuSenhaLbl.IsVisible = true;
                 Device.StartTimer(TimeSpan.FromSeconds(1), () =>
                 {
-
                     i--;
                     if (i < 0)
                     {
@@ -118,23 +119,17 @@ namespace Boora_TCC_2019.TELAS
                     }
                     return aux;
                 });
-
-
             }
-
         }
         public void EsqueceuSenha(object sender, EventArgs args)
         {
             // TODO - Desenvolver metodo da esqueceu a senha
 
             txt_email_redefinir_senha.IsVisible = true;
-            btn_RedefinirSenha.IsVisible = true;
-            
-           
+            btn_RedefinirSenha.IsVisible = true;                     
         }
         public async void RedefinirSenhaAsync(object sender,EventArgs args)
         {
-
             Email email = new Email();
            await email.RedefinirSenha(txt_email_redefinir_senha.Text,txtNome_academia.Text);
 
@@ -144,8 +139,6 @@ namespace Boora_TCC_2019.TELAS
        public void Cadastre_sua_Academia(object sender, EventArgs args)
         {
             App.Current.MainPage = new TELAS_CADASTRO.Cadastrar_Academia();
-        }
-
-        
+        }        
     }
 }

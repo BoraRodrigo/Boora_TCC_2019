@@ -15,6 +15,7 @@ namespace Boora_TCC_2019.MODEL
         public string Idade { get; set; }
         public string objetivo_Aluno { get; set; }
         public int Situacao { get; set; }
+        public string Foto_Aluno { get; set; }
 
     }
 }

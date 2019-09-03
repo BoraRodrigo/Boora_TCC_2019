@@ -63,16 +63,12 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
             }
         }
         private async void Btn_Buscar(object sender, EventArgs e)
-        {
-            
-
+        {          
             await CrossMedia.Current.Initialize();
             try
             {
-
                 file = await Plugin.Media.CrossMedia.Current.PickPhotoAsync(new Plugin.Media.Abstractions.PickMediaOptions
-                {
-            
+                {           
                     PhotoSize = Plugin.Media.Abstractions.PhotoSize.Medium
                     // PhotoSize = PhotoSize.Custom,
                    // CustomPhotoSize = 40

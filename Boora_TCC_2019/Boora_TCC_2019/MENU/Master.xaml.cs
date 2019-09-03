@@ -1,4 +1,5 @@
-﻿using Boora_TCC_2019.TELAS;
+﻿using Boora_TCC_2019.DAO;
+using Boora_TCC_2019.TELAS;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 using ScheduleSimpleSample;
@@ -19,6 +20,10 @@ namespace Boora_TCC_2019.MENU
     public partial class Master : MasterDetailPage
     {
         MediaFile file;
+        AcademiaDAO academiaDAO = new AcademiaDAO();
+        AlunoDAO alunoDAO = new AlunoDAO();
+
+
         public Master()
         {
 
@@ -39,6 +44,25 @@ namespace Boora_TCC_2019.MENU
                 btn_Alterar_dados_Aluno.IsVisible = false;
                 btn_cadastro_instrutor.IsVisible = false;//deixa de fora de momento
                 lblNomeUsuario.Text = Login.Nome_Academia_login;
+                btn_Alterar.IsVisible = false;//não fiz o alter pra imagem da academia.
+            }
+        }
+        protected async override void OnAppearing()
+        {
+            try
+            {
+                if (Login.Tipo_login.Equals("Dono_Academia"))
+                {
+                    foto_Perfil.Source = await academiaDAO.Buscar_IMAGEM_Logo_Academia(Login.Id_Academia_Login);
+                }
+                else if (Login.Tipo_login.Equals("Aluno"))
+                {
+                    foto_Perfil.Source = await alunoDAO.Buscar_IMAGEM_Perfil_Aluno(Login.Id_Aluno_Login);
+
+                }
+            }
+            catch
+            {
             }
         }
         // aqui vc instancia novo navigationPage com a tela que vc quer cadastrar. cada metodo para um botao.
@@ -96,8 +120,6 @@ namespace Boora_TCC_2019.MENU
         {
             //Alterado pq ficava liberado o menu apos deslogar, assim nao tem menu
             App.Current.MainPage = new Login();
-
-
         }
 
         private void Send(object sender, EventArgs e)
@@ -123,10 +145,8 @@ namespace Boora_TCC_2019.MENU
             await CrossMedia.Current.Initialize();
             try
             {
-
                 file = await Plugin.Media.CrossMedia.Current.PickPhotoAsync(new Plugin.Media.Abstractions.PickMediaOptions
                 {
-
                     PhotoSize = Plugin.Media.Abstractions.PhotoSize.Medium
                     // PhotoSize = PhotoSize.Custom,
                     // CustomPhotoSize = 40
@@ -136,8 +156,9 @@ namespace Boora_TCC_2019.MENU
                 foto_Perfil.Source = ImageSource.FromStream(() =>
                 {
                     var imageStram = file.GetStream();
-                    return imageStram;
+                    return imageStram;                  
                 });
+              await  alunoDAO.Alterar_Foto_Perfil(Login.Id_Aluno_Login, file.GetStream());
             }
             catch (Exception ex)
             {

@@ -60,7 +60,6 @@ namespace Boora_TCC_2019.DAO
                   Whats = academia.Whats,
                   Instagran = academia.Instagran
 
-
               });
 
             var imageUrl = await firebaseStorage
@@ -76,13 +75,10 @@ namespace Boora_TCC_2019.DAO
               .Child("Academias")
               .Child(nomeAcademia)
               .OnceAsync<Academia>();
-
-
             return academia.Where(a => a.Nome_academia == nomeAcademia).FirstOrDefault();
         }
         public async Task<List<Academia>> Busca_Academia(string nome)
         {
-
             return (await firebase
                 .Child("Academias")
                 .Child(nome)

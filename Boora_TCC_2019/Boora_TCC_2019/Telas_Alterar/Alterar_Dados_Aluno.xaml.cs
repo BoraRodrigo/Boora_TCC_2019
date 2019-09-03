@@ -43,16 +43,13 @@ namespace Boora_TCC_2019.Telas_Alterar
                 aluno.Altura = Convert.ToDouble(txt_ALTURA.Text);
                 aluno.Idade = datanascimento;
                 aluno.objetivo_Aluno = txt_OBJETIVO.Text;
+                aluno.Foto_Aluno = Login.Id_Aluno_Login;
                 aluno.Situacao = 1;
-
-
                 limpaCampos();
-
                 await alunoDAO.AlterarALUNO(Login.Id_Aluno_Login, aluno);
             }
             catch 
            {
-
                 await DisplayAlert("ERRO", "Verefique as informações", "OK");
             }
         

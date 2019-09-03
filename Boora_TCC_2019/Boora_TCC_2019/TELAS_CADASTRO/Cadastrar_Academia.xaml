@@ -23,7 +23,7 @@
                     <Entry Placeholder="Senha" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SENHA" IsPassword="True"/>
 
 
-                    <Entry  Placeholder="CNPJ" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_CNPJ">
+                    <Entry  Placeholder="CNPJ" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_CNPJ" Keyboard="Numeric">
                         <Entry.Behaviors>
                             <behaviorPack:CNPJValidationBehavior />
                             <behaviorPack:MaskedBehavior Mask="XX.XXX.XXX/XXXX-XX" />

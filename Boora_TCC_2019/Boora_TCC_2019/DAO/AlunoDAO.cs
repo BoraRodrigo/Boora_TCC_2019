@@ -6,6 +6,7 @@ using Firebase.Database.Query;
 using Firebase.Storage;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,9 +17,9 @@ namespace Boora_TCC_2019.DAO
     {
         FirebaseClient firebase = new FirebaseClient("https://tcc-2019-53a08.firebaseio.com/");
         FirebaseStorage firebaseStorage = new FirebaseStorage("tcc-2019-53a08.appspot.com");
+
         public async Task<List<Aluno>> Busca_Aluno()
         {
-
             return (await firebase
                 .Child("Academias")
                 .Child(Login.Nome_Academia_login )
@@ -61,7 +62,7 @@ namespace Boora_TCC_2019.DAO
                 }).ToList();
 
         }
-        public async Task Cadastrar_Aluno(Aluno aluno)
+        public async Task Cadastrar_Aluno(Aluno aluno, Stream fileStream)
         {
             var cadastro_aluno= await firebase
                .Child("Academias")
@@ -77,6 +78,7 @@ namespace Boora_TCC_2019.DAO
                   Altura = aluno.Altura,
                   Idade = aluno.Idade,
                   objetivo_Aluno = aluno.objetivo_Aluno,
+                  Foto_Aluno=aluno.Foto_Aluno,
                   Situacao = aluno.Situacao
               });
             string id_cadastroalunoKEY = cadastro_aluno.Key;
@@ -102,11 +104,16 @@ namespace Boora_TCC_2019.DAO
                   Altura = aluno.Altura,
                   Idade = aluno.Idade,
                   objetivo_Aluno = aluno.objetivo_Aluno,
+                  Foto_Aluno=id_cadastroalunoKEY,
                   Situacao = aluno.Situacao
               });
+            var imageUrl = await firebaseStorage
+
+           .Child(Login.Nome_Academia_login)
+           .Child("Foto_Perfil")
+           .Child(cadastro_aluno.Key)
+           .PutAsync(fileStream);
         }
-
-
         //Busca serie aluno e coloca dados em campos de dados ver implementacao -BORA
         //retona os detalhaes do exercicio da serie.
         // esta tabela possui o ID do exercicio vinculado a estas inf
@@ -194,6 +201,7 @@ namespace Boora_TCC_2019.DAO
                   Altura = aluno.Altura,
                   Idade = aluno.Idade,
                   objetivo_Aluno = aluno.objetivo_Aluno,
+                  Foto_Aluno=aluno.Foto_Aluno,
                   Situacao = aluno.Situacao
               });
         }
@@ -247,6 +255,23 @@ namespace Boora_TCC_2019.DAO
 
                 throw;
             }
+        }
+        public async Task<string> Buscar_IMAGEM_Perfil_Aluno(string id_Aluno)
+        {
+            return await firebaseStorage
+                .Child(Login.Nome_Academia_login)
+                .Child("Foto_Perfil")
+                .Child(id_Aluno)
+                .GetDownloadUrlAsync();
+        }
+        public async Task Alterar_Foto_Perfil(string id_Aluno_Alterar_Foto, Stream fileStream)
+        {
+
+           var imageUrl = await firebaseStorage
+          .Child(Login.Nome_Academia_login)
+          .Child("Foto_Perfil")
+          .Child(id_Aluno_Alterar_Foto)
+          .PutAsync(fileStream);
         }
     }
 }
