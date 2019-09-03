@@ -42,6 +42,8 @@
                     <Button Image="minhasseries.png" BackgroundColor="Transparent" Text="Minhas Séries" Clicked="GoEMinhasSeries" BorderWidth="1" x:Name="btn_minhas_Series" BorderColor="Black"/>
                     <Button Image="calendario.png" BackgroundColor="Transparent" Text="Meu Calendário" Clicked="GoEMeuClendario" BorderWidth="1" x:Name="btn_meu_calendario" BorderColor="Black"/>
                     <Button Image="sobre.png" BackgroundColor="Transparent" Text="Sobre" Clicked="Send"  BorderWidth="1" BorderColor="Black"/>
+                    <Button  BackgroundColor="Transparent" Text="Novo Aviso" Clicked="Cadastrar_Aviso" x:Name="btn_cadastrarAviso" BorderWidth="1" BorderColor="Black"/>
+
                     <Button Image="alterar.png"  BackgroundColor="Transparent" Text="Alterar Dados" Clicked="alterarDados"  BorderWidth="1" BorderColor="Black" x:Name="btn_Alterar_dados_Aluno"/>
 
                     <Button Image="sair.png" BackgroundColor="Transparent" Text="SAIR" Clicked="GoSAIR"  BorderWidth="1"  BorderColor="Black">

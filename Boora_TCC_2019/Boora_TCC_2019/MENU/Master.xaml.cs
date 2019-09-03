@@ -36,6 +36,7 @@ namespace Boora_TCC_2019.MENU
                 btn_cadastro_instrutor.IsVisible = false;
                 btn_lista_alunos.IsVisible = false;
                 lblNomeUsuario.Text = Login.Nome_Aluno_Logado;
+                btn_cadastrarAviso.IsVisible = false;
             }
             else if (Login.Tipo_login.Equals("Dono_Academia"))
             {
@@ -139,6 +140,11 @@ namespace Boora_TCC_2019.MENU
             this.Detail = new NavigationPage(new TELAS.ListAlunosView());
             IsPresented = false;
 
+        }
+        private void Cadastrar_Aviso(object sender, EventArgs e)
+        {
+            this.Detail = new NavigationPage(new TELAS_CADASTRO.Cadastrar_Novo_Aviso());
+            IsPresented = false;
         }
         private async void Btn_Alterar_Imagem(object sender, EventArgs e)
         {

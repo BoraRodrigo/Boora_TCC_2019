@@ -51,8 +51,9 @@ namespace Boora_TCC_2019.DAO
               });
             var imageUrl = await firebaseStorage
 
-           .Child(Login.Nome_Academia_login)
+
            .Child("Avisos_Da_Academia")
+           .Child(Login.Nome_Academia_login)
            .Child(cadastro_avisos.Key)
            .PutAsync(fileStream);
         }
@@ -73,8 +74,8 @@ namespace Boora_TCC_2019.DAO
         public async Task<string> Buscar_IMAGEM_AVISOS(string id_Avisos)
         {
             return await firebaseStorage
-                .Child(Login.Nome_Academia_login)
                 .Child("Avisos_Da_Academia")
+                .Child(Login.Nome_Academia_login)
                 .Child(id_Avisos)
                 .GetDownloadUrlAsync();
         }
