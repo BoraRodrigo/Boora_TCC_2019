@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
-             x:Class="Boora_TCC_2019.TELAS.Login">
+             x:Class="Boora_TCC_2019.TELAS.Login"
+             BackgroundImage="fundoI.jpg">
 
 
 
@@ -11,17 +12,17 @@
         <AbsoluteLayout>
 
 
-            <StackLayout BackgroundColor="White" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+            <StackLayout BackgroundColor="Transparent" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
                 <StackLayout Padding="0" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                    <ffimageloading:CachedImage Source="iconBora.png"  />
+                    <ffimageloading:CachedImage Source="iconBora.png" HeightRequest="160" WidthRequest="160" />
 
-                    <Entry   x:Name="txtNome" Placeholder="Login" TextColor="#ffc800" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
+                    <Entry   x:Name="txtNome" Placeholder="Login" TextColor="#ffc800" PlaceholderColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
 
-                    <Entry x:Name="txtsenha" Placeholder="Senha" TextColor="#ffc800" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" IsPassword="True"/>
+                    <Entry x:Name="txtsenha" Placeholder="Senha" TextColor="#ffc800" PlaceholderColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" IsPassword="True"/>
 
-                    <Entry x:Name="txtNome_academia" Placeholder="Nome Academia" TextColor="#ffc800" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
+                    <Entry x:Name="txtNome_academia" Placeholder="Nome Academia" TextColor="Black" PlaceholderColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
 
-                    <ImageButton Source="loginbot.png" Padding="0" BackgroundColor="Transparent"  Clicked="EfetuarLogin">
+                    <Button Text="Entrar" Padding="0" BackgroundColor="#ffc800"  WidthRequest="60" Clicked="EfetuarLogin" BorderWidth="0" CornerRadius="30">
                         <!-- Efeito de click-->
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
@@ -40,11 +41,11 @@
                                 </VisualState>
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
-                    </ImageButton>
+                    </Button>
 
-                    <Entry IsVisible="False" x:Name="txt_email_redefinir_senha" Placeholder="Email" TextColor="#ffc800" PlaceholderColor="#ffc800" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
-                    <Button  Text="Enviar Email" BackgroundColor="White" x:Name="btn_RedefinirSenha"  Clicked="RedefinirSenhaAsync" IsVisible="False"/>
-                    <Label Text="Esqueceu a senha?" FontSize="12" Margin="0" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#ffc800">
+                    <Entry IsVisible="False" x:Name="txt_email_redefinir_senha" Placeholder="Email" TextColor="Black" PlaceholderColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
+                    <Button  Text="Enviar Email" BackgroundColor="Transparent" x:Name="btn_RedefinirSenha"  Clicked="RedefinirSenhaAsync" IsVisible="False"/>
+                    <Label Text="Esqueceu a senha?" FontSize="12" Margin="0" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Tapped="EsqueceuSenha"/>
                         </Label.GestureRecognizers>
@@ -52,15 +53,15 @@
 
 
 
-                    <StackLayout Padding="30,0" Spacing="12" BackgroundColor="White" >
-                        <input:RadioButtonGroupView x:Name="chekboxTipo" BackgroundColor="White" >
-                            <input:RadioButton Text="Aluno" TextColor="Black" x:Name="chekAluno" CircleColor="Red" Color="Orange"/>
-                            <input:RadioButton Text="Academia" TextColor="Black" x:Name="chekAcademia" CircleColor="Red" Color="Orange"/>
+                    <StackLayout Padding="30,0" Spacing="12" BackgroundColor="Transparent" >
+                        <input:RadioButtonGroupView x:Name="chekboxTipo" BackgroundColor="Transparent" >
+                            <input:RadioButton Text="Aluno" TextColor="Black" BackgroundColor="Transparent" x:Name="chekAluno" CircleColor="#ffc800" Color="Black"/>
+                            <input:RadioButton Text="Academia" TextColor="Black" BackgroundColor="Transparent" x:Name="chekAcademia" CircleColor="#ffc800" Color="Black"/>
                            <!-- <input:RadioButton Text="Personal" TextColor="Black" x:Name="chekPersonal" CircleColor="Red" Color="Orange"/> -->
                         </input:RadioButtonGroupView>
                     </StackLayout>
 
-                    <Label Text="Cadastre sua Academia" FontSize="12" Margin="0" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#ffc800">
+                    <Label Text="Cadastre sua Academia" FontSize="12" Margin="0" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Tapped="Cadastre_sua_Academia"/>
                         </Label.GestureRecognizers>

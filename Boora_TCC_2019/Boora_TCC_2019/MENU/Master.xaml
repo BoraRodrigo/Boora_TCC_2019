@@ -11,7 +11,7 @@
                 <StackLayout>
                     <!--Adiona novo botao, e no Master C# faz o funçao do evento clicked, esse tipo de menu so funciona em masterdateilpage-->
                     <StackLayout  BackgroundColor="#0d0b24" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Orientation="Vertical" WidthRequest="200" HeightRequest="180" >
-                        <controls:CircleImage Source="addfoto.png"  HorizontalOptions="Center" VerticalOptions="Center" BorderThickness="2" x:Name="foto_Perfil">
+                        <controls:CircleImage Source="addfoto.png"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BorderThickness="2" x:Name="foto_Perfil">
                             <controls:CircleImage.WidthRequest >
                                 <OnPlatform x:TypeArguments="x:Double" >
                                     <On Platform="Android, iOS">120</On>
@@ -24,11 +24,14 @@
                                     <On Platform="UWP">150</On>
                                 </OnPlatform>
                             </controls:CircleImage.HeightRequest>
-                            
+                            <controls:CircleImage.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Alterar_Imagem"/>
+                            </controls:CircleImage.GestureRecognizers>
+
                         </controls:CircleImage>
                         <!--Colocar este evento de clique no botão não sei fazer isso, quando o dono de academia loga estou desabilitando o botão pq não implementei isso  -->
 
-                        <Button x:Name="btn_Alterar" Text="Alterar" BackgroundColor="Transparent"  Clicked="Btn_Alterar_Imagem"  BorderWidth="1"  BorderColor="Black"/>
+                        <!--<Button x:Name="btn_Alterar" Text="Alterar" BackgroundColor="Transparent"  Clicked="Btn_Alterar_Imagem"  BorderWidth="1"  BorderColor="Black"/>-->
                         <Label x:Name="lblNomeUsuario"   TextColor="White" HorizontalOptions="Center" VerticalOptions="End" BackgroundColor="#0d0b24" VerticalTextAlignment="Center"/>
                     </StackLayout>
 

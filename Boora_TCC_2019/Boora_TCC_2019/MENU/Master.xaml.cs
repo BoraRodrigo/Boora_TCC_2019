@@ -45,7 +45,7 @@ namespace Boora_TCC_2019.MENU
                 btn_Alterar_dados_Aluno.IsVisible = false;
                 btn_cadastro_instrutor.IsVisible = false;//deixa de fora de momento
                 lblNomeUsuario.Text = Login.Nome_Academia_login;
-                btn_Alterar.IsVisible = false;//não fiz o alter pra imagem da academia.
+                //btn_Alterar.IsVisible = false;//não fiz o alter pra imagem da academia.
             }
         }
         protected async override void OnAppearing()
@@ -146,7 +146,7 @@ namespace Boora_TCC_2019.MENU
             this.Detail = new NavigationPage(new TELAS_CADASTRO.Cadastrar_Novo_Aviso());
             IsPresented = false;
         }
-        private async void Btn_Alterar_Imagem(object sender, EventArgs e)
+        private async void Alterar_Imagem(object sender, EventArgs e)
         {
             await CrossMedia.Current.Initialize();
             try
@@ -155,7 +155,7 @@ namespace Boora_TCC_2019.MENU
                 {
                     PhotoSize = Plugin.Media.Abstractions.PhotoSize.Medium
                     // PhotoSize = PhotoSize.Custom,
-                    // CustomPhotoSize = 40
+                    //CustomPhotoSize = 40
                 });
                 if (file == null)
                     return;
