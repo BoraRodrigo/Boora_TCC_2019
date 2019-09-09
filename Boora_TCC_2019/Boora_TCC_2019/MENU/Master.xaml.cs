@@ -35,7 +35,7 @@ namespace Boora_TCC_2019.MENU
                 btn_cadastro_exercicio.IsVisible = false;
                 btn_cadastro_instrutor.IsVisible = false;
                 btn_lista_alunos.IsVisible = false;
-                lblNomeUsuario.Text = Login.Nome_Aluno_Logado;
+                lblNomeUsuario.Text = Login.Nome_Aluno_Logado.ToUpper();
                 btn_cadastrarAviso.IsVisible = false;
             }
             else if (Login.Tipo_login.Equals("Dono_Academia"))
@@ -44,7 +44,7 @@ namespace Boora_TCC_2019.MENU
                 btn_meu_calendario.IsVisible = false;
                 btn_Alterar_dados_Aluno.IsVisible = false;
                 btn_cadastro_instrutor.IsVisible = false;//deixa de fora de momento
-                lblNomeUsuario.Text = Login.Nome_Academia_login;
+                lblNomeUsuario.Text = Login.Nome_Academia_login.ToUpper();
                 //btn_Alterar.IsVisible = false;//não fiz o alter pra imagem da academia.
             }
         }

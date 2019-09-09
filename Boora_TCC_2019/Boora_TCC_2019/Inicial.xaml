@@ -1,18 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Boora_TCC_2019.Inicial" BackgroundImage="ImagemFundo.jpg" >
+             x:Class="Boora_TCC_2019.Inicial" BackgroundImage="FundoTcc.png" >
     <ContentPage.Content>
 
         <StackLayout  Orientation="Vertical"  BackgroundColor="Transparent">
 
             <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  BackgroundColor="Transparent">
-                    <Label Text="Bem Vindo!" Style="{StaticResource LblInicio}" TextColor="{StaticResource ColorLabel}" Margin="0" /> 
-                    <Label x:Name="lbl_nome_academia" Text="" Style="{StaticResource LblInicio}" TextColor="{StaticResource  ColorLabel}"/> 
-               
+                   
+                
                 <StackLayout Padding="20" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" >
                     <Image x:Name="imgagem_logo_Academia"/>
-               
+                    <Label x:Name="lbl_nome_academia" Text="" Style="{StaticResource LblInicio}" TextColor="{StaticResource  ColorLabel}"/>
                 </StackLayout>
             </StackLayout>
           

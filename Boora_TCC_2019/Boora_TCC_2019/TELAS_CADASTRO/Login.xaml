@@ -11,10 +11,9 @@
     <ContentPage.Content >
         <AbsoluteLayout>
 
-
             <StackLayout BackgroundColor="Transparent" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
                 <StackLayout Padding="0" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                    <ffimageloading:CachedImage Source="iconBora.png" HeightRequest="160" WidthRequest="160" />
+                    <ffimageloading:CachedImage Source="LogoTcc.png" HeightRequest="160" WidthRequest="160" />
 
                     <Entry   x:Name="txtNome" Placeholder="Login" TextColor="#ffc800" PlaceholderColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
 
@@ -44,7 +43,26 @@
                     </Button>
 
                     <Entry IsVisible="False" x:Name="txt_email_redefinir_senha" Placeholder="Email" TextColor="Black" PlaceholderColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
-                    <Button  Text="Enviar Email" BackgroundColor="Transparent" x:Name="btn_RedefinirSenha"  Clicked="RedefinirSenhaAsync" IsVisible="False"/>
+                    <Button  Text="Enviar Email" BackgroundColor="Green" x:Name="btn_RedefinirSenha"  Clicked="RedefinirSenhaAsync" IsVisible="False" CornerRadius="30">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale"
+                            Value="1" />
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale" 
+                            Value="0.8" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Button>
+                    
                     <Label Text="Esqueceu a senha?" FontSize="12" Margin="0" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Tapped="EsqueceuSenha"/>
@@ -66,17 +84,15 @@
                             <TapGestureRecognizer Tapped="Cadastre_sua_Academia"/>
                         </Label.GestureRecognizers>
                     </Label>
-
-                 
                 </StackLayout>
                 <Label x:Name="EsqueceuSenhaLbl" HorizontalTextAlignment="Center"  IsVisible="False" BackgroundColor="#ffc800" HorizontalOptions="FillAndExpand"/>
             </StackLayout>
             <!--Carregando...-->
-            <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="#8785a6" x:Name="SlCarregandoLogin" IsVisible="False">
-                <StackLayout BackgroundColor="#8785a6" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <StackLayout   AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="White" x:Name="SlCarregandoLogin" IsVisible="False">
+                <StackLayout BackgroundColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                    <!-- <ActivityIndicator IsRunning="True" Color="#ffc800" /> -->
                     <ffimageloading:CachedImage Source="gif_login.gif" HeightRequest="90" WidthRequest="90"/>
-                    <Label TextColor="Purple" Text="Carregando..." HorizontalOptions="Center" FontSize="14"/>
+                    <Label TextColor="Yellow" Text="Carregando..." HorizontalOptions="Center" FontSize="20"/>
                 </StackLayout>
             </StackLayout>
         </AbsoluteLayout>

@@ -3,15 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:page="clr-namespace:Boora_TCC_2019"
                   xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+                  xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
                   x:Class="Boora_TCC_2019.MENU.Master">
 
-    <MasterDetailPage.Master >
-        <ContentPage Title="Menu">
+
+    <MasterDetailPage.Master  >
+        <ContentPage Title="Menu"  BackgroundImage="fundoI.jpg">
             <ScrollView>
-                <StackLayout>
-                    <!--Adiona novo botao, e no Master C# faz o funçao do evento clicked, esse tipo de menu so funciona em masterdateilpage-->
-                    <StackLayout  BackgroundColor="#0d0b24" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Orientation="Vertical" WidthRequest="200" HeightRequest="180" >
-                        <controls:CircleImage Source="addfoto.png"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BorderThickness="2" x:Name="foto_Perfil">
+                <StackLayout >
+                   
+                <!--Adiona novo botao, e no Master C# faz o funçao do evento clicked, esse tipo de menu so funciona em masterdateilpage-->
+                    <StackLayout   BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Orientation="Vertical" WidthRequest="200" HeightRequest="180" >
+                        <controls:CircleImage Source="addfoto.png"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BorderThickness="4" x:Name="foto_Perfil" BorderColor="Black">
                             <controls:CircleImage.WidthRequest >
                                 <OnPlatform x:TypeArguments="x:Double" >
                                     <On Platform="Android, iOS">120</On>
@@ -27,29 +30,256 @@
                             <controls:CircleImage.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="Alterar_Imagem"/>
                             </controls:CircleImage.GestureRecognizers>
-
                         </controls:CircleImage>
                         <!--Colocar este evento de clique no botão não sei fazer isso, quando o dono de academia loga estou desabilitando o botão pq não implementei isso  -->
 
                         <!--<Button x:Name="btn_Alterar" Text="Alterar" BackgroundColor="Transparent"  Clicked="Btn_Alterar_Imagem"  BorderWidth="1"  BorderColor="Black"/>-->
-                        <Label x:Name="lblNomeUsuario"   TextColor="White" HorizontalOptions="Center" VerticalOptions="End" BackgroundColor="#0d0b24" VerticalTextAlignment="Center"/>
+                        <Label x:Name="lblNomeUsuario" FontSize="Large"  TextColor="Black" HorizontalOptions="Center" VerticalOptions="End" BackgroundColor="White" VerticalTextAlignment="Center"/>
                     </StackLayout>
 
-                    <Button Image="inicial.png"  BackgroundColor="Transparent" Text="Inicial" Clicked="GoInicial" BorderWidth="1" BorderColor="Black" Padding="0" Margin="0"/>
-                    <Button Image="lista.png" BackgroundColor="Transparent" Text="Alunos" Clicked="GoListaAlunos" BorderWidth="1"  x:Name="btn_lista_alunos" BorderColor="Black" Padding="0" Margin="0"/>
-                    <Button Image="cadastro_icon.png" BackgroundColor="Transparent" Text="Cadastro Aluno" Clicked="GoCadastroAluno" BorderWidth="1" x:Name="btn_cadastro_aluno" BorderColor="Black" Padding="0"/>
-                    <Button Image="cadastro_serie.png" BackgroundColor="Transparent" Text="Cadastro Exercício" Clicked="GoCadastroExercicio" BorderWidth="1"  x:Name="btn_cadastro_exercicio" BorderColor="Black" Margin="0"/>
-                    <Button Image="cadastro_icon.png" BackgroundColor="Transparent" Text="Cadastro Instrutor" Clicked="GoCadastroInstrutor" BorderWidth="1"  x:Name="btn_cadastro_instrutor" BorderColor="Black"/>
-                    <Button Image="corestema.png"  Text="Alterar Tema" Clicked="GoPersonalizacao" BorderWidth="1"  BorderColor="Black"/>
-                    <Button Image="lista.png" BackgroundColor="Transparent" Text="Lista Exercício" Clicked="GoListExercicios" BorderWidth="1" BorderColor="Black"/>
-                    <Button Image="minhasseries.png" BackgroundColor="Transparent" Text="Minhas Séries" Clicked="GoEMinhasSeries" BorderWidth="1" x:Name="btn_minhas_Series" BorderColor="Black"/>
-                    <Button Image="calendario.png" BackgroundColor="Transparent" Text="Meu Calendário" Clicked="GoEMeuClendario" BorderWidth="1" x:Name="btn_meu_calendario" BorderColor="Black"/>
-                    <Button Image="sobre.png" BackgroundColor="Transparent" Text="Sobre" Clicked="Send"  BorderWidth="1" BorderColor="Black"/>
-                    <Button  BackgroundColor="Transparent" Text="Novo Aviso" Clicked="Cadastrar_Aviso" x:Name="btn_cadastrarAviso" BorderWidth="1" BorderColor="Black"/>
+                    <Button Image="inicial.png"  BackgroundColor="Transparent" Text="Inicial" Clicked="GoInicial" BorderWidth="1" BorderColor="Black" Padding="0" Margin="0" TextColor="{StaticResource ColorLabel}" CornerRadius="20">
+                        <!-- Efeito de click-->
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale"
+                            Value="1" />
+                                    </VisualState.Setters>
+                                </VisualState>
 
-                    <Button Image="alterar.png"  BackgroundColor="Transparent" Text="Alterar Dados" Clicked="alterarDados"  BorderWidth="1" BorderColor="Black" x:Name="btn_Alterar_dados_Aluno"/>
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale" 
+                            Value="0.8" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        </Button>
+                    <Button Image="lista.png" BackgroundColor="Transparent" Text="Alunos" Clicked="GoListaAlunos" BorderWidth="1"  x:Name="btn_lista_alunos" BorderColor="Black" Padding="0" Margin="0" TextColor="{StaticResource ColorLabel}" CornerRadius="20">
+                        <!-- Efeito de click-->
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale"
+                            Value="1" />
+                                    </VisualState.Setters>
+                                </VisualState>
 
-                    <Button Image="sair.png" BackgroundColor="Transparent" Text="SAIR" Clicked="GoSAIR"  BorderWidth="1"  BorderColor="Black">
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale" 
+                            Value="0.8" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Button>
+                    <Button Image="cadastro_icon.png" BackgroundColor="Transparent" Text="Cadastro Aluno" Clicked="GoCadastroAluno" BorderWidth="1" x:Name="btn_cadastro_aluno" BorderColor="Black" Padding="0" TextColor="{StaticResource ColorLabel}" CornerRadius="20">
+                        <!-- Efeito de click-->
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale"
+                            Value="1" />
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale" 
+                            Value="0.8" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Button>
+                    <Button Image="cadastro_serie.png" BackgroundColor="Transparent" Text="Cadastro Exercício" Clicked="GoCadastroExercicio" BorderWidth="1"  x:Name="btn_cadastro_exercicio" BorderColor="Black" Margin="0" TextColor="{StaticResource ColorLabel}" CornerRadius="20">
+                        <!-- Efeito de click-->
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale"
+                            Value="1" />
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale" 
+                            Value="0.8" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Button>
+                    <Button Image="cadastro_icon.png" BackgroundColor="Transparent" Text="Cadastro Instrutor" Clicked="GoCadastroInstrutor" BorderWidth="1"  x:Name="btn_cadastro_instrutor" BorderColor="Black" TextColor="{StaticResource ColorLabel}" CornerRadius="20">
+                        <!-- Efeito de click-->
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale"
+                            Value="1" />
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale" 
+                            Value="0.8" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Button>
+                    <Button Image="corestema.png"  Text="Alterar Tema" Clicked="GoPersonalizacao" BorderWidth="1"  BorderColor="Black" TextColor="{StaticResource ColorLabel}" CornerRadius="20">
+                        <!-- Efeito de click-->
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale"
+                            Value="1" />
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale" 
+                            Value="0.8" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Button>
+                    <Button Image="lista.png" BackgroundColor="Transparent" Text="Lista Exercício" Clicked="GoListExercicios" BorderWidth="1" BorderColor="Black" TextColor="{StaticResource ColorLabel}" CornerRadius="20">
+                        <!-- Efeito de click-->
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale"
+                            Value="1" />
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale" 
+                            Value="0.8" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Button>
+                    <Button Image="minhasseries.png" BackgroundColor="Transparent" Text="Minhas Séries" Clicked="GoEMinhasSeries" BorderWidth="1" x:Name="btn_minhas_Series" BorderColor="Black" TextColor="{StaticResource ColorLabel}" CornerRadius="20">
+                        <!-- Efeito de click-->
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale"
+                            Value="1" />
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale" 
+                            Value="0.8" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Button>
+                    <Button Image="calendario.png" BackgroundColor="Transparent" Text="Meu Calendário" Clicked="GoEMeuClendario" BorderWidth="1" x:Name="btn_meu_calendario" BorderColor="Black" TextColor="{StaticResource ColorLabel}" CornerRadius="20">
+                        <!-- Efeito de click-->
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale"
+                            Value="1" />
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale" 
+                            Value="0.8" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Button>
+                    <Button Image="sobre.png" BackgroundColor="Transparent" Text="Sobre" Clicked="Send"  BorderWidth="1" BorderColor="Black" TextColor="{StaticResource ColorLabel}" CornerRadius="20">
+                        <!-- Efeito de click-->
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale"
+                            Value="1" />
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale" 
+                            Value="0.8" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Button>
+                    <Button  BackgroundColor="Transparent" Text="Novo Aviso" Clicked="Cadastrar_Aviso" x:Name="btn_cadastrarAviso" BorderWidth="1" BorderColor="Black" TextColor="{StaticResource ColorLabel}" CornerRadius="20">
+                        <!-- Efeito de click-->
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale"
+                            Value="1" />
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale" 
+                            Value="0.8" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Button>
+
+                    <Button Image="alterar.png"  BackgroundColor="Transparent" Text="Alterar Dados" Clicked="alterarDados"  BorderWidth="1" BorderColor="Black" x:Name="btn_Alterar_dados_Aluno" TextColor="{StaticResource ColorLabel}" CornerRadius="20">
+                        <!-- Efeito de click-->
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale"
+                            Value="1" />
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale" 
+                            Value="0.8" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Button>
+
+                    <Button Image="sair.png" BackgroundColor="Transparent" Text="SAIR" Clicked="GoSAIR"  BorderWidth="1"  BorderColor="Black" TextColor="{StaticResource ColorLabel}">
                         <!-- Efeito de click-->
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">

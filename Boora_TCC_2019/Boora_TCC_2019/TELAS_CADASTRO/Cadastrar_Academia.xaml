@@ -37,15 +37,49 @@
                 <control:MaskedEntry Placeholder="TELEFONE" Mask="(XX)X XXXX-XXXX" Keyboard="Numeric" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_TELEFONE" ></control:MaskedEntry>
                 <Entry Placeholder="INSTAGRAN" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_INSTAGRAN"/>
 
-                <Image x:Name="imgChoosed" HeightRequest="150"/>
+                    <Image x:Name="imgChoosed" HeightRequest="150" BackgroundColor="#d8d9d1"/>
 
-                <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                    <StackLayout  HorizontalOptions="Center" Orientation="Horizontal">
 
-                <Button Image="buscar.png"  x:Name="btnPick" WidthRequest="200" Text="Buscar imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar"/>
-                 <Button Image="cadastro_serie.png" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center" />
-                </StackLayout>
+                        <Button Image="buscar.png" BackgroundColor="Blue" x:Name="btnPick" WidthRequest="100" Text="Imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar" CornerRadius="20">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal">
+                                        <VisualState.Setters>
+                                            <Setter Property="Scale"
+                            Value="1" />
+                                        </VisualState.Setters>
+                                    </VisualState>
 
+                                    <VisualState x:Name="Pressed">
+                                        <VisualState.Setters>
+                                            <Setter Property="Scale" 
+                            Value="0.8" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </Button>
+                        <Button Image="cadastro_serie.png" BackgroundColor="Green" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center"  CornerRadius="20">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal">
+                                        <VisualState.Setters>
+                                            <Setter Property="Scale"
+                            Value="1" />
+                                        </VisualState.Setters>
+                                    </VisualState>
 
+                                    <VisualState x:Name="Pressed">
+                                        <VisualState.Setters>
+                                            <Setter Property="Scale" 
+                            Value="0.8" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </Button>
+                    </StackLayout>
                 </StackLayout>
         </StackLayout>
         </ScrollView>

@@ -7,9 +7,11 @@
             <ResourceDictionary>
             <Color x:Key="ColorLabel">#00f2ff</Color>
             <Color x:Key="ColorStacklayout">#000000</Color>
+            
             <Style TargetType="StackLayout">
-                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
             </Style>
+                
             <Style TargetType="Frame">
                 <Setter Property="WidthRequest" Value="200"/>
                 <Setter Property="BorderColor" Value="Black"/>
@@ -47,9 +49,13 @@
                 <Setter Property="HorizontalOptions" Value="Center"/>
             </Style>
             <Style TargetType="NavigationPage">
-                <Setter Property="BarBackgroundColor" Value="#0d0b24"/>
-                
+                <Setter Property="BarBackgroundColor" Value="Black"/>
             </Style>
-         </ResourceDictionary>
+
+
+
+           
+
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
