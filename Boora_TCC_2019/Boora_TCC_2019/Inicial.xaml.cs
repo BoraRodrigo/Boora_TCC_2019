@@ -19,7 +19,7 @@ namespace Boora_TCC_2019
 		{           
           //  NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent ();           
-            lbl_nome_academia.Text = "ACADEMIA " + Login.Nome_Academia_login.ToString().ToUpper();           
+           // lbl_nome_academia.Text = "ACADEMIA " + Login.Nome_Academia_login.ToString().ToUpper();           
         }
         protected async override void OnAppearing()
         {

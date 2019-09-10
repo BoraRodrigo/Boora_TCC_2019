@@ -49,23 +49,28 @@ namespace Boora_TCC_2019.TELAS
             AcademiaDAO academiaDAO = new AcademiaDAO();
             Nome_Academia_login = txtNome_academia.Text;
 
-            string nome;
+            string nomelogin;
+            string senhalogin;
+            string academialogin;
             try
             {
-                // resolve a questao do espaço
+                // resolve a questao do espaço no final da palavra 10/09
 
-                nome = txtNome.Text.Trim();
+
+                nomelogin = txtNome.Text.TrimEnd();
+                senhalogin = txtsenha.Text.TrimEnd();
+                academialogin = txtNome_academia.Text.TrimEnd();
                 if (chekAluno.IsChecked == true)
                 {
                     SlCarregandoLogin.IsVisible = true; // enquanto espera resposta do BD sobe um stacklayout com indicador(carregadndo) rodadndo.
-                    aluno = await alunoDAO.Login_Aluno(nome, txtsenha.Text);
+                    aluno = await alunoDAO.Login_Aluno(nomelogin, senhalogin);
 
                     Id_Aluno_Login = aluno.Id_Aluno;
                     Nome_Aluno_Logado = aluno.Nome;
                     Senha_Aluno_Logado = aluno.Senha;
 
 
-                    var academiaLogin = await academiaDAO.Busca_Academia_Nome(txtNome_academia.Text);
+                    var academiaLogin = await academiaDAO.Busca_Academia_Nome(academialogin);
                     Telefone_Academia = academiaLogin.Whats;
                     Instagran_Academia = academiaLogin.Instagran;
                     Id_Academia_Login = academiaLogin.Id_academia;
@@ -80,7 +85,7 @@ namespace Boora_TCC_2019.TELAS
                 else if (chekAcademia.IsChecked == true)
                 {
                     SlCarregandoLogin.IsVisible = true;
-                    academia = await academiaDAO.Login_Dono_Academia(txtsenha.Text, txtNome.Text);
+                    academia = await academiaDAO.Login_Dono_Academia(senhalogin, nomelogin);
 
 
                     //aqui tem que ajustar esta imporvisado ainda 
@@ -138,7 +143,7 @@ namespace Boora_TCC_2019.TELAS
         }
        public void Cadastre_sua_Academia(object sender, EventArgs args)
         {
-            App.Current.MainPage = new TELAS_CADASTRO.Cadastrar_Academia();
+            App.Current.MainPage = new NavigationPage(new TELAS_CADASTRO.Cadastrar_Academia());
         }        
     }
 }

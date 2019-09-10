@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry"
              xmlns:behaviorPack="clr-namespace:Xamarin.Forms.BehaviorValidationPack;assembly=Xamarin.Forms.BehaviorValidationPack"
-             x:Class="Boora_TCC_2019.TELAS_CADASTRO.Cadastrar_Academia">
+             x:Class="Boora_TCC_2019.TELAS_CADASTRO.Cadastrar_Academia"
+             BackgroundImage="fundoI.jpg">
     <ContentPage.Content>
         <ScrollView>
         <StackLayout>
