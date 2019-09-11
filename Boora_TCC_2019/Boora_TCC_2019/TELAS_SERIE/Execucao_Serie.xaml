@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-             x:Class="Boora_TCC_2019.TELAS_SERIE.Execucao_Serie">
+             x:Class="Boora_TCC_2019.TELAS_SERIE.Execucao_Serie"
+             BackgroundImage="fundoI.jpg">
     <ContentPage.Content>
         <ScrollView>
             <AbsoluteLayout>
@@ -68,8 +69,8 @@
    
                 </StackLayout>
                 <!--Carregando...-->
-                <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="Black" x:Name="SlCarregando" IsVisible="False">
-                    <StackLayout BackgroundColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="WhiteSmoke" x:Name="SlCarregando" IsVisible="False">
+                    <StackLayout  BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                         <ffimageloading:CachedImage Source="gif_login.gif" HeightRequest="90" WidthRequest="90"/>
                         <Label TextColor="#ffc800" Text="Carregando..." HorizontalOptions="Center" FontSize="12"/>
                     </StackLayout>

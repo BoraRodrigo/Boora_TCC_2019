@@ -21,7 +21,7 @@ namespace Boora_TCC_2019
                                                                             "k9;MTEzNDQwQDMxMzcyZTMxMmUzMEtjem5Rem4rb3pXMVpiSTFxcjFZUUxPMk9uQzBHTGZ1R2FWbkczOTR1R0U9");
             InitializeComponent();
             MudarCorPersonalizacao();
-            MainPage = new Login();
+            MainPage = new NavigationPage(new Login());
         }
 
         protected override void OnStart()

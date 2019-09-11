@@ -49,12 +49,8 @@
                 <Setter Property="HorizontalOptions" Value="Center"/>
             </Style>
             <Style TargetType="NavigationPage">
-                <Setter Property="BarBackgroundColor" Value="Black"/>
+                <Setter Property="BarBackgroundColor" Value="LightGray"/>
             </Style>
-
-
-
-           
 
         </ResourceDictionary>
     </Application.Resources>

@@ -4,7 +4,8 @@
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
              x:Class="Boora_TCC_2019.TELAS.Login"
-             BackgroundImage="fundoI.jpg">
+             BackgroundImage="fundoI.jpg"
+             NavigationPage.HasNavigationBar="False">
 
 
 
@@ -42,7 +43,7 @@
                         </VisualStateManager.VisualStateGroups>
                     </Button>
 
-                    <Entry IsVisible="False" x:Name="txt_email_redefinir_senha" Placeholder="Email" TextColor="Black" PlaceholderColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
+                    <!--<Entry IsVisible="False" x:Name="txt_email_redefinir_senha" Placeholder="Email" TextColor="Black" PlaceholderColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
                     <Button  Text="Enviar Email" BackgroundColor="Green" x:Name="btn_RedefinirSenha"  Clicked="RedefinirSenhaAsync" IsVisible="False" CornerRadius="30">
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
@@ -61,7 +62,7 @@
                                 </VisualState>
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
-                    </Button>
+                    </Button>-->
                     
                     <Label Text="Esqueceu a senha?" FontSize="12" Margin="0" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black">
                         <Label.GestureRecognizers>
@@ -89,11 +90,10 @@
                 <Label x:Name="EsqueceuSenhaLbl" HorizontalTextAlignment="Center"  IsVisible="False" BackgroundColor="#ffc800" HorizontalOptions="FillAndExpand"/>
             </StackLayout>
             <!--Carregando...-->
-            <StackLayout   AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="White" x:Name="SlCarregandoLogin" IsVisible="False">
-                <StackLayout BackgroundColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                   <!-- <ActivityIndicator IsRunning="True" Color="#ffc800" /> -->
+            <StackLayout   AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="WhiteSmoke" x:Name="SlCarregandoLogin" IsVisible="False">
+                <StackLayout BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                     <ffimageloading:CachedImage Source="gif_login.gif" HeightRequest="90" WidthRequest="90"/>
-                    <Label TextColor="Yellow" Text="Carregando..." HorizontalOptions="Center" FontSize="20"/>
+                    <Label TextColor="#ffc800" Text="Carregando..." HorizontalOptions="Center" FontSize="12"/>
                 </StackLayout>
             </StackLayout>
         </AbsoluteLayout>

@@ -2,34 +2,30 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-             x:Class="Boora_TCC_2019.TELAS_CADASTRO.ListViewExercicios"
-             BackgroundImage="fundoI.jpg">
+             x:Class="Boora_TCC_2019.TELAS.ListAvisos">
     <ContentPage.Content>
         <AbsoluteLayout>
             <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
                 <StackLayout Padding="0" Margin="15">
-                    <Label Text="EXERCÍCIOS CADASTRADOS" Style="{StaticResource LblTitulo}" TextColor="{StaticResource ColorLabel}"/>
-                    <Entry Placeholder="Pesquisar" x:Name="Pesquisar_Exercicios" TextChanged="BuscaRapida"/>
-
-                    <ListView x:Name="ListaExercicios">
-                        <ListView.ItemTemplate>
+                    <Label Text="AVISOS" Style="{StaticResource LblTitulo}" TextColor="{StaticResource ColorLabel}"/>
+                   
+                    <ListView Margin="0,10" x:Name="ListaAvisos">
+                        <ListView.ItemTemplate >
                             <DataTemplate >
-                                <ImageCell Text="{Binding Nome}" TextColor="{StaticResource ColorLabel}" ImageSource="{Binding Imagem_Gif}"  Detail="{Binding Objetivo}" DetailColor="Black" />
-                            </DataTemplate >
+                                <ImageCell ImageSource="{Binding Data_Aviso}" Text="{Binding Descricao_Aviso}" Detail="{Binding Data_Aviso}"  />
+                            </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
+
                 </StackLayout>
             </StackLayout>
             <!--Carregando...-->
-            <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="WhiteSmoke" x:Name="SlCarregandoLista" IsVisible="False">
+            <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="WhiteSmoke" x:Name="SlCarregandoAvisos" IsVisible="False">
                 <StackLayout BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                     <ffimageloading:CachedImage Source="gif_login.gif" HeightRequest="90" WidthRequest="90"/>
                     <Label TextColor="#ffc800" Text="Carregando..." HorizontalOptions="Center" FontSize="12"/>
                 </StackLayout>
             </StackLayout>
         </AbsoluteLayout>
-       
     </ContentPage.Content>
 </ContentPage>
-
-

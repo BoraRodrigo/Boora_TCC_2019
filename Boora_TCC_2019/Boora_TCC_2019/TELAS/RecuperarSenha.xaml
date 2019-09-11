@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Boora_TCC_2019.TELAS.RecuperarSenha"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             BackgroundImage="fundoI.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+            <input:AdvancedEntry Title="Teste" PlaceholderColor="Black" TextColor="Black" BackgroundColor="Transparent" CornerRadius="30" />
+            <input:AdvancedEntry IconImage="calendario.png" x:Name="txt_email_redefinir_senha" Placeholder="Email" TextColor="Black" PlaceholderColor="Black" HorizontalOptions="Center"  WidthRequest="150" BackgroundColor="Transparent" CornerRadius="30" />
+            <input:AdvancedEntry x:Name="txtNome_Academia" Placeholder="Nome Academia" TextColor="Black" PlaceholderColor="Black" HorizontalOptions="Center"  WidthRequest="150" BackgroundColor="Transparent" CornerRadius="30" />
+            <Button  Text="Enviar Email" BackgroundColor="Green" x:Name="btn_RedefinirSenha"  Clicked="RedefinirSenhaAsync"  CornerRadius="30">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="Scale"
+                            Value="1" />
+                            </VisualState.Setters>
+                        </VisualState>
+
+                        <VisualState x:Name="Pressed">
+                            <VisualState.Setters>
+                                <Setter Property="Scale" 
+                            Value="0.8" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

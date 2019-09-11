@@ -40,9 +40,9 @@
 
                     <Image x:Name="imgChoosed" HeightRequest="150" BackgroundColor="#d8d9d1"/>
 
-                    <StackLayout  HorizontalOptions="Center" Orientation="Horizontal">
+                    <StackLayout  HorizontalOptions="Center" Orientation="Vertical">
 
-                        <Button Image="buscar.png" BackgroundColor="Blue" x:Name="btnPick" WidthRequest="100" Text="Imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar" CornerRadius="20">
+                        <Button Image="buscar.png" BackgroundColor="Blue" x:Name="btnPick" Text="Imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar" CornerRadius="30">
                             <VisualStateManager.VisualStateGroups>
                                 <VisualStateGroup x:Name="CommonStates">
                                     <VisualState x:Name="Normal">
@@ -61,7 +61,7 @@
                                 </VisualStateGroup>
                             </VisualStateManager.VisualStateGroups>
                         </Button>
-                        <Button Image="cadastro_serie.png" BackgroundColor="Green" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center"  CornerRadius="20">
+                        <Button Image="cadastro_serie.png" BackgroundColor="Green" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center"  CornerRadius="30">
                             <VisualStateManager.VisualStateGroups>
                                 <VisualStateGroup x:Name="CommonStates">
                                     <VisualState x:Name="Normal">

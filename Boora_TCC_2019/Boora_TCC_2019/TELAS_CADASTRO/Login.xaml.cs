@@ -128,22 +128,22 @@ namespace Boora_TCC_2019.TELAS
         }
         public void EsqueceuSenha(object sender, EventArgs args)
         {
-            // TODO - Desenvolver metodo da esqueceu a senha
-
-            txt_email_redefinir_senha.IsVisible = true;
-            btn_RedefinirSenha.IsVisible = true;                     
+            Navigation.PushAsync(new TELAS.RecuperarSenha(), true);
+        
+            //txt_email_redefinir_senha.IsVisible = true;
+           //btn_RedefinirSenha.IsVisible = true;                     
         }
-        public async void RedefinirSenhaAsync(object sender,EventArgs args)
-        {
-            Email email = new Email();
-           await email.RedefinirSenha(txt_email_redefinir_senha.Text,txtNome_academia.Text);
+        //public async void RedefinirSenhaAsync(object sender,EventArgs args)
+        //{
+        //    Email email = new Email();
+        //   await email.RedefinirSenha(txt_email_redefinir_senha.Text,txtNome_academia.Text);
 
-            txt_email_redefinir_senha.IsVisible = false;
-            btn_RedefinirSenha.IsVisible = false;
-        }
+        //    txt_email_redefinir_senha.IsVisible = false;
+        //    btn_RedefinirSenha.IsVisible = false;
+        //}
        public void Cadastre_sua_Academia(object sender, EventArgs args)
         {
-            App.Current.MainPage = new NavigationPage(new TELAS_CADASTRO.Cadastrar_Academia());
+            Navigation.PushAsync(new TELAS_CADASTRO.Cadastrar_Academia(), true);
         }        
     }
 }

@@ -28,7 +28,7 @@ namespace Boora_TCC_2019.MENU
         {
 
             InitializeComponent();
-          //tirar depois
+          
             if (Login.Tipo_login.Equals("Aluno"))
             {
                 btn_cadastro_aluno.IsVisible=false;
@@ -171,5 +171,11 @@ namespace Boora_TCC_2019.MENU
                 Debug.WriteLine(ex.Message);
             }
         }
+        private void GoAvisos(object sender, EventArgs e)
+        {
+            this.Detail = new NavigationPage(new TELAS.ListAvisos());
+            IsPresented = false;
+        }
+        
     }
 }

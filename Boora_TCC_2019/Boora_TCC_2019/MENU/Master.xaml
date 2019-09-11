@@ -4,7 +4,8 @@
                   xmlns:page="clr-namespace:Boora_TCC_2019"
                   xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
                   xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
-                  x:Class="Boora_TCC_2019.MENU.Master" >
+                  x:Class="Boora_TCC_2019.MENU.Master" 
+                  BackgroundImage="fundoI.jpg">
 
 
     <MasterDetailPage.Master >
@@ -80,10 +81,14 @@
                             <Button Image="alterar.png"  BackgroundColor="Transparent" Text="Alterar Dados" Clicked="alterarDados" Margin="5,0,0,0" x:Name="btn_Alterar_dados_Aluno" TextColor="{StaticResource ColorLabel}" >
                                 
                             </Button>
+                            <Button  BackgroundColor="Transparent" Text="Avisos" Clicked="GoAvisos" Margin="5,0,0,0" TextColor="{StaticResource ColorLabel}">
+
+                            </Button>
 
                             <Button Image="sair.png" BackgroundColor="Transparent" Text="SAIR" Clicked="GoSAIR" Margin="5,0,0,0" TextColor="{StaticResource ColorLabel}">
                                 
                             </Button>
+                            
                         </StackLayout>
                         <Label BackgroundColor="#ffc800" HorizontalOptions="End" WidthRequest="15"/>
                     </StackLayout>

@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Boora_TCC_2019.TELAS_CADASTRO.Cadastrar_Novo_Aviso">
+             x:Class="Boora_TCC_2019.TELAS_CADASTRO.Cadastrar_Novo_Aviso"
+             BackgroundImage="fundoI.jpg">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
@@ -9,9 +10,9 @@
                     <Label Text="NOVO AVISO" Style="{StaticResource LblTitulo}" TextColor="{StaticResource ColorLabel}" />
                     <Entry x:Name="txtDESCRICAO" Placeholder="Descrição" PlaceholderColor="{StaticResource ColorLabel}" />
                     <Image x:Name="imgChoosed" HeightRequest="150"/>
-                    <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
-                        <Button Image="buscar.png" x:Name="btnPick" WidthRequest="200" Text="Buscar imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar"/>
-                        <Button Image="cadastro_serie.png" x:Name="btnUpload" WidthRequest="200" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Cadastrar" />
+                    <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Vertical">
+                        <Button Image="buscar.png" x:Name="btnPick"  BackgroundColor="Blue" Text="Buscar imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar" CornerRadius="30"/>
+                        <Button Image="cadastro_serie.png" x:Name="btnUpload" BackgroundColor="Green" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Cadastrar" CornerRadius="30" />
                     </StackLayout>
                 </StackLayout>
             </StackLayout>

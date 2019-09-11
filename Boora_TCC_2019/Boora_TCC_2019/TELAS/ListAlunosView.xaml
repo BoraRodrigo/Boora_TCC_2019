@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-             x:Class="Boora_TCC_2019.TELAS.ListAlunosView">
+             x:Class="Boora_TCC_2019.TELAS.ListAlunosView"
+             BackgroundImage="fundoI.jpg">
     <ContentPage.Content>
         <AbsoluteLayout>
             <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
@@ -10,15 +11,6 @@
                     <Label Text="ALUNOS CADASTRADOS" Style="{StaticResource LblTitulo}" TextColor="{StaticResource ColorLabel}"/>
                     <Entry Placeholder="Pesquisar" x:Name="Pesquisar_Alunos" TextChanged="BuscaRapida"/>
 
-                    <!--Carregando...
-                    <ListView x:Name="ListaAlunos" BackgroundColor="#ffc800" ItemSelected="SelecaoAlunoAction">
-                        <ListView.ItemTemplate>
-                            <DataTemplate >
-                                <TextCell Text="{Binding Nome}" TextColor="Black"  Detail="{Binding Email}" DetailColor="Black" />
-                            </DataTemplate >
-                        </ListView.ItemTemplate>
-                    </ListView>
--->
                     <ListView Margin="0,10" x:Name="ListaAlunos"  ItemSelected="SelecaoAlunoAction">
                         <ListView.ItemTemplate >
                             <DataTemplate >
@@ -30,8 +22,8 @@
                 </StackLayout>
             </StackLayout>
             <!--Carregando...-->
-            <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="Black" x:Name="SlCarregandoLista" IsVisible="False">
-                <StackLayout BackgroundColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="WhiteSmoke" x:Name="SlCarregandoLista" IsVisible="False">
+                <StackLayout BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                     <ffimageloading:CachedImage Source="gif_login.gif" HeightRequest="90" WidthRequest="90"/>
                     <Label TextColor="#ffc800" Text="Carregando..." HorizontalOptions="Center" FontSize="12"/>
                 </StackLayout>

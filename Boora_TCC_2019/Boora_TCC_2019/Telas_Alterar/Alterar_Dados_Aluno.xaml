@@ -1,49 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Boora_TCC_2019.Telas_Alterar.Alterar_Dados_Aluno">
+             x:Class="Boora_TCC_2019.Telas_Alterar.Alterar_Dados_Aluno"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             BackgroundImage="fundoI.jpg">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout>
-                <StackLayout Padding="0" Margin="15">
-                    <Label Text="ALTERAR ALUNO" Style="{StaticResource LblTitulo}" TextColor="{StaticResource  ColorLabel}"/>
-                    <Entry Placeholder="Nome Completo" PlaceholderColor="{StaticResource  ColorLabel}" x:Name="txt_NOME" />
-                    <StackLayout  Orientation="Horizontal" >
-                        <Entry Placeholder="Email                                                                  " x:Name="txt_EMAIL"  PlaceholderColor="{StaticResource ColorLabel}"/>
-                        <Label Text="*" x:Name="lbl_validaemail" Style="{StaticResource LblTitulo}" TextColor="Red" />
-                    </StackLayout  >
+            <AbsoluteLayout>
+                <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+                    <StackLayout Padding="0" Margin="15">
+                        <Label Text="ALTERAR ALUNO" Style="{StaticResource LblTitulo}" TextColor="{StaticResource  ColorLabel}"/>
+                        <Entry Placeholder="Nome Completo" PlaceholderColor="{StaticResource  ColorLabel}" x:Name="txt_NOME" />
+                        <StackLayout  Orientation="Horizontal" >
+                            <Entry Placeholder="Email                                                                  " x:Name="txt_EMAIL"  PlaceholderColor="{StaticResource ColorLabel}"/>
+                            <Label Text="*" x:Name="lbl_validaemail" Style="{StaticResource LblTitulo}" TextColor="Red" />
+                        </StackLayout  >
 
-                    <StackLayout Orientation="Horizontal">
-                        <Label  Text="Data Nascimento:" HorizontalOptions="FillAndExpand" x:Name="DataNascimento" FontSize="18" TextColor="{StaticResource ColorLabel}"/>
-                        <DatePicker FontSize="18" HorizontalOptions="FillAndExpand" TextColor="{StaticResource ColorLabel}" Format="dd/MM/yyyy" x:Name="txt_IDADE" MinimumDate="01/01/1980" DateSelected="DataSelecionada"/>
-                    </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label  Text="Data Nascimento:" HorizontalOptions="FillAndExpand" x:Name="DataNascimento" FontSize="18" TextColor="{StaticResource ColorLabel}"/>
+                            <DatePicker FontSize="18" HorizontalOptions="FillAndExpand" TextColor="{StaticResource ColorLabel}" Format="dd/MM/yyyy" x:Name="txt_IDADE" MinimumDate="01/01/1980" DateSelected="DataSelecionada"/>
+                        </StackLayout>
 
-                    <StackLayout  Orientation="Horizontal" >
-                        <Label  Text="Senha:"  x:Name="Senha" FontSize="18" TextColor="{StaticResource ColorLabel}"/>
-                        <Entry Placeholder="Senha"  HorizontalOptions="FillAndExpand" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SENHA" IsPassword="False"/>
-                    </StackLayout>
-                    <StackLayout  Orientation="Horizontal" >
-                        <Label  Text="Peso:"  x:Name="Peso" FontSize="18" TextColor="{StaticResource ColorLabel}"/>
-                        <Entry Placeholder="Peso"  HorizontalOptions="FillAndExpand" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_PESO" Keyboard="Numeric"/>
-                    </StackLayout>
-                    <StackLayout  Orientation="Horizontal" >
-                        <Label  Text="Altura:"  x:Name="Altura" FontSize="18" TextColor="{StaticResource ColorLabel}" />
-                        <Entry Placeholder="Altura"  HorizontalOptions="FillAndExpand" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_ALTURA" Keyboard="Numeric"/>
-                    </StackLayout>
-                    <StackLayout  Orientation="Horizontal" >
-                        <Label  Text="Objetivo:" x:Name="SeObjetivonha" FontSize="18" TextColor="{StaticResource ColorLabel}"/>
-                        <Entry Placeholder="Objetivo"  HorizontalOptions="FillAndExpand" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_OBJETIVO"/>
-                    </StackLayout>
-                    <StackLayout  Orientation="Horizontal" >
-                        <Label  Text="Situação:"  x:Name="Situação" FontSize="18" TextColor="{StaticResource ColorLabel}"/>
-                        <Entry Placeholder="Situação"  HorizontalOptions="FillAndExpand" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SITUACAO"/>
-                    </StackLayout>
-                    <StackLayout>
-                        <Button Image="alterar.png" Text="ALTERAR" TextColor="{StaticResource ColorLabel}" x:Name="AlterarDados" Clicked="Btn_AlterarDados_ClickedAsync" HorizontalOptions="Center" />
-                    </StackLayout>
+                        <StackLayout  Orientation="Horizontal" >
+                            <Label  Text="Senha:"  x:Name="Senha" FontSize="18" TextColor="{StaticResource ColorLabel}"/>
+                            <Entry Placeholder="Senha"  HorizontalOptions="FillAndExpand" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SENHA" IsPassword="False"/>
+                        </StackLayout>
+                        <StackLayout  Orientation="Horizontal" >
+                            <Label  Text="Peso:"  x:Name="Peso" FontSize="18" TextColor="{StaticResource ColorLabel}"/>
+                            <Entry Placeholder="Peso"  HorizontalOptions="FillAndExpand" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_PESO" Keyboard="Numeric"/>
+                        </StackLayout>
+                        <StackLayout  Orientation="Horizontal" >
+                            <Label  Text="Altura:"  x:Name="Altura" FontSize="18" TextColor="{StaticResource ColorLabel}" />
+                            <Entry Placeholder="Altura"  HorizontalOptions="FillAndExpand" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_ALTURA" Keyboard="Numeric"/>
+                        </StackLayout>
+                        <StackLayout  Orientation="Horizontal" >
+                            <Label  Text="Objetivo:" x:Name="SeObjetivonha" FontSize="18" TextColor="{StaticResource ColorLabel}"/>
+                            <Entry Placeholder="Objetivo"  HorizontalOptions="FillAndExpand" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_OBJETIVO"/>
+                        </StackLayout>
+                        <StackLayout  Orientation="Horizontal" >
+                            <Label  Text="Situação:"  x:Name="Situação" FontSize="18" TextColor="{StaticResource ColorLabel}"/>
+                            <Entry Placeholder="Situação"  HorizontalOptions="FillAndExpand" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SITUACAO"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Button Image="alterar.png" Text="ALTERAR" TextColor="{StaticResource ColorLabel}" x:Name="AlterarDados" Clicked="Btn_AlterarDados_ClickedAsync" HorizontalOptions="Center" />
+                        </StackLayout>
                 
+                    </StackLayout>
                 </StackLayout>
-            </StackLayout>
+                <!--Carregando...-->
+                <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="WhiteSmoke" x:Name="SlCarregando" IsVisible="False">
+                    <StackLayout  BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <ffimageloading:CachedImage Source="gif_login.gif" HeightRequest="90" WidthRequest="90"/>
+                        <Label TextColor="#ffc800" Text="Carregando..." HorizontalOptions="Center" FontSize="12"/>
+                    </StackLayout>
+                </StackLayout>
+            </AbsoluteLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>
