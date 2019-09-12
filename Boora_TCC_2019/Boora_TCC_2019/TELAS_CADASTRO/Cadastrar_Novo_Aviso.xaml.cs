@@ -51,7 +51,7 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
         {
             try
             {
-                avisos_Academia.Data_Aviso = DateTime.Now.ToShortTimeString();
+                avisos_Academia.Data_Aviso = (DateTime.Now.ToShortDateString() + " - " + DateTime.Now.ToShortTimeString());
                 avisos_Academia.Descricao_Aviso = txtDESCRICAO.Text;
                 avisos_Academia.Id_Avisos_Academia = "";
                 avisos_Academia.Imagem_Avisos = "";

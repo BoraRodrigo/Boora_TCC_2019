@@ -27,13 +27,13 @@ namespace Boora_TCC_2019.TELAS
             SlCarregandoAvisos.IsVisible = true;
             lista_avisos = await avisos_.Lista_Avisos();
 
-            //for (int i = 0; i < lista_avisos.Count; i++)
-            //{
-            //    string path = await avisos_.Buscar_IMAGEM_AVISOS(lista_avisos[i].Imagem_Avisos);
+            for (int i = 0; i < lista_avisos.Count; i++)
+            {
+                string path = await avisos_.Buscar_IMAGEM_AVISOS(lista_avisos[i].Imagem_Avisos);
 
-            //    lista_avisos[i].Imagem_Avisos = path;
+                lista_avisos[i].Imagem_Avisos = path;
 
-            //}
+            }
 
             ListaAvisos.ItemsSource = lista_avisos;
 

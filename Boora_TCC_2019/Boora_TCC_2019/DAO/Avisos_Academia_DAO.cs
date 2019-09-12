@@ -27,7 +27,7 @@ namespace Boora_TCC_2019.DAO
                   Id_Avisos_Academia = aviso_Academia.Id_Avisos_Academia,
                   Descricao_Aviso = aviso_Academia.Descricao_Aviso,
                   Data_Aviso = aviso_Academia.Data_Aviso,
-                  Imagem_Avisos = aviso_Academia.Imagem_Avisos
+                  Imagem_Avisos = aviso_Academia.Id_Avisos_Academia
 
               });
             string id_cadastroAVISO_KEY = cadastro_avisos.Key;
@@ -46,7 +46,7 @@ namespace Boora_TCC_2019.DAO
                   Id_Avisos_Academia = id_cadastroAVISO_KEY,
                   Descricao_Aviso = aviso_Academia.Descricao_Aviso,
                   Data_Aviso = aviso_Academia.Data_Aviso,
-                  Imagem_Avisos = aviso_Academia.Imagem_Avisos
+                  Imagem_Avisos = id_cadastroAVISO_KEY
                   
               });
             var imageUrl = await firebaseStorage

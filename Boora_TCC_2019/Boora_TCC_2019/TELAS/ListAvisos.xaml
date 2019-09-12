@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-             x:Class="Boora_TCC_2019.TELAS.ListAvisos">
+             x:Class="Boora_TCC_2019.TELAS.ListAvisos"
+             BackgroundImage="fundoI.jpg">
     <ContentPage.Content>
         <AbsoluteLayout>
             <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
@@ -12,7 +13,7 @@
                     <ListView Margin="0,10" x:Name="ListaAvisos">
                         <ListView.ItemTemplate >
                             <DataTemplate >
-                                <ImageCell ImageSource="{Binding Data_Aviso}" Text="{Binding Descricao_Aviso}" Detail="{Binding Data_Aviso}"  />
+                                <ImageCell ImageSource="{Binding Imagem_Avisos}" Text="{Binding Descricao_Aviso}" Detail="{Binding Data_Aviso}"  />
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
