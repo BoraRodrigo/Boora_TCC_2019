@@ -7,7 +7,7 @@
         <StackLayout>
             <!--comentario-->
             <StackLayout>
-                <Label x:Name="LblAvisoSerieRealizado" IsVisible="False" Style="{StaticResource LblAvisos}"/>
+                <Label x:Name="LblAvisoSerieRealizado"  IsVisible="False" Style="{StaticResource LblAvisos}"/>
                 <Label x:Name="Titulo_Serie" Style="{StaticResource LblTitulo}"/>
                 <ListView Margin="0,10" x:Name="ListaExerciciosSerie"  ItemSelected="ListaExerciciosSerie_ItemSelected">
                     <ListView.ItemTemplate >
@@ -17,7 +17,26 @@
                     </ListView.ItemTemplate>
                 </ListView>
 
-                <Button Text="Finalizar Série" HorizontalOptions="Center" Clicked="finalizarSerie" />
+                <Button Text="Finalizar Série" HorizontalOptions="Center" Clicked="finalizarSerie" BackgroundColor="Green" CornerRadius="30">
+                    <!-- Efeito de click-->
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="Scale"
+                            Value="1" />
+                                </VisualState.Setters>
+                            </VisualState>
+
+                            <VisualState x:Name="Pressed">
+                                <VisualState.Setters>
+                                    <Setter Property="Scale" 
+                            Value="0.8" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateManager.VisualStateGroups>
+                </Button>
             </StackLayout>
             <StackLayout>
 

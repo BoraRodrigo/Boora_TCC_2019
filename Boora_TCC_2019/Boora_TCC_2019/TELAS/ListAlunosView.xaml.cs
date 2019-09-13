@@ -63,7 +63,8 @@ namespace Boora_TCC_2019.TELAS
         {
             Aluno aluno = (Aluno)args.SelectedItem;
 
-            Navigation.PushAsync(new TELAS.Cadastrar_Serie(aluno));
+            // Navigation.PushAsync(new TELAS.Cadastrar_Serie(aluno));
+            Navigation.PushAsync(new TELAS.Lista_Frequencia_Aluno(aluno));
         }
     }
 }

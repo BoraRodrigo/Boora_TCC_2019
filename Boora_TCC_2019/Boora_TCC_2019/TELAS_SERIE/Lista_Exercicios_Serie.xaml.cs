@@ -76,7 +76,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
                     {
 
                         LblAvisoSerieRealizado.Text = ("Já realizou esta série hoje - " + (DateTime.Now.ToString("dd/MM/yyyy")));
-                        LblAvisoSerieRealizado.BackgroundColor = Color.Black;
+                        LblAvisoSerieRealizado.BackgroundColor = Color.Red;
                         LblAvisoSerieRealizado.IsVisible = true;
 
                         Verefica_Dia = true;

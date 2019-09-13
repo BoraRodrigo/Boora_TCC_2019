@@ -28,8 +28,46 @@
                             </StackLayout>
 
                         </StackLayout>
-                        <Button Image="cadastro_serie" Text="Adicionar" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Cadastrar_Exercicios_Serie"  HorizontalOptions="Center" />
-                        <Button Image="inicial.png" Text="Finalizar" TextColor="{StaticResource ColorLabel}" HorizontalOptions="Center" />
+                        <Button Image="cadastro_serie" Text="Adicionar" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Cadastrar_Exercicios_Serie"  HorizontalOptions="Center" CornerRadius="30">
+                            <!-- Efeito de click-->
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal">
+                                        <VisualState.Setters>
+                                            <Setter Property="Scale"
+                            Value="1" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+
+                                    <VisualState x:Name="Pressed">
+                                        <VisualState.Setters>
+                                            <Setter Property="Scale" 
+                            Value="0.8" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </Button>
+                        <Button Image="inicial.png" Text="Finalizar" TextColor="{StaticResource ColorLabel}" Clicked="Finalizar_cadastro_serie" HorizontalOptions="Center" CornerRadius="30">
+                            <!-- Efeito de click-->
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal">
+                                        <VisualState.Setters>
+                                            <Setter Property="Scale"
+                            Value="1" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+
+                                    <VisualState x:Name="Pressed">
+                                        <VisualState.Setters>
+                                            <Setter Property="Scale" 
+                            Value="0.8" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </Button>
                     </StackLayout>
                 </Frame>
                 <StackLayout>
@@ -49,7 +87,7 @@
                         <StackLayout Padding="0" Margin="15" VerticalOptions="StartAndExpand">
                             <StackLayout Orientation="Vertical">
                                 <Label Text="Exercícios na Série" Style="{StaticResource LblTitulo}" TextColor="{StaticResource ColorLabel}"/>
-                                
+
                             </StackLayout>
 
                             <ListView x:Name="ListaExerciciosSeriesView">
@@ -59,16 +97,10 @@
                                     </DataTemplate>
                                 </ListView.ItemTemplate>
                             </ListView>
-                       
-                      
-                   
-
-                </StackLayout>
+                        </StackLayout>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
-
-
         </ScrollView>
             
     </ContentPage.Content>

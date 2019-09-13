@@ -119,5 +119,10 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
             Txt_nome_Exercicio.Text = exercicio.Nome;
             Txt_Id_Exercicios_Serie.Text = exercicio.Id_exercicio.ToString();
         }
+
+        private void Finalizar_cadastro_serie(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Inicial());
+        }
     }
 }

@@ -74,21 +74,21 @@
                             <Button Image="sobre.png" BackgroundColor="Transparent" Text="Sobre" Clicked="Send" Margin="5,0,0,0" TextColor="{StaticResource ColorLabel}" >
                                
                             </Button>
-                            <Button  BackgroundColor="Transparent" Text="Novo Aviso" Clicked="Cadastrar_Aviso" Margin="5,0,0,0" x:Name="btn_cadastrarAviso" TextColor="{StaticResource ColorLabel}" >
+                            <Button  Image="avisos.png" BackgroundColor="Transparent" Text="Novo Aviso" Clicked="Cadastrar_Aviso" Margin="5,0,0,0" x:Name="btn_cadastrarAviso" TextColor="{StaticResource ColorLabel}" >
                                 
                             </Button>
 
                             <Button Image="alterar.png"  BackgroundColor="Transparent" Text="Alterar Dados" Clicked="alterarDados" Margin="5,0,0,0" x:Name="btn_Alterar_dados_Aluno" TextColor="{StaticResource ColorLabel}" >
                                 
                             </Button>
-                            <Button  BackgroundColor="Transparent" Text="Avisos" Clicked="GoAvisos" Margin="5,0,0,0" TextColor="{StaticResource ColorLabel}">
+                            <Button  Image="avisos.png" BackgroundColor="Transparent" Text="Avisos" Clicked="GoAvisos" Margin="5,0,0,0" TextColor="{StaticResource ColorLabel}">
 
                             </Button>
 
                             <Button Image="sair.png" BackgroundColor="Transparent" Text="SAIR" Clicked="GoSAIR" Margin="5,0,0,0" TextColor="{StaticResource ColorLabel}">
                                 
                             </Button>
-                            
+
                         </StackLayout>
                         <Label BackgroundColor="#ffc800" HorizontalOptions="End" WidthRequest="15"/>
                     </StackLayout>

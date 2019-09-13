@@ -22,8 +22,6 @@ namespace Boora_TCC_2019.MENU
         MediaFile file;
         AcademiaDAO academiaDAO = new AcademiaDAO();
         AlunoDAO alunoDAO = new AlunoDAO();
-
-
         public Master()
         {
 
@@ -146,6 +144,7 @@ namespace Boora_TCC_2019.MENU
             this.Detail = new NavigationPage(new TELAS_CADASTRO.Cadastrar_Novo_Aviso());
             IsPresented = false;
         }
+        
         private async void Alterar_Imagem(object sender, EventArgs e)
         {
             await CrossMedia.Current.Initialize();
