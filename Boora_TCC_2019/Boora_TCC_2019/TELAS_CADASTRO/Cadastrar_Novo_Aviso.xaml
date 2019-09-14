@@ -10,8 +10,8 @@
                     <Label Text="NOVO AVISO" Style="{StaticResource LblTitulo}" TextColor="{StaticResource ColorLabel}" />
                     <Entry x:Name="txtDESCRICAO" Placeholder="Descrição" PlaceholderColor="{StaticResource ColorLabel}" />
                     <Image x:Name="imgChoosed" HeightRequest="150"/>
-                    <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Vertical">
-                        <Button Image="buscar.png" x:Name="btnPick"  BackgroundColor="Blue" Text="Buscar imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar" CornerRadius="30"/>
+                    <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button Image="buscar.png" x:Name="btnPick"  BackgroundColor="#ffc800" Text="imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar" CornerRadius="30"/>
                         <Button Image="cadastro_serie.png" x:Name="btnUpload" BackgroundColor="Green" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Cadastrar" CornerRadius="30" />
                     </StackLayout>
                 </StackLayout>

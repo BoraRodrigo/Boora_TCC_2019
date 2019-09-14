@@ -35,13 +35,13 @@
 
 
                     <Image x:Name="imgChoosed" HeightRequest="150" BackgroundColor="#d8d9d1"/>
-                <Button Image="buscar.png"  x:Name="btnPick" WidthRequest="200" Text="Buscar imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar_Foto_Perfil" CornerRadius="20" BackgroundColor="Blue"/>
-                   
+                    
 
-                    <StackLayout>     
-                    <Button Image="cadastro_icon.png" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="Center"  CornerRadius="20" BackgroundColor="Green"/>
-                    </StackLayout>
-                </StackLayout>
+               <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <Button Image="buscar.png" WidthRequest="150" x:Name="btnPick"  Text="imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar_Foto_Perfil" CornerRadius="30"  HorizontalOptions="StartAndExpand" BackgroundColor="#ffc800" />
+                        <Button Image="cadastro_icon.png"  WidthRequest="150" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="EndAndExpand"  CornerRadius="30" BackgroundColor="Green"/>
+               </StackLayout>
+               </StackLayout>
             
         </StackLayout>
         </ScrollView>

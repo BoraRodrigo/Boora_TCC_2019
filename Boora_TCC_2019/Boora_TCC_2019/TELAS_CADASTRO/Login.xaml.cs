@@ -129,6 +129,8 @@ namespace Boora_TCC_2019.TELAS
         public void EsqueceuSenha(object sender, EventArgs args)
         {
             Navigation.PushAsync(new TELAS.RecuperarSenha(), true);
+
+
         
             //txt_email_redefinir_senha.IsVisible = true;
            //btn_RedefinirSenha.IsVisible = true;                     

@@ -5,12 +5,12 @@
              xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
              BackgroundImage="fundoI.jpg">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <StackLayout BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand">
 
 
             <input:AdvancedEntry IconImage="calendario.png" HorizontalOptions="FillAndExpand" x:Name="txt_email_redefinir_senha" Placeholder="Email" TextColor="Black" PlaceholderColor="Black"  WidthRequest="150" BackgroundColor="Transparent" CornerRadius="30" />
             <input:AdvancedEntry x:Name="txtNome_Academia" HorizontalOptions="FillAndExpand" Placeholder="Nome Academia" TextColor="Black" PlaceholderColor="Black"   WidthRequest="150" BackgroundColor="Transparent" CornerRadius="30" />
-            <Button  Text="Enviar Email" BackgroundColor="Green" x:Name="btn_RedefinirSenha"  Clicked="RedefinirSenhaAsync"  CornerRadius="30">
+            <Button  Text="Enviar Email" BackgroundColor="Green" x:Name="btn_RedefinirSenha"  Clicked="RedefinirSenhaAsync" HorizontalOptions="Center" CornerRadius="30">
                 <VisualStateManager.VisualStateGroups>
                     <VisualStateGroup x:Name="CommonStates">
                         <VisualState x:Name="Normal">

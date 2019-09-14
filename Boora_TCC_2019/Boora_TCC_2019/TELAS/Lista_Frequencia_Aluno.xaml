@@ -19,7 +19,7 @@
                     </ListView>
                 </StackLayout>
 
-                <Button Image="cadastro_serie.png" Text="Nova Serie" TextColor="{StaticResource ColorLabel}" x:Name="btn_Cadastrar" Clicked="Cadastrar_SerieAsy" HorizontalOptions="End"  CornerRadius="20" BackgroundColor="Green">
+                <Button Image="cadastro_serie.png" Text="Nova Serie" TextColor="{StaticResource ColorLabel}" x:Name="btn_Cadastrar" Clicked="Cadastrar_SerieAsy" HorizontalOptions="FillAndExpand"  CornerRadius="20" BackgroundColor="Green">
                     <!-- Efeito de click-->
                     <VisualStateManager.VisualStateGroups>
                         <VisualStateGroup x:Name="CommonStates">

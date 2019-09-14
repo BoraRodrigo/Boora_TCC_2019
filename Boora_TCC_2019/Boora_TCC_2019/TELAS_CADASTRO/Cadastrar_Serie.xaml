@@ -37,7 +37,7 @@
                     </StackLayout>
 
                     <Label Text="Data final não selecionada" x:Name="dataFinalIsVisible"   IsVisible="False" Style="{StaticResource LblAvisos}" TextColor="{StaticResource ColorLabel}"/>
-                    <Button Image="cadastro_serie.png" Text="Cadastrar Série" TextColor="{StaticResource ColorLabel}"  Clicked="Btn_Cadastrar_Serie" HorizontalOptions="Center" CornerRadius="30">
+                    <Button Image="cadastro_serie.png" BackgroundColor="Green" Text="Cadastrar Série" TextColor="{StaticResource ColorLabel}"  Clicked="Btn_Cadastrar_Serie" HorizontalOptions="Center" CornerRadius="30">
                         <!-- Efeito de click-->
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">

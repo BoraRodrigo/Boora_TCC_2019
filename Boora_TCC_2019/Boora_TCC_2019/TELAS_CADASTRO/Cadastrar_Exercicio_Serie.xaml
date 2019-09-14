@@ -28,7 +28,8 @@
                             </StackLayout>
 
                         </StackLayout>
-                        <Button Image="cadastro_serie" Text="Adicionar" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Cadastrar_Exercicios_Serie"  HorizontalOptions="Center" CornerRadius="30">
+                        <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                             <Button Image="cadastro_serie" Text="Adicionar" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Cadastrar_Exercicios_Serie"  HorizontalOptions="StartAndExpand"  BackgroundColor="Green" CornerRadius="30">
                             <!-- Efeito de click-->
                             <VisualStateManager.VisualStateGroups>
                                 <VisualStateGroup x:Name="CommonStates">
@@ -48,7 +49,7 @@
                                 </VisualStateGroup>
                             </VisualStateManager.VisualStateGroups>
                         </Button>
-                        <Button Image="inicial.png" Text="Finalizar" TextColor="{StaticResource ColorLabel}" Clicked="Finalizar_cadastro_serie" HorizontalOptions="Center" CornerRadius="30">
+                            <Button Image="inicial.png" Text="Finalizar" TextColor="{StaticResource ColorLabel}" Clicked="Finalizar_cadastro_serie" HorizontalOptions="EndAndExpand" BackgroundColor="#ffc800" CornerRadius="30">
                             <!-- Efeito de click-->
                             <VisualStateManager.VisualStateGroups>
                                 <VisualStateGroup x:Name="CommonStates">
@@ -68,6 +69,7 @@
                                 </VisualStateGroup>
                             </VisualStateManager.VisualStateGroups>
                         </Button>
+                        </StackLayout>
                     </StackLayout>
                 </Frame>
                 <StackLayout>

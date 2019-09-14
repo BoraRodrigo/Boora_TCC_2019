@@ -14,14 +14,17 @@
                     <Entry x:Name="txtNOME" Placeholder="Nome"  PlaceholderColor="{StaticResource ColorLabel}" />
                     <Entry x:Name="txtDESCRICAO" Placeholder="Descrição" PlaceholderColor="{StaticResource ColorLabel}" />
                     <Editor x:Name="txtOBJETIVO" Placeholder="Objetivo" HeightRequest="150" PlaceholderColor="{StaticResource ColorLabel}" />
-                    <Image x:Name="imgChoosed" HeightRequest="150"/>
+                    <Image x:Name="imgChoosed" HeightRequest="150" BackgroundColor="#d8d9d1"/>
 
-                    <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
-
-                        <Button Image="buscar.png" x:Name="btnPick" WidthRequest="200" Text="Buscar imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar"/>
-                        <Button Image="cadastro_serie.png" x:Name="btnUpload" WidthRequest="200" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Upload" />
+                    <StackLayout  HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Button Image="buscar.png" x:Name="btnPick" WidthRequest="150" Text="Imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar" HorizontalOptions="StartAndExpand" CornerRadius="30" BackgroundColor="#ffc800"/>
+                        <Button Image="cadastro_serie.png" x:Name="btnUpload" WidthRequest="150" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Upload" HorizontalOptions="EndAndExpand" CornerRadius="30"  BackgroundColor="Green"/>
 
                     </StackLayout>
+                    <!--<StackLayout  HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Button Image="cadastro_serie.png" x:Name="btnUpload" WidthRequest="200" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Upload" HorizontalOptions="CenterAndExpand" CornerRadius="30"  BackgroundColor="Green"/>
+                    </StackLayout>-->
+
                 </StackLayout>
             </StackLayout>
         </ScrollView>
