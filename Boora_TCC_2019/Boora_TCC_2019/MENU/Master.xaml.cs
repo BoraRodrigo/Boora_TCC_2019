@@ -86,11 +86,11 @@ namespace Boora_TCC_2019.MENU
             throw new NotImplementedException();
         }
 
-        private void GoPersonalizacao(object sender, EventArgs args)
-        {
-            this.Detail = new NavigationPage(new TELAS.Personalizacao());
-            IsPresented = false;
-        }
+        //private void GoPersonalizacao(object sender, EventArgs args)
+        //{
+        //    this.Detail = new NavigationPage(new TELAS.Personalizacao());
+        //    IsPresented = false;
+        //}
         private void GoListExercicios(object sender, EventArgs args)
         {
             this.Detail = new NavigationPage(new TELAS_CADASTRO.ListViewExercicios());

@@ -59,9 +59,9 @@
                             <Button Image="cadastro_icon.png" BackgroundColor="Transparent" Text="Cadastro Instrutor" Clicked="GoCadastroInstrutor" x:Name="btn_cadastro_instrutor" Margin="5,0,0,0" TextColor="{StaticResource ColorLabel}" >
                                 
                             </Button>
-                            <Button Image="corestema.png"  Text="Alterar Tema" Clicked="GoPersonalizacao" Margin="5,0,0,0" TextColor="{StaticResource ColorLabel}">
+                            <!--<Button Image="corestema.png"  Text="Alterar Tema" Clicked="GoPersonalizacao" Margin="5,0,0,0" TextColor="{StaticResource ColorLabel}">
                                 
-                            </Button>
+                            </Button>-->
                             <Button Image="lista.png" BackgroundColor="Transparent" Text="Lista Exercício" Clicked="GoListExercicios" Margin="5,0,0,0" TextColor="{StaticResource ColorLabel}">
                                 
                             </Button>

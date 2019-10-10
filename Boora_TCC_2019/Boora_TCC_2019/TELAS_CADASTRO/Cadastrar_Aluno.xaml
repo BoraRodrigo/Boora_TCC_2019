@@ -21,7 +21,7 @@
                     <Label Text="*" x:Name="lbl_validaemail" Style="{StaticResource LblTitulo}" TextColor="Red" />
                 </StackLayout  >
 
-                <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource ColorStacklayout}">
+                <StackLayout Orientation="Horizontal">
                     <Label  Text="Data Nascimento:" HorizontalOptions="FillAndExpand" x:Name="DataNascimento" FontSize="18" TextColor="{StaticResource ColorLabel}"/>
                     <DatePicker  FontSize="18" HorizontalOptions="FillAndExpand" TextColor="{StaticResource ColorLabel}" Format="dd/MM/yyyy" x:Name="txt_IDADE" MinimumDate="01/01/1980" DateSelected="DataSelecionada"/>
                 </StackLayout>
@@ -39,7 +39,7 @@
 
                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                         <Button Image="buscar.png" WidthRequest="150" x:Name="btnPick"  Text="imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar_Foto_Perfil" CornerRadius="30"  HorizontalOptions="StartAndExpand" BackgroundColor="#ffc800" />
-                        <Button Image="cadastro_icon.png"  WidthRequest="150" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="EndAndExpand"  CornerRadius="30" BackgroundColor="Green"/>
+                        <Button Image="cadastro_icon.png"  WidthRequest="160" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" x:Name="btn_Cadastrar" Clicked="Cadastrar_AlunoAsy" HorizontalOptions="EndAndExpand"  CornerRadius="30" BackgroundColor="Green"/>
                </StackLayout>
                </StackLayout>
             

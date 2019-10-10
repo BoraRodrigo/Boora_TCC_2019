@@ -18,7 +18,7 @@
 
                     <StackLayout  HorizontalOptions="FillAndExpand" Orientation="Horizontal">
                         <Button Image="buscar.png" x:Name="btnPick" WidthRequest="150" Text="Imagem" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Buscar" HorizontalOptions="StartAndExpand" CornerRadius="30" BackgroundColor="#ffc800"/>
-                        <Button Image="cadastro_serie.png" x:Name="btnUpload" WidthRequest="150" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Upload" HorizontalOptions="EndAndExpand" CornerRadius="30"  BackgroundColor="Green"/>
+                        <Button Image="cadastro_serie.png" x:Name="btnUpload" WidthRequest="160" Text="Cadastrar" TextColor="{StaticResource ColorLabel}" Clicked="Btn_Upload" HorizontalOptions="EndAndExpand" CornerRadius="30"  BackgroundColor="Green"/>
 
                     </StackLayout>
                     <!--<StackLayout  HorizontalOptions="FillAndExpand" Orientation="Horizontal">
