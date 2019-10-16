@@ -116,7 +116,7 @@ namespace Boora_TCC_2019.DAO
             catch (Exception)
             {
 
-                throw;
+                return null;
             }
         }
         public async Task<string> Buscar_IMAGEM_Logo_Academia(string id_Academia)

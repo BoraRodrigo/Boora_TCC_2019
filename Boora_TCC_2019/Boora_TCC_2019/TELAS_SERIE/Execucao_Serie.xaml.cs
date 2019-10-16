@@ -62,10 +62,13 @@ namespace Boora_TCC_2019.TELAS_SERIE
             
             Device.StartTimer(TimeSpan.FromSeconds(1), () =>
             {
-                Entry.Text = tempo(++_vezesTimer);
+                //Entry.Text = tempo(++_vezesTimer);
+
+                btn_cronometro.Text = tempo(++_vezesTimer);
                 if (zerar == false)
                 {
-                    Entry.Text = "Iniciar Cronômetro";
+                  //  Entry.Text = "Iniciar Cronômetro";
+                    btn_cronometro.Text = "Iniciar Cronômetro";
                     _vezesTimer = 0;
 
                 }

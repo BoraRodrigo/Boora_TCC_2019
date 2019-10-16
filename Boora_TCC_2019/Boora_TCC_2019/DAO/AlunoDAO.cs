@@ -253,7 +253,7 @@ namespace Boora_TCC_2019.DAO
             catch (Exception)
             {
 
-                throw;
+                return null;
             }
         }
         public async Task<string> Buscar_IMAGEM_Perfil_Aluno(string id_Aluno)

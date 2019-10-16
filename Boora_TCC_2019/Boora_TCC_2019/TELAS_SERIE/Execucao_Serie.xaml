@@ -52,14 +52,35 @@
 
                         </StackLayout>
                 </Frame>
-                <StackLayout Orientation="Vertical" HorizontalOptions="Center" >
-                    <Label Text="Iniciar Cronômetro" x:Name="Entry" TextColor="Black" FontSize="24" HorizontalTextAlignment="Center">
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" >
+                    <!--<Label Text="Iniciar Cronômetro" x:Name="Entry" TextColor="Black" FontSize="24" HorizontalTextAlignment="Center">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Tapped="Button_OnClicked" />
                         </Label.GestureRecognizers>
-                    </Label>
-                    <Label x:Name="RepeticoesRealizadas" FontSize="24" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
-                </StackLayout>
+                    </Label>-->
+
+                        <Button Text="Iniciar" x:Name="btn_cronometro" Padding="0" BackgroundColor="#ffc800"  WidthRequest="60" Clicked="Button_OnClicked" BorderWidth="0" CornerRadius="20">
+                            <!-- Efeito de click-->
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal">
+                                        <VisualState.Setters>
+                                            <Setter Property="Scale"
+                            Value="1" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+
+                                    <VisualState x:Name="Pressed">
+                                        <VisualState.Setters>
+                                            <Setter Property="Scale" 
+                            Value="0.8" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </Button>
+                        <Label x:Name="RepeticoesRealizadas" FontSize="24" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
                 <Frame>
                     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                             <ffimageloading:CachedImage x:Name="imgbaixadaM" HeightRequest="180" WidthRequest="180" />

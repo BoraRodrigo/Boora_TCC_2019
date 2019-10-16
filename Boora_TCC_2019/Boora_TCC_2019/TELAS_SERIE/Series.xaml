@@ -41,13 +41,71 @@
                              
                             </StackLayout>
                         </Frame>
-                      
-                        <Button Text="Vizualizar" Clicked="IniciarSerie" HorizontalOptions="Center" />
+
+                        <Button Text="Vizualizar" Clicked="IniciarSerie" HorizontalOptions="Center"  CornerRadius="30" BackgroundColor="White">
+                            <!-- Efeito de click-->
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal">
+                                        <VisualState.Setters>
+                                            <Setter Property="Scale"
+                            Value="1" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+
+                                    <VisualState x:Name="Pressed">
+                                        <VisualState.Setters>
+                                            <Setter Property="Scale" 
+                            Value="0.8" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </Button>
+
+
                         <StackLayout Orientation="Vertical">
                             <StackLayout Orientation="Horizontal" >
 
-                                <Button Image="anterior.png" Text="Anterior" Margin="0,0,0,50" HorizontalOptions="FillAndExpand"  Clicked="Anterior_SerieAsync"/>
-                                <Button  Image="proxima.png" Text="Proxima" Margin="0,0,0,50" HorizontalOptions="FillAndExpand"  Clicked="Proxima_SerieAsync" />
+                                <Button Image="anterior.png" Text="Anterior" Margin="0,0,0,50" HorizontalOptions="FillAndExpand"  Clicked="Anterior_SerieAsync">
+                                    <VisualStateManager.VisualStateGroups>
+                                        <VisualStateGroup x:Name="CommonStates">
+                                            <VisualState x:Name="Normal">
+                                                <VisualState.Setters>
+                                                    <Setter Property="Scale"
+                            Value="1" />
+                                                </VisualState.Setters>
+                                            </VisualState>
+
+                                            <VisualState x:Name="Pressed">
+                                                <VisualState.Setters>
+                                                    <Setter Property="Scale" 
+                            Value="0.8" />
+                                                </VisualState.Setters>
+                                            </VisualState>
+                                        </VisualStateGroup>
+                                    </VisualStateManager.VisualStateGroups>
+                                </Button>
+
+                                <Button  Image="proxima.png" Text="Proxima" Margin="0,0,0,50" HorizontalOptions="FillAndExpand"  Clicked="Proxima_SerieAsync">
+                                    <VisualStateManager.VisualStateGroups>
+                                        <VisualStateGroup x:Name="CommonStates">
+                                            <VisualState x:Name="Normal">
+                                                <VisualState.Setters>
+                                                    <Setter Property="Scale"
+                            Value="1" />
+                                                </VisualState.Setters>
+                                            </VisualState>
+
+                                            <VisualState x:Name="Pressed">
+                                                <VisualState.Setters>
+                                                    <Setter Property="Scale" 
+                            Value="0.8" />
+                                                </VisualState.Setters>
+                                            </VisualState>
+                                        </VisualStateGroup>
+                                    </VisualStateManager.VisualStateGroups>
+                                </Button>
                                 <!--troquei os displays alerts por essa label-->
                                 
                             </StackLayout>

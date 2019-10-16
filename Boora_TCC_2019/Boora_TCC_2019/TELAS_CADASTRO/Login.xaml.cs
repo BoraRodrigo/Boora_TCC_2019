@@ -65,6 +65,15 @@ namespace Boora_TCC_2019.TELAS
                     SlCarregandoLogin.IsVisible = true; // enquanto espera resposta do BD sobe um stacklayout com indicador(carregadndo) rodadndo.
                     aluno = await alunoDAO.Login_Aluno(nomelogin, senhalogin);
 
+                    ///resolve o erro do loping login (Retorna null na busca de não econtrar)
+                    if (aluno == null)
+                    {
+                        SlCarregandoLogin.IsVisible = false;
+                        await DisplayAlert("", "Erro ao Efetuar Login", "");
+                        App.Current.MainPage = new Login();
+                     
+                    }
+
                     Id_Aluno_Login = aluno.Id_Aluno;
                     Nome_Aluno_Logado = aluno.Nome;
                     Senha_Aluno_Logado = aluno.Senha;
@@ -74,6 +83,8 @@ namespace Boora_TCC_2019.TELAS
                     Telefone_Academia = academiaLogin.Whats;
                     Instagran_Academia = academiaLogin.Instagran;
                     Id_Academia_Login = academiaLogin.Id_academia;
+
+                 
 
 
                     SlCarregandoLogin.IsVisible = false; // apos o retorno do BD o Stacklayout some.
@@ -87,6 +98,15 @@ namespace Boora_TCC_2019.TELAS
                     SlCarregandoLogin.IsVisible = true;
                     academia = await academiaDAO.Login_Dono_Academia(senhalogin, nomelogin);
 
+                    ///resolve o erro do loping login (Retorna null na busca de não econtrar)
+                    if (academia == null)
+                    {
+                        SlCarregandoLogin.IsVisible = false;
+                        await DisplayAlert("", "Erro ao Efetuar Login", "");
+                        App.Current.MainPage = new Login();
+                   
+                    }
+
 
                     //aqui tem que ajustar esta imporvisado ainda 
                     Id_Aluno_Login = academia.Id_academia;
@@ -98,6 +118,8 @@ namespace Boora_TCC_2019.TELAS
                     Tipo_login = "Dono_Academia";
 
                    
+
+
                     App.Current.MainPage = new MENU.Master();
                     SlCarregandoLogin.IsVisible = false;
                 }
