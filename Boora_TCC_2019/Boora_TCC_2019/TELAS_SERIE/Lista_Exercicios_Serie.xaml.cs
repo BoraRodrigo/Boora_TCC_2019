@@ -28,8 +28,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
             BuscaNome();
            
             ListaExerciciosSerie.ItemsSource = Exerciciolista;
-            
-
+  
         }
         private async void BuscaNome()
         {

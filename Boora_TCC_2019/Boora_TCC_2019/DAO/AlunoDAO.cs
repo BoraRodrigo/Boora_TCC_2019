@@ -238,7 +238,7 @@ namespace Boora_TCC_2019.DAO
 
         }
 
-        public async Task<Aluno> Login_Aluno(string nome, string senha)
+        public async Task<Aluno> Login_Aluno(string email, string senha)//troquei pra logar com email
         {
             try
             {
@@ -248,7 +248,7 @@ namespace Boora_TCC_2019.DAO
                 .Child(Login.Nome_Academia_login)
                     .Child("Aluno")
                   .OnceAsync<Aluno>();
-                return aluno.Where(a => a.Nome == nome && a.Senha == senha).FirstOrDefault();
+                return aluno.Where(a => a.Email == email && a.Senha == senha).FirstOrDefault();
             }
             catch (Exception)
             {

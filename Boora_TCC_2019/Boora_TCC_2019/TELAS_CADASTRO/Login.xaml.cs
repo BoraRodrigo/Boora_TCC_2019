@@ -21,6 +21,9 @@ namespace Boora_TCC_2019.TELAS
         public static string Id_Aluno_Login { get; set; }
         public static string Nome_Aluno_Logado { get; set; }
         public static string Senha_Aluno_Logado { get; set; }
+
+        public static string Email_Aluno_Logado { get; set; }
+
         public static string Nome_Academia_login { get; set; }
 
         public static string Telefone_Academia { get; set; }
@@ -51,6 +54,7 @@ namespace Boora_TCC_2019.TELAS
 
             string nomelogin;
             string senhalogin;
+
             string academialogin;
             try
             {
@@ -59,6 +63,8 @@ namespace Boora_TCC_2019.TELAS
 
                 nomelogin = txtNome.Text.TrimEnd();
                 senhalogin = txtsenha.Text.TrimEnd();
+                
+
                 academialogin = txtNome_academia.Text.TrimEnd();
                 if (chekAluno.IsChecked == true)
                 {
@@ -77,6 +83,7 @@ namespace Boora_TCC_2019.TELAS
                     Id_Aluno_Login = aluno.Id_Aluno;
                     Nome_Aluno_Logado = aluno.Nome;
                     Senha_Aluno_Logado = aluno.Senha;
+                    Email_Aluno_Logado = aluno.Email;
 
 
                     var academiaLogin = await academiaDAO.Busca_Academia_Nome(academialogin);
@@ -96,7 +103,7 @@ namespace Boora_TCC_2019.TELAS
                 else if (chekAcademia.IsChecked == true)
                 {
                     SlCarregandoLogin.IsVisible = true;
-                    academia = await academiaDAO.Login_Dono_Academia(senhalogin, nomelogin);
+                    academia = await academiaDAO.Login_Dono_Academia(senhalogin,academialogin, nomelogin);
 
                     ///resolve o erro do loping login (Retorna null na busca de não econtrar)
                     if (academia == null)

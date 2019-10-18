@@ -80,7 +80,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
         public async Task Exercicio_Pelo_List(Exercicio exercicio)
         {
             Login login = new Login();
-            var alunoLogado = await alunoDAO.Login_Aluno(Login.Nome_Aluno_Logado, Login.Senha_Aluno_Logado);
+            var alunoLogado = await alunoDAO.Login_Aluno(Login.Email_Aluno_Logado, Login.Senha_Aluno_Logado);/////////////////// mudar aqui em casa para static enviar email
             var seriealuno = await alunoDAO.Busca_Serie_Aluno(IdSerie);
 
             listaExercicio = await exercicios_Serie_DAO.Busca_Exercicios_Serie_DA_SERIE(IdSerie);

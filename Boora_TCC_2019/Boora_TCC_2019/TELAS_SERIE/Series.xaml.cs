@@ -109,7 +109,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
           
             lbl_DATAVENC.Text= DateTime.Now.ToString("dd/MM/yyyy");
             Login login = new Login();
-            var alunoLogado = await alunoDAO.Login_Aluno(Login.Nome_Aluno_Logado, Login.Senha_Aluno_Logado);
+            var alunoLogado = await alunoDAO.Login_Aluno(Login.Email_Aluno_Logado, Login.Senha_Aluno_Logado);
             
             //tras todas as series que o aluno tem 
             var lista_Serie = await exercicios_Serie_DAO.Busca_Todas__Series_Aluno(Login.Id_Aluno_Login);

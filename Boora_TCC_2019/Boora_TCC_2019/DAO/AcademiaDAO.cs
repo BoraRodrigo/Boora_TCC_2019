@@ -102,7 +102,7 @@ namespace Boora_TCC_2019.DAO
                 }).ToList();
 
         }
-        public async Task<Academia> Login_Dono_Academia( string senha, string nome)
+        public async Task<Academia> Login_Dono_Academia( string senha, string nome,string email)//alt
         {
             try
             {
@@ -111,7 +111,7 @@ namespace Boora_TCC_2019.DAO
                 .Child("Academias")
                 .Child(Login.Nome_Academia_login)
                 .OnceAsync<Academia>();
-                return academia.Where(a => a.Nome_academia == nome && a.Senha == senha).FirstOrDefault();
+                return academia.Where(a => a.Email == email && a.Senha == senha).FirstOrDefault();
             }
             catch (Exception)
             {
