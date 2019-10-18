@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Boora_TCC_2019.MODEL.Academia>
+@{
+    ViewBag.Title = "Listar_Academia";
+}
+
+<h2>Faça parte de nossa aquipe</h2>
+
+<h2>A busca da academia tem que ser feita por um campo nome onde se insere o
+    nome da academia e ela ira listar de momento no codigo fonte esta busca só a angelos</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome_academia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cidade)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome_academia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cidade)
+            </td>
+            <td>
+                @Html.ActionLink("Seja um membro", "Alterar", new { id = 2})
+            </td>
+        </tr>
+    }
+
+</table>
+
+

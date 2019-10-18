@@ -114,6 +114,61 @@ namespace Boora_TCC_2019.DAO
            .Child(cadastro_aluno.Key)
            .PutAsync(fileStream);
         }
+
+        public async Task Cadastrar_Aluno_WEB(Aluno aluno)
+        {
+            //passar aqui o nome da academia para se cadastrar. No moento estou passando só o angelos para teste
+            var cadastro_aluno = await firebase
+               .Child("Academias")
+               .Child("Angelos")
+               .Child("Aluno")
+              .PostAsync(new Aluno()
+              {
+                  Id_Aluno = aluno.Id_Aluno,
+                  Nome = aluno.Nome,
+                  Email = aluno.Email,
+                  Senha = aluno.Senha,
+                  Peso = aluno.Peso,
+                  Altura = aluno.Altura,
+                  Idade = aluno.Idade,
+                  objetivo_Aluno = aluno.objetivo_Aluno,
+                  Foto_Aluno = aluno.Foto_Aluno,
+                  Situacao = aluno.Situacao
+              });
+            string id_cadastroalunoKEY = cadastro_aluno.Key;
+
+            var alterar_alunoID = (await firebase
+             .Child("Academias")
+             .Child("Angelos")
+             .Child("Aluno")
+             .OnceAsync<Aluno>()).Where(a => a.Object.Id_Aluno == id_cadastroalunoKEY).FirstOrDefault();
+
+            await firebase
+              .Child("Academias")
+              .Child("Angelos")
+              .Child("Aluno")
+              .Child(id_cadastroalunoKEY)
+              .PutAsync(new Aluno()
+              {
+                  Id_Aluno = id_cadastroalunoKEY,
+                  Nome = aluno.Nome,
+                  Email = aluno.Email,
+                  Senha = aluno.Senha,
+                  Peso = aluno.Peso,
+                  Altura = aluno.Altura,
+                  Idade = aluno.Idade,
+                  objetivo_Aluno = aluno.objetivo_Aluno,
+                  Foto_Aluno = id_cadastroalunoKEY,
+                  Situacao = aluno.Situacao
+              });
+            //var imageUrl = await firebaseStorage
+
+           //.Child("Angelos")
+           //.Child("Foto_Perfil")
+           //.Child(cadastro_aluno.Key)
+           //.PutAsync(null);
+        }
+
         //Busca serie aluno e coloca dados em campos de dados ver implementacao -BORA
         //retona os detalhaes do exercicio da serie.
         // esta tabela possui o ID do exercicio vinculado a estas inf
