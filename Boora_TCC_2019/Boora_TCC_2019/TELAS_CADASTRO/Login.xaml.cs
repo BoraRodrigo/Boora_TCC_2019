@@ -1,4 +1,5 @@
-﻿using Boora_TCC_2019.ClassesUTEIS;
+﻿using Boora_TCC_2019.BancoSQlite;
+using Boora_TCC_2019.ClassesUTEIS;
 using Boora_TCC_2019.DAO;
 using Boora_TCC_2019.MODEL;
 using System;
@@ -34,17 +35,42 @@ namespace Boora_TCC_2019.TELAS
 
         public static string Tipo_login { get; set; }
 
+        Db_SqlLite db = new Db_SqlLite();
+        List<Acessar> lista = new List<Acessar>();
+        Acessar acessar = new Acessar();
         public Login ()
 		{
 
             InitializeComponent ();
-           
+            lista = db.Consultar_Logins();
+            if (lista.Capacity != 0)
+            {
+                try
+                {
+                    txtNome.Text = lista[0].Email;
+                    txtNome_academia.Text = lista[0].Academia;
+                    txtsenha.Text = lista[0].Senha;
+                    if (lista[0].Tipo.Equals("ALUNO"))
+                    {
+                        chekAluno.IsChecked = true;
+                    }
+                    else if (lista[0].Tipo.Equals("ACADEMIA"))
+                    {
+                        chekAcademia.IsChecked = true;
+                    }
+                }
+                catch 
+                {
 
+                    
+                }
+                
+                
+            }
         }
         private async void EfetuarLogin(object sender, EventArgs args)
         {
-
-
+            
             Aluno aluno = new Aluno();
             AlunoDAO alunoDAO = new AlunoDAO();
 
@@ -54,8 +80,41 @@ namespace Boora_TCC_2019.TELAS
 
             string nomelogin;
             string senhalogin;
-
             string academialogin;
+
+            if (lista.Capacity == 0)
+            {
+                
+                acessar.Email = txtNome.Text;
+                acessar.Academia = txtNome_academia.Text;
+                acessar.Senha = txtsenha.Text;
+                if (chekAluno.IsChecked == true)
+                {
+                    acessar.Tipo = "ALUNO";
+                }
+                if (chekAcademia.IsChecked == true)
+                {
+                    acessar.Tipo = "ACADEMIA";
+                }
+                db.Salvar_Login(acessar);
+            }
+            else
+            {
+                acessar.Email = txtNome.Text;
+                acessar.Academia = txtNome_academia.Text;
+                acessar.Senha = txtsenha.Text;
+                if (chekAluno.IsChecked == true)
+                {
+                    acessar.Tipo = "ALUNO";
+                }
+                if (chekAcademia.IsChecked == true)
+                {
+                    acessar.Tipo = "ACADEMIA";
+                }
+                acessar.id = lista[0].id;
+                db.Alterar_Login(acessar);
+            }
+
             try
             {
                 // resolve a questao do espaço no final da palavra 10/09
@@ -63,9 +122,8 @@ namespace Boora_TCC_2019.TELAS
 
                 nomelogin = txtNome.Text.TrimEnd();
                 senhalogin = txtsenha.Text.TrimEnd();
-                
-
                 academialogin = txtNome_academia.Text.TrimEnd();
+
                 if (chekAluno.IsChecked == true)
                 {
                     SlCarregandoLogin.IsVisible = true; // enquanto espera resposta do BD sobe um stacklayout com indicador(carregadndo) rodadndo.
@@ -154,6 +212,9 @@ namespace Boora_TCC_2019.TELAS
                     return aux;
                 });
             }
+
+           
+
         }
         public void EsqueceuSenha(object sender, EventArgs args)
         {

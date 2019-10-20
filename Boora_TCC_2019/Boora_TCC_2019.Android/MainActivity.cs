@@ -32,5 +32,37 @@ namespace Boora_TCC_2019.Droid
         {
             Plugin.Permissions.PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
+        //
+        protected override void OnPause()
+        {
+            base.OnPause();
+        }
+
+        protected override void OnSaveInstanceState(Bundle outState)
+        {
+            base.OnSaveInstanceState(outState);
+        }
+
+        protected override void OnResume()
+        {
+            
+            base.OnResume();
+        }
+        protected override void OnStart()
+        {
+            
+            base.OnStart();
+        }
+        protected override void OnStop()
+        {
+            
+            base.OnStop();
+        }
+        protected override void OnRestart()
+        {
+
+            base.OnRestart();
+        }
     }
 }

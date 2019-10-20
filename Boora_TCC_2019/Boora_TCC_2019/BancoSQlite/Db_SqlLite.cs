@@ -19,6 +19,7 @@ namespace Boora_TCC_2019.BancoSQlite
             _conexao = new SQLiteConnection(caminho);
 
             _conexao.CreateTable<Cores>();
+            _conexao.CreateTable<Acessar>();
 
         }
 
@@ -39,6 +40,25 @@ namespace Boora_TCC_2019.BancoSQlite
         public void Excluir(Cores cores)
         {
             _conexao.Delete(cores);
+        }
+
+        public List<Acessar> Consultar_Logins()
+        {
+            return _conexao.Table<Acessar>().ToList();
+        }
+
+        public void Salvar_Login(Acessar acessar)
+        {
+            _conexao.Insert(acessar);
+        }
+
+        public void Alterar_Login(Acessar acessar)
+        {
+            _conexao.Update(acessar);
+        }
+        public void Excluir_Login(Acessar acessar)
+        {
+            _conexao.Delete(acessar);
         }
     }
 }
