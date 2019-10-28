@@ -15,12 +15,14 @@ namespace Boora_TCC_2019.DAO
     public class AcademiaDAO
     {
         FirebaseClient firebase = new FirebaseClient("https://tcc-2019-53a08.firebaseio.com/");
+
         FirebaseStorage firebaseStorage = new FirebaseStorage("tcc-2019-53a08.appspot.com");
         public async Task Cadastrar_Academia(Academia academia, Stream fileStream)
         {
             var cadastroAcademia = await firebase
-                .Child("Academias")
-                .Child(academia.Nome_academia)
+              .Child("Academias")
+              .Child(academia.Nome_academia)
+              .Child("Dados_Academia")
                 .PostAsync(new Academia()
                 {
                     Id_academia = academia.Id_academia,
@@ -41,12 +43,13 @@ namespace Boora_TCC_2019.DAO
             var alterar_academiaID = (await firebase
               .Child("Academias")
               .Child(academia.Nome_academia)
+              .Child("Dados_Academia")
               .OnceAsync<Academia>()).Where(a => a.Object.Id_academia.Equals(id_academiaKEY)).FirstOrDefault();
 
             await firebase
               .Child("Academias")
               .Child(academia.Nome_academia)
-              .Child(id_academiaKEY)
+              .Child("Dados_Academia")//mudei aqui pra adicionar uma child de pesquisa
               .PutAsync(new Academia()
               {
                   Id_academia = id_academiaKEY,
@@ -77,6 +80,7 @@ namespace Boora_TCC_2019.DAO
               .OnceAsync<Academia>();
             return academia.Where(a => a.Nome_academia == nomeAcademia).FirstOrDefault();
         }
+        
         public async Task<List<Academia>> Busca_Academia(string nome)
         {
             return (await firebase
@@ -102,6 +106,34 @@ namespace Boora_TCC_2019.DAO
                 }).ToList();
 
         }
+        public async Task<List<Academia>> Busca_Academia_WEB()
+        {
+            return (await firebase
+                .Child("Academias")
+                .Child("L")
+                
+
+                .OnceAsync<Academia>()).Select(item =>
+                {
+
+                    return new Academia
+                    {
+                        Id_academia = item.Object.Id_academia,
+                        Cidade = item.Object.Cidade,
+                        Estado = item.Object.Estado,
+                        Cnpj = item.Object.Cnpj,
+                        Logo_academia = item.Object.Logo_academia,
+                        Email = item.Object.Email,
+                        Nome_academia = item.Object.Nome_academia,
+                        Senha = item.Object.Senha,
+                        Whats = item.Object.Whats,
+                        Instagran = item.Object.Instagran
+
+                    };
+                }).ToList();
+
+        }
+
         public async Task<Academia> Login_Dono_Academia( string senha, string nome,string email)//alt
         {
             try
@@ -125,6 +157,26 @@ namespace Boora_TCC_2019.DAO
                 .Child("Logo_Academias")
                 .Child(id_Academia)
                 .GetDownloadUrlAsync();
+        }
+        public async Task Alterar_Academia(string nome_academia, Academia academia)
+        {
+            await firebase
+               .Child("Academias")
+               .Child(Login.Nome_Academia_login)
+               .Child("Dados_Academia")
+              .PutAsync(new Academia()
+              {
+                  Id_academia = Login.Id_Academia_Login,
+                  Cidade = academia.Cidade,
+                  Estado = academia.Estado,
+                  Cnpj = academia.Cnpj,
+                  Nome_academia=nome_academia,
+                  Logo_academia = Login.Id_Academia_Login,
+                  Email = academia.Email,
+                  Senha = academia.Senha,
+                  Whats = academia.Whats,
+                  Instagran = academia.Instagran
+              });
         }
     }
 }

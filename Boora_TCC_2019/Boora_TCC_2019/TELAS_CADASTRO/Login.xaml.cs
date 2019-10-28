@@ -149,8 +149,7 @@ namespace Boora_TCC_2019.TELAS
                     Instagran_Academia = academiaLogin.Instagran;
                     Id_Academia_Login = academiaLogin.Id_academia;
 
-                 
-
+                
 
                     SlCarregandoLogin.IsVisible = false; // apos o retorno do BD o Stacklayout some.
                     Tipo_login = "Aluno";
@@ -236,6 +235,8 @@ namespace Boora_TCC_2019.TELAS
        public void Cadastre_sua_Academia(object sender, EventArgs args)
         {
             Navigation.PushAsync(new TELAS_CADASTRO.Cadastrar_Academia(), true);
+
+            
         }        
     }
 }

@@ -45,8 +45,11 @@ namespace Boora_TCC_2019.Telas_Alterar
                 aluno.objetivo_Aluno = txt_OBJETIVO.Text;
                 aluno.Foto_Aluno = Login.Id_Aluno_Login;
                 aluno.Situacao = 1;
-                limpaCampos();
+                
                 await alunoDAO.AlterarALUNO(Login.Id_Aluno_Login, aluno);
+                App.Current.MainPage = new MENU.Master();
+                limpaCampos();
+
             }
             catch 
            {

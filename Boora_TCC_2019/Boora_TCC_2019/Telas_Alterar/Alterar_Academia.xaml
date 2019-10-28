@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry"
+             xmlns:behaviorPack="clr-namespace:Xamarin.Forms.BehaviorValidationPack;assembly=Xamarin.Forms.BehaviorValidationPack"
+             x:Class="Boora_TCC_2019.Telas_Alterar.Alterar_Academia">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <StackLayout Padding="0" Margin="15">
+
+                    <Label Text="CADASTRAR ACADEMIA" Style="{StaticResource LblTitulo}" TextColor="{StaticResource ColorLabel}"/>
+
+                    <Entry Placeholder="Nome Academia" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_NOMEACADEMIA" />
+
+                    <Entry Placeholder="Email" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_EMAIL">
+                        <Entry.Behaviors>
+                            <behaviorPack:EmailValidationBehavior />
+                        </Entry.Behaviors>
+                    </Entry>
+
+                    <Entry Placeholder="Senha" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SENHA" IsPassword="True"/>
+
+
+                    <Entry  Placeholder="CNPJ" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_CNPJ" Keyboard="Numeric">
+                        <Entry.Behaviors>
+                            <behaviorPack:CNPJValidationBehavior />
+                            <behaviorPack:MaskedBehavior Mask="XX.XXX.XXX/XXXX-XX" />
+                        </Entry.Behaviors>
+                    </Entry>
+
+                    <Entry Placeholder="CIDADE" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_CIDADE"/>
+                    <Entry Placeholder="ESTADO" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_ESTADO"/>
+
+
+                    <control:MaskedEntry Placeholder="TELEFONE" Mask="(XX)X XXXX-XXXX" Keyboard="Numeric" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_TELEFONE" ></control:MaskedEntry>
+                    <Entry Placeholder="INSTAGRAN" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_INSTAGRAN"/>
+
+                    <Image x:Name="imgChoosed" HeightRequest="150" BackgroundColor="#d8d9d1"/>
+
+                    <StackLayout  HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                       
+                            <Button Image="alterar.png" Text="ALTERAR" TextColor="{StaticResource ColorLabel}" x:Name="AlterarDados" Clicked="Btn_AlterarDados_ClickedAsync" HorizontalOptions="Center" CornerRadius="30" BackgroundColor="Green">
+                                <!-- Efeito de click-->
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal">
+                                            <VisualState.Setters>
+                                                <Setter Property="Scale"
+                            Value="1" />
+                                            </VisualState.Setters>
+                                        </VisualState>
+
+                                        <VisualState x:Name="Pressed">
+                                            <VisualState.Setters>
+                                                <Setter Property="Scale" 
+                            Value="0.8" />
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                            </Button>
+                        
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

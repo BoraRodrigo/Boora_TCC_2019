@@ -35,6 +35,7 @@ namespace Boora_TCC_2019.MENU
                 btn_lista_alunos.IsVisible = false;
                 lblNomeUsuario.Text = Login.Nome_Aluno_Logado.ToUpper();
                 btn_cadastrarAviso.IsVisible = false;
+                btn_Alterar_dados_Academia.IsVisible = false;
             }
             else if (Login.Tipo_login.Equals("Dono_Academia"))
             {
@@ -133,6 +134,14 @@ namespace Boora_TCC_2019.MENU
             IsPresented = false;
 
         }
+        private void alterarDadosacademia(object sender, EventArgs e)
+        {
+            this.Detail = new NavigationPage(new Telas_Alterar.Alterar_Academia());
+            IsPresented = false;
+
+        }
+
+        
         private void GoListaAlunos(object sender, EventArgs e)
         {
             this.Detail = new NavigationPage(new TELAS.ListAlunosView());

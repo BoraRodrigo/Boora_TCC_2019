@@ -178,8 +178,8 @@ namespace Boora_TCC_2019.DAO
             var exercicios_serie = await exercicios_Serie_DAO.Busca_Exercicios_Serie();
             await firebase
               .Child("Academias")
-                .Child(Login.Nome_Academia_login)
-                .Child("Exercicios_Serie_DAO")
+               .Child(Login.Nome_Academia_login)
+               .Child("Exercicios_Serie_DAO")
               .OnceAsync<Exercicios_Serie_DAO>();
             return exercicios_serie.Where(a => a.Id_Serie.Equals( id_serie)).FirstOrDefault();
         }

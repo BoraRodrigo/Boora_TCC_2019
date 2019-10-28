@@ -81,6 +81,12 @@
                             <Button Image="alterar.png"  BackgroundColor="Transparent" Text="Alterar Dados" Clicked="alterarDados" Margin="5,0,0,0" x:Name="btn_Alterar_dados_Aluno" TextColor="{StaticResource ColorLabel}" >
                                 
                             </Button>
+
+
+                            <Button Image="alterar.png"  BackgroundColor="Transparent" Text="Alterar Dados" Clicked="alterarDadosacademia" Margin="5,0,0,0" x:Name="btn_Alterar_dados_Academia" TextColor="{StaticResource ColorLabel}" >
+
+                            </Button>
+
                             <Button  Image="avisos.png" BackgroundColor="Transparent" Text="Avisos" Clicked="GoAvisos" Margin="5,0,0,0" TextColor="{StaticResource ColorLabel}">
 
                             </Button>

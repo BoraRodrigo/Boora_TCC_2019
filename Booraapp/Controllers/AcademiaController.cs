@@ -19,9 +19,8 @@ namespace Booraapp.Controllers
         {
             AcademiaDAO academiaDAO = new AcademiaDAO();
             Academia academia = new Academia();
-            academia= await academiaDAO.Busca_Academia_Nome("Angelos");
             List<Academia> lista_academia = new List<Academia>();
-            lista_academia.Add(academia);
+            lista_academia= await academiaDAO.Busca_Academia_WEB();
             return View(lista_academia);
         }
 
