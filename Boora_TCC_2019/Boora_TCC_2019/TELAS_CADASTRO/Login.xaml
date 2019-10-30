@@ -16,11 +16,11 @@
                 <StackLayout Padding="0" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                     <ffimageloading:CachedImage Source="LogoTcc.png" HeightRequest="160" WidthRequest="160" />
 
-                    <Entry   x:Name="txtNome" Placeholder="Email" TextColor="#ffc800" PlaceholderColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
+                    <Entry   x:Name="txtNome" Placeholder="Email" TextColor="Black" PlaceholderColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="180" />
 
-                    <Entry x:Name="txtsenha" Placeholder="Senha" TextColor="#ffc800" PlaceholderColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" IsPassword="True"/>
+                    <Entry x:Name="txtsenha" Placeholder="Senha" TextColor="Black" PlaceholderColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="180" IsPassword="True"/>
 
-                    <Entry x:Name="txtNome_academia" Placeholder="Nome Academia" TextColor="#ffc800" PlaceholderColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="150" />
+                    <Entry x:Name="txtNome_academia" Placeholder="Nome Academia" TextColor="Black" PlaceholderColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="180" />
 
                     <Button Text="Entrar" Padding="0" BackgroundColor="#ffc800"  WidthRequest="60" Clicked="EfetuarLogin" BorderWidth="0" CornerRadius="30">
                         <!-- Efeito de click-->

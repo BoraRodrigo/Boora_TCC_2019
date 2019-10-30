@@ -11,12 +11,13 @@
     <MasterDetailPage.Master >
         <ContentPage Title="Menu">
             <ScrollView>
-                <StackLayout >
+                <StackLayout BackgroundColor="#ffc800">
 
-                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
-                <!--Adiona novo botao, e no Master C# faz o funçao do evento clicked, esse tipo de menu so funciona em masterdateilpage-->
-                    <StackLayout BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Orientation="Vertical"  HeightRequest="180" >
-                        <controls:CircleImage Source="addfoto.png"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BorderThickness="2" x:Name="foto_Perfil" BorderColor="Black">
+                    <StackLayout Orientation="Horizontal" >
+                        <Label BackgroundColor="#ffc800" HorizontalOptions="End" />
+                        <!--Adiona novo botao, e no Master C# faz o funçao do evento clicked, esse tipo de menu so funciona em masterdateilpage-->
+                        <StackLayout BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Orientation="Vertical"  HeightRequest="180" >
+                            <controls:CircleImage Source="addfoto.png"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BorderThickness="2" x:Name="foto_Perfil" BorderColor="Black" > 
                             <controls:CircleImage.WidthRequest >
                                 <OnPlatform x:TypeArguments="x:Double" >
                                     <On Platform="Android, iOS">120</On>
@@ -36,12 +37,12 @@
                         <!--Colocar este evento de clique no botão não sei fazer isso, quando o dono de academia loga estou desabilitando o botão pq não implementei isso  -->
 
                         <!--<Button x:Name="btn_Alterar" Text="Alterar" BackgroundColor="Transparent"  Clicked="Btn_Alterar_Imagem"  BorderWidth="1"  BorderColor="Black"/>-->
-                        <Label x:Name="lblNomeUsuario" FontSize="Micro"  TextColor="Black" HorizontalOptions="Center" VerticalOptions="End" BackgroundColor="Transparent" VerticalTextAlignment="Center"/>
+                            <Label x:Name="lblNomeUsuario" FontSize="Micro"  TextColor="Black" HorizontalOptions="Center" VerticalOptions="End" BackgroundColor="Transparent" VerticalTextAlignment="Center"/>
                     </StackLayout>
-                        <Label BackgroundColor="#ffc800" HorizontalOptions="End" />
-                    </StackLayout>
+                        
+                </StackLayout>
 
-                    <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
                         
                         <StackLayout BackgroundColor="Transparent" Orientation="Vertical" HorizontalOptions="FillAndExpand">
                             <Button Image="inicial.png"  BackgroundColor="Transparent" Text="Inicial" Clicked="GoInicial"  Padding="0" Margin="13,0,0,0" TextColor="{StaticResource ColorLabel}" >
