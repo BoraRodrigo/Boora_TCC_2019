@@ -11,7 +11,7 @@
 
     <ContentPage.Content >
         <AbsoluteLayout>
-
+            <!-- so -->
             <StackLayout BackgroundColor="Transparent" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
                 <StackLayout Padding="0" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                     <ffimageloading:CachedImage Source="LogoTcc.png" HeightRequest="160" WidthRequest="160" />

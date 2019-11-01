@@ -12,7 +12,7 @@
         <ContentPage Title="Menu">
             <ScrollView>
                 <StackLayout BackgroundColor="#ffc800">
-
+<!-- so -->
                     <StackLayout Orientation="Horizontal" >
                         <Label BackgroundColor="#ffc800" HorizontalOptions="End" />
                         <!--Adiona novo botao, e no Master C# faz o funçao do evento clicked, esse tipo de menu so funciona em masterdateilpage-->
