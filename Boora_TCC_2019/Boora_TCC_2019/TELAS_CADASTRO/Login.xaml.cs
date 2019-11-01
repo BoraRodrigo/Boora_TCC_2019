@@ -187,11 +187,6 @@ namespace Boora_TCC_2019.TELAS
                     App.Current.MainPage = new MENU.Master();
                     SlCarregandoLogin.IsVisible = false;
                 }
-                //else if (chekPersonal.IsChecked == true)
-                //{
-                //    await DisplayAlert("", "Não Implementado", "");
-                //}
-
 
             }
             catch
@@ -211,32 +206,23 @@ namespace Boora_TCC_2019.TELAS
                     return aux;
                 });
             }
-
-           
-
         }
+
         public void EsqueceuSenha(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new TELAS.RecuperarSenha(), true);
-
-
-        
-            //txt_email_redefinir_senha.IsVisible = true;
-           //btn_RedefinirSenha.IsVisible = true;                     
+            Navigation.PushAsync(new TELAS.RecuperarSenha(), true);      
         }
-        //public async void RedefinirSenhaAsync(object sender,EventArgs args)
-        //{
-        //    Email email = new Email();
-        //   await email.RedefinirSenha(txt_email_redefinir_senha.Text,txtNome_academia.Text);
-
-        //    txt_email_redefinir_senha.IsVisible = false;
-        //    btn_RedefinirSenha.IsVisible = false;
-        //}
+       
        public void Cadastre_sua_Academia(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new TELAS_CADASTRO.Cadastrar_Academia(), true);
-
-            
-        }        
+         
+        Navigation.PushAsync(new TELAS_CADASTRO.Cadastrar_Academia(), true);
+      //aqui trava se logar e sair depois clicar aqui é algo com o navigation page ele pede pra usar 
+        }
+        public void  Cadastrar_Aluno(object sender, EventArgs args)
+        {
+            Device.OpenUri(new Uri("http://booraapp.gear.host"));
+        }
+        
     }
 }

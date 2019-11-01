@@ -86,6 +86,13 @@
                             <TapGestureRecognizer Tapped="Cadastre_sua_Academia"/>
                         </Label.GestureRecognizers>
                     </Label>
+                    
+                    <Label Text="Aluno Cadastre-se já" FontSize="12" Margin="0" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Cadastrar_Aluno"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+
                 </StackLayout>
                 <Label x:Name="EsqueceuSenhaLbl" HorizontalTextAlignment="Center"  IsVisible="False" BackgroundColor="#ffc800" HorizontalOptions="FillAndExpand"/>
             </StackLayout>

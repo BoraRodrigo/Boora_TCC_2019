@@ -110,7 +110,7 @@ namespace Boora_TCC_2019.DAO
         {
             return (await firebase
                 .Child("Academias")
-                .Child("L")
+
                 
 
                 .OnceAsync<Academia>()).Select(item =>

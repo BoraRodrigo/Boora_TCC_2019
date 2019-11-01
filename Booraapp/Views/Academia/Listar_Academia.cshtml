@@ -4,9 +4,16 @@
 }
 
 <h2>Faça parte de nossa aquipe</h2>
+<br />
+<br />
 
-<h2>A busca da academia tem que ser feita por um campo nome onde se insere o
-    nome da academia e ela ira listar de momento no codigo fonte esta busca só a angelos</h2>
+<form method="post">
+    <p>
+        Nome Academia: <input type="text" name="SearchString">
+        <input type="submit" value="Buscar" />
+    </p>
+</form>
+
 <table class="table">
     <tr>
         <th>
@@ -19,17 +26,18 @@
     </tr>
     @foreach (var item in Model)
     {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome_academia)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cidade)
-            </td>
-            <td>
-                @Html.ActionLink("Seja um membro", "Alterar", new { id = 2})
-            </td>
-        </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome_academia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cidade)
+        </td>
+        <td>
+            @Html.ActionLink("Seja um membro", "Cadastrar_", "CadastrarAluno", new { id = item.Nome_academia }, null)
+    
+        </td>
+    </tr>
     }
 
 </table>

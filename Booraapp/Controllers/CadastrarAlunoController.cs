@@ -17,20 +17,24 @@ namespace Booraapp.Controllers
         {
             return View();
         }
-        public ActionResult Cadastrar_()
+        public ActionResult Cadastrar_(string id)
         {
+
+            ViewBag.Id_Academia = id;
             return View();
         }
+
+
         [HttpPost]
-        public async System.Threading.Tasks.Task<ActionResult> Cadastrar_(Aluno aluno)
+        public async System.Threading.Tasks.Task<ActionResult> Cadastrar_(Aluno aluno, FormCollection form)
         {
 
 
             AlunoDAO alunoDao = new AlunoDAO();
-                await alunoDao.Cadastrar_Aluno_WEB(aluno);
+                await alunoDao.Cadastrar_Aluno_WEB(aluno, form["Id_Academia"]);
                 ModelState.Clear();
             
-            return View();
+               return RedirectToAction("Index","Home");
         }
 
     }

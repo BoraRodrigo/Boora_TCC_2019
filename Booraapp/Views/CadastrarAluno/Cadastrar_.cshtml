@@ -4,7 +4,6 @@
     ViewBag.Title = "Cadastrar_";
 }
 
-<h2> A aluno aqui cadastrado será inserido na academia "Angelos" pq está fixo no codigo, a vereificação e email já cadastrado não esta implementado aqui ainda</h2>
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
@@ -75,9 +74,15 @@
                 </div>
             </div>
 
+
+            <div class="form-group">
+                Academia Selecionada<br />
+                <input type="text" id="Id_Academia" name="Id_Academia" value=" @ViewBag.Id_Academia" />
+            </div>
+
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
-                    <input type="submit"  value="Cadastrar" class="btn btn-default" />
+                    <input type="submit" value="Cadastrar" class="btn btn-default" />
                 </div>
             </div>
         </div>

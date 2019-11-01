@@ -115,12 +115,12 @@ namespace Boora_TCC_2019.DAO
            .PutAsync(fileStream);
         }
 
-        public async Task Cadastrar_Aluno_WEB(Aluno aluno)
+        public async Task Cadastrar_Aluno_WEB(Aluno aluno , string nome_academia)
         {
             //passar aqui o nome da academia para se cadastrar. No moento estou passando só o angelos para teste
             var cadastro_aluno = await firebase
                .Child("Academias")
-               .Child("Angelos")
+               .Child(nome_academia)
                .Child("Aluno")
               .PostAsync(new Aluno()
               {
