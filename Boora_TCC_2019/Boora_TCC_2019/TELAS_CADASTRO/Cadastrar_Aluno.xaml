@@ -31,8 +31,7 @@
 
 
                 <Entry Placeholder="Objetivo" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_OBJETIVO"/>
-                <Entry Placeholder="Situação" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SITUACAO"/>
-
+                
 
                     <Image x:Name="imgChoosed" HeightRequest="150" BackgroundColor="#d8d9d1"/>
                     

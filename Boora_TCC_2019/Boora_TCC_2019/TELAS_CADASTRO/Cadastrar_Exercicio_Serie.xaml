@@ -21,9 +21,9 @@
                                 <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="{StaticResource ColorLabel}" Placeholder="Vezes" x:Name="Txt_Quantidade_Vezes" Keyboard="Numeric"/>
                             </StackLayout>
 
-                            <StackLayout Orientation="Horizontal">
-                                <Label HorizontalOptions="FillAndExpand" Text="{StaticResource ColorLabel}" FontAttributes="Bold" TextColor="{StaticResource ColorLabel}"/>
-                                <Entry HorizontalOptions="FillAndExpand"  PlaceholderColor="{StaticResource ColorLabel}" Placeholder="Peso" x:Name="txt_Peso" Keyboard="Numeric" />
+                            <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                                <Label HorizontalOptions="StartAndExpand" Text="{StaticResource ColorLabel}" FontAttributes="Bold" TextColor="{StaticResource ColorLabel}"/>
+                                <Entry HorizontalOptions="StartAndExpand"  PlaceholderColor="{StaticResource ColorLabel}" Placeholder="Peso" x:Name="txt_Peso" Keyboard="Numeric" />
 
                             </StackLayout>
 
@@ -89,13 +89,13 @@
                         <StackLayout Padding="0" Margin="15" VerticalOptions="StartAndExpand">
                             <StackLayout Orientation="Vertical">
                                 <Label Text="Exercícios na Série" Style="{StaticResource LblTitulo}" TextColor="{StaticResource ColorLabel}"/>
-
+                                <Entry IsEnabled="False"/>
                             </StackLayout>
 
-                            <ListView x:Name="ListaExerciciosSeriesView">
+                            <ListView x:Name="ListaExerciciosSeriesView" BackgroundColor="{StaticResource ColorStacklayout}">
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
-                                        <TextCell Text="{Binding Nome}" TextColor="{StaticResource ColorLabel}" />
+                                        <TextCell Text="{Binding Nome}"  TextColor="{StaticResource ColorLabel}" />
                                     </DataTemplate>
                                 </ListView.ItemTemplate>
                             </ListView>

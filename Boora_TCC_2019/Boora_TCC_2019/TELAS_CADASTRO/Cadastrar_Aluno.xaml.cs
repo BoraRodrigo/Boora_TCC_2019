@@ -71,6 +71,7 @@ namespace Boora_TCC_2019.TELAS
                         aluno.Idade = datanascimento;
                         aluno.objetivo_Aluno = txt_OBJETIVO.Text;
                         aluno.Situacao = 1;
+                       
 
                         await alunoDAO.Cadastrar_Aluno(aluno,file.GetStream());
                         limpaCampos();
@@ -116,7 +117,7 @@ namespace Boora_TCC_2019.TELAS
 
             txt_OBJETIVO.Text = "";
             txt_PESO.Text = "";
-            txt_SITUACAO.Text = "";
+          
             btn_Cadastrar.IsEnabled = true;
 
         }

@@ -24,11 +24,16 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
         private List<Exercicio> listaAuxiliar { get; set; }
         public Cadastrar_Exercicio_Serie (Aluno a, Serie s)
 		{
-			InitializeComponent ();
+            NavigationPage.SetHasBackButton(this, false);
+            InitializeComponent ();
             
             aluno = a;
             serie = s;
 		}
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
+        }//desabilitar botão fisico voltar
 
         private async void Btn_Cadastrar_Exercicios_Serie(object sender, EventArgs e)
         {

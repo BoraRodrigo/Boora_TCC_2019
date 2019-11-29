@@ -16,11 +16,14 @@ namespace Boora_TCC_2019
 	public partial class Inicial : ContentPage
 	{
 		public Inicial ()
-		{           
-          //  NavigationPage.SetHasNavigationBar(this, false);
+		{
+            //  NavigationPage.SetHasNavigationBar(this, false);
+            NavigationPage.SetHasBackButton(this, false);
+            
             InitializeComponent ();           
            // lbl_nome_academia.Text = "ACADEMIA " + Login.Nome_Academia_login.ToString().ToUpper();           
         }
+       
         protected async override void OnAppearing()
         {
             try
