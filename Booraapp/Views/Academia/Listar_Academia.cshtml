@@ -10,36 +10,50 @@
 <form method="post">
     <p>
         Nome Academia: <input type="text" name="SearchString">
-        <input type="submit" value="Buscar" />
+        <input type="submit" value="Buscar"/>
     </p>
 </form>
 
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Nome_academia)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Cidade)
-        </th>
-        <th></th>
-    </tr>
-    @foreach (var item in Model)
-    {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Nome_academia)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Cidade)
-        </td>
-        <td>
-            @Html.ActionLink("Seja um membro", "Cadastrar_", "CadastrarAluno", new { id = item.Nome_academia }, null)
-    
-        </td>
-    </tr>
-    }
+<div id="div_Academias">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome_academia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cidade)
+            </th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome_academia)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cidade)
+                </td>
+                <td>
+                    @Html.ActionLink("Seja um membro", "Cadastrar_", "CadastrarAluno", new { id = item.Nome_academia }, null)
 
-</table>
+                </td>
+            </tr>
+        }
+
+    </table>
+@*@section scripts{
+
+    <script>
+        $(document).ready(function () {
+            $("#div_Academias").hide();
+
+        });
+        function div_show() {
+            $("#div_Academias").show();
+        }
+    </script>
+    
+    }*@
 
 

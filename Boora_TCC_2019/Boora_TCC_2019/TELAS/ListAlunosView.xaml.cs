@@ -32,7 +32,7 @@ namespace Boora_TCC_2019.TELAS
 
             for (int i = 0; i < listaInterna.Count; i++)
             {
-                listaInterna[i].objetivo_Aluno = "user.png";
+                listaInterna[i].foto_listar = "user.png";
             }
 
 
@@ -52,7 +52,7 @@ namespace Boora_TCC_2019.TELAS
                 listaPesquisa = listaInterna.Where(a => a.Nome.Contains(args.NewTextValue)).ToList();
             for (int i = 0; i < listaPesquisa.Count; i++)
             {
-                listaPesquisa[i].objetivo_Aluno = "user.png";
+                listaPesquisa[i].foto_listar = "user.png";
             }
 
             ListaAlunos.ItemsSource = listaPesquisa;
@@ -64,7 +64,7 @@ namespace Boora_TCC_2019.TELAS
             Aluno aluno = (Aluno)args.SelectedItem;
 
             // Navigation.PushAsync(new TELAS.Cadastrar_Serie(aluno));
-            Navigation.PushAsync(new TELAS.Lista_Frequencia_Aluno(aluno));
+            Navigation.PushAsync(new TELAS.Detalhes_Alunos(aluno));
         }
     }
 }

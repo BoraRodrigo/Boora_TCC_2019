@@ -32,9 +32,10 @@ namespace Boora_TCC_2019.TELAS
             lista_Dias_Frequencia = await controle_Dia_DAO.Busca_Todas__Dias_Do_Aluno(aluno_parametro.Id_Aluno);        
             Lista_Frequencia.ItemsSource = lista_Dias_Frequencia;
             SlCarregandoAvisos.IsVisible = false;
+            
         }
 
-        private void Cadastrar_SerieAsy(object sender, EventArgs e)
+        private void _Cadastrar_SerieAsy(object sender, EventArgs e)
         {
             Navigation.PushAsync(new TELAS.Cadastrar_Serie(aluno_parametro));
         }

@@ -108,11 +108,9 @@ namespace Boora_TCC_2019.DAO
         }
         public async Task<List<Academia>> Busca_Academia_WEB()
         {
+
             return (await firebase
-                .Child("Academias")
-
-                
-
+                .Child("tcc-2019-53a08").Child("Academias")
                 .OnceAsync<Academia>()).Select(item =>
                 {
 

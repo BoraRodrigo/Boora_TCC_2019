@@ -18,7 +18,8 @@ namespace Booraapp.Controllers
         public async System.Threading.Tasks.Task<ActionResult> Listar_Academia()
         {
             AcademiaDAO academiaDAO = new AcademiaDAO();
-            List<Academia> lista_academia = await academiaDAO.Busca_Academia_WEB();
+            List<Academia> lista_academia = new List<Academia>();
+            lista_academia = await academiaDAO.Busca_Academia_WEB();
             return View(lista_academia);
         }
         [HttpPost]

@@ -14,6 +14,7 @@ namespace Boora_TCC_2019.MODEL
         public string Senha { get; set; }
         public string Academia { get; set; }
         public string Tipo { get; set; }
+        public int salvar_Dados { get; set; }
 
     }
 }

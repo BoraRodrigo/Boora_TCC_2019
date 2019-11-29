@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Boora_TCC_2019.TELAS.Detalhes_Alunos"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+              BackgroundImage="fundoI.jpg">
+    <ContentPage.Content>
+        <ScrollView>
+               
+            <StackLayout Padding="0" Margin="5" HorizontalOptions="FillAndExpand">
+             <Label Text="DETALHE ALUNO" HorizontalTextAlignment="Center" Style="{StaticResource LblTitulo}" TextColor="{StaticResource  ColorLabel}"/>
+                <Frame HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
+                    <StackLayout Orientation="Horizontal">
+                            <Label Text="Nome: " TextColor="Blue"/>
+                            <Label x:Name="lbl_Nome"/>
+                        </StackLayout>
+                    </Frame>
+                <Frame HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Idade: " TextColor="Blue"/>
+                        <Label x:Name="lbl_Idade"/>
+                        <Label Text=" anos"/>
+                    </StackLayout>
+                </Frame>
+                <Frame HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
+                    <StackLayout Orientation="Horizontal">
+                            <Label Text="Peso: " TextColor="Blue"/>
+                            <Label x:Name="lbl_Peso"/>
+                        <Label Text=" kg"/>
+                    </StackLayout>
+                    </Frame>
+                <Frame HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
+                    <StackLayout Orientation="Horizontal">
+                    <Label Text="Altura: " TextColor="Blue"/>
+                        <Label x:Name="lbl_Altura"/>
+                    <Label Text=" m"/>
+                </StackLayout>
+                </Frame>
+                <Frame HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
+                    <StackLayout Orientation="Horizontal">
+                            <Label Text="Email: " TextColor="Blue"/>
+                            <Label x:Name="lbl_Email"/>
+                        </StackLayout>
+                    </Frame>
+                <Frame HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
+                        <StackLayout Orientation="Horizontal">
+                    <Label Text="Objetivo: " TextColor="Blue"/>
+                        <Label x:Name="lbl_Objetivo"/>
+                    </StackLayout>
+                    </Frame>
+                    <Frame HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
+                    <StackLayout Orientation="Horizontal">
+                            <Label Text="Situacao: " TextColor="Blue"/>
+                            <Label x:Name="lbl_Situacao"/>
+                        </StackLayout>
+                    </Frame>
+
+                <Button Image="cadastro_serie.png" Text="Frequencia" TextColor="{StaticResource ColorLabel}" x:Name="btn_Cadastrar" Clicked="Cadastrar_SerieAsy" HorizontalOptions="FillAndExpand"  CornerRadius="20" BackgroundColor="Green">
+                    <!-- Efeito de click-->
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="Scale"
+                            Value="1" />
+                                </VisualState.Setters>
+                            </VisualState>
+
+                            <VisualState x:Name="Pressed">
+                                <VisualState.Setters>
+                                    <Setter Property="Scale" 
+                            Value="0.8" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateManager.VisualStateGroups>
+                </Button>
+
+            </StackLayout>
+       
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

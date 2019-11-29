@@ -22,6 +22,8 @@
 
                     <Entry x:Name="txtNome_academia" Placeholder="Nome Academia" TextColor="Black" PlaceholderColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Center" WidthRequest="180" />
 
+                    <input:CheckBox x:Name="ch_salvarDados" HorizontalOptions="Center" Text="Salvar dados" TextColor="Black" Color="Black" BorderColor="#ffc800"/>
+
                     <Button Text="Entrar" Padding="0" BackgroundColor="#ffc800"  WidthRequest="60" Clicked="EfetuarLogin" BorderWidth="0" CornerRadius="30">
                         <!-- Efeito de click-->
                         <VisualStateManager.VisualStateGroups>

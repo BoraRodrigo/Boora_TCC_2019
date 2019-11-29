@@ -14,7 +14,7 @@
                     <ListView Margin="0,10" x:Name="ListaAlunos"  ItemSelected="SelecaoAlunoAction">
                         <ListView.ItemTemplate >
                             <DataTemplate >
-                                <ImageCell ImageSource="{Binding objetivo_Aluno}" Text="{Binding Nome}" Detail="{Binding Email}"  />
+                                <ImageCell ImageSource="{Binding foto_listar}" Text="{Binding Nome}" Detail="{Binding Email}"  />
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>

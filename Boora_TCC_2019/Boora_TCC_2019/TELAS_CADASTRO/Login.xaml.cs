@@ -58,6 +58,19 @@ namespace Boora_TCC_2019.TELAS
                     {
                         chekAcademia.IsChecked = true;
                     }
+                    if (lista[0].salvar_Dados == 1)
+                    {
+                        ch_salvarDados.IsChecked = true;
+                    }
+                    else
+                    {
+                        ch_salvarDados.IsChecked = false;
+                        txtNome.Text = "";
+                        txtNome_academia.Text = "";
+                        txtsenha.Text = "";
+                        chekAcademia.IsChecked = false;
+                        chekAcademia.IsChecked = false;
+                    }
                 }
                 catch 
                 {
@@ -81,39 +94,84 @@ namespace Boora_TCC_2019.TELAS
             string nomelogin;
             string senhalogin;
             string academialogin;
-
-            if (lista.Capacity == 0)
+            
+            if(ch_salvarDados.IsChecked == true)
             {
-                
-                acessar.Email = txtNome.Text;
-                acessar.Academia = txtNome_academia.Text;
-                acessar.Senha = txtsenha.Text;
-                if (chekAluno.IsChecked == true)
+                if (lista.Capacity == 0)
                 {
-                    acessar.Tipo = "ALUNO";
+
+                    acessar.salvar_Dados = 1;
+                    acessar.Email = txtNome.Text;
+                    acessar.Academia = txtNome_academia.Text;
+                    acessar.Senha = txtsenha.Text;
+                    if (chekAluno.IsChecked == true)
+                    {
+                        acessar.Tipo = "ALUNO";
+                    }
+                    if (chekAcademia.IsChecked == true)
+                    {
+                        acessar.Tipo = "ACADEMIA";
+                    }
+                    db.Salvar_Login(acessar);
                 }
-                if (chekAcademia.IsChecked == true)
+                else
                 {
-                    acessar.Tipo = "ACADEMIA";
+                    acessar.salvar_Dados = 1;
+                    acessar.Email = txtNome.Text;
+                    acessar.Academia = txtNome_academia.Text;
+                    acessar.Senha = txtsenha.Text;
+                    if (chekAluno.IsChecked == true)
+                    {
+                        acessar.Tipo = "ALUNO";
+                    }
+                    if (chekAcademia.IsChecked == true)
+                    {
+                        acessar.Tipo = "ACADEMIA";
+                    }
+                    acessar.id = lista[0].id;
+                    db.Alterar_Login(acessar);
                 }
-                db.Salvar_Login(acessar);
             }
             else
             {
-                acessar.Email = txtNome.Text;
-                acessar.Academia = txtNome_academia.Text;
-                acessar.Senha = txtsenha.Text;
-                if (chekAluno.IsChecked == true)
+                if (lista.Capacity == 0)
                 {
-                    acessar.Tipo = "ALUNO";
+
+                    acessar.salvar_Dados = 0;
+                    acessar.Email = txtNome.Text;
+                    acessar.Academia = txtNome_academia.Text;
+                    acessar.Senha = txtsenha.Text;
+                    if (chekAluno.IsChecked == true)
+                    {
+                        acessar.Tipo = "ALUNO";
+                    }
+                    if (chekAcademia.IsChecked == true)
+                    {
+                        acessar.Tipo = "ACADEMIA";
+                    }
+                    db.Salvar_Login(acessar);
                 }
-                if (chekAcademia.IsChecked == true)
+                else
                 {
-                    acessar.Tipo = "ACADEMIA";
+                    acessar.salvar_Dados = 0;
+                    acessar.Email = txtNome.Text;
+                    acessar.Academia = txtNome_academia.Text;
+                    acessar.Senha = txtsenha.Text;
+                    if (chekAluno.IsChecked == true)
+                    {
+                        acessar.Tipo = "ALUNO";
+                    }
+                    if (chekAcademia.IsChecked == true)
+                    {
+                        acessar.Tipo = "ACADEMIA";
+                    }
+                    acessar.id = lista[0].id;
+                    db.Alterar_Login(acessar);
                 }
-                acessar.id = lista[0].id;
-                db.Alterar_Login(acessar);
+
             }
+
+           
 
             try
             {
