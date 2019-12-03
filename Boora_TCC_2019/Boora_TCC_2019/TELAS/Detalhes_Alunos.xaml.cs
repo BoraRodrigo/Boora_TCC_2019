@@ -17,11 +17,13 @@ namespace Boora_TCC_2019.TELAS
 		{
                       
 			InitializeComponent();
-
+            int dataNasc; 
             alunoREF = aluno;
 
+            dataNasc = DateTime.Now.Year - Convert.ToDateTime(aluno.Idade).Year; 
+
             lbl_Nome.Text = aluno.Nome;
-            lbl_Idade.Text = aluno.Idade;
+            lbl_Idade.Text = dataNasc.ToString();
             lbl_Peso.Text = aluno.Peso.ToString();
             lbl_Altura.Text = aluno.Altura.ToString();
             lbl_Email.Text = aluno.Email;

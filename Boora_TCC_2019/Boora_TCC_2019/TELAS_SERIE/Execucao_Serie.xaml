@@ -10,8 +10,8 @@
                 <StackLayout Orientation="Vertical" Padding="10" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                    <Label Text="Boora Malhar "  FontSize="22"  FontAttributes="Bold"/>
-                    <Label x:Name="txtNomeALUNO"  FontSize="22"  FontAttributes="Bold" />
+                    <Label Text="Boora Malhar "  FontSize="19"  FontAttributes="Bold"/>
+                    <Label x:Name="txtNomeALUNO"  FontSize="19"  FontAttributes="Bold" />
                 </StackLayout>
 
                 <Frame >
@@ -87,7 +87,7 @@
                         <Image x:Name="imgbaixadaW" HeightRequest="180" WidthRequest="180" />
                     </StackLayout>
                 </Frame>
-   
+                    
                 </StackLayout>
                 <!--Carregando...-->
                 <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="WhiteSmoke" x:Name="SlCarregando" IsVisible="False">

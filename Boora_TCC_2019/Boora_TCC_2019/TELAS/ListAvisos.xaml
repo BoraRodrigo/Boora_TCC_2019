@@ -9,8 +9,8 @@
             <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
                 <StackLayout Padding="0" Margin="15">
                     <Label Text="AVISOS" Style="{StaticResource LblTitulo}" TextColor="{StaticResource ColorLabel}"/>
-                   
-                    <ListView Margin="0,10" x:Name="ListaAvisos">
+
+                    <ListView Margin="0,10" x:Name="ListaAvisos" ItemSelected="SelecaoAvisoAction">
                         <ListView.ItemTemplate >
                             <DataTemplate >
                                 <ImageCell ImageSource="{Binding Imagem_Avisos}" Text="{Binding Descricao_Aviso}" Detail="{Binding Data_Aviso}"  />

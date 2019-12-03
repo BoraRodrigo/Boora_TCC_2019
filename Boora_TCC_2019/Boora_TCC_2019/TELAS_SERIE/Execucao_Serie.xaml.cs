@@ -117,5 +117,6 @@ namespace Boora_TCC_2019.TELAS_SERIE
             result = "Descanso - " + Minutos + ":" + Segundos;
             return result;
         }
+
     }
 }

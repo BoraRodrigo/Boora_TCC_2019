@@ -21,6 +21,8 @@ namespace Boora_TCC_2019.TELAS
             InitializeComponent();
         }
 
+
+
         protected async override void OnAppearing()
         {
             base.OnAppearing();
@@ -41,6 +43,16 @@ namespace Boora_TCC_2019.TELAS
 
 
         }
+
+        private void SelecaoAvisoAction(object sender, SelectedItemChangedEventArgs args)
+        {
+            Avisos_Academia aviso = (Avisos_Academia)args.SelectedItem;
+
+            // Navigation.PushAsync(new TELAS.Cadastrar_Serie(aluno));
+            Navigation.PushAsync(new TELAS.Detalhe_Avisos(aviso));
+        }
+
+
 
     }
 }

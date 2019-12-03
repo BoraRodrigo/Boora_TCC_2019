@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Boora_TCC_2019.TELAS.Detalhe_Avisos"
+             BackgroundImage="fundoI.jpg">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+            <Label x:Name="txt_titulo" FontSize="18" HorizontalTextAlignment="Center" />
+            <Editor x:Name="txt_detalhes" IsReadOnly="True"/>
+            <Image x:Name="img_imagem" WidthRequest="300" HeightRequest="300"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
