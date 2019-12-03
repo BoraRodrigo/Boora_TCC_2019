@@ -16,9 +16,15 @@ namespace Boora_TCC_2019.TELAS
 		public TelaSobre ()
 		{
 			InitializeComponent ();
+
 		}
 
+        public void GoInsta(object sender, EventArgs args)
+        {
         
+            string instagramacadeia = "https://booraapp.gear.host/";
+            Device.OpenUri(new Uri(instagramacadeia));
+        }
 
         public void MaisDetalhesAction(object sender, EventArgs args)
         {

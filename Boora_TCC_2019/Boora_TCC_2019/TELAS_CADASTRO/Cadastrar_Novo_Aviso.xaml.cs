@@ -57,6 +57,8 @@ namespace Boora_TCC_2019.TELAS_CADASTRO
                 avisos_Academia.Imagem_Avisos = "";
                 await avisos_Academia_DAO.Cadastrar_Avisos_Academia(avisos_Academia, file.GetStream());
                 await DisplayAlert("Sucesso", "Aviso Cadastrado!", "OK");
+                txtDESCRICAO.Text = "";
+                imgChoosed.Source = null;
             }
             catch
             {

@@ -55,6 +55,10 @@ namespace Boora_TCC_2019.TELAS
             {
                 await exercicioDAO.Cadastrar_Exercicio("1", txtNOME.Text, txtDESCRICAO.Text, txtOBJETIVO.Text, file.GetStream(), Path.GetFileName(file.Path));
                 await DisplayAlert("Sucesso", "Exercicio Cadastrado!", "OK");
+                txtDESCRICAO.Text = "";
+                txtNOME.Text = "";
+                txtOBJETIVO.Text = "";
+                imgChoosed.Source = null;
             }
             catch 
             {

@@ -38,8 +38,8 @@
                             <Entry Placeholder="Objetivo"  HorizontalOptions="FillAndExpand" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_OBJETIVO"/>
                         </StackLayout>
                         <StackLayout  Orientation="Horizontal" >
-                            <Label  Text="Situação:"  x:Name="Situação" FontSize="18" TextColor="{StaticResource ColorLabel}"/>
-                            <Entry Placeholder="Situação"  HorizontalOptions="FillAndExpand" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SITUACAO"/>
+                            <Label  Text="Situação:"  x:Name="Situação" FontSize="18" TextColor="{StaticResource ColorLabel}" IsVisible="False"/>
+                            <Entry Placeholder="Situação"  HorizontalOptions="FillAndExpand" PlaceholderColor="{StaticResource ColorLabel}" x:Name="txt_SITUACAO" IsVisible="False"/>
                         </StackLayout>
                         <StackLayout>
                             <Button Image="alterar.png" Text="ALTERAR" TextColor="{StaticResource ColorLabel}" x:Name="AlterarDados" Clicked="Btn_AlterarDados_ClickedAsync" HorizontalOptions="Center" CornerRadius="30" BackgroundColor="Green">

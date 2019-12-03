@@ -237,6 +237,7 @@ namespace Boora_TCC_2019.TELAS
                     Senha_Aluno_Logado = academia.Senha;
                     Telefone_Academia = academia.Whats;
                     Nome_Academia_login = academia.Nome_academia;
+                    Instagran_Academia = academia.Instagran;
                     Tipo_login = "Dono_Academia";
 
                    

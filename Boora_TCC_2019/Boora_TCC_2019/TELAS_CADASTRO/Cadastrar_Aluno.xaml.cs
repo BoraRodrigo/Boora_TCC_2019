@@ -117,7 +117,8 @@ namespace Boora_TCC_2019.TELAS
 
             txt_OBJETIVO.Text = "";
             txt_PESO.Text = "";
-          
+            imgChoosed.Source = null;
+
             btn_Cadastrar.IsEnabled = true;
 
         }

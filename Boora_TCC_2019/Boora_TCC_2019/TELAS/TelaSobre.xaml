@@ -17,6 +17,10 @@
                 </Label>
                 <Label x:Name="Lbl_MaisDetalhes2" TextColor="{StaticResource ColorLabel}" HorizontalTextAlignment="Center" IsVisible="False"/>
 
+                <Button Text="Visite nosso Site! AQUI" Clicked="GoInsta" HorizontalOptions="Center"
+                        Padding="0" BackgroundColor="White"    BorderWidth="1" CornerRadius="30"
+                        VerticalOptions="CenterAndExpand"></Button>
+           
             </StackLayout>
             <StackLayout VerticalOptions="End" HorizontalOptions="End">
                 <ffimageloading:CachedImage Source="loading.gif"/>

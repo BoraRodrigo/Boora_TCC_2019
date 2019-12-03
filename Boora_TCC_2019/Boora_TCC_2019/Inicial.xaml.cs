@@ -38,7 +38,7 @@ namespace Boora_TCC_2019
         public void GoInsta(object sender, EventArgs args)
         {
             // 2 semestre =)
-            string instagramacadeia = "https://www.instagram.com/"+Login.Instagran_Academia+"/";
+            string instagramacadeia = "https://www.instagram.com/"+Login.Instagran_Academia;
             Device.OpenUri(new Uri(instagramacadeia));
         }
 

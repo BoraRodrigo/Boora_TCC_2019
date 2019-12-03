@@ -11,7 +11,7 @@ using ImageCircle.Forms.Plugin.Droid;
 
 namespace Boora_TCC_2019.Droid
 {
-    [Activity(Label = "BoORa!", Icon = "@drawable/iconBora", Theme = "@style/MainTheme", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "BoORa!", Icon = "@drawable/iconApp", Theme = "@style/MainTheme", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
