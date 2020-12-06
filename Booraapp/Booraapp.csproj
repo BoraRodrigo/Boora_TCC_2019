@@ -241,6 +241,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <Content Include="Recursos\google-play-badge.png" />
+    <Content Include="Recursos\icone.jpg" />
+    <Content Include="Recursos\logo.jpg" />
+    <Content Include="Recursos\PlayStoreIcon.png" />
     <Content Include="Recursos\QrCode.jpeg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

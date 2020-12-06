@@ -20,7 +20,7 @@ namespace Boora_TCC_2019.DAO
         {
 
             return (await firebase
-                .Child("Academias")
+                .Child("Exercicios_Serie_DAO")
                 .Child(Login.Nome_Academia_login)
                 .Child("Exercicios_Serie_DAO")
                 .OnceAsync<Exercicios_Serie>()).Select(item => new Exercicios_Serie
@@ -38,7 +38,7 @@ namespace Boora_TCC_2019.DAO
         {
 
             return (await firebase
-               .Child("Academias")
+               .Child("Exercicios_Serie_DAO")
                 .Child(Login.Nome_Academia_login)
                 .Child("Exercicios_Serie_DAO").OrderBy("Id_Serie").EqualTo(id_da_serie)
                 .OnceAsync<Exercicios_Serie>()).Select(item => new Exercicios_Serie
@@ -63,7 +63,7 @@ namespace Boora_TCC_2019.DAO
                 //    ".read": true,
                 //     ".write": true
                 //  }
-                .Child("Academias")
+                .Child("Serie")
                 .Child(Login.Nome_Academia_login)
                 .Child("Serie").OrderBy("Id_Aluno").EqualTo(idAluno)
                 .OnceAsync<Serie>()).Select(item => new Serie
@@ -81,7 +81,7 @@ namespace Boora_TCC_2019.DAO
         public async Task Cadastrar_Exercicios_Serie(Exercicios_Serie exercicios_Serie)
         {
             await firebase
-              .Child("Academias")
+              .Child("Exercicios_Serie_DAO")
                 .Child(Login.Nome_Academia_login)
                 .Child("Exercicios_Serie_DAO")
               .PostAsync(new Exercicios_Serie()

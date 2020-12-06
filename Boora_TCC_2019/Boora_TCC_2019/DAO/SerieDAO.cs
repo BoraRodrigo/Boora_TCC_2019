@@ -20,7 +20,7 @@ namespace Boora_TCC_2019.DAO
         {
 
             return (await firebase
-                .Child("Academias")
+                .Child("Serie")
                 .Child(Login.Nome_Academia_login)
                 .Child("Serie")
                 .OnceAsync<Serie>()).Select(item => new Serie
@@ -41,7 +41,7 @@ namespace Boora_TCC_2019.DAO
           
 
          var cadastro_serie=   await firebase
-             .Child("Academias")
+                .Child("Serie")
                 .Child(Login.Nome_Academia_login)
                 .Child("Serie")
               .PostAsync(new Serie() { Id_Serie = serie.Id_Serie,
@@ -56,15 +56,15 @@ namespace Boora_TCC_2019.DAO
              id_serieKEY = cadastro_serie.Key;
 
             var alterar_serieID = (await firebase
-            .Child("Academias")
+                .Child("Serie")
                 .Child(Login.Nome_Academia_login)
                 .Child("Serie")
             .OnceAsync<Serie>()).Where(a => a.Object.Id_Serie == id_serieKEY).FirstOrDefault();
 
             await firebase
-           .Child("Academias")
-                .Child(Login.Nome_Academia_login)
-                .Child("Serie")
+            .Child("Serie")
+            .Child(Login.Nome_Academia_login)
+            .Child("Serie")
             .Child(id_serieKEY)
             .PutAsync(new Serie()
             {
@@ -82,7 +82,7 @@ namespace Boora_TCC_2019.DAO
         {
             var exercicio = await Busca_Serie();
             await firebase
-              .Child("Academias")
+                .Child("Serie")
                 .Child(Login.Nome_Academia_login)
                 .Child("Serie")
               .OnceAsync<Serie>();

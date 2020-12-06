@@ -24,7 +24,7 @@ namespace Boora_TCC_2019.TELAS_SERIE
             InitializeComponent();
             IdSerie = id;
             Exerciciolista = lista;
-            
+           
             BuscaNome();
            
             ListaExerciciosSerie.ItemsSource = Exerciciolista;
@@ -43,6 +43,11 @@ namespace Boora_TCC_2019.TELAS_SERIE
             Confere_Dia();
 
         }
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
+        }//desabilitar botão fisico voltar
+
 
         private async void ListaExerciciosSerie_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
@@ -62,42 +67,60 @@ namespace Boora_TCC_2019.TELAS_SERIE
         }
         private async void finalizarSerie(object sender, EventArgs e)
         {
-            Login login = new Login();
-            Controle_Dia controle_Dia = new Controle_Dia();
-            Controle_Dia_DAO controle_Dia_DAO = new Controle_Dia_DAO();
-            List<Controle_Dia> lista_controle_dia = new List<Controle_Dia>();
-
-            lista_controle_dia = await controle_Dia_DAO.Busca_Todas__Dias_Do_Aluno(Login.Id_Aluno_Login);
-
-            bool Verefica_Dia = false;
-            for (int i = 0; i < lista_controle_dia.Count; i++)
+            bool verefica_finalizou = false;
+            for (int i = 0; i < Exerciciolista.Count; i++)
             {
-                try
+                if (Exerciciolista[i].Imagem_Gif.ToString().Equals("fail.png"))
                 {
-                    if (lista_controle_dia[i].Data_Presenca.Equals(DateTime.Now.ToString("dd/MM/yyyy")) && lista_controle_dia[i].Nome_serie.Equals(NomeSerie))
-                    {
-
-                        LblAvisoSerieRealizado.Text = ("Já realizou esta série hoje - " + (DateTime.Now.ToString("dd/MM/yyyy")));
-                        LblAvisoSerieRealizado.BackgroundColor = Color.Red;
-                        LblAvisoSerieRealizado.IsVisible = true;
-
-                        Verefica_Dia = true;
-                    }
+                    verefica_finalizou = true;
+                    
                 }
-                catch { }
             }
-
-          
-            if (Verefica_Dia==false)
+            if (verefica_finalizou == false)
             {
 
-                controle_Dia.Id_Aluno = Login.Id_Aluno_Login;//passar o id do aluno que fez a serie
-                controle_Dia.Nome_serie = NomeSerie;
-                controle_Dia.Hora_Serie = DateTime.Now.Hour.ToString();
-                controle_Dia.Data_Presenca = DateTime.Now.ToString("dd/MM/yyyy");
-                await controle_Dia_DAO.Cadastrar_Dia(controle_Dia);
+                Login login = new Login();
+                Controle_Dia controle_Dia = new Controle_Dia();
+                Controle_Dia_DAO controle_Dia_DAO = new Controle_Dia_DAO();
+                List<Controle_Dia> lista_controle_dia = new List<Controle_Dia>();
 
-            }  //passar aqui o nome da serie que vai salvar e o id do aluno tó fazendo isso de modo direto pra ganhar tempo
+                lista_controle_dia = await controle_Dia_DAO.Busca_Todas__Dias_Do_Aluno(Login.Id_Aluno_Login);
+
+                bool Verefica_Dia = false;
+                for (int i = 0; i < lista_controle_dia.Count; i++)
+                {
+                    try
+                    {
+                        if (lista_controle_dia[i].Data_Presenca.Equals(DateTime.Now.ToString("dd/MM/yyyy")) && lista_controle_dia[i].Nome_serie.Equals(NomeSerie))
+                        {
+
+                            LblAvisoSerieRealizado.Text = ("Já realizou esta série hoje - " + (DateTime.Now.ToString("dd/MM/yyyy")));
+                            LblAvisoSerieRealizado.BackgroundColor = Color.Red;
+                            LblAvisoSerieRealizado.IsVisible = true;
+
+                            Verefica_Dia = true;
+                        }
+                    }
+                    catch { }
+                }
+
+
+                if (Verefica_Dia == false)
+                {
+
+                    controle_Dia.Id_Aluno = Login.Id_Aluno_Login;//passar o id do aluno que fez a serie
+                    controle_Dia.Nome_serie = NomeSerie;
+                    controle_Dia.Hora_Serie = DateTime.Now.Hour.ToString();
+                    controle_Dia.Data_Presenca = DateTime.Now.ToString("dd/MM/yyyy");
+                    await controle_Dia_DAO.Cadastrar_Dia(controle_Dia);
+
+                }
+            }
+            else
+            {
+                await DisplayAlert("","Finalize todos Exercícios","OK");
+            }
+        //passar aqui o nome da serie que vai salvar e o id do aluno tó fazendo isso de modo direto pra ganhar tempo
         }
 
         private async void Confere_Dia()

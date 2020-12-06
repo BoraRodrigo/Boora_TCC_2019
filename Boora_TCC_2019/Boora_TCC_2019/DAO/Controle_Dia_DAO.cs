@@ -18,9 +18,10 @@ namespace Boora_TCC_2019.DAO
         {
 
             await firebase
-             .Child("Academias")
-                .Child(Login.Nome_Academia_login)
-                .Child("Dia_Presenca")
+             .Child("Dia_Presenca")             
+             .Child(Login.Nome_Academia_login)
+             .Child("Dia_Presenca")
+
               .PostAsync(new Controle_Dia()
               {
                   Id_Aluno=controle_Dia.Id_Aluno,
@@ -33,9 +34,10 @@ namespace Boora_TCC_2019.DAO
         {
 
             return (await firebase
-               .Child("Academias")
+               .Child("Dia_Presenca")
                 .Child(Login.Nome_Academia_login)
-                .Child("Dia_Presenca").OrderBy("Id_Aluno").EqualTo(idAluno)
+                .Child("Dia_Presenca")
+                .OrderBy("Id_Aluno").EqualTo(idAluno)
                 .OnceAsync<Controle_Dia>()).Select(item => new Controle_Dia
                 {
                     Id_Aluno = item.Object.Id_Aluno,

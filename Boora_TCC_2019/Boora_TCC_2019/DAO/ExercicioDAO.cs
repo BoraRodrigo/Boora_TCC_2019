@@ -20,9 +20,8 @@ namespace Boora_TCC_2019.DAO
          {
 
            return (await firebase
-              .Child("Academias")
-                .Child(Login.Nome_Academia_login)
-                .Child("Exercicio")
+              .Child("Exercicios")
+               .Child(Login.Nome_Academia_login)
                .OnceAsync<Exercicio>()).Select(item => new Exercicio
                {
                    Nome = item.Object.Nome,
@@ -37,9 +36,8 @@ namespace Boora_TCC_2019.DAO
         public async Task Cadastrar_Exercicio(string id_Exercicio, string nome,string descricao, string objetivo, Stream fileStream, string fileName)
         {
           var cadastro_exercicio=  await firebase
-            .Child("Academias")
-                .Child(Login.Nome_Academia_login)
-                .Child("Exercicio")              
+            .Child("Exercicios")
+               .Child(Login.Nome_Academia_login)
               .PostAsync(new Exercicio() { Id_exercicio=id_Exercicio,
                   Nome = nome,
                   Descricao = descricao,
@@ -49,15 +47,13 @@ namespace Boora_TCC_2019.DAO
             string id_exercicioKEY = cadastro_exercicio.Key;//salva o id de cadastro do firebase
 
             var alterar_exercicioID = (await firebase
-             .Child("Academias")
-                .Child(Login.Nome_Academia_login)
-                .Child("Exercicio")
-              .OnceAsync<Exercicio>()).Where(a => a.Object.Id_exercicio .Equals(id_exercicioKEY)).FirstOrDefault();
+            .Child("Exercicios")
+            .Child(Login.Nome_Academia_login)
+            .OnceAsync<Exercicio>()).Where(a => a.Object.Id_exercicio .Equals(id_exercicioKEY)).FirstOrDefault();
 
-            await firebase
-             .Child("Academias")
-                .Child(Login.Nome_Academia_login)
-                .Child("Exercicio")
+                await firebase
+               .Child("Exercicios")
+              .Child(Login.Nome_Academia_login)
               .Child(id_exercicioKEY)
               .PutAsync(new Exercicio()
               {
@@ -82,9 +78,8 @@ namespace Boora_TCC_2019.DAO
           {
               var exercicio = await Busca_Exercicio();
               await firebase
-               .Child("Academias")
-                .Child(Login.Nome_Academia_login)
-                .Child("Exercicio")
+               .Child("Exercicios")
+               .Child(Login.Nome_Academia_login)
                 .OnceAsync<Exercicio>();
               return exercicio.Where(a => a.Id_exercicio == id_Exercicio).FirstOrDefault();
          
@@ -95,15 +90,13 @@ namespace Boora_TCC_2019.DAO
              {
             //metodo incompleto
             var alterar_exercicio = (await firebase
-                .Child("Academias")
-                .Child(Login.Nome_Academia_login)
-                .Child("Exercicio")
+                   .Child("Exercicios")
+                   .Child(Login.Nome_Academia_login)
                    .OnceAsync<Exercicio>()).Where(a => a.Object.Id_exercicio == id_Exercicio).FirstOrDefault();
 
                  await firebase
-                .Child("Academias")
-                .Child(Login.Nome_Academia_login)
-                .Child("Exercicio")
+                   .Child("Exercicios")
+                   .Child(Login.Nome_Academia_login)
                    .Child(alterar_exercicio.Key)
                    .PutAsync(new Exercicio() { Id_exercicio = id_Exercicio, Nome = nome });
              }
@@ -111,9 +104,8 @@ namespace Boora_TCC_2019.DAO
             public async Task Excluir_Exercicio(string id_Exercicio)
           {
               var excluirExercicio = (await firebase
-               .Child("Academias")
+                .Child("Exercicios")
                 .Child(Login.Nome_Academia_login)
-                .Child("Exercicio")
                 .OnceAsync<Exercicio>()).Where(a => a.Object.Id_exercicio == id_Exercicio).FirstOrDefault();
               await firebase.Child("Exercicio").Child(excluirExercicio.Key).DeleteAsync();
 

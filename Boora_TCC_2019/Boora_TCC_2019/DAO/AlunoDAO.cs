@@ -21,9 +21,8 @@ namespace Boora_TCC_2019.DAO
         public async Task<List<Aluno>> Busca_Aluno()
         {
             return (await firebase
-                .Child("Academias")
-                .Child(Login.Nome_Academia_login )
-                .Child("Aluno")
+                .Child("Alunos")
+                .Child(Login.Nome_Academia_login )             
                 .OnceAsync<Aluno>()).Select(item => new Aluno
                 {
                     Id_Aluno = item.Object.Id_Aluno,
@@ -44,9 +43,8 @@ namespace Boora_TCC_2019.DAO
         {
 
             return (await firebase
-                .Child("Academias")
-                .Child(nome_Academia)
-                .Child("Aluno")
+                .Child("Alunos")
+                .Child(nome_Academia)              
                 .OnceAsync<Aluno>()).Select(item => new Aluno
                 {
                     Id_Aluno = item.Object.Id_Aluno,
@@ -65,9 +63,8 @@ namespace Boora_TCC_2019.DAO
         public async Task Cadastrar_Aluno(Aluno aluno, Stream fileStream)
         {
             var cadastro_aluno= await firebase
-               .Child("Academias")
+               .Child("Alunos")
                .Child(Login.Nome_Academia_login)
-               .Child("Aluno")
               .PostAsync(new Aluno()
               {
                   Id_Aluno = aluno.Id_Aluno,
@@ -84,15 +81,13 @@ namespace Boora_TCC_2019.DAO
             string id_cadastroalunoKEY = cadastro_aluno.Key;
 
             var alterar_alunoID = (await firebase
-             .Child("Academias")
-             .Child(Login.Nome_Academia_login)
-             .Child("Aluno")
+               .Child("Alunos")
+               .Child(Login.Nome_Academia_login)
              .OnceAsync<Aluno>()).Where(a => a.Object.Id_Aluno == id_cadastroalunoKEY).FirstOrDefault();
 
             await firebase
-              .Child("Academias")
-              .Child(Login.Nome_Academia_login)
-              .Child("Aluno")
+               .Child("Alunos")
+               .Child(Login.Nome_Academia_login)
               .Child(id_cadastroalunoKEY)
               .PutAsync(new Aluno()
               {
@@ -119,9 +114,8 @@ namespace Boora_TCC_2019.DAO
         {
             //passar aqui o nome da academia para se cadastrar. No moento estou passando só o angelos para teste
             var cadastro_aluno = await firebase
-               .Child("Academias")
-               .Child(nome_academia)
-               .Child("Aluno")
+               .Child("Alunos")
+               .Child(nome_academia)               
               .PostAsync(new Aluno()
               {
                   Id_Aluno = aluno.Id_Aluno,
@@ -138,15 +132,13 @@ namespace Boora_TCC_2019.DAO
             string id_cadastroalunoKEY = cadastro_aluno.Key;
 
             var alterar_alunoID = (await firebase
-             .Child("Academias")
-             .Child("Angelos")
-             .Child("Aluno")
+             .Child("Alunos")
+             .Child(nome_academia)          
              .OnceAsync<Aluno>()).Where(a => a.Object.Id_Aluno == id_cadastroalunoKEY).FirstOrDefault();
 
             await firebase
-              .Child("Academias")
-              .Child("Angelos")
-              .Child("Aluno")
+              .Child("Alunos")
+              .Child(nome_academia)             
               .Child(id_cadastroalunoKEY)
               .PutAsync(new Aluno()
               {
@@ -177,7 +169,7 @@ namespace Boora_TCC_2019.DAO
             Exercicios_Serie_DAO exercicios_Serie_DAO = new Exercicios_Serie_DAO();
             var exercicios_serie = await exercicios_Serie_DAO.Busca_Exercicios_Serie();
             await firebase
-              .Child("Academias")
+              .Child("Exercicios_Serie_DAO")
                .Child(Login.Nome_Academia_login)
                .Child("Exercicios_Serie_DAO")
               .OnceAsync<Exercicios_Serie_DAO>();
@@ -188,7 +180,8 @@ namespace Boora_TCC_2019.DAO
         {
             var aluno = await Busca_Aluno();
             await firebase
-                .Child("Aluno")
+                .Child("Alunos")
+                .Child(Login.Nome_Academia_login)
               .OnceAsync<Aluno>();
             return aluno.Where(a => a.Id_Aluno == id_alunoAlterar).FirstOrDefault();
 
@@ -199,9 +192,8 @@ namespace Boora_TCC_2019.DAO
             //busca o aluno pelo email para pode enviar um email para alterar a senha
             var aluno = await Busca_Aluno_Por_nome_Academia_Enviar_Email(academia);
             await firebase
-                .Child("Academias")
-                .Child(academia)
-                .Child("Aluno")
+                .Child("Alunos")
+                .Child(Login.Nome_Academia_login)
               .OnceAsync<Aluno>();
             return aluno.Where(a => a.Email == email).FirstOrDefault();
 
@@ -212,9 +204,8 @@ namespace Boora_TCC_2019.DAO
    
             var aluno = await Busca_Aluno_Por_nome_Academia_Enviar_Email(Login.Nome_Academia_login);
             await firebase
-                .Child("Academias")
+                .Child("Alunos")
                 .Child(Login.Nome_Academia_login)
-                .Child("Aluno")
               .OnceAsync<Aluno>();
             return aluno.Where(a => a.Email == email).FirstOrDefault();
         }
@@ -226,7 +217,7 @@ namespace Boora_TCC_2019.DAO
             SerieDAO Serie_DAO = new SerieDAO();
             var serie = await Serie_DAO.Busca_Serie();
             await firebase
-              .Child("Academias")
+              .Child("Serie")
                 .Child(Login.Nome_Academia_login)
                 .Child("Serie")
               .OnceAsync<Serie>();
@@ -236,15 +227,13 @@ namespace Boora_TCC_2019.DAO
         public async Task AlterarALUNO(string idAluno, Aluno aluno)
         {
             var alunoAlterar = (await firebase
-               .Child("Academias")
-               .Child(Login.Nome_Academia_login)
-               .Child("Aluno")
+                .Child("Alunos")
+                .Child(Login.Nome_Academia_login)
               .OnceAsync<Aluno>()).Where(a => a.Object.Id_Aluno == idAluno).FirstOrDefault();
 
             await firebase
-              .Child("Academias")
+              .Child("Alunos")
               .Child(Login.Nome_Academia_login)
-               .Child("Aluno")
               .Child(alunoAlterar.Key)
               .PutAsync(new Aluno()
               {
@@ -267,16 +256,14 @@ namespace Boora_TCC_2019.DAO
             var aluno = await  Busca_Dados_Aluno_Por_Email(email, academia);
 
             var alunoAlterar = (await firebase
-               .Child("Academias")
-               .Child(academia)
-               .Child("Aluno")
+              .Child("Alunos")
+              .Child(Login.Nome_Academia_login)
               .OnceAsync<Aluno>()).Where(a => a.Object.Email == email).FirstOrDefault();
 
 
             await firebase
-              .Child("Academias")
-              .Child(academia)
-               .Child("Aluno")
+              .Child("Alunos")
+              .Child(Login.Nome_Academia_login)
               .Child(alunoAlterar.Key)
               .PutAsync(new Aluno()
               {
@@ -299,10 +286,9 @@ namespace Boora_TCC_2019.DAO
             {
                 var aluno = await Busca_Aluno();
                 await firebase
-                 .Child("Academias")
+                .Child("Alunos")
                 .Child(Login.Nome_Academia_login)
-                    .Child("Aluno")
-                  .OnceAsync<Aluno>();
+                .OnceAsync<Aluno>();
                 return aluno.Where(a => a.Email == email && a.Senha == senha).FirstOrDefault();
             }
             catch (Exception)

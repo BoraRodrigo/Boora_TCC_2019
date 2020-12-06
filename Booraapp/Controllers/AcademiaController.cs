@@ -35,6 +35,8 @@ namespace Booraapp.Controllers
                 return View();
             }
 
+           
+
             return View(lista_academia);
             
 
